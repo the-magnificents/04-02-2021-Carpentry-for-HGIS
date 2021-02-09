@@ -1,0 +1,42 @@
+c,Astoria,-133.996669,190.000000,9500
+c,Portland,-71.665279,121.498751,1500000
+r,Astoria,Portland
+c,Salem,-102.830974,77.835137,150000
+r,Portland,Salem
+c,Corvallis,-109.000833,46.669442,55000
+r,Salem,Corvallis
+c,Eugene,-115.328893,-9.333888,150000
+r,Salem,Eugene
+c,_1,-34.329725,-96.502914,0
+c,Coos Bay,-190.000000,-65.495420,25000
+c,_3,-140.166528,-133.996669,0
+r,Eugene,_3
+r,Coos Bay,_3
+c,Newport,-165.162365,52.997502,10000
+r,Corvallis,Newport
+c,Reedsport,-183.830142,-28.001665,4000
+r,Eugene,Reedsport
+r,Coos Bay,Reedsport
+c,Lincoln City,-152.664446,102.672773,10000
+r,Reedsport,Lincoln City
+r,Astoria,Lincoln City
+r,Portland,Lincoln City
+r,Salem,Lincoln City
+c,Klamath Falls,-34.329725,-183.830142,20000
+r,_1,Klamath Falls
+c,Bend,9.333888,-15.661948,80000
+r,Salem,Bend
+r,Bend,_1
+c,_2,52.839301,115.170691,0
+r,Bend,_2
+c,The Dalles,15.503747,121.498751,13000
+r,The Dalles,_2
+r,Portland,The Dalles
+c,Pendleton,171.174022,127.668609,16000
+r,The Dalles,Pendleton
+c,Burns,152.506245,-71.665279,3000
+r,Bend,Burns
+c,Lakeview,59.167361,-190.000000,2000
+r,Klamath Falls,Lakeview
+c,Medford,-109.000833,-165.004163,75000
+r,_3,Medford
