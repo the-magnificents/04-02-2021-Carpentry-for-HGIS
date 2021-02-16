@@ -12,4 +12,4 @@ class City():
 # new_city = City([c,Astoria,-133.996669,190.000000,9500])
 # new_city = City(['c,Astoria,-133.996669,190.000000,9500'])
 # new_city = City(['c','Astoria',-133.996669,190.000000,9500])
-print(new_city.name)
+# print(new_city.name)
