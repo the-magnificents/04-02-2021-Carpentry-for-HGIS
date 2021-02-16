@@ -1,0 +1,1108 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About these instructor notes &#8212; My book title</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Python essentials for GIS learners" href="../README.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">My book title</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../README.html">
+   Python essentials for GIS learners
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   About these instructor notes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#python-scripting-and-basic-data-analysis">
+   Python scripting and basic data analysis
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#checklist">
+   Checklist
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#excercise-using-someone-else-s-code">
+   Excercise: Using someone else’s code
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#excercise-understand-someone-else-s-code-even-when-you-dont-know-how-to-program">
+   Excercise: Understand someone else’s code (even when you dont know how to program)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#variables-and-constants">
+   Variables (and constants)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#go-from-for-loops-and-while-loops-to-functions">
+   Go from for loops and while loops to functions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#knowledge-base-for-instructors-things-i-think-are-interesting-and-important-to-understand">
+   Knowledge base for instructors (Things I think are interesting and important to understand)
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/02_Python_Draw_GIS/notes.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/02_Python_Draw_GIS/notes.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   About these instructor notes
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lets-put-it-as-a-user-story">
+     Lets put it as a user story :)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-scripting-and-basic-data-analysis">
+   Python scripting and basic data analysis
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lesson-style">
+     Lesson style
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#premises">
+     Premises
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#checklist">
+   Checklist
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#general-learning-goals">
+     General learning goals
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#takeaways-from-this-lesson-summarizing">
+     Takeaways from this lesson (summarizing)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#technology-and-setup-requirements">
+     Technology and setup requirements
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#expected-outcomes">
+     Expected outcomes
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#learning-objectives-according-to-the-carpentries">
+     Learning objectives according to the carpentries
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#variables">
+       Variables
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#visualizing-tabular-data">
+       Visualizing tabular data
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#repeating-actions-with-loops">
+     Repeating Actions with Loops
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#storing-multiple-values-in-lists">
+     Storing Multiple Values in Lists
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analyzing-data-from-multiple-files">
+     Analyzing Data from Multiple Files
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conditionals">
+     Conditionals
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#creating-functions">
+     Creating functions
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#errors-and-exceptions">
+     Errors and Exceptions
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#defensive-programming">
+     Defensive Programming
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#debugging">
+     Debugging
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#command-line-programs">
+     Command-Line programs
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#excercise-using-someone-else-s-code">
+   Excercise: Using someone else’s code
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#run-the-main-script-of-the-repository">
+     Run the main script of the repository
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#discuss-what-just-happened-with-the-learners-in-the-mindset-of">
+     Discuss what just happened with the learners in the mindset of
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#excercise-understand-someone-else-s-code-even-when-you-dont-know-how-to-program">
+   Excercise: Understand someone else’s code (even when you dont know how to program)
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#variables-and-constants">
+   Variables (and constants)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nice-references-for-instructor">
+     Nice references for instructor
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-working-with-variables">
+     Exercise, working with variables
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-types">
+     Data types
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#storing-different-data-types">
+     Storing different data types
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#instructor-demonstrates-these-different-data-types-using-the-python-interpreter">
+     Instructor demonstrates these different data types using the python interpreter
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#excercise-exploring-objects-and-data-types-in-the-given-code">
+     Excercise, exploring objects and data types in the given code
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#for-this-exercise-the-instructor-needs-to-know-python-objects-and-classes">
+       For this exercise the instructor needs to know Python Objects and Classes
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#go-from-for-loops-and-while-loops-to-functions">
+   Go from for loops and while loops to functions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#excercise-drawing-polygons-with-turtle">
+     Excercise, drawing polygons with turtle
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#excercise-combining-functions-and-object-orientation">
+     Excercise, combining functions and object orientation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#knowledge-base-for-instructors-things-i-think-are-interesting-and-important-to-understand">
+   Knowledge base for instructors (Things I think are interesting and important to understand)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-you-need-to-know-about-python-interpreter">
+     What you need to know about python interpreter
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#programmers-view-of-interpreter">
+       Programmer’s view of interpreter
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#run-time">
+     Run time
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#computer-memory">
+     Computer memory:
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="about-these-instructor-notes">
+<h1>About these instructor notes<a class="headerlink" href="#about-these-instructor-notes" title="Permalink to this headline">¶</a></h1>
+<p>Use these notes to run this workshop and guide yourself through excercises, they are not necessarily meant to be seen by participants, but it can be helpful for instructors/coinstructors and helpers to understand what is being taught and the rationale behind teaching this workshop.</p>
+<div class="section" id="lets-put-it-as-a-user-story">
+<h2>Lets put it as a user story :)<a class="headerlink" href="#lets-put-it-as-a-user-story" title="Permalink to this headline">¶</a></h2>
+<p><em>As an instructor, co-instructor and helper I would like to have some documented guide on how to teach this workshop and facilitate the performance of excercises so that I can keep on track of the lesson and master underlying concepts behind the lesson</em></p>
+</div>
+</div>
+<div class="section" id="python-scripting-and-basic-data-analysis">
+<h1>Python scripting and basic data analysis<a class="headerlink" href="#python-scripting-and-basic-data-analysis" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="lesson-style">
+<h2>Lesson style<a class="headerlink" href="#lesson-style" title="Permalink to this headline">¶</a></h2>
+<p>These lesson is part of an <a class="reference external" href="https://en.wikipedia.org/wiki/Open_educational_resources">open educational resource</a> or module. It is designed to be used in the context of the other lessons, and builds up knowledge, excercises and concepts using previous lessons as a foundation.</p>
+<p>We start with a program that works, to give a full picture, run first source code, then inspect the source code, and try to understand it step by step througout the lesson. The instructor will be reflecting between essential concepts of python and progressively reviewing the code on the basis of the new concepts taught. Therefore the instructor will go back to the source code provided and ask students about specific lines of code.</p>
+<p>Find entire carpentry lesson flow diagram <a class="reference external" href="https://drive.google.com/file/d/1a3gIdHMfKCtgeqvXORqhvfcRrKU4-CAq/view?usp=sharing">here</a></p>
+<p><img alt="" src="../_images/HGIS_carpentries.jpg" /></p>
+</div>
+<div class="section" id="premises">
+<h2>Premises<a class="headerlink" href="#premises" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>We use turtle to show people how to make a minimal GIS data layer programmatically.</p></li>
+<li><p>We use pandas and matplotlib to explore datasets</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="checklist">
+<h1>Checklist<a class="headerlink" href="#checklist" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="general-learning-goals">
+<h2>General learning goals<a class="headerlink" href="#general-learning-goals" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Learn and apply fundamental concepts of python to enhance your computational skills for your own research tasks</p></li>
+<li><p>Get inspired and motivated to explore python libraries</p></li>
+<li><p>Get exposed to contemporary software tools and basic practices</p></li>
+<li><p>Understand the advantages of automation and programmatic operations with CLIs and how they can complement GUI interfaces</p></li>
+</ul>
+</div>
+<div class="section" id="takeaways-from-this-lesson-summarizing">
+<h2>Takeaways from this lesson (summarizing)<a class="headerlink" href="#takeaways-from-this-lesson-summarizing" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Practice, explore and be creative</p></li>
+<li><p>Learn from others code</p></li>
+<li><p>Make time to invest in comptuational skills and tools</p></li>
+</ul>
+</div>
+<div class="section" id="technology-and-setup-requirements">
+<h2>Technology and setup requirements<a class="headerlink" href="#technology-and-setup-requirements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>What are the requirements to participate in this lesson</p></li>
+</ul>
+</div>
+<div class="section" id="expected-outcomes">
+<h2>Expected outcomes<a class="headerlink" href="#expected-outcomes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>By the end of this lesson you will understand fundamental concepts underlying python.</p></li>
+<li><p>Practice these concepts through various examples and excercises.</p></li>
+<li><p>Connect bash and commands with setting up ptyhon and also working with the file system with python. Introduce basics of data types, the philosophy behind python and how to work with libraries. (Carpentries material).</p></li>
+<li><p>Run scripts with python (just like we did with bash) and then move to jupyter notebooks
+environments (package management)</p></li>
+</ul>
+<p>Intermediate advanced exercises
+We can have a list of challenges in the lesson, for people to try and study other things</p>
+<p>Examples
+Here we can have a list of examples</p>
+<p>Errors, reproducing errors….</p>
+</div>
+<div class="section" id="learning-objectives-according-to-the-carpentries">
+<h2>Learning objectives according to the carpentries<a class="headerlink" href="#learning-objectives-according-to-the-carpentries" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="variables">
+<h3>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Assign values to variables.</p></li>
+</ul>
+</div>
+<div class="section" id="visualizing-tabular-data">
+<h3>Visualizing tabular data<a class="headerlink" href="#visualizing-tabular-data" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Explain what a library is and what libraries are used for.</p></li>
+<li><p>Import a Python library and use the functions it contains.</p></li>
+<li><p>Read tabular data from a file into a program.</p></li>
+<li><p>Select individual values and subsections from data.</p></li>
+<li><p>Perform operations on arrays of data.</p></li>
+<li><p>Plot simple graphs from data.</p></li>
+<li><p>Group several graphs in a single figure.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="repeating-actions-with-loops">
+<h2>Repeating Actions with Loops<a class="headerlink" href="#repeating-actions-with-loops" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Explain what a for loop does.</p></li>
+<li><p>Correctly write for loops to repeat simple calculations.</p></li>
+<li><p>Trace changes to a loop variable as the loop runs.</p></li>
+<li><p>Trace changes to other variables as they are updated by a for loop.</p></li>
+</ul>
+</div>
+<div class="section" id="storing-multiple-values-in-lists">
+<h2>Storing Multiple Values in Lists<a class="headerlink" href="#storing-multiple-values-in-lists" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Explain what a list is.</p></li>
+<li><p>Create and index lists of simple values.</p></li>
+<li><p>Change the values of individual elements</p></li>
+<li><p>Append values to an existing list</p></li>
+<li><p>Reorder and slice list elements</p></li>
+<li><p>Create and manipulate nested lists</p></li>
+</ul>
+</div>
+<div class="section" id="analyzing-data-from-multiple-files">
+<h2>Analyzing Data from Multiple Files<a class="headerlink" href="#analyzing-data-from-multiple-files" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Use a library function to get a list of filenames that match a wildcard pattern.</p></li>
+<li><p>Write a for loop to process multiple files.</p></li>
+</ul>
+</div>
+<div class="section" id="conditionals">
+<h2>Conditionals<a class="headerlink" href="#conditionals" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Write conditional statements including if, elif, and else branches.</p></li>
+<li><p>Correctly evaluate expressions containing and and or.</p></li>
+</ul>
+</div>
+<div class="section" id="creating-functions">
+<h2>Creating functions<a class="headerlink" href="#creating-functions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Define a function that takes parameters.</p></li>
+<li><p>Return a value from a function.</p></li>
+<li><p>Test and debug a function.</p></li>
+<li><p>Set default values for function parameters.</p></li>
+<li><p>Explain why we should divide programs into small, single-purpose functions.</p></li>
+</ul>
+</div>
+<div class="section" id="errors-and-exceptions">
+<h2>Errors and Exceptions<a class="headerlink" href="#errors-and-exceptions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>To be able to read a traceback, and determine where the error took place and what type it is.</p></li>
+<li><p>To be able to describe the types of situations in which syntax errors, indentation errors, name errors, index errors, and missing file errors occur.</p></li>
+</ul>
+</div>
+<div class="section" id="defensive-programming">
+<h2>Defensive Programming<a class="headerlink" href="#defensive-programming" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Explain what an assertion is.</p></li>
+<li><p>Add assertions that check the program’s state is correct.</p></li>
+<li><p>Correctly add precondition and postcondition assertions to functions.</p></li>
+<li><p>Explain what test-driven development is, and use it when creating new functions.</p></li>
+<li><p>Explain why variables should be initialized using actual data values rather than arbitrary constants.</p></li>
+</ul>
+</div>
+<div class="section" id="debugging">
+<h2>Debugging<a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Debug code containing an error systematically.</p></li>
+<li><p>Identify ways of making code less error-prone and more easily tested.</p></li>
+</ul>
+</div>
+<div class="section" id="command-line-programs">
+<h2>Command-Line programs<a class="headerlink" href="#command-line-programs" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Use the values of command-line arguments in a program.</p></li>
+<li><p>Handle flags and files separately in a command-line program.</p></li>
+<li><p>Read data from standard input in a program so that it can be used in a pipeline.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="excercise-using-someone-else-s-code">
+<h1>Excercise: Using someone else’s code<a class="headerlink" href="#excercise-using-someone-else-s-code" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>Code along (participants repeat what the instructor is doing)</p>
+</div></blockquote>
+<blockquote>
+<div><p>This excercise will help to practice how to use the shell and demonstrate where users will navigate directories to find files and perform basic operations learned previously.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Download the given python repository (our example repository, ideally using bash)</p></li>
+<li><p>Explore the python repository only using the terminal(this is a must)</p></li>
+</ul>
+<div class="section" id="run-the-main-script-of-the-repository">
+<h2>Run the main script of the repository<a class="headerlink" href="#run-the-main-script-of-the-repository" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Navigate inside the directory and run: <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">map.py</span> <span class="pre">oregonmap.csv</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="discuss-what-just-happened-with-the-learners-in-the-mindset-of">
+<h2>Discuss what just happened with the learners in the mindset of<a class="headerlink" href="#discuss-what-just-happened-with-the-learners-in-the-mindset-of" title="Permalink to this headline">¶</a></h2>
+<p>computational thinking</p>
+<ul class="simple">
+<li><p>Can anyone explain what might have happened</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="excercise-understand-someone-else-s-code-even-when-you-dont-know-how-to-program">
+<h1>Excercise: Understand someone else’s code (even when you dont know how to program)<a class="headerlink" href="#excercise-understand-someone-else-s-code-even-when-you-dont-know-how-to-program" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Inspect the following code with the learners, ask questions about what they are reading.</p></li>
+<li><p>Can you identify roughly which parts of the code are responsible for what is happening in the program?</p></li>
+<li><p>What helped you identify the portions of the code?</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Copyright 2014 Andrew Cleland</span>
+<span class="c1"># Map drawing using turtle graphics</span>
+<span class="c1"># Reads data from a csv file to generate a map.</span>
+
+<span class="c1"># Import necessary packages</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">from</span> <span class="nn">turtle</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># Global constants</span>
+<span class="n">TOWN_MIN</span> <span class="o">=</span> <span class="mi">1</span>   <span class="c1"># Min town population</span>
+<span class="n">TOWN_MAX</span> <span class="o">=</span> <span class="mi">90000</span>   <span class="c1"># Max town population</span>
+<span class="n">TOWN_MARK</span> <span class="o">=</span> <span class="mi">2</span>   <span class="c1"># radius of town marker</span>
+<span class="n">CITY_MARK</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">TOWN_MARK</span>   <span class="c1"># radius of city marker</span>
+
+<span class="c1"># City class - contains name, location, and population</span>
+<span class="k">class</span> <span class="nc">City</span><span class="p">():</span>
+    <span class="c1"># Constructor</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="c1"># data is in form [c, name, x position, y position, population]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">loc</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pop</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+
+<span class="c1"># Road class - contains names of connecting cities</span>
+<span class="k">class</span> <span class="nc">Road</span><span class="p">():</span>
+    <span class="c1"># Constructor</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="c1"># data has form [r, cityname1, cityname2]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">city1</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">city2</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+
+<span class="c1"># Map class - contains lists of cities and roads</span>
+<span class="k">class</span> <span class="nc">Map</span><span class="p">():</span>
+    
+    <span class="c1"># Constructor - generates map from a valid csv file</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mapfile</span><span class="p">):</span>
+        <span class="c1"># Read the file</span>
+        <span class="n">map_data</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">mapfile</span><span class="p">))</span>
+        <span class="c1"># Initialize city list</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cities</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="c1"># Initialize road list</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">roads</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="c1"># Collect and store data to lists</span>
+        <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">map_data</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">entry</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span>
+                <span class="n">newCity</span> <span class="o">=</span> <span class="n">City</span><span class="p">(</span><span class="n">entry</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">cities</span><span class="p">[</span><span class="n">newCity</span><span class="o">.</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">newCity</span>
+            <span class="k">elif</span> <span class="n">entry</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;r&#39;</span><span class="p">:</span>
+                <span class="n">newRoad</span> <span class="o">=</span> <span class="n">Road</span><span class="p">(</span><span class="n">entry</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">roads</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">newRoad</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This shouldn</span><span class="se">\&#39;</span><span class="s1">t print&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Method for drawing the map</span>
+    <span class="k">def</span> <span class="nf">draw</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        
+        <span class="c1"># Define Screen var - need it for keeping screen open</span>
+        <span class="n">scr</span> <span class="o">=</span> <span class="n">Screen</span><span class="p">()</span>
+
+        <span class="c1"># Sub method for drawing labels</span>
+        <span class="k">def</span> <span class="nf">label</span><span class="p">(</span><span class="n">city</span><span class="p">):</span>
+            <span class="n">space</span> <span class="o">=</span> <span class="mi">4</span>   <span class="c1"># num pixels to space between marker and label</span>
+            <span class="n">penup</span><span class="p">()</span>
+            <span class="n">goto</span><span class="p">(</span><span class="n">city</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">space</span><span class="p">,</span> <span class="n">city</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
+            <span class="n">write</span><span class="p">(</span><span class="n">city</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+
+        <span class="c1"># Make turtle shape an actual turtle</span>
+        <span class="n">shape</span><span class="p">(</span><span class="s2">&quot;turtle&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Draw cities</span>
+        <span class="k">for</span> <span class="n">cityname</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">cities</span><span class="p">:</span>
+            <span class="c1"># Load city from cities dictionary</span>
+            <span class="n">city</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cities</span><span class="p">[</span><span class="n">cityname</span><span class="p">]</span>
+            <span class="c1"># Lift pen, go to location of city</span>
+            <span class="n">penup</span><span class="p">()</span>
+            <span class="n">goto</span><span class="p">(</span><span class="n">city</span><span class="o">.</span><span class="n">x</span><span class="o">+</span><span class="n">TOWN_MARK</span><span class="p">,</span> <span class="n">city</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
+            <span class="n">setheading</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+
+            <span class="c1"># Draw appropriate marker given population size</span>
+            <span class="k">if</span> <span class="n">city</span><span class="o">.</span><span class="n">pop</span> <span class="o">&gt;</span> <span class="n">TOWN_MIN</span> <span class="ow">and</span> <span class="n">city</span><span class="o">.</span><span class="n">pop</span> <span class="o">&lt;=</span> <span class="n">TOWN_MAX</span><span class="p">:</span>
+               <span class="n">pendown</span><span class="p">()</span>
+               <span class="n">circle</span><span class="p">(</span><span class="n">TOWN_MARK</span><span class="p">)</span>
+               <span class="n">label</span><span class="p">(</span><span class="n">city</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">city</span><span class="o">.</span><span class="n">pop</span> <span class="o">&gt;</span> <span class="n">TOWN_MAX</span><span class="p">:</span>
+                <span class="n">pendown</span><span class="p">()</span>
+                <span class="n">begin_fill</span><span class="p">()</span>
+                <span class="n">circle</span><span class="p">(</span><span class="n">CITY_MARK</span><span class="p">)</span>
+                <span class="n">end_fill</span><span class="p">()</span>
+                <span class="n">label</span><span class="p">(</span><span class="n">city</span><span class="p">)</span>
+        
+        <span class="c1"># Draw roads</span>
+        <span class="k">for</span> <span class="n">road</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">roads</span><span class="p">:</span>
+            <span class="c1"># Lift pen, go to location of city1</span>
+            <span class="n">penup</span><span class="p">()</span>
+            <span class="n">goto</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cities</span><span class="p">[</span><span class="n">road</span><span class="o">.</span><span class="n">city1</span><span class="p">]</span><span class="o">.</span><span class="n">loc</span><span class="p">)</span>
+            <span class="c1"># Apply pen, and go to location of city2</span>
+            <span class="n">pendown</span><span class="p">()</span>
+            <span class="n">goto</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cities</span><span class="p">[</span><span class="n">road</span><span class="o">.</span><span class="n">city2</span><span class="p">]</span><span class="o">.</span><span class="n">loc</span><span class="p">)</span>
+        
+        <span class="c1"># Remove turtle from the map</span>
+        <span class="n">hideturtle</span><span class="p">()</span>
+
+        <span class="c1"># Keep screen open until user closes it</span>
+        <span class="n">scr</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+
+<span class="c1"># # Allow for command line usage</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="nb">map</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="nb">map</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="variables-and-constants">
+<h1>Variables (and constants)<a class="headerlink" href="#variables-and-constants" title="Permalink to this headline">¶</a></h1>
+<p>Explain what are variables, and what should the learner know about variables.</p>
+<p>In computer programming, a variable or scalar is a storage location (identified by a memory address) paired with an associated <strong>symbolic name</strong>, which contains some known or unknown quantity of information referred to as a value.</p>
+<div class="section" id="nice-references-for-instructor">
+<h2>Nice references for instructor<a class="headerlink" href="#nice-references-for-instructor" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://stevenpcurtis.medium.com/what-is-a-variable-3447ac1331b9">What is a Variable?</a></p></li>
+<li><p><a class="reference external" href="https://www.google.com/search?q=what+is+a+variable+in+programming&amp;rlz=1C1GCEU_nlNL866NL866&amp;oq=what+is+a+variable+in&amp;aqs=chrome.0.0l3j69i57j0i20i263j0l5.3869j0j1&amp;sourceid=chrome&amp;ie=UTF-8">Variables wikipedia</a></p></li>
+</ul>
+</div>
+<div class="section" id="exercise-working-with-variables">
+<h2>Exercise, working with variables<a class="headerlink" href="#exercise-working-with-variables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Identify with students different data types in the <code class="docutils literal notranslate"><span class="pre">map.py</span></code> script.</p></li>
+<li><p>Create variables that represent Delft characteristics as a city.Think of characteristics that you can express with different data types (integers, strings, arrays)</p></li>
+<li><p>Print formmated data about the city to display these variables in the python interpreter.</p></li>
+<li><p>Create a list of cities in the Netherlands.
+This should be a python list containing all cities.</p></li>
+<li><p>print user friendly outputs with the print function</p></li>
+</ul>
+</div>
+<div class="section" id="data-types">
+<h2>Data types<a class="headerlink" href="#data-types" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Strings</p></li>
+<li><p>Numbers (integers and floats)</p></li>
+<li><p>Lists</p></li>
+<li><p>Dictionaries</p></li>
+<li><p>Objects</p></li>
+</ul>
+</div>
+<div class="section" id="storing-different-data-types">
+<h2>Storing different data types<a class="headerlink" href="#storing-different-data-types" title="Permalink to this headline">¶</a></h2>
+<p>We can use variables to store all sorts of different types of data.
+We might be limited by our programming language, but as shown above Integers, Floats, Characters and Strings are certainly options to be stored in a variable.</p>
+<p><img alt="" src="https://miro.medium.com/max/875/1*Px7h03Ih7B5QZu4KQpSEoQ.png" /></p>
+</div>
+<div class="section" id="instructor-demonstrates-these-different-data-types-using-the-python-interpreter">
+<h2>Instructor demonstrates these different data types using the python interpreter<a class="headerlink" href="#instructor-demonstrates-these-different-data-types-using-the-python-interpreter" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Run these commands step by step on the intepreter</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="n">new_city</span> <span class="o">=</span> <span class="n">City</span><span class="p">([</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;Havana&#39;</span><span class="p">,</span><span class="o">-</span><span class="mf">133.996669</span><span class="p">,</span><span class="mf">190.000000</span><span class="p">,</span><span class="mi">9500</span><span class="p">])</span>
+<span class="c1">## check types (no need to use print in the python shell)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">new_city</span><span class="p">))</span>
+
+<span class="c1">## Explain the object stored in memory</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">new_city</span><span class="p">)</span>
+<span class="c1">## Print a property of the city</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">new_city</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;__main__.City&#39;&gt;
+&lt;__main__.City object at 0x000002696DC80D90&gt;
+Havana
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="excercise-exploring-objects-and-data-types-in-the-given-code">
+<h2>Excercise, exploring objects and data types in the given code<a class="headerlink" href="#excercise-exploring-objects-and-data-types-in-the-given-code" title="Permalink to this headline">¶</a></h2>
+<p>Demonstrate how to work with objects</p>
+<ul class="simple">
+<li><p>Create a city object from the given class</p></li>
+<li><p>Inspect the city object created</p></li>
+<li><p>Modify a city object</p></li>
+<li><p>Create a map object</p></li>
+<li><p>Inspect the dictionary inside the map object</p></li>
+</ul>
+<div class="section" id="for-this-exercise-the-instructor-needs-to-know-python-objects-and-classes">
+<h3>For this exercise the instructor needs to know Python Objects and Classes<a class="headerlink" href="#for-this-exercise-the-instructor-needs-to-know-python-objects-and-classes" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p><strong>Why is important to know about objects?</strong> Everything is an object in python and most operations done by users involve using libraries(objects), using methods and attributes.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Python is an object oriented programming language. Unlike procedure oriented programming, where the main emphasis is on functions, object oriented programming stresses on objects.An object is simply a collection of data (variables) and methods (functions) that act on those data. Similarly, a class is a blueprint for that object. We can think of class as a sketch (prototype) of a house. It contains all the details about the floors, doors, windows etc. Based on these descriptions we build the house. House is the object.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">These commands are meant to be used first in the python interpreter</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1">## Skip first this step and look at the error</span>
+<span class="kn">from</span> <span class="nn">map</span> <span class="kn">import</span> <span class="n">City</span>
+
+<span class="c1"># 1. Skip this step and only doing after reflecting on error</span>
+<span class="c1"># from map import Map</span>
+
+<span class="c1"># 2. Create a city object from the given class</span>
+<span class="n">new_city</span> <span class="o">=</span> <span class="n">City</span><span class="p">([</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;Havana&#39;</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">2.6</span><span class="p">,</span> <span class="mi">100000</span><span class="p">])</span>
+
+<span class="c1">## 3. Inspect a city object</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">new_city</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+
+<span class="c1">## Create a map object</span>
+<span class="n">new_map</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="s1">&#39;oregonmap.csv&#39;</span><span class="p">)</span>
+
+<span class="c1">## Inspect the Map </span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Havana
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="go-from-for-loops-and-while-loops-to-functions">
+<h1>Go from for loops and while loops to functions<a class="headerlink" href="#go-from-for-loops-and-while-loops-to-functions" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p><strong>The main idea behind this section</strong>. Reusing instructions (programmatic operations and instructions, storing instruction on files(scripts), and reusing functions)</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>How to run this section?</strong> Build up the need of using multipline commands, to source files, to functions (Demonstrate by example what reusability means in this section, this is where functions come into place)Reflect on the notion of objects</p>
+</div></blockquote>
+<p>In order to work with python built in IDLE do <code class="docutils literal notranslate"><span class="pre">py</span> <span class="pre">-3</span> <span class="pre">-m</span> <span class="pre">idlelib</span></code></p>
+<div class="section" id="excercise-drawing-polygons-with-turtle">
+<h2>Excercise, drawing polygons with turtle<a class="headerlink" href="#excercise-drawing-polygons-with-turtle" title="Permalink to this headline">¶</a></h2>
+<p>This excercise also aims to show the</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">turtle</span>
+<span class="c1">## Explain differences</span>
+<span class="c1"># from turtle import * </span>
+
+<span class="c1">## Explain how to use the help()</span>
+<span class="c1"># help(turtle)</span>
+
+<span class="c1">## Excercise: </span>
+<span class="c1"># Do this first manually</span>
+<span class="c1"># turtle.shape(&quot;turtle&quot;)</span>
+<span class="c1"># turtle.forward(100)</span>
+<span class="c1"># turtle.setheading(90)</span>
+<span class="c1"># turtle.forward(100)</span>
+<span class="c1"># turtle.setheading(180)</span>
+<span class="c1"># turtle.forward(100)</span>
+<span class="c1"># turtle.setheading(270)</span>
+<span class="c1"># turtle.forward(100)</span>
+
+<span class="c1">## Do it then with a for loop</span>
+<span class="c1">## Explain the need for a foor loop</span>
+<span class="c1"># length = 100</span>
+<span class="c1"># directions = [0,90,180,270]</span>
+<span class="c1"># for dir in directions:</span>
+<span class="c1">#     turtle.setheading(dir)</span>
+<span class="c1">#     turtle.forward(length)</span>
+
+<span class="c1">## Example of a function</span>
+<span class="c1">## triangle = [[a_side, C_angle], [b_side, A_angle], [c_side, B_angle]]</span>
+<span class="k">def</span> <span class="nf">draw_triangle</span><span class="p">(</span><span class="n">triangle</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">triangle</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">entry</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">entry</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">entry</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="c1">## Excercise: </span>
+<span class="c1">## Building a polygon with a better data model</span>
+<span class="k">def</span> <span class="nf">draw_polygon</span><span class="p">(</span><span class="n">coordinates</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    By doing myself this excercise I figured out problems to solve</span>
+<span class="sd">    like for instance the if statement at the end of the function</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">coord</span> <span class="ow">in</span> <span class="n">coordinates</span><span class="p">:</span>
+        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span> 
+        <span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">coord</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">coord</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+        <span class="c1"># turtle.penup()</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">count</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">coordinates</span><span class="p">)):</span>
+            <span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">coordinates</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">coordinates</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="c1">## Another triangle data model</span>
+<span class="c1">## A polygon model</span>
+<span class="c1">##   Latitude,Longitude</span>
+<span class="c1">##   [[51.984338,4.136685],</span>
+<span class="c1">##   [51.852919,5.290831],</span>
+<span class="c1">##   [52.861383,5.024489]]</span>
+
+<span class="c1">## Explain this example first and why is it so bad</span>
+<span class="c1"># draw_triangle([[100,100],[264,19],[300,60]])</span>
+<span class="c1"># draw_triangle([[100,100],[264,180-19],[300,60]])</span>
+
+<span class="c1">## Explain these example and the data model and why is better.</span>
+<span class="c1"># draw_polygon([[20,30],[100,200],[-50,180]])</span>
+<span class="c1"># draw_polygon([[20,30],[100,200],[-50,180],[300,-150]])</span>
+<span class="n">draw_polygon</span><span class="p">([[</span><span class="o">-</span><span class="mi">50</span><span class="p">,</span><span class="mi">180</span><span class="p">],[</span><span class="mi">100</span><span class="p">,</span><span class="mi">200</span><span class="p">],[</span><span class="mi">300</span><span class="p">,</span><span class="o">-</span><span class="mi">150</span><span class="p">],[</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">]])</span>
+
+<span class="n">turtle</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">Terminator</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">23</span><span class="o">-</span><span class="mi">62</span><span class="n">bb3509968b</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">65</span> <span class="c1"># draw_polygon([[20,30],[100,200],[-50,180]])</span>
+<span class="g g-Whitespace">     </span><span class="mi">66</span> <span class="c1"># draw_polygon([[20,30],[100,200],[-50,180],[300,-150]])</span>
+<span class="ne">---&gt; </span><span class="mi">67</span> <span class="n">draw_polygon</span><span class="p">([[</span><span class="o">-</span><span class="mi">50</span><span class="p">,</span><span class="mi">180</span><span class="p">],[</span><span class="mi">100</span><span class="p">,</span><span class="mi">200</span><span class="p">],[</span><span class="mi">300</span><span class="p">,</span><span class="o">-</span><span class="mi">150</span><span class="p">]</span> <span class="p">,</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">]])</span>
+<span class="g g-Whitespace">     </span><span class="mi">68</span> 
+<span class="g g-Whitespace">     </span><span class="mi">69</span> <span class="n">turtle</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
+
+<span class="nn">&lt;ipython-input-23-62bb3509968b&gt;</span> in <span class="ni">draw_polygon</span><span class="nt">(coordinates)</span>
+<span class="g g-Whitespace">     </span><span class="mi">40</span>     <span class="n">like</span> <span class="k">for</span> <span class="n">instance</span> <span class="n">the</span> <span class="k">if</span> <span class="n">statement</span> <span class="n">at</span> <span class="n">the</span> <span class="n">end</span> <span class="n">of</span> <span class="n">the</span> <span class="n">function</span>
+<span class="g g-Whitespace">     </span><span class="mi">41</span>     <span class="s1">&#39;&#39;&#39;</span>
+<span class="ne">---&gt; </span><span class="mi">42</span><span class="s1">     turtle.penup()</span>
+<span class="g g-Whitespace">     </span><span class="mi">43</span><span class="s1">     count = 0</span>
+<span class="g g-Whitespace">     </span><span class="mi">44</span><span class="s1">     for coord in coordinates:</span>
+
+<span class="nn">~\Anaconda3\lib\turtle.py</span> in <span class="ni">penup</span><span class="nt">()</span>
+
+<span class="ne">Terminator</span>: 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="excercise-combining-functions-and-object-orientation">
+<h2>Excercise, combining functions and object orientation<a class="headerlink" href="#excercise-combining-functions-and-object-orientation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Calculate the total population in the dataset</p></li>
+<li><p>Calculate the biggest city in the dataset</p></li>
+<li><p>Make a script file with a function where you calculate to reuse this calculation.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">map</span>
+<span class="n">new_map</span> <span class="o">=</span> <span class="nb">map</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="s1">&#39;oregonmap.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># print(new_map.cities)</span>
+<span class="c1"># Then invite students to reflect what the number means, city object at0x000123....</span>
+<span class="c1"># Rep: print a specific city in delft new_map.cities[&lt;SELECTED CITY&gt;]</span>
+
+<span class="c1"># Invite students to do a for loop</span>
+<span class="k">for</span> <span class="n">city</span> <span class="ow">in</span> <span class="n">new_map</span><span class="o">.</span><span class="n">cities</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">city</span><span class="p">)</span>      <span class="c1"># THIS IS JUST PRINTING THE KEY</span>
+    <span class="c1"># print(city.name) # EXPLAIN WHY THIS GIVES AN ERROR</span>
+    <span class="c1"># print(new_map.cities[city])</span>
+    <span class="c1"># print(new_map.cities[city].name, new_map.cities[city].pop)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="knowledge-base-for-instructors-things-i-think-are-interesting-and-important-to-understand">
+<h1>Knowledge base for instructors (Things I think are interesting and important to understand)<a class="headerlink" href="#knowledge-base-for-instructors-things-i-think-are-interesting-and-important-to-understand" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-you-need-to-know-about-python-interpreter">
+<h2>What you need to know about python interpreter<a class="headerlink" href="#what-you-need-to-know-about-python-interpreter" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="programmers-view-of-interpreter">
+<h3>Programmer’s view of interpreter<a class="headerlink" href="#programmers-view-of-interpreter" title="Permalink to this headline">¶</a></h3>
+<p>If you have been coding in Python for sometime, you must have heard about the interpreter  at least a few times. From a programmer’s perspective, an interpreter is simply a software which executes the source code line by line.</p>
+<p><a class="reference external" href="https://indianpythonista.wordpress.com/2018/01/04/how-python-runs/">How Python runs</a></p>
+<p><img alt="" src="https://i.imgur.com/c0PRvvI.png" /></p>
+<p>Python is an interpreted programming language. Your Python code actually gets compiled down to more computer-readable instructions called bytecode. These instructions get interpreted by a virtual machine when you run your code.</p>
+<p>Have you ever seen a .pyc file or a <strong>pycache</strong> folder? That’s the bytecode that gets interpreted by the virtual machine.</p>
+</div>
+</div>
+<div class="section" id="run-time">
+<h2>Run time<a class="headerlink" href="#run-time" title="Permalink to this headline">¶</a></h2>
+<p>In computer science, runtime, run time, or execution time is the final phase of a computer program’s life cycle, in which the code is being executed on the computer’s central processing unit (CPU) as machine code. In other words, “runtime” is the running phase of a program.</p>
+</div>
+<div class="section" id="computer-memory">
+<h2>Computer memory:<a class="headerlink" href="#computer-memory" title="Permalink to this headline">¶</a></h2>
+<p>RAM is the primary or main memory of computer. It is the place where the text, data, instructions and intermediate results are stored while executing a program. The total memory is organized into number of bytes and each byte is again divided into 8 bits.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./02_Python_Draw_GIS"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="../README.html" title="previous page">Python essentials for GIS learners</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book community<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>
