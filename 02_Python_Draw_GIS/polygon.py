@@ -6,8 +6,7 @@ def centroid(vertexes):
      _len = len(vertexes)
      _x = sum(_x_list) / _len
      _y = sum(_y_list) / _len
-     return [_x, _y]
-
+     return [_x, _y]    
 
 def get_angle(coords):
     '''
@@ -15,17 +14,33 @@ def get_angle(coords):
     using basic trigonometry to calculate the angle of the triangle
     this angle will be used to sort coordinates of an array
     '''     
-    # Compute hypothenuse
-    hypothenuse = math.sqrt(coords[0] ** 2 + coords[1] ** 2) 
-    
-    # the opposite side is y so we used the second value in coords list
-    angle = math.degrees(math.asin(coords[1]/hypothenuse))
-    
-    if(coords[0] < 0):
-        angle = angle * 3
+    x = coords[0]
+    y = coords[1]
 
-    if angle < 0:
-        angle = 360 + (-angle)
+    # Compute hypothenuse
+    hypothenuse = math.sqrt(x ** 2 + y ** 2) 
+
+    # Gets angle and converts radians in degrees
+    angle = math.degrees(math.asin(y/hypothenuse))
+    
+    # if angle < 0:
+    #     # Convert negative angle into a positive angle
+    #     angle = 360 + (-angle)
+    
+    # if angle > 360:
+    #     angle = 720 - angle 
+    
+    if(x < 0 and y > 0 ):
+        # Define angle according to quadrant
+        angle = 180 - angle
+    elif(x < 0 and y < 0):
+        angle = 270 - angle
+
+    elif(x > 0 and y < 0):
+        angle = 360 - angle
+
+    
+    
     
     return angle
 
@@ -35,31 +50,29 @@ def sort_item(ref,points):
         iterating backwards, if previous value is bigger, then the last element
         moves one index down
         '''
-        while ref >= 0:
+        while ref > 0:
             curr = get_angle(points[ref])
             prev = get_angle(points[ref - 1])
-            if curr < prev:
-                old_curr = points[ref]
-                points[ref] = points[ref-1]
-                points[ref-1] = old_curr
+            if prev > curr:
+                new_prev = points[ref]
+                new_curr = points[ref-1]
+                points[ref-1] = new_prev
+                points[ref] = new_curr
                 ref -= 1
             else:
                 break
-        
-        return points
 
+        return points
+        
 def sort_points(points):
     '''
-    this function sorts points from smaller to bigger angles to be able
-    to draw points from left to right and draw proper polygons
+    this function sorts points from smaller to bigger angles to prepare polygon data
     '''
     reference = 1
-
     
     while reference < len(points):
         points = sort_item(reference, points)
         reference += 1
-
     
     return points
 
@@ -76,11 +89,12 @@ def get_next_pt(points):
     
     return next
 
+def list_ordered_angles(coords):
+    angles = []
+    coords = sort_points(coords)
+    for point in coords:
+        angles.append(get_angle(point))
+    
+    return angles
+    
 
-print(get_angle([-142.5,115]))
-print(get_angle([7.5,135.0]))
-
-# Example
-points = [[-142.5, 115.0], [7.5, 135.0], [-72.5, -35.0], [207.5, -215.0]]
-print(points)
-print(sort_points(points)) 
