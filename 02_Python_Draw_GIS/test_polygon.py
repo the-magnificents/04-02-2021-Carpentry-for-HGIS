@@ -14,13 +14,16 @@ class TestPolygon(unittest.TestCase):
         
     def test_get_angle(self):
         self.assertEqual(get_angle([50,10]), 11.309932474020215)
+        # Coordinates in third quadrant
         self.assertEqual(round(get_angle([-158,-80])),297)
-        self.assertEqual(round(get_angle([221,-10])),3)
-        self.assertEqual(round(get_angle([121.66, -260.0])),65)
+        # Angle is bigger than 360
+        self.assertEqual(round(get_angle([221,-10])),-3)
+        # Angle bigger than 360
+        self.assertEqual(round(get_angle([121.66, -260.0])),-65)
     
     def test_sort_item(self):
         self.assertEqual(sort_item(2,[[20,30],[10,50],[50,10]]),[[50,10],[20,30],[10,50]])
 
 if __name__ == '__main__':
-    # When run this module directly run the whole test
+    # Run the whole test
     unittest.main()

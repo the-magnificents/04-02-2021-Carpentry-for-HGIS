@@ -38,12 +38,6 @@ def get_angle(coords):
     while angle > 360:
         angle =  360 - angle 
     
-    # if angle < 0:
-    #     # Convert negative angle into a positive angle
-    #     angle = 360 + (-angle)
-    
-    # elif angle > 360:
-    #     angle = 360 - angle
 
     return angle
 
