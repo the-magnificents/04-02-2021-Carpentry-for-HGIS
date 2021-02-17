@@ -1,0 +1,18 @@
+# In _toc.yml
+- file: README
+
+- part: Getting started
+  chapters: 
+  - file: 00_Lesson_prep/README
+  - file: 00_Lesson_prep/Schedule
+
+# - part: Day 1
+
+
+- part: Day 2 
+  chapters:
+  - file: 02_Python_Draw_GIS/notes
+
+- part: Instructor Notes
+  chapters:
+  - file: 00_Instructor_notes/README 

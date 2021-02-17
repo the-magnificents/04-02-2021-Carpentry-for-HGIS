@@ -1,0 +1,5 @@
+# in _config.yml
+title: "Python essentials for GIS learners"
+logo: images/logo.png
+execute:
+  execute_notebooks: "off"
