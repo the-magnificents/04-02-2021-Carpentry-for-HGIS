@@ -23,25 +23,28 @@ def get_angle(coords):
     # Gets angle and converts radians in degrees
     angle = math.degrees(math.asin(y/hypothenuse))
     
+    # Define angle for second quadrant
+    if(x < 0 and y > 0 ):
+        angle = 180 - angle
+
+    # Define angle for third quadrant
+    elif(x < 0 and y < 0):
+        angle = 270 - angle      
+
+    # Define angle for forth quadrant
+    elif(x > 0 and y < 0):
+        angle = 360 - angle
+         
+    while angle > 360:
+        angle =  360 - angle 
+    
     # if angle < 0:
     #     # Convert negative angle into a positive angle
     #     angle = 360 + (-angle)
     
-    # if angle > 360:
-    #     angle = 720 - angle 
-    
-    if(x < 0 and y > 0 ):
-        # Define angle according to quadrant
-        angle = 180 - angle
-    elif(x < 0 and y < 0):
-        angle = 270 - angle
+    # elif angle > 360:
+    #     angle = 360 - angle
 
-    elif(x > 0 and y < 0):
-        angle = 360 - angle
-
-    
-    
-    
     return angle
 
 def sort_item(ref,points):
