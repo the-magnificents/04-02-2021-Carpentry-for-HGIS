@@ -44,6 +44,40 @@
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "the-magnificents/04-02-2021-Carpentry-for-HGIS");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
@@ -219,6 +253,79 @@
  <li class="toctree-l1">
   <a class="reference internal" href="02_Python_Draw_GIS/notes.html#knowledge-base-for-instructors-things-i-think-are-interesting-and-important-to-understand">
    Knowledge base for instructors (Things I think are interesting and important to understand)
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Day 3
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Git/git_lesson.html">
+   Version control with Git
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Git/git_lesson.html#setup-requirements">
+   Setup requirements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Git/git_lesson.html#background">
+   Background
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Git/git_lesson.html#setting-up-git">
+   Setting up Git
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Git/git_lesson.html#make-the-world-cities-workshop-folder-into-a-local-git-repository">
+   Make the
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     world_cities_workshop/
+    </span>
+   </code>
+   folder into a local Git repository
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Git/git_lesson.html#making-a-change-to-a-file">
+   Making a change to a file
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Git/git_lesson.html#using-gitignore">
+   Using
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     .gitignore
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Git/git_lesson.html#remote-collaboration-on-github">
+   Remote collaboration on GitHub
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Git/git_lesson.html#working-with-others-on-github">
+   Working with others on GitHub
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Git/git_lesson.html#a-basic-collaborative-workflow">
+   A basic collaborative workflow
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Git/git_lesson.html#open-science">
+   Open Science
   </a>
  </li>
 </ul>

@@ -44,6 +44,40 @@
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "the-magnificents/04-02-2021-Carpentry-for-HGIS");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
@@ -226,6 +260,79 @@
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
+  Day 3
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Git/git_lesson.html">
+   Version control with Git
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Git/git_lesson.html#setup-requirements">
+   Setup requirements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Git/git_lesson.html#background">
+   Background
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Git/git_lesson.html#setting-up-git">
+   Setting up Git
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Git/git_lesson.html#make-the-world-cities-workshop-folder-into-a-local-git-repository">
+   Make the
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     world_cities_workshop/
+    </span>
+   </code>
+   folder into a local Git repository
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Git/git_lesson.html#making-a-change-to-a-file">
+   Making a change to a file
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Git/git_lesson.html#using-gitignore">
+   Using
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     .gitignore
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Git/git_lesson.html#remote-collaboration-on-github">
+   Remote collaboration on GitHub
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Git/git_lesson.html#working-with-others-on-github">
+   Working with others on GitHub
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Git/git_lesson.html#a-basic-collaborative-workflow">
+   A basic collaborative workflow
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Git/git_lesson.html#open-science">
+   Open Science
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
   Instructor Notes
  </span>
 </p>
@@ -300,6 +407,30 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#day-1-the-unix-shell-and-getting-started-with-python">
+   Day 1: The Unix Shell and Getting Started with Python
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#day-2-python-essentials">
+   Day 2: Python Essentials
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#day-3-basic-data-analysis-with-python-jupyter-notebooks-and-version-control-with-git">
+   Day 3: Basic data analysis with Python (Jupyter Notebooks?) and Version control with Git
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -309,6 +440,50 @@
                 
   <div class="section" id="schedule-overview">
 <h1>Schedule overview<a class="headerlink" href="#schedule-overview" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="day-1-the-unix-shell-and-getting-started-with-python">
+<h2>Day 1: The Unix Shell and Getting Started with Python<a class="headerlink" href="#day-1-the-unix-shell-and-getting-started-with-python" title="Permalink to this headline">¶</a></h2>
+<p><strong>Morning session</strong></p>
+<ol class="simple">
+<li><p>Introduction to Workshop and orienting participants with setup (30 mins)</p></li>
+</ol>
+<ul class="simple">
+<li><p>show how to write questions in issues on website and explanation not to use comments “live”</p></li>
+<li><p>introduce ourselves and icebreaker in comments</p></li>
+</ul>
+<ol class="simple">
+<li><p>Unix Shell (1.5 hours)</p></li>
+<li><p>Getting started with Python (1 hour)</p></li>
+</ol>
+<ul class="simple">
+<li><p>Working with an editor</p></li>
+<li><p>Run a script</p></li>
+<li><p>write variables</p></li>
+</ul>
+<p><strong>Afternoon session - independent exercises</strong></p>
+<p>Exercises (4 hours)
+Population data creation</p>
+</div>
+<div class="section" id="day-2-python-essentials">
+<h2>Day 2: Python Essentials<a class="headerlink" href="#day-2-python-essentials" title="Permalink to this headline">¶</a></h2>
+<p><strong>Morning session</strong></p>
+<ol class="simple">
+<li><p>(maybe) Reflection on exercises from Day 1</p></li>
+</ol>
+<ul class="simple">
+<li><p>introduce launching and working with jupyterlab</p></li>
+</ul>
+<p><strong>Afternoon session - independent exercises</strong></p>
+<p>Exercises (4 hours)</p>
+</div>
+<div class="section" id="day-3-basic-data-analysis-with-python-jupyter-notebooks-and-version-control-with-git">
+<h2>Day 3: Basic data analysis with Python (Jupyter Notebooks?) and Version control with Git<a class="headerlink" href="#day-3-basic-data-analysis-with-python-jupyter-notebooks-and-version-control-with-git" title="Permalink to this headline">¶</a></h2>
+<p><strong>Morning session</strong></p>
+<ol class="simple">
+<li><p>Data analysis and visualisation with pandas and matplotlib (1.5 hrs)</p></li>
+<li><p>Version control with Git (1hr 15 mins)</p></li>
+<li><p>Resources for continued learning (15 mins)</p></li>
+</ol>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
