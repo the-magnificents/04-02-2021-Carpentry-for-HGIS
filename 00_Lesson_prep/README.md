@@ -17,3 +17,7 @@ The default shell in some versions of macOS is Bash, and Bash is available in al
 
 ### Data and code for Day 1
 Before today's workshop, we sent out a link to a folder called `workshop_data/` that you should have downloaded. You should save these files exactly as they are in a folder on your Desktop called `workshop_data/`.
+
+### Expectations for Day 1
+
+At the end of the teaching day 1 each student should have a project folder called `world_cities_workshop/` that contains three subfolders, `data/`, `scripts/`, and `documents/`. In the `data/` folder should be one .csv file called `netherlands-cities.csv` containing population data and coordinates for the 5 largest cities in the Netherlands. The `scripts/` folder should have one script called `map.py` that was provided at the start of the workshop, and the `documents/` folder should have one text file called `data-documentation.txt`.
