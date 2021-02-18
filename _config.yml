@@ -3,3 +3,8 @@ title: "Python essentials for GIS learners"
 logo: images/logo.png
 execute:
   execute_notebooks: "off"
+
+html:
+    comments:
+      utterances:
+        repo: "the-magnificents/04-02-2021-Carpentry-for-HGIS" 
