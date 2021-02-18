@@ -6,7 +6,10 @@
   - file: 00_Lesson_prep/README
   - file: 00_Lesson_prep/Schedule
 
-# - part: Day 1
+- part: Day 1
+  chapters: 
+  - file: 01_Day_1/exercises/01_exercise
+  - file: 01_Day_1/exercises/02_exercise
 
 
 - part: Day 2 
