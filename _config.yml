@@ -4,6 +4,9 @@ logo: images/logo.png
 execute:
   execute_notebooks: "off"
 
+only_build_toc_files: true
+
+
 html:
   comments:
     utterances:
