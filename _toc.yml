@@ -15,7 +15,11 @@
 
 - part: Day 2 
   chapters:
-  - file: 02_Python_Draw_GIS/notes
+  - file: 02_Python_Draw_GIS/01_lesson
+  - file: 02_Python_Draw_GIS/02_lesson
+  - file: 02_Python_Draw_GIS/03_lesson
+
+
 
 - part: Day 3
   chapters:
