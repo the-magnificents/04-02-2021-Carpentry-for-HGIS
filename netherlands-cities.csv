@@ -1,0 +1,9 @@
+c,Amsterdam,52.3676,4.9041,872779
+c,Eindhoven,51.4416,5.4697,234456
+c,Rotterdam,51.9244,4.4777,651376
+c,The-Hague,52.0705,4.3007,545163
+c,Utrecht,52.0907,5.1214,357694
+r,Amsterdam,Rotterdam
+r,Rotterdam,Utrecht
+r,Amsterdam,Utrecht
+r,The-Hague,Rotterdam
