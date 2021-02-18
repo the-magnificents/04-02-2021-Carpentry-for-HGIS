@@ -55,7 +55,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Python essentials for GIS learners" href="../README.html" />
+    <link rel="next" title="Instructor notes" href="../00_Instructor_notes/README.html" />
+    <link rel="prev" title="Simple excercises te get started" href="../01_Day_1/exercises/exercises.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -92,15 +93,44 @@
   </a>
  </li>
 </ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Getting started
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00_Lesson_prep/README.html">
+   Preparing for the workshop
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00_Lesson_prep/Schedule.html">
+   Schedule overview
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Day 1
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01_Day_1/exercises/exercises.html">
+   Simple excercises te get started
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Day 2
+ </span>
+</p>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    About these instructor notes
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#python-scripting-and-basic-data-analysis">
-   Python scripting and basic data analysis
   </a>
  </li>
  <li class="toctree-l1">
@@ -131,6 +161,18 @@
  <li class="toctree-l1">
   <a class="reference internal" href="#knowledge-base-for-instructors-things-i-think-are-interesting-and-important-to-understand">
    Knowledge base for instructors (Things I think are interesting and important to understand)
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Instructor Notes
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00_Instructor_notes/README.html">
+   Instructor notes
   </a>
  </li>
 </ul>
@@ -230,13 +272,11 @@
      Lets put it as a user story :)
     </a>
    </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#python-scripting-and-basic-data-analysis">
-   Python scripting and basic data analysis
-  </a>
-  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python-scripting-and-basic-data-analysis">
+     Python scripting and basic data analysis
+    </a>
+   </li>
    <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#lesson-style">
      Lesson style
@@ -468,9 +508,9 @@
 <h2>Lets put it as a user story :)<a class="headerlink" href="#lets-put-it-as-a-user-story" title="Permalink to this headline">¶</a></h2>
 <p><em>As an instructor, co-instructor and helper I would like to have some documented guide on how to teach this workshop and facilitate the performance of excercises so that I can keep on track of the lesson and master underlying concepts behind the lesson</em></p>
 </div>
-</div>
 <div class="section" id="python-scripting-and-basic-data-analysis">
-<h1>Python scripting and basic data analysis<a class="headerlink" href="#python-scripting-and-basic-data-analysis" title="Permalink to this headline">¶</a></h1>
+<h2>Python scripting and basic data analysis<a class="headerlink" href="#python-scripting-and-basic-data-analysis" title="Permalink to this headline">¶</a></h2>
+</div>
 <div class="section" id="lesson-style">
 <h2>Lesson style<a class="headerlink" href="#lesson-style" title="Permalink to this headline">¶</a></h2>
 <p>These lesson is part of an <a class="reference external" href="https://en.wikipedia.org/wiki/Open_educational_resources">open educational resource</a> or module. It is designed to be used in the context of the other lessons, and builds up knowledge, excercises and concepts using previous lessons as a foundation.</p>
@@ -774,6 +814,26 @@ Here we can have a list of examples</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">4</span><span class="n">b11b814ac02</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">    </span><span class="mi">109</span> <span class="c1"># # Allow for command line usage</span>
+<span class="g g-Whitespace">    </span><span class="mi">110</span> <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">111</span>     <span class="nb">map</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="g g-Whitespace">    </span><span class="mi">112</span>     <span class="nb">map</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+
+<span class="nn">&lt;ipython-input-1-4b11b814ac02&gt;</span> in <span class="ni">__init__</span><span class="nt">(self, mapfile)</span>
+<span class="g g-Whitespace">     </span><span class="mi">39</span>     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mapfile</span><span class="p">):</span>
+<span class="g g-Whitespace">     </span><span class="mi">40</span>         <span class="c1"># Read the file</span>
+<span class="ne">---&gt; </span><span class="mi">41</span>         <span class="n">map_data</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">mapfile</span><span class="p">))</span>
+<span class="g g-Whitespace">     </span><span class="mi">42</span>         <span class="c1"># Initialize city list</span>
+<span class="g g-Whitespace">     </span><span class="mi">43</span>         <span class="bp">self</span><span class="o">.</span><span class="n">cities</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;--ip=127.0.0.1&#39;
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="variables-and-constants">
@@ -832,13 +892,6 @@ We might be limited by our programming language, but as shown above Integers, Fl
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;__main__.City&#39;&gt;
-&lt;__main__.City object at 0x000002696DC80D90&gt;
-Havana
-</pre></div>
-</div>
-</div>
 </div>
 </div>
 <div class="section" id="excercise-exploring-objects-and-data-types-in-the-given-code">
@@ -883,11 +936,6 @@ Havana
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Havana
-</pre></div>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -907,6 +955,7 @@ Havana
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">turtle</span>
+<span class="kn">from</span> <span class="nn">polygon</span> <span class="kn">import</span> <span class="n">sort_points</span><span class="p">,</span> <span class="n">get_angle</span>
 <span class="c1">## Explain differences</span>
 <span class="c1"># from turtle import * </span>
 
@@ -940,6 +989,8 @@ Havana
         <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">entry</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
         <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">entry</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 
+
+
 <span class="c1">## Excercise: </span>
 <span class="c1">## Building a polygon with a better data model</span>
 <span class="k">def</span> <span class="nf">draw_polygon</span><span class="p">(</span><span class="n">coordinates</span><span class="p">):</span>
@@ -947,16 +998,27 @@ Havana
 <span class="sd">    By doing myself this excercise I figured out problems to solve</span>
 <span class="sd">    like for instance the if statement at the end of the function</span>
 <span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">angle_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">point</span> <span class="ow">in</span> <span class="n">coordinates</span><span class="p">:</span>
+        <span class="n">angle_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">get_angle</span><span class="p">(</span><span class="n">point</span><span class="p">))</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">angle_list</span><span class="p">)</span>
+
     <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
     <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">coord</span> <span class="ow">in</span> <span class="n">coordinates</span><span class="p">:</span>
         <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span> 
         <span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">coord</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">coord</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
         <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
-        <span class="n">turtle</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+        <span class="c1"># turtle.circle(5)</span>
         <span class="c1"># turtle.penup()</span>
         <span class="k">if</span><span class="p">(</span><span class="n">count</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">coordinates</span><span class="p">)):</span>
             <span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">coordinates</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">coordinates</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+
+
+<span class="k">def</span> <span class="nf">draw_better</span><span class="p">(</span><span class="n">coordinates</span><span class="p">):</span>
+    <span class="n">coordinates</span> <span class="o">=</span> <span class="n">sort_points</span><span class="p">(</span><span class="n">coordinates</span><span class="p">)</span>
+    <span class="n">draw_polygon</span><span class="p">(</span><span class="n">coordinates</span><span class="p">)</span>
 
 <span class="c1">## Another triangle data model</span>
 <span class="c1">## A polygon model</span>
@@ -964,40 +1026,90 @@ Havana
 <span class="c1">##   [[51.984338,4.136685],</span>
 <span class="c1">##   [51.852919,5.290831],</span>
 <span class="c1">##   [52.861383,5.024489]]</span>
-
+<span class="n">draw_coordinates</span><span class="p">()</span>
+<span class="n">polygon</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">300</span><span class="p">,</span><span class="o">-</span><span class="mi">150</span><span class="p">],[</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">],[</span><span class="mi">100</span><span class="p">,</span><span class="mi">200</span><span class="p">],[</span><span class="o">-</span><span class="mi">50</span><span class="p">,</span><span class="mi">180</span><span class="p">],</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span><span class="mi">80</span><span class="p">]]</span>
 <span class="c1">## Explain this example first and why is it so bad</span>
 <span class="c1"># draw_triangle([[100,100],[264,19],[300,60]])</span>
 <span class="c1"># draw_triangle([[100,100],[264,180-19],[300,60]])</span>
 
 <span class="c1">## Explain these example and the data model and why is better.</span>
-<span class="c1"># draw_polygon([[20,30],[100,200],[-50,180]])</span>
 <span class="c1"># draw_polygon([[20,30],[100,200],[-50,180],[300,-150]])</span>
-<span class="n">draw_polygon</span><span class="p">([[</span><span class="o">-</span><span class="mi">50</span><span class="p">,</span><span class="mi">180</span><span class="p">],[</span><span class="mi">100</span><span class="p">,</span><span class="mi">200</span><span class="p">],[</span><span class="mi">300</span><span class="p">,</span><span class="o">-</span><span class="mi">150</span><span class="p">],[</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">]])</span>
+<span class="n">draw_better</span><span class="p">(</span><span class="n">polygon</span><span class="p">)</span>
+<span class="c1"># print(polygon)</span>
+<span class="c1"># print(sort_points(polygon))</span>
+<span class="c1"># draw_polygon([[-50,180],[100,200],[300,-150],[20,30]])</span>
 
 <span class="n">turtle</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">Terminator</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">23</span><span class="o">-</span><span class="mi">62</span><span class="n">bb3509968b</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">     </span><span class="mi">65</span> <span class="c1"># draw_polygon([[20,30],[100,200],[-50,180]])</span>
-<span class="g g-Whitespace">     </span><span class="mi">66</span> <span class="c1"># draw_polygon([[20,30],[100,200],[-50,180],[300,-150]])</span>
-<span class="ne">---&gt; </span><span class="mi">67</span> <span class="n">draw_polygon</span><span class="p">([[</span><span class="o">-</span><span class="mi">50</span><span class="p">,</span><span class="mi">180</span><span class="p">],[</span><span class="mi">100</span><span class="p">,</span><span class="mi">200</span><span class="p">],[</span><span class="mi">300</span><span class="p">,</span><span class="o">-</span><span class="mi">150</span><span class="p">]</span> <span class="p">,</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">]])</span>
-<span class="g g-Whitespace">     </span><span class="mi">68</span> 
-<span class="g g-Whitespace">     </span><span class="mi">69</span> <span class="n">turtle</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[386.565051177078, 56.30993247402022, 63.43494882292201, 223.42766700973718, 38.65980825409009]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">turtle</span>
+<span class="k">def</span> <span class="nf">draw_coordinates</span><span class="p">():</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">300</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">300</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="o">-</span><span class="mi">300</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">turtle</span>
+<span class="kn">from</span> <span class="nn">polygon</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">speed</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">draw_polygon</span><span class="p">(</span><span class="n">coordinates</span><span class="p">):</span>
 
-<span class="nn">&lt;ipython-input-23-62bb3509968b&gt;</span> in <span class="ni">draw_polygon</span><span class="nt">(coordinates)</span>
-<span class="g g-Whitespace">     </span><span class="mi">40</span>     <span class="n">like</span> <span class="k">for</span> <span class="n">instance</span> <span class="n">the</span> <span class="k">if</span> <span class="n">statement</span> <span class="n">at</span> <span class="n">the</span> <span class="n">end</span> <span class="n">of</span> <span class="n">the</span> <span class="n">function</span>
-<span class="g g-Whitespace">     </span><span class="mi">41</span>     <span class="s1">&#39;&#39;&#39;</span>
-<span class="ne">---&gt; </span><span class="mi">42</span><span class="s1">     turtle.penup()</span>
-<span class="g g-Whitespace">     </span><span class="mi">43</span><span class="s1">     count = 0</span>
-<span class="g g-Whitespace">     </span><span class="mi">44</span><span class="s1">     for coord in coordinates:</span>
+    <span class="c1"># To properly draw the polygon we need to center the centroid</span>
+    <span class="c1"># Into the turtle coordinate system</span>
+    <span class="n">center</span> <span class="o">=</span> <span class="n">centroid</span><span class="p">(</span><span class="n">coordinates</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">point</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">coordinates</span><span class="p">):</span>
+        <span class="n">coordinates</span><span class="p">[</span><span class="n">idx</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">coordinates</span><span class="p">[</span><span class="n">idx</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">center</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">coordinates</span><span class="p">[</span><span class="n">idx</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">coordinates</span><span class="p">[</span><span class="n">idx</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">center</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 
-<span class="nn">~\Anaconda3\lib\turtle.py</span> in <span class="ni">penup</span><span class="nt">()</span>
+    <span class="n">coordinates</span> <span class="o">=</span> <span class="n">sort_points</span><span class="p">(</span><span class="n">coordinates</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">list_ordered_angles</span><span class="p">(</span><span class="n">coordinates</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sort_points</span><span class="p">(</span><span class="n">coordinates</span><span class="p">))</span>
 
-<span class="ne">Terminator</span>: 
+    <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">coord</span> <span class="ow">in</span> <span class="n">coordinates</span><span class="p">:</span>
+        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span> 
+        <span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">coord</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">coord</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
+        
+        <span class="c1"># Close the polygon by going back to the first point in the list</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">count</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">coordinates</span><span class="p">)):</span>
+            <span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">coordinates</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">coordinates</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+    
+<span class="n">draw_coordinates</span><span class="p">()</span>
+
+<span class="c1">## Examples of polygons</span>
+<span class="c1"># polygon = [[-50,180],[20,30],[100,200],[300,-150], [400,100]] # Working</span>
+<span class="c1"># polygon = [[50,10],[30,20],[10,50], [40,60]] # Working</span>
+<span class="c1"># polygon = [[-50,180],[20,30],[100,200],[300,-150], [400,100],[300,300]] # Working</span>
+<span class="n">polygon</span> <span class="o">=</span> <span class="p">[[</span><span class="o">-</span><span class="mi">50</span><span class="p">,</span><span class="mi">180</span><span class="p">],[</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">],[</span><span class="mi">100</span><span class="p">,</span><span class="mi">200</span><span class="p">],[</span><span class="mi">300</span><span class="p">,</span><span class="o">-</span><span class="mi">150</span><span class="p">],</span> <span class="p">[</span><span class="mi">400</span><span class="p">,</span><span class="mi">100</span><span class="p">],[</span><span class="mi">300</span><span class="p">,</span><span class="mi">300</span><span class="p">],[</span><span class="mi">100</span><span class="p">,</span><span class="mi">30</span><span class="p">],[</span><span class="o">-</span><span class="mi">400</span><span class="p">,</span><span class="o">-</span><span class="mi">200</span><span class="p">],[</span><span class="mi">70</span><span class="p">,</span><span class="mi">55</span><span class="p">],</span> <span class="p">[</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">],[</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">]]</span>
+
+
+<span class="n">draw_polygon</span><span class="p">(</span><span class="n">polygon</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[-50.87396151619197, -42.91342131781141, 8.120981727121734, 48.17487180742686, 82.25079469750064, 136.01794155987537, 176.42366562500266, 285.97281014740173, 292.03976808844214, 297.91122421939264, 301.2437923252457]
+[[19.818181818181813, -24.363636363636367], [219.8181818181818, -204.36363636363637], [319.8181818181818, 45.63636363636363], [219.8181818181818, 245.63636363636363], [19.818181818181813, 145.63636363636363], [-130.1818181818182, 125.63636363636363], [-10.181818181818187, 0.6363636363636331], [-50.18181818181819, -14.363636363636367], [-60.18181818181819, -24.363636363636367], [-480.1818181818182, -254.36363636363637], [-68.18181818181819, -41.36363636363637]]
 </pre></div>
 </div>
 </div>
@@ -1025,6 +1137,29 @@ Havana
     <span class="c1"># print(city.name) # EXPLAIN WHY THIS GIVES AN ERROR</span>
     <span class="c1"># print(new_map.cities[city])</span>
     <span class="c1"># print(new_map.cities[city].name, new_map.cities[city].pop)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Astoria
+Portland
+Salem
+Corvallis
+Eugene
+_1
+Coos Bay
+_3
+Newport
+Reedsport
+Lincoln City
+Klamath Falls
+Bend
+_2
+The Dalles
+Pendleton
+Burns
+Lakeview
+Medford
 </pre></div>
 </div>
 </div>
@@ -1082,7 +1217,8 @@ Havana
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../README.html" title="previous page">Python essentials for GIS learners</a>
+    <a class='left-prev' id="prev-link" href="../01_Day_1/exercises/exercises.html" title="previous page">Simple excercises te get started</a>
+    <a class='right-next' id="next-link" href="../00_Instructor_notes/README.html" title="next page">Instructor notes</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
