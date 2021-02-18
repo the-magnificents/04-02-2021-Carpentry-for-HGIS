@@ -8,7 +8,8 @@
 
 - part: Day 1
   chapters: 
-  - file: 01_Day_1/exercises/exercises
+  - file: 01_Day_1/exercises/01_exercise
+  - file: 01_Day_1/exercises/02_exercise
 
 
 - part: Day 2 
