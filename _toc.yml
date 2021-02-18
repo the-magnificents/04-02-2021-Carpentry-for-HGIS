@@ -8,7 +8,11 @@
 
 - part: Day 1
   chapters: 
-  - file: Unix_shell/unix_lesson
+  - file: Unix_shell/Lessons/unix_lesson_intro
+  - file: Unix_shell/Lessons/unix_lesson1
+  - file: Unix_shell/Lessons/unix_lesson2
+  - file: Unix_shell/Lessons/unix_lesson3
+  - file: Unix_shell/Exercises/generate_country_data_exercise
   - file: 01_Day_1/exercises/01_exercise
   - file: 01_Day_1/exercises/02_exercise
 
@@ -23,7 +27,12 @@
 
 - part: Day 3
   chapters:
-  - file: Git/git_lesson
+  - file: Git/Lessons/git_lesson_intro
+  - file: Git/Lessons/git_lesson1
+  - file: Git/Lessons/git_lesson2
+  - file: Git/Lessons/git_lesson3
+  - file: Git/Lessons/git_lesson4
+
 
 - part: Instructor Notes
   chapters:
