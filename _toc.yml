@@ -19,4 +19,10 @@
 
 - part: Instructor Notes
   chapters:
-  - file: 00_Instructor_notes/README 
+  - file: 00_Instructor_notes/README
+
+
+  html:
+  comments:
+    utterances:
+      repo: "the-magnificents/04-02-2021-Carpentry-for-HGIS" 
