@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instructor notes &#8212; Python essentials for GIS learners</title>
+    <title>Variables (and constants) &#8212; Python essentials for GIS learners</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -89,7 +89,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Version control with Git" href="../Git/git_lesson.html" />
+    <link rel="next" title="Go from for loops and while loops to functions" href="03_lesson.html" />
+    <link rel="prev" title="Excercise: Understand someone else’s code (even when you dont know how to program)" href="01_lesson.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -220,24 +221,24 @@ commentsRunWhenDOMLoaded(addUtterances);
   Day 2
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../02_Python_Draw_GIS/01_lesson.html">
+  <a class="reference internal" href="01_lesson.html">
    Excercise: Understand someone else’s code (even when you dont know how to program)
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../02_Python_Draw_GIS/02_lesson.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Variables (and constants)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../02_Python_Draw_GIS/03_lesson.html">
+  <a class="reference internal" href="03_lesson.html">
    Go from for loops and while loops to functions
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../02_Python_Draw_GIS/03_lesson.html#knowledge-base-for-instructors-things-i-think-are-interesting-and-important-to-understand">
+  <a class="reference internal" href="03_lesson.html#knowledge-base-for-instructors-things-i-think-are-interesting-and-important-to-understand">
    Knowledge base for instructors (Things I think are interesting and important to understand)
   </a>
  </li>
@@ -320,9 +321,9 @@ commentsRunWhenDOMLoaded(addUtterances);
   Instructor Notes
  </span>
 </p>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00_Instructor_notes/README.html">
    Instructor notes
   </a>
  </li>
@@ -366,9 +367,9 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/00_Instructor_notes/README.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/02_Python_Draw_GIS/02_lesson.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -386,10 +387,73 @@ commentsRunWhenDOMLoaded(addUtterances);
 
         <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/02_Python_Draw_GIS/02_lesson.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
     </div>
 
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nice-references-for-instructor">
+   Nice references for instructor
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-working-with-variables">
+   Exercise, working with variables
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-types">
+   Data types
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#storing-different-data-types">
+   Storing different data types
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instructor-demonstrates-these-different-data-types-using-the-python-interpreter">
+   Instructor demonstrates these different data types using the python interpreter
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#excercise-exploring-objects-and-data-types-in-the-given-code">
+   Excercise, exploring objects and data types in the given code
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#for-this-exercise-the-instructor-needs-to-know-python-objects-and-classes">
+     For this exercise the instructor needs to know Python Objects and Classes
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
         
     </div>
 </div>
@@ -398,9 +462,109 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  <div class="section" id="instructor-notes">
-<h1>Instructor notes<a class="headerlink" href="#instructor-notes" title="Permalink to this headline">¶</a></h1>
-<p>Here we describe how is the workshop meant to be run</p>
+  <div class="section" id="variables-and-constants">
+<h1>Variables (and constants)<a class="headerlink" href="#variables-and-constants" title="Permalink to this headline">¶</a></h1>
+<p>Explain what are variables, and what should the learner know about variables.</p>
+<p>In computer programming, a variable or scalar is a storage location (identified by a memory address) paired with an associated <strong>symbolic name</strong>, which contains some known or unknown quantity of information referred to as a value.</p>
+<div class="section" id="nice-references-for-instructor">
+<h2>Nice references for instructor<a class="headerlink" href="#nice-references-for-instructor" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://stevenpcurtis.medium.com/what-is-a-variable-3447ac1331b9">What is a Variable?</a></p></li>
+<li><p><a class="reference external" href="https://www.google.com/search?q=what+is+a+variable+in+programming&amp;rlz=1C1GCEU_nlNL866NL866&amp;oq=what+is+a+variable+in&amp;aqs=chrome.0.0l3j69i57j0i20i263j0l5.3869j0j1&amp;sourceid=chrome&amp;ie=UTF-8">Variables wikipedia</a></p></li>
+</ul>
+</div>
+<div class="section" id="exercise-working-with-variables">
+<h2>Exercise, working with variables<a class="headerlink" href="#exercise-working-with-variables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Identify with students different data types in the <code class="docutils literal notranslate"><span class="pre">map.py</span></code> script.</p></li>
+<li><p>Create variables that represent Delft characteristics as a city.Think of characteristics that you can express with different data types (integers, strings, arrays)</p></li>
+<li><p>Print formmated data about the city to display these variables in the python interpreter.</p></li>
+<li><p>Create a list of cities in the Netherlands.
+This should be a python list containing all cities.</p></li>
+<li><p>print user friendly outputs with the print function</p></li>
+</ul>
+</div>
+<div class="section" id="data-types">
+<h2>Data types<a class="headerlink" href="#data-types" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Strings</p></li>
+<li><p>Numbers (integers and floats)</p></li>
+<li><p>Lists</p></li>
+<li><p>Dictionaries</p></li>
+<li><p>Objects</p></li>
+</ul>
+</div>
+<div class="section" id="storing-different-data-types">
+<h2>Storing different data types<a class="headerlink" href="#storing-different-data-types" title="Permalink to this headline">¶</a></h2>
+<p>We can use variables to store all sorts of different types of data.
+We might be limited by our programming language, but as shown above Integers, Floats, Characters and Strings are certainly options to be stored in a variable.</p>
+<p><img alt="" src="https://miro.medium.com/max/875/1*Px7h03Ih7B5QZu4KQpSEoQ.png" /></p>
+</div>
+<div class="section" id="instructor-demonstrates-these-different-data-types-using-the-python-interpreter">
+<h2>Instructor demonstrates these different data types using the python interpreter<a class="headerlink" href="#instructor-demonstrates-these-different-data-types-using-the-python-interpreter" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Run these commands step by step on the intepreter</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="n">new_city</span> <span class="o">=</span> <span class="n">City</span><span class="p">([</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;Havana&#39;</span><span class="p">,</span><span class="o">-</span><span class="mf">133.996669</span><span class="p">,</span><span class="mf">190.000000</span><span class="p">,</span><span class="mi">9500</span><span class="p">])</span>
+<span class="c1">## check types (no need to use print in the python shell)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">new_city</span><span class="p">))</span>
+
+<span class="c1">## Explain the object stored in memory</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">new_city</span><span class="p">)</span>
+<span class="c1">## Print a property of the city</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">new_city</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="excercise-exploring-objects-and-data-types-in-the-given-code">
+<h2>Excercise, exploring objects and data types in the given code<a class="headerlink" href="#excercise-exploring-objects-and-data-types-in-the-given-code" title="Permalink to this headline">¶</a></h2>
+<p>Demonstrate how to work with objects</p>
+<ul class="simple">
+<li><p>Create a city object from the given class</p></li>
+<li><p>Inspect the city object created</p></li>
+<li><p>Modify a city object</p></li>
+<li><p>Create a map object</p></li>
+<li><p>Inspect the dictionary inside the map object</p></li>
+</ul>
+<div class="section" id="for-this-exercise-the-instructor-needs-to-know-python-objects-and-classes">
+<h3>For this exercise the instructor needs to know Python Objects and Classes<a class="headerlink" href="#for-this-exercise-the-instructor-needs-to-know-python-objects-and-classes" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p><strong>Why is important to know about objects?</strong> Everything is an object in python and most operations done by users involve using libraries(objects), using methods and attributes.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Python is an object oriented programming language. Unlike procedure oriented programming, where the main emphasis is on functions, object oriented programming stresses on objects.An object is simply a collection of data (variables) and methods (functions) that act on those data. Similarly, a class is a blueprint for that object. We can think of class as a sketch (prototype) of a house. It contains all the details about the floors, doors, windows etc. Based on these descriptions we build the house. House is the object.</p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">These commands are meant to be used first in the python interpreter</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1">## Skip first this step and look at the error</span>
+<span class="kn">from</span> <span class="nn">map</span> <span class="kn">import</span> <span class="n">City</span>
+
+<span class="c1"># 1. Skip this step and only doing after reflecting on error</span>
+<span class="c1"># from map import Map</span>
+
+<span class="c1"># 2. Create a city object from the given class</span>
+<span class="n">new_city</span> <span class="o">=</span> <span class="n">City</span><span class="p">([</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;Havana&#39;</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">2.6</span><span class="p">,</span> <span class="mi">100000</span><span class="p">])</span>
+
+<span class="c1">## 3. Inspect a city object</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">new_city</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+
+<span class="c1">## Create a map object</span>
+<span class="n">new_map</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="s1">&#39;oregonmap.csv&#39;</span><span class="p">)</span>
+
+<span class="c1">## Inspect the Map </span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -416,7 +580,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./00_Instructor_notes"
+            path: "./02_Python_Draw_GIS"
         },
         predefinedOutput: true
     }
@@ -431,7 +595,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../Git/git_lesson.html" title="previous page">Version control with Git</a>
+    <a class='left-prev' id="prev-link" href="01_lesson.html" title="previous page">Excercise: Understand someone else’s code (even when you dont know how to program)</a>
+    <a class='right-next' id="next-link" href="03_lesson.html" title="next page">Go from for loops and while loops to functions</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
