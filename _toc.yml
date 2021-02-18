@@ -8,6 +8,7 @@
 
 - part: Day 1
   chapters: 
+  - file: Unix_shell/unix_lesson
   - file: 01_Day_1/exercises/01_exercise
   - file: 01_Day_1/exercises/02_exercise
 
