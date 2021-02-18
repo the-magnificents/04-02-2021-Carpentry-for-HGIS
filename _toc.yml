@@ -17,6 +17,10 @@
   chapters:
   - file: 02_Python_Draw_GIS/notes
 
+- part: Day 3
+  chapters:
+  - file: Git/git_lesson
+
 - part: Instructor Notes
   chapters:
   - file: 00_Instructor_notes/README 
