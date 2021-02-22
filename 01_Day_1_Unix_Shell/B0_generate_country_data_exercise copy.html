@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 1: Unix Shell &#8212; Python essentials for GIS learners</title>
+    <title>Exercise (data generation) &#8212; Python essentials for GIS learners</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -89,8 +89,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Create a new project directory and subdirectories for data and code" href="A1_unix_lesson1.html" />
-    <link rel="prev" title="Introduction to Unix shell and basic python setup" href="00_README.html" />
+    <link rel="next" title="Excercise 1" href="B1_exercise.html" />
+    <link rel="prev" title="Select, concatenate and add custom data to .csv files" href="A3_unix_lesson3.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -121,16 +121,16 @@ commentsRunWhenDOMLoaded(addUtterances);
 </form>
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <ul class="current nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../README.html">
-   Python essentials for GIS learners
-  </a>
- </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../00_Lesson_prep/README.html">
+  <a class="reference internal" href="../00_Lesson_prep/00_README.html">
    Preparing for the workshop
   </a>
   <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../00_Lesson_prep/01_About_this_workshop.html">
+     General considerations for this workshop
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../00_Lesson_prep/Schedule.html">
      Schedule overview
@@ -142,11 +142,11 @@ commentsRunWhenDOMLoaded(addUtterances);
  </li>
  <li class="toctree-l1 current active collapsible-parent">
   <a class="reference internal" href="00_README.html">
-   Introduction to Unix shell and basic python setup
+   Day 1
   </a>
   <ul class="current collapse-ul">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="A0_unix_lesson_intro.html">
      Day 1: Unix Shell
     </a>
    </li>
@@ -165,8 +165,8 @@ commentsRunWhenDOMLoaded(addUtterances);
      Select, concatenate and add custom data to .csv files
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="B0_generate_country_data_exercise.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Exercise (data generation)
     </a>
    </li>
@@ -191,7 +191,7 @@ commentsRunWhenDOMLoaded(addUtterances);
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../02_Python_Draw_GIS/00_README.html">
-   Python
+   Day 2
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
@@ -214,10 +214,15 @@ commentsRunWhenDOMLoaded(addUtterances);
   </i>
  </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../03_Day_3_Git/A1_git_lesson_intro.html">
-   Version control with Git
+  <a class="reference internal" href="../03_Day_3_Git/00_README.html">
+   Day 3
   </a>
   <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03_Day_3_Git/A1_git_lesson_intro.html">
+     Version control with Git
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../03_Day_3_Git/A2_git_lesson1.html">
      Set up and initialise a local Git repository
@@ -242,72 +247,82 @@ commentsRunWhenDOMLoaded(addUtterances);
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html">
-   Version control with Git
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#setup-requirements">
-   Setup requirements
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#background">
-   Background
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#setting-up-git">
-   Setting up Git
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#make-the-world-cities-workshop-folder-into-a-local-git-repository">
-   Make the
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     world_cities_workshop/
-    </span>
-   </code>
-   folder into a local Git repository
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#making-a-change-to-a-file">
-   Making a change to a file
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#using-gitignore">
-   Using
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     .gitignore
-    </span>
-   </code>
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#remote-collaboration-on-github">
-   Remote collaboration on GitHub
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#working-with-others-on-github">
-   Working with others on GitHub
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#a-basic-collaborative-workflow">
-   A basic collaborative workflow
-  </a>
- </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#open-science">
-   Open Science
+  <a class="reference internal" href="../Instructor_notes/00_README.html">
+   Instructor notes
   </a>
   <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/01_Notes_From_DH_context.html">
+     Guide to programing with Python for the Digital Humanities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html">
+     Version control with Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#setup-requirements">
+     Setup requirements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#background">
+     Background
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#setting-up-git">
+     Setting up Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#make-the-world-cities-workshop-folder-into-a-local-git-repository">
+     Make the
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       world_cities_workshop/
+      </span>
+     </code>
+     folder into a local Git repository
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#making-a-change-to-a-file">
+     Making a change to a file
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#using-gitignore">
+     Using
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       .gitignore
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#remote-collaboration-on-github">
+     Remote collaboration on GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#working-with-others-on-github">
+     Working with others on GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#a-basic-collaborative-workflow">
+     A basic collaborative workflow
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#open-science">
+     Open Science
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../Instructor_notes/open_science_instructor_notes.html">
      Open Science
@@ -319,93 +334,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/python_instructor_notes.html#checklist">
-     Checklist
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/python_instructor_notes.html#excercise-using-someone-else-s-code">
-     Excercise: Using someone else’s code
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/python_instructor_notes.html#excercise-understand-someone-else-s-code-even-when-you-dont-know-how-to-program">
-     Excercise: Understand someone else’s code (even when you dont know how to program)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/python_instructor_notes.html#variables-and-constants">
-     Variables (and constants)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/python_instructor_notes.html#go-from-for-loops-and-while-loops-to-functions">
-     Go from for loops and while loops to functions
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/python_instructor_notes.html#knowledge-base-for-instructors-things-i-think-are-interesting-and-important-to-understand">
-     Knowledge base for instructors (Things I think are interesting and important to understand)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/README.html">
-     Instructor notes
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="../Instructor_notes/unix_instructor_notes.html">
      Creating and navigating files and directories with the Unix Shell (Bash)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/unix_instructor_notes.html#setup-requirements">
-     Setup requirements
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/unix_instructor_notes.html#background">
-     Background
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/unix_instructor_notes.html#running-commands">
-     Running commands
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/unix_instructor_notes.html#make-a-workshop-folder-called-world-cities-workshop">
-     Make a workshop folder called
-     <code class="docutils literal notranslate">
-      <span class="pre">
-       world_cities_workshop/
-      </span>
-     </code>
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/unix_instructor_notes.html#moving-files-to-the-project-folder">
-     Moving files to the project folder
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/unix_instructor_notes.html#select-and-concatenate-data-files">
-     Select and concatenate data files
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/unix_instructor_notes.html#introduction-to-python">
-     Introduction to Python
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/unix_instructor_notes.html#expectations-for-day-1">
-     Expectations for Day 1
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/unix_instructor_notes.html#homework-for-day-1-afternoon">
-     Homework for Day 1 (afternoon)
     </a>
    </li>
   </ul>
@@ -452,9 +382,9 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/01_Day_1/A0_unix_lesson_intro.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/01_Day_1_Unix_Shell/B0_generate_country_data_exercise copy.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -483,18 +413,8 @@ commentsRunWhenDOMLoaded(addUtterances);
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#intro-to-creating-and-navigating-files-and-directories-with-the-unix-shell-bash">
-   Intro to creating and navigating files and directories with the Unix Shell (Bash)
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#background">
-   Background
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#run-your-first-bash-commands">
-   Run your first Bash commands
+  <a class="reference internal nav-link" href="#generating-country-population-data">
+   Generating country population data
   </a>
  </li>
 </ul>
@@ -508,29 +428,21 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  <div class="section" id="day-1-unix-shell">
-<h1>Day 1: Unix Shell<a class="headerlink" href="#day-1-unix-shell" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="intro-to-creating-and-navigating-files-and-directories-with-the-unix-shell-bash">
-<h2>Intro to creating and navigating files and directories with the Unix Shell (Bash)<a class="headerlink" href="#intro-to-creating-and-navigating-files-and-directories-with-the-unix-shell-bash" title="Permalink to this headline">¶</a></h2>
-<p>This lesson is an introduction to using the Unix shell and the Bash scripting language to create and navigate through files and directories (folders) on your local computer. It is an alternative to “clicking” and provides some significant advantages in documenting processes, automating tasks, and enabling reproducible workflows.</p>
-<p>This lesson material is based upon the Software Carpentries lesson on <a class="reference external" href="http://swcarpentry.github.io/shell-novice/">The Unix Shell</a>, the <a class="reference external" href="https://datacarpentry.org/shell-genomics/">Introduction to the Command Line for Genomics</a> lesson from Data Carpentries, and an <a class="reference external" href="https://datacarpentry.org/2015-11-04-ACUNS/shell-intro/">Intro to the Shell</a> workshop from softwarecarpentry.org.</p>
-</div>
-<div class="section" id="background">
-<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
-<p>The shell is a program that enables us to send commands to the computer and receive output. It is also referred to as the terminal or command line.
-Humans and computers commonly interact in many different ways, such as through a keyboard and mouse, touch screen interfaces, or using speech recognition systems. The most widely used way to interact with personal computers is called a graphical user interface (GUI). With a GUI, we give instructions by clicking a mouse and using menu-driven interactions.</p>
-<p>While the visual aid of a GUI makes it intuitive to learn, this way of delivering instructions to a computer scales very poorly. Imagine the following task: moving every file that contains the word “important” to a dedicated folder. Using a GUI, you would not only be clicking at your desk for several hours, but you could potentially also commit an error in the process of completing this repetitive task. This is where we take advantage of the Unix shell. The Unix shell is both a command-line interface (CLI) and a scripting language, allowing such repetitive tasks to be done automatically and fast. With the proper commands, the shell can repeat tasks with or without some modification as many times as we want. Using the shell, the task in the example can be accomplished in seconds.</p>
-<p>The most popular Unix shell is Bash (the Bourne Again SHell — so-called because it’s derived from a shell written by Stephen Bourne). Bash is the default shell on most modern implementations of Unix and in most packages that provide Unix-like tools for Windows.</p>
-<p>Using the shell will take some effort and some time to learn. While a GUI presents you with choices to select, CLI choices are not automatically presented to you, so you must learn a few commands like new vocabulary in a language you’re studying. However, unlike a spoken language, a small number of “words” (i.e. commands) gets you a long way, and we’ll cover some of those essentials today.</p>
-<p>The grammar of a shell allows you to combine existing tools into powerful pipelines and handle large volumes of data automatically. Sequences of commands can be written into a script, improving the reproducibility of workflows.</p>
-</div>
-<div class="section" id="run-your-first-bash-commands">
-<h2>Run your first Bash commands<a class="headerlink" href="#run-your-first-bash-commands" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="exercise-data-generation">
+<h1>Exercise (data generation)<a class="headerlink" href="#exercise-data-generation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="generating-country-population-data">
+<h2>Generating country population data<a class="headerlink" href="#generating-country-population-data" title="Permalink to this headline">¶</a></h2>
+<p>Each person should choose a country and source population data for its five largest cities. You can use any site you like and make sure to cite the source. One example is https://worldpopulationreview.com/countries.</p>
+<p>An example of how to cite the source of population data for Canada from World Population Review is:</p>
+<p>World Population Review. (2021, February 15). Canada Population 2021. Retrieved from https://worldpopulationreview.com/countries/canada-population</p>
 <ol class="simple">
-<li><p>Change Directory to Desktop: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">Desktop</span></code></p></li>
-<li><p>List files and directories on Desktop: <code class="docutils literal notranslate"><span class="pre">my_Desktop</span> <span class="pre">$</span> <span class="pre">ls</span></code></p></li>
-<li><p>Try a command error: <code class="docutils literal notranslate"><span class="pre">my_Desktop</span> <span class="pre">$</span> <span class="pre">ks</span></code></p></li>
+<li><p>Using a text editor like Notepad or TextEdit, create a .csv file called mycountry-cities.csv. Change to the name of your country.</p></li>
+<li><p>Make sure before you save it that you turn it into plain text. In TextEdit this is done by navigating to Format &gt; Make Plain Text.</p></li>
+<li><p>Copy the exact syntax of the netherlands-cities.csv file and list your city, it’s coordinates, and its population size in that order. Each city should have its own line which starts with a “c”, for city.</p></li>
 </ol>
+<p>Tips: Make sure you do not include spaces in either your city name (if it is multiple words, like The Hague you can either do The-Hague or TheHague) or your lines (every comma should not have a space after it). Population numbers shouldn’t have any commas or periods.</p>
+<p>For example, the entry for New York City would look like this:
+c,NewYorkCity,40.7128,74.0060,8419000</p>
 </div>
 </div>
 
@@ -547,7 +459,7 @@ Humans and computers commonly interact in many different ways, such as through a
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./01_Day_1"
+            path: "./01_Day_1_Unix_Shell"
         },
         predefinedOutput: true
     }
@@ -562,8 +474,8 @@ Humans and computers commonly interact in many different ways, such as through a
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="00_README.html" title="previous page">Introduction to Unix shell and basic python setup</a>
-    <a class='right-next' id="next-link" href="A1_unix_lesson1.html" title="next page">Create a new project directory and subdirectories for data and code</a>
+    <a class='left-prev' id="prev-link" href="A3_unix_lesson3.html" title="previous page">Select, concatenate and add custom data to .csv files</a>
+    <a class='right-next' id="next-link" href="B1_exercise.html" title="next page">Excercise 1</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
