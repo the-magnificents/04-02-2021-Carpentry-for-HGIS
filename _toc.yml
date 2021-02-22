@@ -1,7 +1,8 @@
 file: README
 sections:
-- file: 00_Lesson_prep/README
+- file: 00_Lesson_prep/00_README
   sections:
+  - file: 00_Lesson_prep/01_About_this_workshop
   - file: 00_Lesson_prep/Schedule
 - file: 01_Day_1_Unix_Shell/00_README
   sections:
@@ -9,7 +10,7 @@ sections:
   - file: 01_Day_1_Unix_Shell/A1_unix_lesson1
   - file: 01_Day_1_Unix_Shell/A2_unix_lesson2
   - file: 01_Day_1_Unix_Shell/A3_unix_lesson3
-  - file: 01_Day_1_Unix_Shell/B0_generate_country_data_exercise
+  - file: 01_Day_1_Unix_Shell/B0_generate_country_data_exercise copy
   - file: 01_Day_1_Unix_Shell/B1_exercise
   - file: 01_Day_1_Unix_Shell/B2_exercise
   - file: 01_Day_1_Unix_Shell/B4_exercise
@@ -18,12 +19,12 @@ sections:
   - file: 02_Python_Draw_GIS/01_lesson
   - file: 02_Python_Draw_GIS/02_lesson
   - file: 02_Python_Draw_GIS/03_lesson
-  # - file: 02_Python_Draw_GIS/code/city
-  #   sections:
-  #   - file: 02_Python_Draw_GIS/code/map
-  #   - file: 02_Python_Draw_GIS/code/polygon
-  #   - file: 02_Python_Draw_GIS/code/simple_GIS
-  #   - file: 02_Python_Draw_GIS/code/test_polygon
+  - file: 02_Python_Draw_GIS/code/city
+    sections:
+    - file: 02_Python_Draw_GIS/code/map
+    - file: 02_Python_Draw_GIS/code/polygon
+    - file: 02_Python_Draw_GIS/code/simple_GIS
+    - file: 02_Python_Draw_GIS/code/test_polygon
 - file: 03_Day_3_Git/00_README
   sections:
   - file: 03_Day_3_Git/A1_git_lesson_intro
@@ -33,6 +34,7 @@ sections:
   - file: 03_Day_3_Git/A5_git_lesson4
 - file: Instructor_notes/00_README
   sections:
+  - file: Instructor_notes/01_Notes_From_DH_context
   - file: Instructor_notes/git_instructor_notes
   - file: Instructor_notes/open_science_instructor_notes
   - file: Instructor_notes/python_instructor_notes
