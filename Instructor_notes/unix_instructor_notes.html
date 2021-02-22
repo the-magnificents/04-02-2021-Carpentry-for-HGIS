@@ -1,0 +1,700 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating and navigating files and directories with the Unix Shell (Bash) &#8212; Python essentials for GIS learners</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "the-magnificents/04-02-2021-Carpentry-for-HGIS");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="About these instructor notes" href="python_instructor_notes.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Python essentials for GIS learners</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="current nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../00_Lesson_prep/README.html">
+   Preparing for the workshop
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../00_Lesson_prep/Schedule.html">
+     Schedule overview
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../01_Day_1_Unix_Shell/00_README.html">
+   Day 1
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/A0_unix_lesson_intro.html">
+     Day 1: Unix Shell
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/A1_unix_lesson1.html">
+     Create a new project directory and subdirectories for data and code
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/A2_unix_lesson2.html">
+     Move data and script files to the project folder
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/A3_unix_lesson3.html">
+     Select, concatenate and add custom data to .csv files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/B0_generate_country_data_exercise.html">
+     Exercise (data generation)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/B1_exercise.html">
+     Excercise 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/B2_exercise.html">
+     Excercise 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/B4_exercise.html">
+     Exercise 4
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../02_Python_Draw_GIS/00_README.html">
+   Day 2
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Python_Draw_GIS/01_lesson.html">
+     Using and reading other people’s code
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Python_Draw_GIS/02_lesson.html">
+     Variables (and constants)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Python_Draw_GIS/03_lesson.html">
+     Go from for loops and while loops to functions
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../03_Day_3_Git/00_README.html">
+   Day 3
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03_Day_3_Git/A1_git_lesson_intro.html">
+     Version control with Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03_Day_3_Git/A2_git_lesson1.html">
+     Set up and initialise a local Git repository
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03_Day_3_Git/A3_git_lesson2.html">
+     Making a change to a file
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03_Day_3_Git/A4_git_lesson3.html">
+     Ignoring things in Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03_Day_3_Git/A5_git_lesson4.html">
+     Remote collaboration on GitHub
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="00_README.html">
+   Instructor notes
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="git_instructor_notes.html">
+     Version control with Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="git_instructor_notes.html#setup-requirements">
+     Setup requirements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="git_instructor_notes.html#background">
+     Background
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="git_instructor_notes.html#setting-up-git">
+     Setting up Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="git_instructor_notes.html#make-the-world-cities-workshop-folder-into-a-local-git-repository">
+     Make the
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       world_cities_workshop/
+      </span>
+     </code>
+     folder into a local Git repository
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="git_instructor_notes.html#making-a-change-to-a-file">
+     Making a change to a file
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="git_instructor_notes.html#using-gitignore">
+     Using
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       .gitignore
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="git_instructor_notes.html#remote-collaboration-on-github">
+     Remote collaboration on GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="git_instructor_notes.html#working-with-others-on-github">
+     Working with others on GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="git_instructor_notes.html#a-basic-collaborative-workflow">
+     A basic collaborative workflow
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="git_instructor_notes.html#open-science">
+     Open Science
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="open_science_instructor_notes.html">
+     Open Science
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="python_instructor_notes.html">
+     About these instructor notes
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Creating and navigating files and directories with the Unix Shell (Bash)
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Instructor_notes/unix_instructor_notes.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#setup-requirements">
+   Setup requirements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-and-script-for-day-1">
+   Data and script for Day 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#background">
+   Background
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#running-commands">
+   Running commands
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#make-a-workshop-folder-called-world-cities-workshop">
+   Make a workshop folder called
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     world_cities_workshop/
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#moving-files-to-the-project-folder">
+   Moving files to the project folder
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#moving-files-from-one-folder-to-another">
+   Moving files from one folder to another
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-wildcards-to-access-multiple-files-at-once">
+   Using wildcards to access multiple files at once
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#select-and-concatenate-data-files">
+   Select and concatenate data files
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#add-road-data-to-netherlands-cities-csv">
+   Add road data to
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     netherlands-cities.csv
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction-to-python">
+   Introduction to Python
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#test-the-map-py-script-on-the-netherlands-data">
+   Test the map.py script on the Netherlands data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#expectations-for-day-1">
+   Expectations for Day 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#homework-for-day-1-afternoon">
+   Homework for Day 1 (afternoon)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#generating-country-population-data">
+   Generating country population data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-exercises">
+   Python exercises
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="creating-and-navigating-files-and-directories-with-the-unix-shell-bash">
+<h1>Creating and navigating files and directories with the Unix Shell (Bash)<a class="headerlink" href="#creating-and-navigating-files-and-directories-with-the-unix-shell-bash" title="Permalink to this headline">¶</a></h1>
+<p>This lesson is an introduction to using the Unix shell and the Bash scripting language to create and navigate through files and directories (folders) on your local computer. It is an alternative to “clicking” and provides some significant advantages in documenting processes, automating tasks, and enabling reproducible workflows.</p>
+<p>This lesson material is based upon the Software Carpentries lesson on <a class="reference external" href="http://swcarpentry.github.io/shell-novice/">The Unix Shell</a>, the <a class="reference external" href="https://datacarpentry.org/shell-genomics/">Introduction to the Command Line for Genomics</a> lesson from Data Carpentries, and an <a class="reference external" href="https://datacarpentry.org/2015-11-04-ACUNS/shell-intro/">Intro to the Shell</a> workshop from softwarecarpentry.org.</p>
+<div class="section" id="setup-requirements">
+<h2>Setup requirements<a class="headerlink" href="#setup-requirements" title="Permalink to this headline">¶</a></h2>
+<p>If you are running Windows, you will need to install Git for Windows following the instructions <a class="reference external" href="https://carpentries.github.io/workshop-template/#shell">here</a>. <em>Participants should install Git/Gitbash before day 1</em></p>
+<p>The default shell in some versions of macOS is Bash, and Bash is available in all versions, so no need to install anything. You access Bash from the Terminal. The easiest way to find it is by using the magnifying glass symbol at the top right corner of your page and search “Terminal”. You should open it up and it’s a good idea to right click the icon at the bottom of your screen and choose Options &gt; Keep in Dock.</p>
+</div>
+<div class="section" id="data-and-script-for-day-1">
+<h2>Data and script for Day 1<a class="headerlink" href="#data-and-script-for-day-1" title="Permalink to this headline">¶</a></h2>
+<p>Before today’s workshop, we sent out a link to a folder called <code class="docutils literal notranslate"><span class="pre">workshop_data/</span></code> that you should have downloaded. You should save these files exactly as they are in a folder on your Desktop called <code class="docutils literal notranslate"><span class="pre">workshop_data/</span></code>.</p>
+</div>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>The shell is a program that enables us to send commands to the computer and receive output. It is also referred to as the terminal or command line.
+Humans and computers commonly interact in many different ways, such as through a keyboard and mouse, touch screen interfaces, or using speech recognition systems. The most widely used way to interact with personal computers is called a graphical user interface (GUI). With a GUI, we give instructions by clicking a mouse and using menu-driven interactions.</p>
+<p>While the visual aid of a GUI makes it intuitive to learn, this way of delivering instructions to a computer scales very poorly. Imagine the following task: __. Using a GUI, you would not only be clicking at your desk for several hours, but you could potentially also commit an error in the process of completing this repetitive task. This is where we take advantage of the Unix shell. The Unix shell is both a command-line interface (CLI) and a scripting language, allowing such repetitive tasks to be done automatically and fast. With the proper commands, the shell can repeat tasks with or without some modification as many times as we want. Using the shell, the task in the example can be accomplished in seconds.</p>
+<p>The most popular Unix shell is Bash (the Bourne Again SHell — so-called because it’s derived from a shell written by Stephen Bourne). Bash is the default shell on most modern implementations of Unix and in most packages that provide Unix-like tools for Windows.</p>
+<p>Using the shell will take some effort and some time to learn. While a GUI presents you with choices to select, CLI choices are not automatically presented to you, so you must learn a few commands like new vocabulary in a language you’re studying. However, unlike a spoken language, a small number of “words” (i.e. commands) gets you a long way, and we’ll cover some of those essentials today.</p>
+<p>The grammar of a shell allows you to combine existing tools into powerful pipelines and handle large volumes of data automatically. Sequences of commands can be written into a script, improving the reproducibility of workflows.</p>
+</div>
+<div class="section" id="running-commands">
+<h2>Running commands<a class="headerlink" href="#running-commands" title="Permalink to this headline">¶</a></h2>
+<p>The shell accepts commands one line at a time following a prompt, which is usually a symbol like <code class="docutils literal notranslate"><span class="pre">$</span></code> or <code class="docutils literal notranslate"><span class="pre">%</span></code>. When typing commands, you do not need to type this symbol, only the command that comes after it.</p>
+<p>Let’s try our first command. We are going to our change directory to Desktop:</p>
+<p><code class="docutils literal notranslate"><span class="pre">cd</span></code> stands for Change Directory and can be used to navigate to another folder or workspace on your computer. Anything you can click on manually can be entered through the shell using this command. Let’s navigate to the Desktop by:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">Desktop</span></code></p>
+<p>Remember to capitalise the word Desktop.</p>
+<p>You should now see that your command prompt has changed to indicate that you are in the Desktop directory of your computer. Any commands we run will now take place on the Desktop, which is what we want.</p>
+<p>Now, let’s say you want to see the contents of a directory after you enter it. That is accomplished with the ls command, or ‘Listing’. You can use this one by itself like this:</p>
+<p><code class="docutils literal notranslate"><span class="pre">my_Desktop</span> <span class="pre">$</span> <span class="pre">ls</span></code></p>
+<p>The output should be a list of the files and folders you have saved on your Desktop. This is also a good way of verifying that you are in the directory you think you are in after you run <code class="docutils literal notranslate"><span class="pre">cd</span></code>.</p>
+<p>What if you type something wrong? That’s no problem - you’ll just see a “command not found” error which can happen if the command was mistyped or if the program that uses the command you tried is not installed. Let’s try something on purpose.</p>
+<p><code class="docutils literal notranslate"><span class="pre">my_Desktop</span> <span class="pre">$</span> <span class="pre">ks</span></code></p>
+<p>You should see a message “ks: command not found” This is what we’d expect, no problem - learning to respond to error messages is an important computational skill. :)</p>
+</div>
+<div class="section" id="make-a-workshop-folder-called-world-cities-workshop">
+<h2>Make a workshop folder called <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/</span></code><a class="headerlink" href="#make-a-workshop-folder-called-world-cities-workshop" title="Permalink to this headline">¶</a></h2>
+<p>The same way you can make folders on your computer by selecting “New Folder” from a file browser window, you can also use the shell to make directories and files.</p>
+<p>This is done using the <code class="docutils literal notranslate"><span class="pre">mkdir</span></code> command.</p>
+<p>Now that you are on your Desktop, let’s make a folder for the project we will be working on for this workshop. Let’s call it <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/</span></code>. Notice that we don’t use spaces in naming any folders - this is helpful to avoid errors when scripting with Bash. It’s good practice to use underscores or dashes instead of space whenever you are naming files or folders.</p>
+<p>In your shell, write the command:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">mkdir</span> <span class="pre">world_cities_workshop</span></code></p>
+<p>And hit enter. If you watch your Desktop, you should see a new folder arrive with that name! Of course you could click on it to see its contents (it should be empty), but let’s use the shell to do that.</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">world_cities_workshop</span></code></p>
+<p>Now, you are in the world_cities_workshop folder. Let’s verify that it’s empty:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">ls</span></code></p>
+<p>Your output should not show anything….Looks good!</p>
+<p>Let’s set up a folder structure for our project that is generally useful for any project working with data and code. It’s good practice to make separate folders each for raw data, data outputs, scripts and documents in the context of any project you’re working on. For now, let’s create two new directories, <code class="docutils literal notranslate"><span class="pre">data/</span></code> and <code class="docutils literal notranslate"><span class="pre">scripts/</span></code> inside the world_cities_workshop/ folder.</p>
+<p>We can make these directories at the same time using Bash. Make sure you are in your world_cities_workshop/ folder and run:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">mkdir</span> <span class="pre">data</span> <span class="pre">scripts</span></code></p>
+<p>You won’t see anything in your shell, but if you run the ls command again you should see two new folders in your project directory. This is good!
+Now let’s try creating a folder for <code class="docutils literal notranslate"><span class="pre">documents/</span></code> in <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/</span></code>. Try this on your own.</p>
+</div>
+<div class="section" id="moving-files-to-the-project-folder">
+<h2>Moving files to the project folder<a class="headerlink" href="#moving-files-to-the-project-folder" title="Permalink to this headline">¶</a></h2>
+<p>The data we want to use are contained in multiple files located in the workshop_data/ folder that we sent out prior to this workshop. Let’s take a look at the contents of that folder by navigating there in the shell. If you are in your <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/</span></code> folder, you can use a special notation that means “move one folder up”, <code class="docutils literal notranslate"><span class="pre">../</span></code> and then move directly into the <code class="docutils literal notranslate"><span class="pre">workshop_data/</span></code> folder:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">../workshop_data</span></code></p>
+<p>Now you should see your prompt change to let you know you are in the <code class="docutils literal notranslate"><span class="pre">workshop_data folder</span></code>. Use ls to take a look at the files that are in there:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">ls</span></code></p>
+<p>You should see eight files in the folder, seven of which are csv files (Comma Separated Values) and one of which is a plain text file (.txt). We can take a look at the contents of each file using the cat command followed by the full name of one of the files including the extension:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cat</span> <span class="pre">amsterdam-nl.csv</span></code></p>
+<p>You should see one line of text containing coordinates and population data for Amsterdam pop up right in your shell. This is the contents of the file (it’s very short!) and the command prompt returns below it. You can cat into other files as well, give it a try on your own.</p>
+</div>
+<div class="section" id="moving-files-from-one-folder-to-another">
+<h2>Moving files from one folder to another<a class="headerlink" href="#moving-files-from-one-folder-to-another" title="Permalink to this headline">¶</a></h2>
+<p>You will see that one of the files in the <code class="docutils literal notranslate"><span class="pre">workshop_data/</span></code> folder is a text file called <code class="docutils literal notranslate"><span class="pre">data-documentation.txt</span></code>. This looks like something we should save, but separately from our raw data. You can use the <code class="docutils literal notranslate"><span class="pre">mv</span></code> command to Move files from one place to another on your computer without using drag and drop. Let’s try moving <code class="docutils literal notranslate"><span class="pre">data-documentation.txt</span></code> to our <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/documents</span></code> folder that you created earlier.</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">mv</span> <span class="pre">data-documentation.txt</span> <span class="pre">../world_cities_workshop/documents</span></code></p>
+<p>Note how we use the <code class="docutils literal notranslate"><span class="pre">../</span></code> notation to move one folder “up” from <code class="docutils literal notranslate"><span class="pre">workshop_data/</span></code> to Desktop, and from there we can specify the exact path to the new folder.</p>
+<p>You should also see a file called <code class="docutils literal notranslate"><span class="pre">map.py</span></code> - this extension lets us know that this is a Python script. We can <code class="docutils literal notranslate"><span class="pre">cat</span></code> into it the same way we did to other files because it is simply a text file with a very particular syntax that Python can read and understand. We don’t know much else about it at this moment, and that’s ok - let’s just move it to the right subfolder within our <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/</span></code> directory.</p>
+<p>Try this on your own.</p>
+<p>(<code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">mv</span> <span class="pre">map.py</span> <span class="pre">../world_cities_workshop/scripts</span></code>)</p>
+</div>
+<div class="section" id="using-wildcards-to-access-multiple-files-at-once">
+<h2>Using wildcards to access multiple files at once<a class="headerlink" href="#using-wildcards-to-access-multiple-files-at-once" title="Permalink to this headline">¶</a></h2>
+<p>Use <code class="docutils literal notranslate"><span class="pre">ls</span></code> again to see the list of files in the <code class="docutils literal notranslate"><span class="pre">workshop_data/</span></code> directory.</p>
+<p>You’ll see that all the .csv files follow a naming convention that goes <code class="docutils literal notranslate"><span class="pre">&lt;cityname&gt;-&lt;countryabbreviation&gt;.csv</span></code>. This is important as a consideration when you’re working with scripts, as there are very easy commands that can be used to quickly move, create and work with files if you know that their names follow a predictable pattern.</p>
+<p>Here we’ll work with an example. We only want data for cities that are in the Netherlands for this first part of our analysis. Of course, being familiar with this country we may recognize that Amsterdam and Rotterdam are in the Netherlands, but we can also take advantage of the naming convention to quickly choose and move all data files from Netherlands’ cities to the <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/data/</span></code> folder where we want them.</p>
+<p>In Bash, <code class="docutils literal notranslate"><span class="pre">*</span></code> is a wildcard, which matches zero or more characters. Let’s consider the <code class="docutils literal notranslate"><span class="pre">workshop_data/</span></code> directory: <code class="docutils literal notranslate"><span class="pre">*.csv</span></code> matches amsterdam-nl.csv, eindhoven-nl.csv and every file that ends with ‘.csv’. On the other hand, <code class="docutils literal notranslate"><span class="pre">n*.csv</span></code> only matches newyorkcity.csv because the ‘n’ at the front only matches filenames that begin with the letter ‘n’.</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">mv</span> <span class="pre">*-nl.csv</span> <span class="pre">../world_cities_workshop/data</span></code></p>
+<p>If you now look in your <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/data/</span></code> folder, you should see 5 files that contain data for cities in the Netherlands.</p>
+</div>
+<div class="section" id="select-and-concatenate-data-files">
+<h2>Select and concatenate data files<a class="headerlink" href="#select-and-concatenate-data-files" title="Permalink to this headline">¶</a></h2>
+<p>Right now, the data are each stored in separate files per city. That might be helpful for some applications, but we want a list of data in one .csv file. We can do this on the command line by using a combination of the <code class="docutils literal notranslate"><span class="pre">awk</span></code> command (used for pattern scanning and processing) and <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>, which concatenates the contents of multiple files to a new file that in this case we will call <code class="docutils literal notranslate"><span class="pre">netherlands-cities.csv</span></code>.</p>
+<p>We can use the wildcard <code class="docutils literal notranslate"><span class="pre">*</span></code> again to grab all the .csv files this time in the <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/data/</span></code> folder. We already know that these are all related to cities in the Netherlands, so we can use purely <code class="docutils literal notranslate"><span class="pre">*.csv</span></code> to match all the files in that directory.</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">awk</span> <span class="pre">1</span> <span class="pre">*.csv</span> <span class="pre">&gt;</span> <span class="pre">netherlands-cities.csv</span></code></p>
+<p>This will save a new file called <code class="docutils literal notranslate"><span class="pre">netherlands-cities.csv</span></code> in the <code class="docutils literal notranslate"><span class="pre">data/</span></code> folder and automatically create a new line between each city. Check to see if it’s there! You can use <code class="docutils literal notranslate"><span class="pre">ls</span></code> to see the files in the <code class="docutils literal notranslate"><span class="pre">data/</span></code> folder, and <code class="docutils literal notranslate"><span class="pre">cat</span></code> to check out the contents of the newly created <code class="docutils literal notranslate"><span class="pre">netherlands-cities.csv</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">data</span></code>
+<code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">ls</span></code>
+<code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cat</span> <span class="pre">netherlands-cities.csv</span></code></p>
+</div>
+<div class="section" id="add-road-data-to-netherlands-cities-csv">
+<h2>Add road data to <code class="docutils literal notranslate"><span class="pre">netherlands-cities.csv</span></code><a class="headerlink" href="#add-road-data-to-netherlands-cities-csv" title="Permalink to this headline">¶</a></h2>
+<p>While these are not geographically accurate to real roads, we may want to add connections between cities of interest. We can do this by editing the <code class="docutils literal notranslate"><span class="pre">netherlands-cities.csv</span></code> file we just created - you guessed it, using the command line!</p>
+<p>Nano is a text editor that you can use direcly in your shell interface. There are a few of these, including vi and vim, but today we’ll just work with nano. These should come with your shell so there’s no need for a separate installation. To open a file with nano, use:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">nano</span> <span class="pre">&lt;filename&gt;</span></code></p>
+<p>Let’s open the netherlands-cities.csv file to add some road data that we will specify now.</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">nano</span> <span class="pre">netherlands-cities.csv</span></code></p>
+<p>Unlike using the <code class="docutils literal notranslate"><span class="pre">cat</span></code> command, nano opens the file contents in a new interface with a black bar at the top and some options at the bottom. Also new is that you can edit the contents of a file and save or ‘write out’ the file afterward. This is what we’ll do now. Note that you can use your arrow keys to navigate the file to make changes, as clicking and inserting is not an option.</p>
+<p>Let’s add the following lines to the netherlands-cities.csv file:</p>
+<p>r,Amsterdam,Rotterdam</p>
+<p>r,Rotterdam,Utrecht</p>
+<p>r,Amsterdam,Utrecht</p>
+<p>r,The-Hague,Rotterdam</p>
+<p>Make sure there is a new line between each of them.</p>
+<p>Now, press shift + control + O to “WriteOut” the file (save it). Nano will ask you if you want to save this file with the same name, and we do, so press enter. You can then press shift + control + X to exit the Nano text editor and get back to your bash shell.</p>
+<p>If you now use cat to check out the contents of your file, you should see that it has been updated:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cat</span> <span class="pre">netherlands-cities.csv</span></code></p>
+</div>
+<div class="section" id="introduction-to-python">
+<h2>Introduction to Python<a class="headerlink" href="#introduction-to-python" title="Permalink to this headline">¶</a></h2>
+<p>Working with Idle, simple examples and exercises.</p>
+</div>
+<div class="section" id="test-the-map-py-script-on-the-netherlands-data">
+<h2>Test the map.py script on the Netherlands data<a class="headerlink" href="#test-the-map-py-script-on-the-netherlands-data" title="Permalink to this headline">¶</a></h2>
+<p>Run map.py on netherlands-cities.csv</p>
+</div>
+<div class="section" id="expectations-for-day-1">
+<h2>Expectations for Day 1<a class="headerlink" href="#expectations-for-day-1" title="Permalink to this headline">¶</a></h2>
+<p>At the end of the teaching day 1 each student should have a project folder called <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/</span></code> that contains three subfolders, <code class="docutils literal notranslate"><span class="pre">data/</span></code>, <code class="docutils literal notranslate"><span class="pre">scripts/</span></code>, and <code class="docutils literal notranslate"><span class="pre">documents/</span></code>. In the <code class="docutils literal notranslate"><span class="pre">data/</span></code> folder should be one .csv file called <code class="docutils literal notranslate"><span class="pre">netherlands-cities.csv</span></code> containing population data and coordinates for the 5 largest cities in the Netherlands. The <code class="docutils literal notranslate"><span class="pre">scripts/</span></code> folder should have one script called <code class="docutils literal notranslate"><span class="pre">map.py</span></code> that was provided at the start of the workshop, and the <code class="docutils literal notranslate"><span class="pre">documents/</span></code> folder should have one text file called <code class="docutils literal notranslate"><span class="pre">data-documentation.txt</span></code>.</p>
+</div>
+<div class="section" id="homework-for-day-1-afternoon">
+<h2>Homework for Day 1 (afternoon)<a class="headerlink" href="#homework-for-day-1-afternoon" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="generating-country-population-data">
+<h2>Generating country population data<a class="headerlink" href="#generating-country-population-data" title="Permalink to this headline">¶</a></h2>
+<p>Each person should choose a country and source population data for its five largest cities. You can use any site you like and make sure to cite the source. One example is https://worldpopulationreview.com/countries.</p>
+<p>An example of how to cite the source of population data for Canada from World Population Review is:</p>
+<p>World Population Review. (2021, February 15). Canada Population 2021. Retrieved from https://worldpopulationreview.com/countries/canada-population</p>
+<p>Using a text editor like Notepad or TextEdit, create a .csv file called mycountry-cities.csv. Change to the name of your country. Make sure before you save it that you turn it into plain text. In TextEdit this is done by navigating to Format &gt; Make Plain Text. Copy the exact syntax of the netherlands-cities.csv file and list your city, it’s coordinates, and its population size in that order. Make sure you do not include spaces in either your city name (if it is multiple words, like The Hague you can either do The-Hague or TheHague) or your lines (every comma should not have a space after it). Population numbers shouldn’t have any commas or periods. Each city should have its own line which starts with a “c”, for city.</p>
+<p>For example, the entry for New York City would look like this:
+c,NewYorkCity,40.7128,74.0060,8419000</p>
+</div>
+<div class="section" id="python-exercises">
+<h2>Python exercises<a class="headerlink" href="#python-exercises" title="Permalink to this headline">¶</a></h2>
+<p>Videos, references, simple exercises to get familiar with working with Python (saving variables etc.). Run Python script map.py on their own and bring questions. Assignment: what do you think the code is doing (parts of it). Compute simple things like multiplying or dividing value stored in variable. Start the next day with examples. Exercises should not take more than 2 hours to do.</p>
+<p>TODO: create central question repository (maybe Google Docs). Randomly assign pairs and swap email addresses. Questions should be posted by 4pm that day so we can prepare for the next day. Resources for learning, what continuing learning do you want?</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Instructor_notes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="python_instructor_notes.html" title="previous page">About these instructor notes</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book community<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>

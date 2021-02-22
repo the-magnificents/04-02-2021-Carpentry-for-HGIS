@@ -1,0 +1,706 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version control with Git &#8212; Python essentials for GIS learners</title>
+    
+  <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "the-magnificents/04-02-2021-Carpentry-for-HGIS");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Python essentials for GIS learners</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <p class="caption collapsible-parent">
+ <span class="caption-text">
+  Getting started
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../00_Lesson_prep/README.html">
+   Preparing for the workshop
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../00_Lesson_prep/Schedule.html">
+   Schedule overview
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Day 1
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../01_Day_1/exercises/01_exercise.html">
+   Excercise 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../01_Day_1/exercises/02_exercise.html">
+   Excercise 2
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Day 2
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../02_Python_Draw_GIS/01_lesson.html">
+   Using and reading other people’s code
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../02_Python_Draw_GIS/02_lesson.html">
+   Variables (and constants)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../02_Python_Draw_GIS/03_lesson.html">
+   Go from for loops and while loops to functions
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Instructor Notes
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../00_Instructor_notes/README.html">
+   Instructor notes
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/Git/Lessons/git_lesson.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Version control with Git
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#learning-objectives">
+     Learning objectives
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#time-estimate">
+     Time estimate
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#setup-requirements">
+   Setup requirements
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-and-code-for-day-3">
+     Data and code for Day 3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#background">
+   Background
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#remote-collaboration">
+     Remote collaboration
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#individual-work">
+     Individual work
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#setting-up-git">
+   Setting up Git
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#make-the-world-cities-workshop-folder-into-a-local-git-repository">
+   Make the
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     world_cities_workshop/
+    </span>
+   </code>
+   folder into a local Git repository
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#making-a-change-to-a-file">
+   Making a change to a file
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adding-something-to-the-map-py-script">
+     _____ adding something to the map.py script
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#moving-changes-to-the-staging-area-with-git-add">
+     Moving changes to the staging area with
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       git
+      </span>
+      <span class="pre">
+       add
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#committing-changes-and-adding-a-message-with-git-commit">
+     Committing changes and adding a message with
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       git
+      </span>
+      <span class="pre">
+       commit
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#recap">
+     Recap
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-gitignore">
+   Using
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     .gitignore
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#remote-collaboration-on-github">
+   Remote collaboration on GitHub
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#relationship-between-local-and-remote-repositories">
+     Relationship between local and remote repositories
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pushing-your-local-repository-to-the-remote-on-github">
+     Pushing your local repository to the remote on GitHub
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-difference-between-push-and-commit">
+     The difference between
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       push
+      </span>
+     </code>
+     and
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       commit
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#working-with-others-on-github">
+   Working with others on GitHub
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cloning-a-repository-from-github">
+     Cloning a repository from GitHub
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#creating-a-pull-request">
+     Creating a pull request
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-basic-collaborative-workflow">
+   A basic collaborative workflow
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#open-science">
+   Open Science
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="version-control-with-git">
+<h1>Version control with Git<a class="headerlink" href="#version-control-with-git" title="Permalink to this headline">¶</a></h1>
+<p>This lesson is focused on understanding and implementing version control with Git to keep track of changes to a code-based project. We’ll talk about the utility of version control systems for tracking changes to local projects, and how it can be used to enable remote collaboration and crediting of multiple authors to a project hosted in a remote repository like GitHub. This material draws from the <a class="reference external" href="https://swcarpentry.github.io/git-novice/">Version Control with Git</a> lesson from the Software Carpentries.</p>
+<div class="section" id="learning-objectives">
+<h2>Learning objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>asdf</p></li>
+<li><p>asdf</p></li>
+</ol>
+</div>
+<div class="section" id="time-estimate">
+<h2>Time estimate<a class="headerlink" href="#time-estimate" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="setup-requirements">
+<h1>Setup requirements<a class="headerlink" href="#setup-requirements" title="Permalink to this headline">¶</a></h1>
+<p>For Windows users, Git should be installed already on your computer as part of your Bash install from Day 1.</p>
+<p>Mac users need to install Git for Mac by downloading and running the most recent “mavericks” installer from <a class="reference external" href="https://sourceforge.net/projects/git-osx-installer/files/">this list on Sourceforge.net</a>. Because this installer is not signed by the developer, you may have to right click (control click) on the .pkg file, click Open, and click Open on the pop up window. After installing Git, there will not be anything in your /Applications folder, as Git is a command line program. <em>Participants should install Git before Day 3</em></p>
+<p>More detailed instructions and videos are available here: https://carpentries.github.io/workshop-template/#git</p>
+<div class="section" id="data-and-code-for-day-3">
+<h2>Data and code for Day 3<a class="headerlink" href="#data-and-code-for-day-3" title="Permalink to this headline">¶</a></h2>
+<p>We will continue to use the data from Day 2 on cities etc. _____</p>
+</div>
+</div>
+<div class="section" id="background">
+<h1>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h1>
+<p>Version control is the lab notebook of the digital world: it’s what professionals use to keep track of what they’ve done and to collaborate with other people. Every large software development project relies on it, and most programmers use it for their small jobs as well. And it isn’t just for software code: books, papers, small data sets, and anything that changes over time or needs to be shared can and should be stored in a version control system.</p>
+<p>A version control system is a tool that keeps track of these changes for us, effectively creating different versions of our files. It allows us to decide which changes will be made to the next version (each record of these changes is called a commit), and keeps useful metadata about them. The complete history of commits for a particular project and their metadata make up a repository. Repositories can be kept in sync across different computers, facilitating collaboration among different people. Version control systems start with a base version of the document and then record changes you make each step of the way. You can think of it as a recording of your progress: you can rewind to start at the base document and play back each change you made, eventually arriving at your more recent version.</p>
+<div class="section" id="remote-collaboration">
+<h2>Remote collaboration<a class="headerlink" href="#remote-collaboration" title="Permalink to this headline">¶</a></h2>
+<p>Collaborative writing or scripting with traditional word processors and text editors is cumbersome. Either every collaborator has to work on a document sequentially (slowing down the process of writing), or you have to send out a version to all collaborators and manually merge their comments into your document. The ‘track changes’ or ‘record changes’ option can highlight changes for you and simplifies merging, but as soon as you accept changes you will lose their history. You will then no longer know who suggested that change, why it was suggested, or when it was merged into the rest of the document.</p>
+<p>Some word processors let us deal with this a little better, such as Microsoft Word’s Track Changes, Google Docs’ version history, but they lack a streamlined way to customise messages about changes made and store just one latest version of the file for everyone working on it. It seems ridiculous to have multiple nearly-identical versions of the same document that we keep passing back and forth to create something whole. The result is a lot of files with names like Final_paper_EDIT01.doc or Final_paper_EDITCOMMITTEE03.doc and so on…it can get messy trying to merge suggestions and changes made by multiple people in multiple documents, sent over email…I’m sure we all know the headache!</p>
+<p>Using Git with a remote platform like GitUnless multiple users make changes to the same section of the document - a conflict - you can incorporate two sets of changes into the same base document.</p>
+</div>
+<div class="section" id="individual-work">
+<h2>Individual work<a class="headerlink" href="#individual-work" title="Permalink to this headline">¶</a></h2>
+<p>Teams are not the only ones to benefit from version control: lone researchers can benefit immensely. Keeping a record of what was changed, when, and why is extremely useful for all researchers if they ever need to come back to the project later on (e.g., a year later, when memory has faded).</p>
+</div>
+</div>
+<div class="section" id="setting-up-git">
+<h1>Setting up Git<a class="headerlink" href="#setting-up-git" title="Permalink to this headline">¶</a></h1>
+<p>When we use Git on a new computer for the first time, we need to configure a few things. The commands we will run only need to be run once: the flag <code class="docutils literal notranslate"><span class="pre">--global</span></code> tells Git to use the settings for every project, in your user account, on this computer. Below are configurations we will set as we get started with Git:</p>
+<ul class="simple">
+<li><p>our name and email address,</p></li>
+<li><p>what our preferred text editor is,</p></li>
+<li><p>and that we want to use these settings globally (i.e. for every project).</p></li>
+</ul>
+<p>Open up your terminal or GitBash command prompt and type:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">user.name</span> <span class="pre">&quot;&lt;insert</span> <span class="pre">your</span> <span class="pre">name</span> <span class="pre">here&gt;&quot;</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">user.email</span> <span class="pre">&quot;&lt;insert</span> <span class="pre">your</span> <span class="pre">email</span> <span class="pre">here&gt;&quot;</span></code></p>
+<p>For these lessons, we will be interacting with GitHub and so the email address used should be the same as the one used when setting up your GitHub account.</p>
+<p>We will also set up nano to be the preferred text editor for Git (you can always reconfigure this if you want to change to a different text editor in the future):</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">core.editor</span> <span class="pre">&quot;nano</span> <span class="pre">-w&quot;</span></code></p>
+<p>You can check your settings at any time by running:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">config</span> <span class="pre">--list</span></code></p>
+<p>We will be working with some of the most common Git commands today. If you ever forget a command, or need help, you can use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">-h</span></code> for a list of commands and <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--help</span></code> to access the detailed Git manual.</p>
+</div>
+<div class="section" id="make-the-world-cities-workshop-folder-into-a-local-git-repository">
+<h1>Make the <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/</span></code> folder into a local Git repository<a class="headerlink" href="#make-the-world-cities-workshop-folder-into-a-local-git-repository" title="Permalink to this headline">¶</a></h1>
+<p>The first step in implementing Git for version control on any project is initializing a new Git repository in a folder in the main folder of that project. This is why keeping everything organized in subdirectories in one place is especially useful! For this workshop, our project folder is the <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/</span></code> folder that should be stored on your Desktop, so we will initialize a new Git repository there. When we initialise a git repository in our main folder, all the contents of every subfolder therein will be automatically trackable with git…so we only need to do this step once in the main <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/</span></code> folder:</p>
+<p>To do so, in your terminal you should <code class="docutils literal notranslate"><span class="pre">cd</span></code> into the <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/</span></code> folder:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">world_cities_workshop</span></code></p>
+<p>And then we will run our first git command to initialize a git repository in this folder:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">init</span></code></p>
+<p>And just like that, we’ve started a local repository that is ready to track changes for us. Pretty neat! Of course, we’re still in the driver’s seat - Git requires our input about what to track, what to ignore, and when to save or “commit” changes that we’ve made to our files and folders. For now, we can check that the git repository has indeed been initialised by running the <code class="docutils literal notranslate"><span class="pre">ls</span></code> command with a flag, <code class="docutils literal notranslate"><span class="pre">-a</span></code> that shows all files and folders, including hidden ones that git has created:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">ls</span> <span class="pre">-a</span></code></p>
+<p>You should see in the output a hidden folder called <code class="docutils literal notranslate"><span class="pre">.git/</span></code>. This is where git will store all the information from commits you make based on changes in your projects, and also where you can revert to previous versions and specific commits if you ever need to. This folder needs to stay put so that the project remains tracked with git and we don’t lose information about changes we’ve made - the choice to hide it makes it a little bit harder to delete (which we don’t want to do)! :)</p>
+<p>Let’s do one last check to make sure our git repository was set up successfully in our <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/</span></code> directory. We’ll ask git to report on its current status using:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">status</span></code></p>
+<p>You should see a message indicating that you are on a branch called “master” and that there is nothing to commit yet - this makes sense because of course we haven’t made any changes yet. That’s coming up!</p>
+</div>
+<div class="section" id="making-a-change-to-a-file">
+<h1>Making a change to a file<a class="headerlink" href="#making-a-change-to-a-file" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="adding-something-to-the-map-py-script">
+<h2>_____ adding something to the map.py script<a class="headerlink" href="#adding-something-to-the-map-py-script" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="moving-changes-to-the-staging-area-with-git-add">
+<h2>Moving changes to the staging area with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code><a class="headerlink" href="#moving-changes-to-the-staging-area-with-git-add" title="Permalink to this headline">¶</a></h2>
+<p>If you think of Git as taking snapshots of changes over the life of a project, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code> specifies what will go in a snapshot (putting things in the staging area), and <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code> then actually takes the snapshot, and makes a permanent record of it (as a commit).</p>
+<p>If you don’t have anything staged when you type git commit, Git will prompt you to use git commit -a or git commit –all, which is kind of like gathering everyone to take a group photo! However, it’s almost always better to explicitly add things to the staging area, because you might commit changes you forgot you made. The staging area can hold changes from any number of files that you want to commit as a single snapshot.</p>
+<p>First, let’s check the status of changes that git knows about using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code>:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">status</span></code></p>
+<p>You should see a message that you are on the branch “master”, there are no commits yet, and there is one untracked file - the <code class="docutils literal notranslate"><span class="pre">map.py</span></code> that we just made changes to. We need to add these changes to the staging area to let git know we want to commit the latest version. We do this by running:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">add</span> <span class="pre">&lt;name_of_file&gt;</span></code></p>
+<p>so, in this case:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">add</span> <span class="pre">map.py</span></code></p>
+<p>Notice that git gives pretty helpful messages when you interact with it on the command line - in this case, it tells us we should use git add to track this file and get the changes ready for committing.</p>
+</div>
+<div class="section" id="committing-changes-and-adding-a-message-with-git-commit">
+<h2>Committing changes and adding a message with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code><a class="headerlink" href="#committing-changes-and-adding-a-message-with-git-commit" title="Permalink to this headline">¶</a></h2>
+<p>When we run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code>, Git takes everything we have told it to save by using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code> and stores a copy permanently inside the special .git directory. This permanent copy is called a commit (or revision) and each one has a short identifer code that can be used to point to the version of your file if you ever need to revert back to it or investigate changes made.</p>
+<p>We use the <code class="docutils literal notranslate"><span class="pre">-m</span></code> flag (for “message”) to record a short, descriptive, and specific comment that will help us remember later on what we did and why. If we just run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code> without the <code class="docutils literal notranslate"><span class="pre">-m</span></code> option, Git will launch nano so that we can write a longer message.</p>
+<p>Good commit messages start with a brief (&lt;50 characters) statement about the changes made in the commit. Generally, the message should complete the sentence “If applied, this commit will…” .</p>
+<p>Let’s try it with our <code class="docutils literal notranslate"><span class="pre">map.py</span></code> script. This is the only file in the staging area, so the message we include in our commit can pertain only to it. If we had made changes to multiple files, for example changed parts of another script, added a new data file, or added lines to the data documentation text file, and we had added those to the staging area as well, we would be writing a commit that summarises the changes to ALL of those files. You can add all the changed files to the staging area at once by using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code>, but since we only changed one file we called it by name. Now, we’re ready to make the commit by running:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;&lt;my</span> <span class="pre">message</span> <span class="pre">here&gt;&quot;</span></code></p>
+<p>Choose a good commit message here - maybe something like ______. Remember, keep it short and sweet, but also memorable.</p>
+<p>When we hit enter, we have successfully stored our first commit to our local git repository! To be sure, let’s run:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">status</span></code></p>
+<p>We should see a message that we are on branch “master”, there is nothing to commit, and the working tree is clean. Nice!</p>
+<p>Another way to verify that our commit was saved is by using the command <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code>, which shows us the project’s history of commits. <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code> lists all commits made to a repository in reverse chronological order. The listing for each commit includes the commit’s full identifier (which starts with the same characters as the short identifier printed by the git commit command earlier)the commit’s author, when it was created, and the log message Git was given when the commit was created.</p>
+<p>If we run <code class="docutils literal notranslate"><span class="pre">ls</span></code> in our project folder at this point, we will still see ____. That’s because Git saves information about files’ history in the special .git directory mentioned earlier so that our filesystem doesn’t become cluttered (and so that we can’t accidentally edit or delete an old version).</p>
+</div>
+<div class="section" id="recap">
+<h2>Recap<a class="headerlink" href="#recap" title="Permalink to this headline">¶</a></h2>
+<p>To recap, the workflow for adding and committing changes to files using Git is:</p>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">status</span></code> to see the files that have been changed and are awaiting commit</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">add</span> <span class="pre">&lt;file_name&gt;</span></code> to add one file at a time to the staging area or <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code> to add all files that have been changed since the last commit</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;&lt;descriptive</span> <span class="pre">message&gt;&quot;</span></code> to commit the latest version of file(s) and describe the nature of the changes made</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="using-gitignore">
+<h1>Using <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code><a class="headerlink" href="#using-gitignore" title="Permalink to this headline">¶</a></h1>
+<p>What if we have files that we do not want Git to track for us, like backup files created by our editor or intermediate files created during data analysis? Putting these files under version control would be a waste of disk space. What’s worse, having them all listed could distract us from changes that actually matter, so let’s tell Git to ignore them.</p>
+<p>We do this by creating a file in the root directory (in this case, the <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/</span></code> folder) of our project called .gitignore. We can use two shell commands, either <code class="docutils literal notranslate"><span class="pre">touch</span></code> or <code class="docutils literal notranslate"><span class="pre">nano</span></code> to create the file. If we use <code class="docutils literal notranslate"><span class="pre">nano</span></code>, the file will be created and opened with the nano editor in one step, but since it’s empty and we still need to decide what to list in there, let’s use <code class="docutils literal notranslate"><span class="pre">touch</span></code> to simply create the file. Make sure you are in the <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/</span></code> folder (not any subfolder):</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">world_cities_workshop</span></code></p>
+<p>And then run the command:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">touch</span> <span class="pre">.gitignore</span></code></p>
+<p>If you run <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-a</span></code> now, you should see a new hidden file called <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> in your <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/</span></code> folder.</p>
+<p>We can edit this file with nano and add the names of files or directories that we specifically want git to ignore and NOT track changes to. We don’t need git to track changes to the <code class="docutils literal notranslate"><span class="pre">netherlands-cities.csv</span></code> file in the <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/data/</span></code> folder, so let’s tell git to ignore it. Open up the .gitignore file by running:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">nano</span> <span class="pre">.gitignore</span></code></p>
+<p>You should see a blank text document in your terminal window. We are going to add to it the name of the file we want to ignore, and we also need to specify the folder that it is in. In nano, type:</p>
+<p><code class="docutils literal notranslate"><span class="pre">data/netherlands-cities.csv</span></code></p>
+<p>Then hit shift + control + O to write out, enter to confirm, and shift + control + X to close nano and return to your shell.</p>
+<p>If you now run <code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">.gitignore</span></code> you should see the line you just wrote as the contents of this file. You can also use the .gitignore file to ignore whole folders - for example if you are working with large amounts of data, image files, or other files that are either too large, unchanging, or otherwise not useful to be tracked with Git. You can also ignore all files of a certain type following the same pattern-matching strategy we used to select separate files that ended with <code class="docutils literal notranslate"><span class="pre">*-nl.csv</span></code>, or say, all <code class="docutils literal notranslate"><span class="pre">.jpg</span></code> files.</p>
+<p>Of course, since we created the .gitignore file after our last commit, we’ll need to add it and commit it so that git knows about its existence and can start ignoring things according to the rules we set. We can do this the same way we added and committed changes to any other file, by:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">add</span> <span class="pre">.gitignore</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;added</span> <span class="pre">.gitignore</span> <span class="pre">file</span> <span class="pre">and</span> <span class="pre">ignored</span> <span class="pre">netherlands-cities.csv</span> <span class="pre">file&quot;</span></code></p>
+<p>If you run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> now, you should see the same message that you are on branch “master”, there is nothing to commit, and the working tree is clean.</p>
+</div>
+<div class="section" id="remote-collaboration-on-github">
+<h1>Remote collaboration on GitHub<a class="headerlink" href="#remote-collaboration-on-github" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="relationship-between-local-and-remote-repositories">
+<h2>Relationship between local and remote repositories<a class="headerlink" href="#relationship-between-local-and-remote-repositories" title="Permalink to this headline">¶</a></h2>
+<p>Version control really comes into its own when we begin to collaborate with other people. We already have most of the machinery we need to do this; the only thing missing is to copy changes from one repository to another.</p>
+<p>Systems like Git allow us to move work between any two repositories. In practice, though, it’s easiest to use one copy as a central hub, and to keep it on the web rather than on someone’s laptop. Most programmers use hosting services like GitHub, Bitbucket or GitLab to hold those master copies, which are sometimes referred to as a “single source of truth”.</p>
+<p>Let’s start by sharing the changes we’ve made to our current project with the world. Log in to GitHub, then click on the plus icon in the top right corner to create a new repository. Name your repository “map-<yourcountryname>” and then click “Create Repository”.</p>
+<p><em>Note:</em> Since this repository will be connected to a local repository, it needs to be empty. Leave “Initialize this repository with a README” unchecked, and keep “None” as options for both “Add .gitignore” and “Add a license.”</p>
+</div>
+<div class="section" id="pushing-your-local-repository-to-the-remote-on-github">
+<h2>Pushing your local repository to the remote on GitHub<a class="headerlink" href="#pushing-your-local-repository-to-the-remote-on-github" title="Permalink to this headline">¶</a></h2>
+<p>As soon as the repository is created, GitHub displays a page with a URL and some information on how to configure your local repository. The remote repository appears empty for now because it doesn’t have any files yet - we have to add those by connecting the remote repository to the local one - remember, this is the <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/</span></code> directory on your computer.</p>
+<p>To do that, GitHub already suggests some helpful commands under the heading <strong>“Push an existing repository from the command line”</strong>. You should see some commands that are unique to the remote repository you just created on GitHub, which allow you to do this connection process to your local folder. In your terminal, make sure you are in your <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/</span></code> directory and then run the following command, making sure to replace <url of your project> with (you guessed it) the actual url of your project shown on GitHub*:</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">origin</span> <span class="pre">&lt;url</span> <span class="pre">of</span> <span class="pre">your</span> <span class="pre">project&gt;.git</span></code></p>
+<p>This first command, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">origin</span></code> does the connecting step between your local repository and the remote on GitHub. Remember, we set up the global configuration options so Git already knows that the person requesting this connection be made is you (from your computer).</p>
+<p>The third step uses the git command <code class="docutils literal notranslate"><span class="pre">push</span></code> to move the files tracked by git in your local repository to the remote on GitHub. We have only one branch in this project (“master”), and of course it’s associated with the origin (the remote repository).</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">-u</span> <span class="pre">origin</span> <span class="pre">master</span></code></p>
+<p>This establishes the connection and makes it easy to <code class="docutils literal notranslate"><span class="pre">push</span></code> future local changes made in your local repository to the remote version on GitHub, and also allows you to <code class="docutils literal notranslate"><span class="pre">pull</span></code> changes that are made by you or someone else on GitHub to your local machine. The <code class="docutils literal notranslate"><span class="pre">-u</span></code> option used with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> associates the current branch with a remote branch so that the commands <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> and <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> can be used without any arguments to move changes between the local and remote repositories. Think of it as a two-way street. :)</p>
+<p>*Note: If you have navigated away from the page that displayed immediately after creating the remote repository on GitHub, you can always get back to the url of your project to set up this step by clicking on the green “Code” button near the top right of your screen on the main repository page. When you click there, choose “HTTPS” and copy the contents of the box below. You can use that directly in your commands with git, including when you want to clone someone else’s repository (more on that later).</p>
+</div>
+<div class="section" id="the-difference-between-push-and-commit">
+<h2>The difference between <code class="docutils literal notranslate"><span class="pre">push</span></code> and <code class="docutils literal notranslate"><span class="pre">commit</span></code><a class="headerlink" href="#the-difference-between-push-and-commit" title="Permalink to this headline">¶</a></h2>
+<p>When we push changes, we’re interacting with a remote repository to update it with the changes we’ve made locally (often this corresponds to sharing the changes we’ve made with others). Commit only updates your local repository.</p>
+</div>
+</div>
+<div class="section" id="working-with-others-on-github">
+<h1>Working with others on GitHub<a class="headerlink" href="#working-with-others-on-github" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="cloning-a-repository-from-github">
+<h2>Cloning a repository from GitHub<a class="headerlink" href="#cloning-a-repository-from-github" title="Permalink to this headline">¶</a></h2>
+<p>We set up a repository they can clone, then I make a change. They run git pull and update their local copy. Don’t need to be members to clone. Important to set privacy settings if you don’t want the world to contribute :)</p>
+</div>
+<div class="section" id="creating-a-pull-request">
+<h2>Creating a pull request<a class="headerlink" href="#creating-a-pull-request" title="Permalink to this headline">¶</a></h2>
+<p>Demonstrate but don’t actually do it.</p>
+</div>
+</div>
+<div class="section" id="a-basic-collaborative-workflow">
+<h1>A basic collaborative workflow<a class="headerlink" href="#a-basic-collaborative-workflow" title="Permalink to this headline">¶</a></h1>
+<p>In practice, it is good to be sure that you have an updated version of the repository you are collaborating on, so you should git pull before making our changes. The basic collaborative workflow would be:</p>
+<ol class="simple">
+<li><p>update your local repo with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code></p></li>
+<li><p>make your changes and stage them with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code></p></li>
+<li><p>commit your changes with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span></code>, and</p></li>
+<li><p>upload the changes to GitHub with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code></p></li>
+</ol>
+<p>It is better to make many commits with smaller changes rather than of one commit with massive changes: small commits are easier to read and review.</p>
+</div>
+<div class="section" id="open-science">
+<h1>Open Science<a class="headerlink" href="#open-science" title="Permalink to this headline">¶</a></h1>
+<p>Free sharing of information might be the ideal in science, but the reality is often more complicated. Normal practice today looks something like this:</p>
+<ul class="simple">
+<li><p>A scientist collects some data and stores it on a machine that is occasionally backed up by their department.</p></li>
+<li><p>They then writes or modify a few small programs (which also reside on their machine) to analyze that data.</p></li>
+<li><p>Once they have some results, they write them up and submit their paper. They might include their data – a growing number of journals require this – but they probably don’t include their code.</p></li>
+<li><p>Time passes.</p></li>
+<li><p>The journal sends them reviews written anonymously by a handful of other people in their field. They revise their paper to satisfy them, during which time they might also modify the scripts they wrote earlier, and resubmit.</p></li>
+<li><p>More time passes.</p></li>
+<li><p>The paper is eventually published. It might include a link to an online copy of their data, but the paper itself will be behind a paywall: only people who have personal or institutional access will be able to read it.</p></li>
+</ul>
+<p>For a growing number of scientists, though, the process looks like this:</p>
+<ul class="simple">
+<li><p>The data that the scientist collects is stored in an open access repository like 4TU.ResearchData or Zenodo, possibly as soon as it’s collected, and given its own Digital Object Identifier (DOI).</p></li>
+<li><p>The scientist creates a new repository on GitHub to hold their work.</p></li>
+<li><p>As they do their analysis, they push changes to their scripts (and possibly some output files) to that repository. They also use the repository for their paper; that repository is then the hub for collaboration with their colleagues.</p></li>
+<li><p>When they’re happy with the state of their paper, they post a version to arXiv or some other preprint server to invite feedback from peers.</p></li>
+<li><p>Based on that feedback, they may post several revisions before finally submitting their paper to a journal.</p></li>
+<li><p>The published paper includes links to their preprint and to their code and data repositories, which makes it much easier for other scientists to use their work as starting point for their own research.</p></li>
+</ul>
+<p>This open model accelerates discovery: the more open work is, the more widely it is cited and re-used. However, people who want to work this way need to make some decisions about what exactly “open” means and how to do it. This is one of the (many) reasons we teach version control. When used diligently, it answers the “how” question by acting as a shareable electronic lab notebook for computational work:</p>
+<ul class="simple">
+<li><p>The conceptual stages of your work are documented, including who did what and when. Every step is stamped with an identifier (the commit ID) that is for most intents and purposes unique.</p></li>
+<li><p>You can tie documentation of rationale, ideas, and other intellectual work directly to the changes that spring from them.</p></li>
+<li><p>You can refer to what you used in your research to obtain your computational results in a way that is unique and recoverable.</p></li>
+<li><p>With a version control system such as Git, the entire history of the repository is easy to archive for perpetuity.</p></li>
+</ul>
+<p>At TU Delft, researchers are able to store 1TB/year of data for free on the 4TU.ResearchData data repository. You can organise your work into projects, and even connect your GitHub repository to link processing scripts to data stored in 4TU.ResearchData! For more information, contact ____.</p>
+<p>Interested in learning more about working reproducibly with code and data? Join the Open Science Community Delft! ____ info.</p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Git\Lessons"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book community<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>

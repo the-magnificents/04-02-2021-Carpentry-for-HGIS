@@ -7,43 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creating and navigating files and directories with the Unix Shell (Bash) &#8212; Python essentials for GIS learners</title>
     
-  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
     
   <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     
       
   <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+    href="../../_static/vendor/open-sans_all/1.44.1/index.css">
   <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+    href="../../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../../_static/js/index.3da636dd464baa7582d2.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/language_data.js"></script>
-    <script src="../_static/togglebutton.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
     <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -79,18 +79,16 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script src="../../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Excercise 1" href="../01_Day_1/exercises/01_exercise.html" />
-    <link rel="prev" title="Schedule overview" href="../00_Lesson_prep/Schedule.html" />
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -107,39 +105,32 @@ commentsRunWhenDOMLoaded(addUtterances);
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../index.html">
+<a class="navbar-brand text-wrap" href="../../index.html">
   
-  <img src="../_static/logo.png" class="logo" alt="logo">
+  <img src="../../_static/logo.png" class="logo" alt="logo">
   
   
   <h1 class="site-logo" id="site-title">Python essentials for GIS learners</h1>
   
 </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form>
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../README.html">
-   Python essentials for GIS learners
-  </a>
- </li>
-</ul>
-<p class="caption collapsible-parent">
+    <p class="caption collapsible-parent">
  <span class="caption-text">
   Getting started
  </span>
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../00_Lesson_prep/README.html">
+  <a class="reference internal" href="../../00_Lesson_prep/README.html">
    Preparing for the workshop
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../00_Lesson_prep/Schedule.html">
+  <a class="reference internal" href="../../00_Lesson_prep/Schedule.html">
    Schedule overview
   </a>
  </li>
@@ -149,69 +140,14 @@ commentsRunWhenDOMLoaded(addUtterances);
   Day 1
  </span>
 </p>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Creating and navigating files and directories with the Unix Shell (Bash)
-  </a>
- </li>
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="#setup-requirements">
-   Setup requirements
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#background">
-   Background
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#running-commands">
-   Running commands
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#make-a-workshop-folder-called-world-cities-workshop">
-   Make a workshop folder called
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     world_cities_workshop/
-    </span>
-   </code>
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#moving-files-to-the-project-folder">
-   Moving files to the project folder
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#select-and-concatenate-data-files">
-   Select and concatenate data files
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#introduction-to-python">
-   Introduction to Python
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#expectations-for-day-1">
-   Expectations for Day 1
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#homework-for-day-1-afternoon">
-   Homework for Day 1 (afternoon)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../01_Day_1/exercises/01_exercise.html">
+  <a class="reference internal" href="../../01_Day_1/exercises/01_exercise.html">
    Excercise 1
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../01_Day_1/exercises/02_exercise.html">
+  <a class="reference internal" href="../../01_Day_1/exercises/02_exercise.html">
    Excercise 2
   </a>
  </li>
@@ -223,96 +159,18 @@ commentsRunWhenDOMLoaded(addUtterances);
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../02_Python_Draw_GIS/01_lesson.html">
-   Excercise: Understand someone else’s code (even when you dont know how to program)
+  <a class="reference internal" href="../../02_Python_Draw_GIS/01_lesson.html">
+   Using and reading other people’s code
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../02_Python_Draw_GIS/02_lesson.html">
+  <a class="reference internal" href="../../02_Python_Draw_GIS/02_lesson.html">
    Variables (and constants)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../02_Python_Draw_GIS/03_lesson.html">
+  <a class="reference internal" href="../../02_Python_Draw_GIS/03_lesson.html">
    Go from for loops and while loops to functions
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../02_Python_Draw_GIS/03_lesson.html#knowledge-base-for-instructors-things-i-think-are-interesting-and-important-to-understand">
-   Knowledge base for instructors (Things I think are interesting and important to understand)
-  </a>
- </li>
-</ul>
-<p class="caption collapsible-parent">
- <span class="caption-text">
-  Day 3
- </span>
-</p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Git/git_lesson.html">
-   Version control with Git
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Git/git_lesson.html#setup-requirements">
-   Setup requirements
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Git/git_lesson.html#background">
-   Background
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Git/git_lesson.html#setting-up-git">
-   Setting up Git
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Git/git_lesson.html#make-the-world-cities-workshop-folder-into-a-local-git-repository">
-   Make the
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     world_cities_workshop/
-    </span>
-   </code>
-   folder into a local Git repository
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Git/git_lesson.html#making-a-change-to-a-file">
-   Making a change to a file
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Git/git_lesson.html#using-gitignore">
-   Using
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     .gitignore
-    </span>
-   </code>
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Git/git_lesson.html#remote-collaboration-on-github">
-   Remote collaboration on GitHub
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Git/git_lesson.html#working-with-others-on-github">
-   Working with others on GitHub
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Git/git_lesson.html#a-basic-collaborative-workflow">
-   A basic collaborative workflow
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Git/git_lesson.html#open-science">
-   Open Science
   </a>
  </li>
 </ul>
@@ -323,7 +181,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </p>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="../00_Instructor_notes/README.html">
+  <a class="reference internal" href="../../00_Instructor_notes/README.html">
    Instructor notes
   </a>
  </li>
@@ -367,7 +225,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/Unix_shell/unix_lesson.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/Unix_shell/Lessons/unix_lesson.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -668,7 +526,7 @@ c,NewYorkCity,40.7128,74.0060,8419000</p>
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./Unix_shell"
+            path: "./Unix_shell\Lessons"
         },
         predefinedOutput: true
     }
@@ -683,8 +541,6 @@ c,NewYorkCity,40.7128,74.0060,8419000</p>
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../00_Lesson_prep/Schedule.html" title="previous page">Schedule overview</a>
-    <a class='right-next' id="next-link" href="../01_Day_1/exercises/01_exercise.html" title="next page">Excercise 1</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
@@ -704,7 +560,7 @@ c,NewYorkCity,40.7128,74.0060,8419000</p>
     </div>
 
     
-  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="../../_static/js/index.3da636dd464baa7582d2.js"></script>
 
 
     
