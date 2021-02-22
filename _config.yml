@@ -6,8 +6,12 @@ execute:
 
 only_build_toc_files: true
 
+exclude_patterns: [02_Python_Draw_GIS/code/** images/**.*,./**/*.py, ./**/*.jpg ]
+
 
 html:
   comments:
     utterances:
       repo: "the-magnificents/04-02-2021-Carpentry-for-HGIS" 
+  
+  home_page_in_navbar: false
