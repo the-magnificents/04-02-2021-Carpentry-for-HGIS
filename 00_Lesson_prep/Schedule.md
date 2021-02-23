@@ -36,10 +36,10 @@ Exercises (4 hours)
 
 **Morning session**
 
-1. Data analysis and visualisation with pandas and matplotlib (1.5 hrs)
+1. Version control with Git (1hr 15 mins)
 
-2. Version control with Git (1hr 15 mins)
+2. Remote collaboration on GitHub (1 hour)
 
-3. Resources for continued learning (15 mins)
+3. Wrap up and resources for continued learning (15 mins)
 
 
