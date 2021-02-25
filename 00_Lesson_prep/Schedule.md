@@ -4,35 +4,37 @@
 
 **Morning session**
 
-1. Introduction to Workshop and orienting participants with setup (30 mins) 
-- show how to write questions in issues on website and explanation not to use comments "live"
-- introduce ourselves and icebreaker in comments
+1. Workshop introduction (30 mins) 
+- Instructor introductions and the goals of this workshop
+- How to use the website to interact and ask questions 
+- Icebreaker activity
 
-2. Unix Shell (1.5 hours)
+2. Navigating files with the Unix Shell (1.5 hours)
+- Introduction to the Bash scripting language
+- Creating directories using the command line
+- Name pattern matching to select, move and concatenate data files
 
 3. Getting started with Python (1 hour)
-- Working with an editor
-- Run a script
-- write variables
+- Working with a Python interpreter
+- Running a script
+- Creating your own variables
 
 **Afternoon session - independent exercises**
 
-Exercises (4 hours)
-Population data creation 
+Exercises (max 4 hours)
+- Links to B0-B3 exercises
 
 ## Day 2: Python Essentials 
 
 **Morning session**
 
-1. (maybe) Reflection on exercises from Day 1
-
-- introduce launching and working with jupyterlab 
+1. Working with Jupyter Lab 
 
 **Afternoon session - independent exercises**
 
 Exercises (4 hours)
 
-## Day 3: Basic data analysis with Python (Jupyter Notebooks?) and Version control with Git
+## Day 3: Version control and remote collaboration on code
 
 **Morning session**
 
