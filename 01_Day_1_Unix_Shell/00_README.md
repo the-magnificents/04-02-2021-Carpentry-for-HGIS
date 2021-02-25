@@ -1,6 +1,6 @@
 # Day 1: Introduction to the Unix Shell and basic setup of Python
 
-## Intro to creating and navigating files and directories with the Unix Shell (Bash)
+## Creating and navigating files and directories with the Unix Shell (Bash)
 
 This lesson is an introduction to using the Unix shell and the Bash scripting language to create and navigate through files and directories (folders) on your local computer. It is an alternative to "clicking" and provides some significant advantages in documenting processes, automating tasks, and enabling reproducible workflows.
 
