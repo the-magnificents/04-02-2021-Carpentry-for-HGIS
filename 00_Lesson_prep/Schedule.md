@@ -61,4 +61,9 @@ Exercises (4 hours)
 
 4. Wrap up and resources for continued learning (15 mins)
 
+**Afternoon session - independent exercises**
+
+Following the last day of teaching, we recommend continuing to see if you can complete the remainder of the exercises on the [Gizmo repository](https://github.com/wmvanvliet/gizmo). Time to test your learning and level up! :) 
+
+
 
