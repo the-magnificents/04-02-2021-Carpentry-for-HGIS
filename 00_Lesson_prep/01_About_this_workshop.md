@@ -1,7 +1,7 @@
 # General considerations for this workshop
 Learning how to program and how to use programming in your research field requires practice and exercise like almost everything 😇.
 
-**This workshop is composed of two complementary and important sessions**. During the morning sessions we provide guidance, examples and space for discussion; and during the afternoon sessions you are required to practice and apply the concepts and knowledge provided with step-by-step exercises.
+**This workshop is composed of two complementary and important sessions**. During the morning sessions we provide guidance, examples and space for discussion; and during the afternoon sessions you are required to practice and apply the concepts and knowledge provided with step-by-step exercises. Your instructors will be available and ready to answer questions if you need help, but you should really try to do these on your own (see below for some tips).
 
 ## Participation guidelines
 We have carefully curated and provided exercises with different levels of complexity. We hope that the initial exercises will help you to build confidence and skills to carry on with more advanced ones.
