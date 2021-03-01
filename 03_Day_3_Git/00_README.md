@@ -14,7 +14,9 @@ Collaborative writing or scripting with traditional word processors and text edi
 
 Some word processors let us deal with this a little better, such as Microsoft Word’s Track Changes, Google Docs’ version history, but they lack a streamlined way to customise messages about changes made and store just one latest version of the file for everyone working on it. It seems ridiculous to have multiple nearly-identical versions of the same document that we keep passing back and forth to create something whole. The result is a lot of files with names like Final_paper_EDIT01.doc or Final_paper_EDITCOMMITTEE03.doc and so on...it can get messy trying to merge suggestions and changes made by multiple people in multiple documents, sent over email...I'm sure we all know the headache!
 
-Using Git with a remote platform like GitUnless multiple users make changes to the same section of the document - a conflict - you can incorporate two sets of changes into the same base document.
+When using a remote collaboration like Git Hub, unless multiple users make changes to the same section of the document - a conflict - you can incorporate two sets of changes into the same base document.
+
+From [GitHub Guides](https://guides.github.com/activities/hello-world/): "GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere." GitHub hosts code and all files for each project in a **repository**, sometimes shortened to "repo". A repository on GitHub is free to create, you can add contributing members and collaborators with different permission settings as you please, and you can access it with a unique URL.
 
 ## Individual work
 Teams are not the only ones to benefit from version control: lone researchers can benefit immensely. Keeping a record of what was changed, when, and why is extremely useful for all researchers if they ever need to come back to the project later on (e.g., a year later, when memory has faded).
