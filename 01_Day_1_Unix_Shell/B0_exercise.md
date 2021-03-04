@@ -1,4 +1,6 @@
-## Select and concatenate data files
+## Exercise 1
+
+### Select and concatenate data files
 
 In Bash, `*` is a wildcard, which matches zero or more characters. When the shell sees a wildcard, it expands the wildcard to create a list of matching filenames before running the command that was asked for. As an exception, if a wildcard expression does not match any file, Bash will pass the expression as an argument to the command as it is. For example typing `ls *.pdf` in the `cities_data/` directory (which does not contains any pdf files) results in an error message that there is no file called `*.pdf`. 
 
