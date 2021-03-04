@@ -1,5 +1,7 @@
 ## Select and concatenate data files
 
+In Bash, `*` is a wildcard, which matches zero or more characters. Let’s consider the `workshop_data/` directory. All the .csv files follow a naming convention that goes `<cityname>-<countryabbreviation>.csv`. `*.csv` matches amsterdam-nl.csv, eindhoven-nl.csv and every file that ends with ‘.csv’. On the other hand, `n*.csv` only matches newyorkcity.csv because the ‘n’ at the front only matches filenames that begin with the letter ‘n’.
+
 The data we want to use are contained in multiple files located in the workshop_data/ folder that we sent out prior to this workshop. Let's take a look at the contents of that folder by navigating there in the shell. If you are in your `cities_data/` folder, you can use a special notation that means "move up one level": Right now, the data are each stored in separate files per city. That might be helpful for some applications, but we want a list of data in one .csv file. We can do this on the command line by using a combination of the `awk` command (used for pattern scanning and processing) and `>`, which concatenates the contents of multiple files to a new file that in this case we will call `netherlands-cities.csv`.
 
 We can use the wildcard `*` to grab all the .csv files this time in the `cities_data` folder. We want to concatenate all files related to cities in the Netherlands, so we should use `*-nl.csv` to match all the files in that directory.
