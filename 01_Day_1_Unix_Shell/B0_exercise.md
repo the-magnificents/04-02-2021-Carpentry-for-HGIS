@@ -6,7 +6,7 @@ In Bash, `*` is a wildcard, which matches zero or more characters. When the sh
 
 Here's how the wildcard works in practice: `*.csv` matches amsterdam-nl.csv, eindhoven-nl.csv and every file that ends with ‘.csv’. On the other hand, `n*.csv` only matches newyorkcity-us.csv because the ‘n’ at the front only matches filenames that begin with the letter ‘n’.
 
-```{admonition} Exercise: Select and concatenate data files
+```{admonition} Exercise: Explore data files
  Take a look at the contents of the `cities_data/` directory. Use `ls` and `cat` to inspect the names, file extensions and contents of the files. What patterns and information do you see? **Tip:** you can write your observations in comments section of the workshop website, and see what others observed! :) 
 ```
 
