@@ -6,19 +6,21 @@ sections:
   - file: 00_Lesson_prep/Schedule
 - file: 01_Day_1_Unix_Shell/00_README
   sections:
-  - file: 01_Day_1_Unix_Shell/A0_unix_lesson_intro
   - file: 01_Day_1_Unix_Shell/A1_unix_lesson1
   - file: 01_Day_1_Unix_Shell/A2_unix_lesson2
   - file: 01_Day_1_Unix_Shell/A3_unix_lesson3
-  - file: 01_Day_1_Unix_Shell/B0_generate_country_data_exercise copy
+  - file: 01_Day_1_Unix_Shell/B0_exercise
   - file: 01_Day_1_Unix_Shell/B1_exercise
-  - file: 01_Day_1_Unix_Shell/B2_exercise
-  - file: 01_Day_1_Unix_Shell/B3_exercise
-  - file: 01_Day_1_Unix_Shell/C1_Excercises_notes
-  - file: 01_Day_1_Unix_Shell/C2_Iterators&Generators
-  - file: 01_Day_1_Unix_Shell/C2_Iterators
-  - file: 01_Day_1_Unix_Shell/C3_Pythonic_
-  - file: 01_Day_1_Unix_Shell/C3_Testing_Carpentry_Lesson
+  - file: 01_Day_1_Unix_Shell/lesson_notes/C1_Excercises_notes
+    sections:
+    - file: 01_Day_1_Unix_Shell/lesson_notes/C2_Iterators&Generators
+    - file: 01_Day_1_Unix_Shell/lesson_notes/C2_Iterators
+    - file: 01_Day_1_Unix_Shell/lesson_notes/C3_Pythonic_
+    - file: 01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson
+  - file: 01_Day_1_Unix_Shell/old_exercises/B1_exercise
+    sections:
+    - file: 01_Day_1_Unix_Shell/old_exercises/B2_exercise
+    - file: 01_Day_1_Unix_Shell/old_exercises/B3_exercise
 - file: 02_Python_Draw_GIS/00_README
   sections:
   - file: 02_Python_Draw_GIS/01_lesson
