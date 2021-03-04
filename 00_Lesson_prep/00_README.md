@@ -16,19 +16,14 @@ If you have any questions about these steps before the workshop, please reach ou
 
 ### Learning objectives 
 
-### Expectations for Day 1
-
-At the end of the morning teaching session on Day 1 each student should have a project folder called `world_cities_workshop/` that contains three subfolders, `data/`, `scripts/`, and `documents/`. In the `data/` folder should be one .csv file called `netherlands-cities.csv` containing population data and coordinates for the 5 largest cities in the Netherlands. The `scripts/` folder should have one script called `map.py` that was provided at the start of the workshop, and the `documents/` folder should have one text file called `data-documentation.txt`.
 
 ## Day 2
 
 ### Learning objectives
 
-### Expectations for Day 2
 
 
 ## Day 3
 
 ### Learning objectives
 
-### Expectations for Day 3
