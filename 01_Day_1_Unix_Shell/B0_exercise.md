@@ -1,14 +1,14 @@
 ## Select and concatenate data files
 
-Right now, the data are each stored in separate files per city. That might be helpful for some applications, but we want a list of data in one .csv file. We can do this on the command line by using a combination of the `awk` command (used for pattern scanning and processing) and `>`, which concatenates the contents of multiple files to a new file that in this case we will call `netherlands-cities.csv`.
+The data we want to use are contained in multiple files located in the workshop_data/ folder that we sent out prior to this workshop. Let's take a look at the contents of that folder by navigating there in the shell. If you are in your `cities_data/` folder, you can use a special notation that means "move up one level": Right now, the data are each stored in separate files per city. That might be helpful for some applications, but we want a list of data in one .csv file. We can do this on the command line by using a combination of the `awk` command (used for pattern scanning and processing) and `>`, which concatenates the contents of multiple files to a new file that in this case we will call `netherlands-cities.csv`.
 
-We can use the wildcard `*` again to grab all the .csv files this time in the `world_cities_workshop/data/` folder. We already know that these are all related to cities in the Netherlands, so we can use purely `*.csv` to match all the files in that directory.
+We can use the wildcard `*` to grab all the .csv files this time in the `cities_data` folder. We want to concatenate all files related to cities in the Netherlands, so we should use `*-nl.csv` to match all the files in that directory.
 
-`$ awk 1 *.csv > netherlands-cities.csv`
+`$ awk 1 *-nl.csv > netherlands-cities.csv`
 
-This will save a new file called `netherlands-cities.csv` in the `data/` folder and automatically create a new line between each city. Check to see if it's there! You can use `ls` to see the files in the `data/` folder, and `cat` to check out the contents of the newly created `netherlands-cities.csv`.
+This will save a new file called `netherlands-cities.csv` in the `cities_data/` folder and automatically create a new line between each city. Check to see if it's there! You can use `ls` to see the files in the `data/` folder, and `cat` to check out the contents of the newly created `netherlands-cities.csv`.
 
-`$ cd data`
+`$ cd cities_data/`
 `$ ls`
 `$ cat netherlands-cities.csv`
 
@@ -26,7 +26,7 @@ Let's open the netherlands-cities.csv file to add some road data that we will 
 
 Unlike using the `cat` command, nano opens the file contents in a new interface with a black bar at the top and some options at the bottom. Also new is that you can edit the contents of a file and save or 'write out' the file afterward. This is what we'll do now. Note that you can use your arrow keys to navigate the file to make changes, as clicking and inserting is not an option.
 
-Let's add the following lines to the netherlands-cities.csv file:
+Add a few lines to the netherlands-cities.csv file:
 
 c,cityname,____
 
