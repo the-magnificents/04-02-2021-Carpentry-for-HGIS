@@ -1,0 +1,1 @@
+[**Python for Business/Introduction to Python**](https://carpentries-incubator.github.io/python-business/01-intro/index.html). This one makes a very strong case for programming in the context of none "technical disciplines"

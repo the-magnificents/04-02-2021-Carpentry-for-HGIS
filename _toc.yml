@@ -13,12 +13,18 @@ sections:
   - file: 01_Day_1_Unix_Shell/B0_generate_country_data_exercise copy
   - file: 01_Day_1_Unix_Shell/B1_exercise
   - file: 01_Day_1_Unix_Shell/B2_exercise
-  - file: 01_Day_1_Unix_Shell/B4_exercise
+  - file: 01_Day_1_Unix_Shell/B3_exercise
+  - file: 01_Day_1_Unix_Shell/C1_Excercises_notes
+  - file: 01_Day_1_Unix_Shell/C2_Iterators&Generators
+  - file: 01_Day_1_Unix_Shell/C2_Iterators
+  - file: 01_Day_1_Unix_Shell/C3_Pythonic_
+  - file: 01_Day_1_Unix_Shell/C3_Testing_Carpentry_Lesson
 - file: 02_Python_Draw_GIS/00_README
   sections:
   - file: 02_Python_Draw_GIS/01_lesson
   - file: 02_Python_Draw_GIS/02_lesson
   - file: 02_Python_Draw_GIS/03_lesson
+  - file: 02_Python_Draw_GIS/C1_Python_Standard_Library
   - file: 02_Python_Draw_GIS/code/city
     sections:
     - file: 02_Python_Draw_GIS/code/map
@@ -35,6 +41,7 @@ sections:
 - file: Instructor_notes/00_README
   sections:
   - file: Instructor_notes/01_Notes_From_DH_context
+  - file: Instructor_notes/02_References
   - file: Instructor_notes/git_instructor_notes
   - file: Instructor_notes/open_science_instructor_notes
   - file: Instructor_notes/python_instructor_notes
