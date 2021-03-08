@@ -22,6 +22,10 @@ sections:
     - file: 02_Python_Draw_GIS/code/polygon
     - file: 02_Python_Draw_GIS/code/simple_GIS
     - file: 02_Python_Draw_GIS/code/test_polygon
+- file: 02_Day_2_QGIS/00_README.md
+  sections:
+  - file: 02_Day_2_QGIS/A1_qgis_lesson1
+  - file: 02_Day_2_QGIS/B0_exercise1_qgis
 - file: 03_Day_3_Git/00_README
   sections:
   - file: 03_Day_3_Git/00_README
