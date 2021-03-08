@@ -1,4 +1,4 @@
-# Exercise 1
+# Work with the bash shell
 
 ### Select and concatenate data files
 
