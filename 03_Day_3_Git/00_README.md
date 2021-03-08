@@ -1,4 +1,4 @@
-# Day 3: Working with remote repositories on GitHub and version control with Git
+# Day 3: Social coding on GitHub and version control with Git
 
 This lesson is focused on understanding and implementing version control with Git to keep track of changes to a code-based project. We'll talk about the utility of version control systems for tracking changes to local projects, and how it can be used to enable remote collaboration and crediting of multiple authors to a project hosted in a remote repository like GitHub. This material draws from the [Version Control with Git](https://swcarpentry.github.io/git-novice/) lesson from the Software Carpentries. It uses the [Gizmo repository](https://github.com/wmvanvliet/gizmo) from wmvanvliet on GitHub as a basis for Python challenges and to illustrate a track changes workflow.
 

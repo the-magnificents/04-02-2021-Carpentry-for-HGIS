@@ -1,4 +1,4 @@
-# Day 1: Introduction to the Unix Shell and basic setup of Python
+# Day 1: Introduction to Unix Shell, Python and Jupyter Lab
 
 ## Creating and navigating files and directories with the Unix Shell (Bash)
 
