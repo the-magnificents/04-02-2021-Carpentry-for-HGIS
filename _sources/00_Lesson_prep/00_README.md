@@ -1,43 +1,29 @@
 # Preparing for the workshop
-Here we put prerequisites for the workshop
-As well as the learning objectives 
+During this workshop, we will be working with some tools and programs that will need to be installed before we begin. The checklist below should be completed prior to Day 1 of the workshop in order to be ready to go :) 
 
-## Checklist
-- Tell participants to make a github account
-- Windows users download and install GitBash
-- Mac users download and install git
-- All: download and install Anaconda
+## Pre-workshop Checklist
+*all of these steps should be taken before Day 1 starts. These programs and files will be all we need to complete all three days of the workshop*
 
+- Take the [pre-workshop survey](https://tudelft.fra1.qualtrics.com/jfe/form/SV_3jxek8fPH8Ma7Fc) to let us know more about you and your learning goals!
+- (Windows users) download and install Git for Windows following the instructions [here](https://carpentries.github.io/workshop-template/#shell).
+- (Mac users) Download and install Git for Mac following the instructions [here](https://carpentries.github.io/workshop-template/#git) 
+- Download and install Anaconda (an all-in-one installer for Python and Jupyter notebooks which we will be using throughout the workshop) following the instructions [here](https://carpentries.github.io/workshop-template/#python)
+- Download the 'workshop_data/' folder from the link we provided and save it to your Desktop with the same name. 
+
+If you have any questions about these steps before the workshop, please reach out to Ashley (a.e.cryan@tudelft.nl) and Jose (j.c.urrallanusa@tudelft.nl) before we get started!
 
 ## Day 1
 
-If you are running Windows, you will need to install Git for Windows following the instructions [here](https://carpentries.github.io/workshop-template/#shell). *Participants should install Git/Gitbash before day 1*
+### Learning objectives 
 
-The default shell in some versions of macOS is Bash, and Bash is available in all versions, so no need to install anything. You access Bash from the Terminal. The easiest way to find it is by using the magnifying glass symbol at the top right corner of your page and search "Terminal". You should open it up and it's a good idea to right click the icon at the bottom of your screen and choose Options > Keep in Dock.
-
-### Data and code for Day 1
-Before today's workshop, we sent out a link to a folder called `workshop_data/` that you should have downloaded. You should save these files exactly as they are in a folder on your Desktop called `workshop_data/`.
-
-### Expectations for Day 1
-
-At the end of the teaching day 1 each student should have a project folder called `world_cities_workshop/` that contains three subfolders, `data/`, `scripts/`, and `documents/`. In the `data/` folder should be one .csv file called `netherlands-cities.csv` containing population data and coordinates for the 5 largest cities in the Netherlands. The `scripts/` folder should have one script called `map.py` that was provided at the start of the workshop, and the `documents/` folder should have one text file called `data-documentation.txt`.
 
 ## Day 2
 
-### Data and code for Day 2
+### Learning objectives
 
-### Expectations for Day 2
 
 
 ## Day 3
 
-For Windows users, Git should be installed already on your computer as part of your Bash install from Day 1. 
+### Learning objectives
 
-Mac users need to install Git for Mac by downloading and running the most recent "mavericks" installer from [this list on Sourceforge.net](https://sourceforge.net/projects/git-osx-installer/files/). Because this installer is not signed by the developer, you may have to right click (control click) on the .pkg file, click Open, and click Open on the pop up window. After installing Git, there will not be anything in your /Applications folder, as Git is a command line program. *Participants should install Git before Day 3*
-
-More detailed instructions and videos are available here: https://carpentries.github.io/workshop-template/#git
-
-### Data and code for Day 3
-We will continue to use the data from Day 2 on cities etc. _____
-
-### Expectations for Day 3

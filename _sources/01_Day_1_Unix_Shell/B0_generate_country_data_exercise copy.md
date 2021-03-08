@@ -1,4 +1,4 @@
-# Exercise (data generation)
+# Exercise 1
 
 ## Generating country population data
 

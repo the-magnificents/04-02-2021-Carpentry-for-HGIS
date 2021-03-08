@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Select, concatenate and add custom data to .csv files &#8212; Python essentials for GIS learners</title>
+    <title>&lt;no title&gt; &#8212; Python essentials for GIS learners</title>
     
   <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -89,7 +89,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Exercise (data generation)" href="B0_generate_country_data_exercise copy.html" />
+    <link rel="next" title="Select and concatenate data files" href="B0_exercise.html" />
     <link rel="prev" title="Move data and script files to the project folder" href="A2_unix_lesson2.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -120,7 +120,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form>
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="current nav sidenav_l1">
+    <ul class="nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../00_Lesson_prep/00_README.html">
    Preparing for the workshop
@@ -140,16 +140,11 @@ commentsRunWhenDOMLoaded(addUtterances);
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 current active collapsible-parent">
+ <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="00_README.html">
-   Day 1
+   Day 1: Introduction to the Unix Shell and basic setup of Python
   </a>
-  <ul class="current collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="A0_unix_lesson_intro.html">
-     Day 1: Unix Shell
-    </a>
-   </li>
+  <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="A1_unix_lesson1.html">
      Create a new project directory and subdirectories for data and code
@@ -160,30 +155,256 @@ commentsRunWhenDOMLoaded(addUtterances);
      Move data and script files to the project folder
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Select, concatenate and add custom data to .csv files
+   <li class="toctree-l2">
+    <a class="reference internal" href="B0_exercise.html">
+     Select and concatenate data files
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="B0_generate_country_data_exercise copy.html">
-     Exercise (data generation)
+    <a class="reference internal" href="B0_exercise.html#add-data-to-netherlands-cities-csv">
+     Add data to
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       netherlands-cities.csv
+      </span>
+     </code>
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="B1_exercise.html">
-     Excercise 1
+     Getting Started with JupyterLab
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="B2_exercise.html">
+    <a class="reference internal" href="B1_exercise.html#jupyterlab-what-about-jupyter-notebooks">
+     JupyterLab? What about Jupyter notebooks?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="B1_exercise.html#starting-jupyterlab">
+     Starting JupyterLab
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="B1_exercise.html#the-jupyterlab-interface">
+     The JupyterLab Interface
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="B1_exercise.html#creating-a-python-script">
+     Creating a Python script
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="B1_exercise.html#creating-a-jupyter-notebook">
+     Creating a Jupyter Notebook
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="B1_exercise.html#how-it-s-stored">
+     How It’s Stored
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="B1_exercise.html#arranging-documents-into-panels-of-tabs">
+     Arranging Documents into Panels of Tabs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="B1_exercise.html#solution">
+     Solution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="B1_exercise.html#use-the-jupyter-notebook-for-editing-and-running-python">
+     Use the Jupyter Notebook for editing and running Python.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="B1_exercise.html#code-vs-text">
+     Code vs. Text
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="B1_exercise.html#the-notebook-has-command-and-edit-modes">
+     The Notebook has Command and Edit modes.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="B1_exercise.html#command-vs-edit">
+     Command Vs. Edit
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="B1_exercise.html#id1">
+     Solution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="B1_exercise.html#a-level-1-heading">
+     A Level-1 Heading
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C2_Iterators&amp;Generators.html">
+     Iterators and iterables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C2_Iterators.html">
+     Iterators and iterables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Pythonic_.html">
+     None pythonic example
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Pythonic_.html#the-pythonic-example">
+     The pythonic example
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html">
+     Use variables to store values.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#use-print-to-display-values">
+     Use
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       print
+      </span>
+     </code>
+     to display values.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-must-be-created-before-they-are-used">
+     Variables must be created before they are used.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-persist-between-cells">
+     Variables Persist Between Cells
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-can-be-used-in-calculations">
+     Variables can be used in calculations.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#use-an-index-to-get-a-single-character-from-a-string">
+     Use an index to get a single character from a string.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#use-a-slice-to-get-a-substring">
+     Use a slice to get a substring.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#use-the-built-in-function-len-to-find-the-length-of-a-string">
+     Use the built-in function
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       len
+      </span>
+     </code>
+     to find the length of a string.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#python-is-case-sensitive">
+     Python is case-sensitive.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#use-meaningful-variable-names">
+     Use meaningful variable names.
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#swapping-values">
+     Swapping Values
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#solution">
+     Solution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#predicting-values">
+     Predicting Values
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#id1">
+     Solution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#challenge">
+     Challenge
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#id2">
+     Solution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#choosing-a-name">
+     Choosing a Name
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#id3">
+     Solution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#slicing-practice">
+     Slicing practice
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#id4">
+     Solution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#slicing-concepts">
+     Slicing concepts
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#solutions">
+     Solutions
+    </a>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="old_exercises/B1_exercise.html">
      Excercise 2
     </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="B4_exercise.html">
-     Exercise 4
-    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="old_exercises/B2_exercise.html">
+       Excercise 2
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="old_exercises/B3_exercise.html">
+       Exercise 3
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
    </li>
   </ul>
   <i class="fas fa-chevron-down">
@@ -209,38 +430,43 @@ commentsRunWhenDOMLoaded(addUtterances);
      Go from for loops and while loops to functions
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Python_Draw_GIS/C1_Python_Standard_Library.html">
+     Python standard libraries
+    </a>
+   </li>
   </ul>
   <i class="fas fa-chevron-down">
   </i>
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../03_Day_3_Git/00_README.html">
-   Day 3
+   Day 3: Working with remote repositories on GitHub and version control with Git
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../03_Day_3_Git/A1_git_lesson_intro.html">
-     Version control with Git
+    <a class="reference internal" href="../03_Day_3_Git/A1_git_lesson1.html">
+     Fork and clone a repository from GitHub
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../03_Day_3_Git/A2_git_lesson1.html">
-     Set up and initialise a local Git repository
+    <a class="reference internal" href="../03_Day_3_Git/A2_git_lesson2.html">
+     Create a new branch and gizmo.py file
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../03_Day_3_Git/A3_git_lesson2.html">
-     Making a change to a file
+    <a class="reference internal" href="../03_Day_3_Git/A3_git_lesson3.html">
+     Add and commit changes to local git repository
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../03_Day_3_Git/A4_git_lesson3.html">
-     Ignoring things in Git
+    <a class="reference internal" href="../03_Day_3_Git/A4_git_lesson4.html">
+     Push changes to remote repository in GitHub
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../03_Day_3_Git/A5_git_lesson4.html">
-     Remote collaboration on GitHub
+    <a class="reference internal" href="../03_Day_3_Git/A5_git_lesson5.html">
+     Test your answers to Python challenges
     </a>
    </li>
   </ul>
@@ -259,68 +485,7 @@ commentsRunWhenDOMLoaded(addUtterances);
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html">
-     Version control with Git
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#setup-requirements">
-     Setup requirements
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#background">
-     Background
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#setting-up-git">
-     Setting up Git
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#make-the-world-cities-workshop-folder-into-a-local-git-repository">
-     Make the
-     <code class="docutils literal notranslate">
-      <span class="pre">
-       world_cities_workshop/
-      </span>
-     </code>
-     folder into a local Git repository
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#making-a-change-to-a-file">
-     Making a change to a file
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#using-gitignore">
-     Using
-     <code class="docutils literal notranslate">
-      <span class="pre">
-       .gitignore
-      </span>
-     </code>
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#remote-collaboration-on-github">
-     Remote collaboration on GitHub
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#working-with-others-on-github">
-     Working with others on GitHub
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#a-basic-collaborative-workflow">
-     A basic collaborative workflow
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html#open-science">
-     Open Science
+     Version control and remote collaboration with Git and GitHub
     </a>
    </li>
    <li class="toctree-l2">
@@ -411,17 +576,7 @@ commentsRunWhenDOMLoaded(addUtterances);
             <i class="fas fa-list"></i> Contents
         </div>
         <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#add-road-data-to-netherlands-cities-csv">
-   Add road data to
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     netherlands-cities.csv
-    </span>
-   </code>
-  </a>
- </li>
+            <ul class="simple nav section-nav flex-column">
 </ul>
 
         </nav>
@@ -433,30 +588,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  <div class="section" id="select-concatenate-and-add-custom-data-to-csv-files">
-<h1>Select, concatenate and add custom data to .csv files<a class="headerlink" href="#select-concatenate-and-add-custom-data-to-csv-files" title="Permalink to this headline">¶</a></h1>
-<ol class="simple">
-<li><p>Make sure you are in the <code class="docutils literal notranslate"><span class="pre">data/</span></code> directory: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">data</span></code></p></li>
-<li><p>Concatenate Netherlands data in one .csv file: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">awk</span> <span class="pre">1</span> <span class="pre">*.csv</span> <span class="pre">&gt;</span> <span class="pre">netherlands-cities.csv</span></code></p></li>
-<li><p>Use <code class="docutils literal notranslate"><span class="pre">ls</span></code> to see the files in the <code class="docutils literal notranslate"><span class="pre">data/</span></code> folder: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">ls</span></code></p></li>
-<li><p>Use <code class="docutils literal notranslate"><span class="pre">cat</span></code> to check out the contents of the newly created <code class="docutils literal notranslate"><span class="pre">netherlands-cities.csv</span></code>: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cat</span> <span class="pre">netherlands-cities.csv</span></code></p></li>
-</ol>
-<div class="section" id="add-road-data-to-netherlands-cities-csv">
-<h2>Add road data to <code class="docutils literal notranslate"><span class="pre">netherlands-cities.csv</span></code><a class="headerlink" href="#add-road-data-to-netherlands-cities-csv" title="Permalink to this headline">¶</a></h2>
-<ol>
-<li><p>Open the <code class="docutils literal notranslate"><span class="pre">netherlands-cities.csv</span></code> file with nano: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">nano</span> <span class="pre">netherlands-cities.csv</span></code></p></li>
-<li><p>Add the following lines to the netherlands-cities.csv file:</p>
-<p>r,Amsterdam,Rotterdam</p>
-<p>r,Rotterdam,Utrecht</p>
-<p>r,Amsterdam,Utrecht</p>
-<p>r,The-Hague,Rotterdam</p>
-</li>
-<li><p>Press shift + control + O to “WriteOut” the file (save it). Nano will ask you if you want to save this file with the same name, and we do, so press enter. You can then press shift + control + X to exit the Nano text editor and get back to your bash shell.</p></li>
-</ol>
-<p>Check out the contents of your file to see that it has been updated: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cat</span> <span class="pre">netherlands-cities.csv</span></code></p>
-</div>
-</div>
-
+  
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -486,7 +618,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="A2_unix_lesson2.html" title="previous page">Move data and script files to the project folder</a>
-    <a class='right-next' id="next-link" href="B0_generate_country_data_exercise copy.html" title="next page">Exercise (data generation)</a>
+    <a class='right-next' id="next-link" href="B0_exercise.html" title="next page">Select and concatenate data files</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

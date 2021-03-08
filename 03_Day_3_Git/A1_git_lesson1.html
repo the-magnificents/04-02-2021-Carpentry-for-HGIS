@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 visuals/information (maybe slides): &#8212; Python essentials for GIS learners</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "the-magnificents/04-02-2021-Carpentry-for-HGIS");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Instructor notes" href="../Instructor_notes/00_README.html" />
+    <link rel="prev" title="Day 3: Social coding on GitHub and version control with Git" href="00_README.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Python essentials for GIS learners</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="current nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../00_Lesson_prep/00_README.html">
+   Preparing for the workshop
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../00_Lesson_prep/01_About_this_workshop.html">
+     General considerations for this workshop
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../00_Lesson_prep/Schedule.html">
+     Schedule overview
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../01_Day_1_Unix_Shell/00_README.html">
+   Day 1: Introduction to Unix Shell, Python and Jupyter Lab
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/A1_unix_lesson1.html">
+     Day 1 visuals/information to add (maybe slides):
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/A2_Runing_quiting.html">
+     Getting Started with JupyterLab
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/B1_exercise.html">
+     Exercise 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/B2_Exercise.html">
+     Excercise variables, values, inputs, outputs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/B3_Exercise.html">
+     Exercise types and built-in functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/B4_Exercise.html">
+     Built-in Functions and Help
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/B5_Exercise.html">
+     Working with libraries
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../02_Day_2_QGIS/00_README.html">
+   Working with the Python console in QGIS
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Day_2_QGIS/A1_qgis_lesson1.html">
+     Programmatically access the attributes of international airports
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Day_2_QGIS/B0_exercise1_qgis.html">
+     Exercise 1: Running someone else’s Python script
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../02_Python_Draw_GIS/00_README.html">
+   Day 2
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Python_Draw_GIS/01_lesson.html">
+     Using and reading other people’s code
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Python_Draw_GIS/02_lesson.html">
+     Variables (and constants)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Python_Draw_GIS/03_lesson.html">
+     Go from for loops and while loops to functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Python_Draw_GIS/C1_Python_Standard_Library.html">
+     Python standard libraries
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="00_README.html">
+   Day 3: Social coding on GitHub and version control with Git
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Day 3 visuals/information (maybe slides):
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../Instructor_notes/00_README.html">
+   Instructor notes
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/01_Notes_From_DH_context.html">
+     Guide to programing with Python for the Digital Humanities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html">
+     Instructor Notes: Python Essentials for GIS Learners Day 3
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/open_science_instructor_notes.html">
+     Open Science
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/python_instructor_notes.html">
+     About these instructor notes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/unix_instructor_notes.html">
+     Instructor Notes: Python Essentials for GIS Learners Day 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/03_Day_3_Git/A1_git_lesson1.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="day-3-visuals-information-maybe-slides">
+<h1>Day 3 visuals/information (maybe slides):<a class="headerlink" href="#day-3-visuals-information-maybe-slides" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Why and when do you fork a repository on GitHub? From <a class="reference external" href="https://guides.github.com/activities/forking/#:~:text=After%20using%20GitHub%20by%20yourself,contribute%20to%20someone%20else%27s%20project.&amp;text=Creating%20a%20%E2%80%9Cfork%E2%80%9D%20is%20producing,repository%20and%20your%20personal%20copy.">GitHub Guides</a>: “After using GitHub by yourself for a while, you may find yourself wanting to contribute to someone else’s project. Or maybe you’d like to use someone’s project as the starting point for your own. This process is known as forking. Creating a “fork” is producing a personal copy of someone else’s project. Forks act as a sort of bridge between the original repository and your personal copy. You can submit Pull Requests to help make other people’s projects better by offering your changes up to the original project. Forking is at the core of social coding at GitHub.”</p></li>
+<li><p>Relationship between local and remote repositories: Version control really comes into its own when we begin to collaborate with other people. We already have most of the machinery we need to do this; the only thing missing is to copy changes from one repository to another. Systems like Git allow us to move work between any two repositories. In practice, though, it’s easiest to use one copy as a central hub, and to keep it on the web rather than on someone’s laptop. Most programmers use hosting services like GitHub, Bitbucket or GitLab to hold those master copies, which are sometimes referred to as a “single source of truth”.</p></li>
+<li><p>What is the .gitignore file? What if we have files that we do not want Git to track for us, like backup files created by our editor or intermediate files created during data analysis? Putting these files under version control would be a waste of disk space. What’s worse, having them all listed could distract us from changes that actually matter, so we tell Git to ignore them via this .gitignore file in the root (main folder) of our repository. We can edit this file with nano and add the names of files or directories that we specifically want git to ignore and NOT track changes to. Anything that is listed there will not be tracked by Git.</p></li>
+<li><p>Git Workflow</p></li>
+</ul>
+<p>The workflow for adding and committing future changes to files using Git is:</p>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">status</span></code> to see the files that have been changed and are awaiting commit</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">add</span> <span class="pre">&lt;file_name&gt;</span></code> to add one file at a time to the staging area or <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code> to add all files that have been changed since the last commit</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;&lt;descriptive</span> <span class="pre">message&gt;&quot;</span></code> to commit the latest version of file(s) and describe the nature of the changes made</p></li>
+</ol>
+<p>…and then optionally pushing to GitHub (or another remote repository like GitLab or BitBucket) by:</p>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> to push the changes to the remote repository</p></li>
+</ol>
+<p>If you are working with others who are making changes to the same repository (ideally on their own branches), use:</p>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> before you start working each session. This avoids conflicts when you try to push your changes.</p></li>
+</ol>
+<ul class="simple">
+<li><p>Using branches with Git and GitHub: From <a class="reference external" href="https://backlog.com/git-tutorial/using-branches/">Backlog.com</a>:”In a collaborative environment, it is common for several developers to share and work on the same source code. While some developers will be fixing bugs, others will be implementing new features, etc. With so much going on, there needs to be a system in place for managing different versions of the same code base. Branching allows each developer to branch out from the original code base and isolate their work from others. It also helps Git to easily merge versions later on. A Git branch is essentially an independent line of development. You can take advantage of branching when working on new features or bug fixes because it isolates your work from that of other team members. Different branches can be merged into any one branch as long as they belong to the same repository.”</p></li>
+<li><p>the Git staging area: “If you think of Git as taking snapshots of changes over the life of a project, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code> specifies what will go in a snapshot (putting things in the staging area), and <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code> then actually takes the snapshot, and makes a permanent record of it (as a commit). If you don’t have anything staged when you type git commit, Git will prompt you to use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-a</span></code> or <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">--all</span></code>, which is kind of like gathering everyone to take a group photo! However, it’s almost always better to explicitly add things to the staging area, because you might commit changes you forgot you made. The staging area can hold changes from any number of files that you want to commit as a single snapshot.”</p></li>
+<li><p>Git commit: When we run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code>, Git takes everything we have told it to save by using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code> and stores a copy permanently inside the special .git directory. This permanent copy is called a commit (or revision) and each one has a short identifer code that can be used to point to the version of your file if you ever need to revert back to it or investigate changes made. We use the <code class="docutils literal notranslate"><span class="pre">-m</span></code> flag (for “message”) to record a short, descriptive, and specific comment that will help us remember later on what we did and why. If we just run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code> without the <code class="docutils literal notranslate"><span class="pre">-m</span></code> option, Git will launch nano so that we can write a longer message. Good commit messages start with a brief (&lt;50 characters) statement about the changes made in the commit. Generally, the message should complete the sentence “If applied, this commit will…” .</p></li>
+<li><p>Git push: When we add and commit changes with git to files in our local computer, we are tracking changes to our <strong>local</strong> repository. In order to have those changes reflected in a <strong>remote</strong> repository (like on GitHub), we need to <strong>push</strong> them to either a brand new or an existing remote repository. In this case, we are working with a repository that already existed on GitHub before it existed on our local computers (we forked and cloned it from GitHub), and it already contains a remote URL in its configuration settings because that information came along with the files when we did the cloning step. We checked this earlier when looking at the git configuration settings - it is updated with each new repository we clone or create. <em>In short:</em> When we push changes, we’re interacting with a remote repository to update it with the changes we’ve made locally (often this corresponds to sharing the changes we’ve made with others).</p></li>
+<li><p>basic collaborative workflow: In practice, it is good to be sure that you have an updated version of the repository you are collaborating on, so you should git pull before making our changes. The basic collaborative workflow would be:</p></li>
+</ul>
+<ol class="simple">
+<li><p>update your local repo with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code></p></li>
+<li><p>make your changes and stage them with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code></p></li>
+<li><p>commit your changes with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span></code>, and</p></li>
+<li><p>upload the changes to GitHub with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code></p></li>
+</ol>
+<p>It is better to make many commits with smaller changes rather than of one commit with massive changes: small commits are easier to read and review.</p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./03_Day_3_Git"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="00_README.html" title="previous page">Day 3: Social coding on GitHub and version control with Git</a>
+    <a class='right-next' id="next-link" href="../Instructor_notes/00_README.html" title="next page">Instructor notes</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book community<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>
