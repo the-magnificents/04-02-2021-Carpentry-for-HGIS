@@ -3,7 +3,7 @@
 
 ## Schedule
 ### Workshop introduction
-Ashley Crya, Jose Urra - 30-45 mins
+Ashley Cryan, Jose Urra - 30-45 mins
 - Icebreaker
 - Workshop structure 
 - How to interact with the website and the material
