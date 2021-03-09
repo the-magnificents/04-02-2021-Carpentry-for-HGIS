@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work with the bash shell &#8212; Python essentials for GIS learners</title>
     
-  <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -89,7 +89,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Excercise variables, values, inputs, outputs" href="B2_Exercise.html" />
+    <link rel="next" title="Variables, values, inputs, outputs" href="B2_Exercise.html" />
     <link rel="prev" title="EXERCISES DAY 1" href="B0_Excercise.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -167,17 +167,17 @@ commentsRunWhenDOMLoaded(addUtterances);
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="B2_Exercise.html">
-       Excercise variables, values, inputs, outputs
+       Variables, values, inputs, outputs
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="B3_Exercise.html">
-       Exercise types and built-in functions
+       Types and built-in functions
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="B4_Exercise.html">
-       Built-in Functions and Help
+       More on built-in Functions and Help
       </a>
      </li>
      <li class="toctree-l3">
@@ -260,11 +260,6 @@ commentsRunWhenDOMLoaded(addUtterances);
    Instructor notes
   </a>
   <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../Instructor_notes/01_Notes_From_DH_context.html">
-     Guide to programing with Python for the Digital Humanities
-    </a>
-   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../Instructor_notes/git_instructor_notes.html">
      Instructor Notes: Python Essentials for GIS Learners Day 3
@@ -385,34 +380,34 @@ commentsRunWhenDOMLoaded(addUtterances);
 <p class="admonition-title">Exercise: Explore data files</p>
 <p>Take a look at the contents of the <code class="docutils literal notranslate"><span class="pre">cities_data/</span></code> directory. Use <code class="docutils literal notranslate"><span class="pre">ls</span></code> and <code class="docutils literal notranslate"><span class="pre">cat</span></code> to inspect the names, file extensions and contents of the files. What patterns and information do you see? <strong>Tip:</strong> you can write your observations in comments section of the workshop website, and see what others observed! :)</p>
 </div>
-<p>:::{admonition} See Solution
-:class: tip, dropdown
-The names of all the .csv and text files in the <code class="docutils literal notranslate"><span class="pre">cities_data/</span></code> directory follow a standard pattern, <code class="docutils literal notranslate"><span class="pre">cityname-countrycode.csv</span></code> or <code class="docutils literal notranslate"><span class="pre">cityname-countrycode.txt</span></code>. This is good practice when working with Bash - it is much easier to ask the computer to find and do something with files that match a convention in their names. You’ll also see that there are no spaces in any filenames, and no capital letters. Instead, we see a lot of dashes.</p>
-<p>We have three types of data files in the <code class="docutils literal notranslate"><span class="pre">cities_data/</span></code> directory: .txt, .csv, and .md. The only .md file is called README.md, and contains some very brief information about the data and the imaginary project they were collected for. It is good practice as well to include a README.md file with any code or data project, and to fill it (much better than we did here) with documentation that can help you or someone else replicate the data and/or the results of your research.
-:::</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">See Solution</p>
+<p>The names of all the .csv and text files in the <code class="docutils literal notranslate"><span class="pre">cities_data/</span></code> directory follow a standard pattern, <code class="docutils literal notranslate"><span class="pre">cityname-countrycode.csv</span></code> or <code class="docutils literal notranslate"><span class="pre">cityname-countrycode.txt</span></code>. This is good practice when working with Bash - it is much easier to ask the computer to find and do something with files that match a convention in their names. You’ll also see that there are no spaces in any filenames, and no capital letters. Instead, we see a lot of dashes.</p>
+<p>We have three types of data files in the <code class="docutils literal notranslate"><span class="pre">cities_data/</span></code> directory: .txt, .csv, and .md. The only .md file is called <a class="reference external" href="http://README.md">README.md</a>, and contains some very brief information about the data and the imaginary project they were collected for. It is good practice as well to include a <a class="reference external" href="http://README.md">README.md</a> file with any code or data project, and to fill it (much better than we did here) with documentation that can help you or someone else replicate the data and/or the results of your research.</p>
+</div>
 <div class="admonition-exercise-select-and-concatenate-data-files admonition">
 <p class="admonition-title">Exercise: Select and concatenate data files</p>
 <p>Right now, the data for each city in the <code class="docutils literal notranslate"><span class="pre">cities_data/</span></code> folder are each stored in separate files per city. That might be helpful for some applications, but we want a list of data in one .csv file. How could we do that?</p>
 </div>
-<p>:::{admonition} See Solution
-:class: tip, dropdown
-We can use the wildcard <code class="docutils literal notranslate"><span class="pre">*</span></code> to grab all the .csv files this time in the <code class="docutils literal notranslate"><span class="pre">cities_data</span></code> folder. We want to concatenate all files related to cities in the Netherlands, so we should use <code class="docutils literal notranslate"><span class="pre">*-nl.csv</span></code> to match all the files from the Netherlands in the directory. We use the <code class="docutils literal notranslate"><span class="pre">awk</span></code> command (used for pattern scanning and processing) along with the 1 flag which automatically inserts a new line between the data from each of the separate files. The <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> symbol will concatenate the contents of all files that match this naming pattern to a new file that we define, in this case called netherlands-cities.csv.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">See Solution</p>
+<p>We can use the wildcard <code class="docutils literal notranslate"><span class="pre">*</span></code> to grab all the .csv files this time in the <code class="docutils literal notranslate"><span class="pre">cities_data</span></code> folder. We want to concatenate all files related to cities in the Netherlands, so we should use <code class="docutils literal notranslate"><span class="pre">*-nl.csv</span></code> to match all the files from the Netherlands in the directory. We use the <code class="docutils literal notranslate"><span class="pre">awk</span></code> command (used for pattern scanning and processing) along with the 1 flag which automatically inserts a new line between the data from each of the separate files. The <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> symbol will concatenate the contents of all files that match this naming pattern to a new file that we define, in this case called netherlands-cities.csv.</p>
 <p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">awk</span> <span class="pre">1</span> <span class="pre">*-nl.csv</span> <span class="pre">&gt;</span> <span class="pre">netherlands-cities.csv</span></code></p>
-<p>You can use <code class="docutils literal notranslate"><span class="pre">ls</span></code> to see the files in the <code class="docutils literal notranslate"><span class="pre">cities_data/</span></code> folder, and <code class="docutils literal notranslate"><span class="pre">cat</span></code> to check out the contents of the newly created <code class="docutils literal notranslate"><span class="pre">netherlands-cities.csv</span></code>.
-:::</p>
+<p>You can use <code class="docutils literal notranslate"><span class="pre">ls</span></code> to see the files in the <code class="docutils literal notranslate"><span class="pre">cities_data/</span></code> folder, and <code class="docutils literal notranslate"><span class="pre">cat</span></code> to check out the contents of the newly created <code class="docutils literal notranslate"><span class="pre">netherlands-cities.csv</span></code>.</p>
+</div>
 <div class="admonition-exercise-add-data-to-netherlands-cities-csv admonition">
 <p class="admonition-title">Exercise: add data to netherlands-cities.csv</p>
-<p>Right now, the netherlands-cities.csv file contains geographic and population data for the 5 largest cities in the Netherlands (Amsterdam, Eindhoven, Rotterdam, The Hague and Utrecht). A good start, but there are many more places of interest in the Netherlands! Add a few more cities to the netherlands-cities.csv file using nano on the command line. Don’t forget to keep the same format as the rest of the data: c,cityname,lat,lon,population. <strong>Bonus:</strong> add info about the source(s) of your population data by editing the README.md file.</p>
+<p>Right now, the netherlands-cities.csv file contains geographic and population data for the 5 largest cities in the Netherlands (Amsterdam, Eindhoven, Rotterdam, The Hague and Utrecht). A good start, but there are many more places of interest in the Netherlands! Add a few more cities to the netherlands-cities.csv file using nano on the command line. Don’t forget to keep the same format as the rest of the data: c,cityname,lat,lon,population. <strong>Bonus:</strong> add info about the source(s) of your population data by editing the <a class="reference external" href="http://README.md">README.md</a> file.</p>
 </div>
-<p>:::{admonition} See Solution
-:class: tip, dropdown
-Use nano to open the netherlands-cities.csv file to add some data for other cities in the Netherlands. Make sure you start a new line for each city you add.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">See Solution</p>
+<p>Use nano to open the netherlands-cities.csv file to add some data for other cities in the Netherlands. Make sure you start a new line for each city you add.</p>
 <p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">nano</span> <span class="pre">netherlands-cities.csv</span></code></p>
 <p>Hit shift + control + O to “WriteOut” the file (save it). Nano will ask you if you want to save this file with the same name, and we do, so hit enter. You can then hit shift + control + X to exit the Nano text editor and get back to your bash shell.</p>
-<p>You can do the same process to edit the README.md file: <code class="docutils literal notranslate"><span class="pre">nano</span> <span class="pre">README.md</span></code> will open the editor and allow you to insert information about the sources of your data.</p>
+<p>You can do the same process to edit the <a class="reference external" href="http://README.md">README.md</a> file: <code class="docutils literal notranslate"><span class="pre">nano</span> <span class="pre">README.md</span></code> will open the editor and allow you to insert information about the sources of your data.</p>
 <p>If you now use cat to check out the contents of your file(s), you should see the changes you’ve made:</p>
-<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cat</span> <span class="pre">netherlands-cities.csv</span></code> ; <code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">README.md</span></code>
-:::</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cat</span> <span class="pre">netherlands-cities.csv</span></code> ; <code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">README.md</span></code></p>
+</div>
 </div>
 </div>
 
@@ -429,7 +424,7 @@ Use nano to open the netherlands-cities.csv file to add some data for other ci
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./01_Day_1_Unix_Shell\excercises"
+            path: "./01_Day_1_Unix_Shell/excercises"
         },
         predefinedOutput: true
     }
@@ -445,7 +440,7 @@ Use nano to open the netherlands-cities.csv file to add some data for other ci
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="B0_Excercise.html" title="previous page">EXERCISES DAY 1</a>
-    <a class='right-next' id="next-link" href="B2_Exercise.html" title="next page">Excercise variables, values, inputs, outputs</a>
+    <a class='right-next' id="next-link" href="B2_Exercise.html" title="next page">Variables, values, inputs, outputs</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
@@ -465,7 +460,7 @@ Use nano to open the netherlands-cities.csv file to add some data for other ci
     </div>
 
     
-  <script src="../../_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     

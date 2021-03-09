@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Working with libraries &#8212; Python essentials for GIS learners</title>
     
-  <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -90,7 +90,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Working with the Python console in QGIS" href="../../02_Day_2_QGIS/00_README.html" />
-    <link rel="prev" title="Built-in Functions and Help" href="B4_Exercise.html" />
+    <link rel="prev" title="More on built-in Functions and Help" href="B4_Exercise.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -167,17 +167,17 @@ commentsRunWhenDOMLoaded(addUtterances);
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="B2_Exercise.html">
-       Excercise variables, values, inputs, outputs
+       Variables, values, inputs, outputs
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="B3_Exercise.html">
-       Exercise types and built-in functions
+       Types and built-in functions
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="B4_Exercise.html">
-       Built-in Functions and Help
+       More on built-in Functions and Help
       </a>
      </li>
      <li class="toctree-l3 current active">
@@ -260,11 +260,6 @@ commentsRunWhenDOMLoaded(addUtterances);
    Instructor notes
   </a>
   <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../Instructor_notes/01_Notes_From_DH_context.html">
-     Guide to programing with Python for the Digital Humanities
-    </a>
-   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../Instructor_notes/git_instructor_notes.html">
      Instructor Notes: Python Essentials for GIS Learners Day 3
@@ -550,14 +545,14 @@ since readers must learn your program’s aliases.</p></li>
 <li><p>Since the library contains this function, why does <code class="docutils literal notranslate"><span class="pre">sqrt</span></code> exist?</p></li>
 </ol>
 </div>
-<p>:::{admonition} See Solution
-:class: tip, dropdown</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">See Solution</p>
 <ol class="simple">
 <li><p>Using <code class="docutils literal notranslate"><span class="pre">help(math)</span></code> we see that we’ve got <code class="docutils literal notranslate"><span class="pre">pow(x,y)</span></code> in addition to <code class="docutils literal notranslate"><span class="pre">sqrt(x)</span></code>, so we could use <code class="docutils literal notranslate"><span class="pre">pow(x,</span> <span class="pre">0.5)</span></code> to find a square root.</p></li>
 <li><p>The <code class="docutils literal notranslate"><span class="pre">sqrt(x)</span></code> function is arguably more readable than <code class="docutils literal notranslate"><span class="pre">pow(x,</span> <span class="pre">0.5)</span></code> when implementing equations. Readability is a cornerstone of good programming, so it makes sense to provide a special function for this specific common case.
-Also, the design of Python’s <code class="docutils literal notranslate"><span class="pre">math</span></code> library has its origin in the C standard, which includes both <code class="docutils literal notranslate"><span class="pre">sqrt(x)</span></code> and <code class="docutils literal notranslate"><span class="pre">pow(x,y)</span></code>, so a little bit of the history of programming is showing in Python’s function names.
-:::</p></li>
+Also, the design of Python’s <code class="docutils literal notranslate"><span class="pre">math</span></code> library has its origin in the C standard, which includes both <code class="docutils literal notranslate"><span class="pre">sqrt(x)</span></code> and <code class="docutils literal notranslate"><span class="pre">pow(x,y)</span></code>, so a little bit of the history of programming is showing in Python’s function names.</p></li>
 </ol>
+</div>
 <div class="admonition-exercise-locating-the-right-module admonition">
 <p class="admonition-title">Exercise: Locating the Right Module</p>
 <p>You want to select a random character from a string:</p>
@@ -573,9 +568,9 @@ Also, the design of Python’s <code class="docutils literal notranslate"><span 
 </ol>
 </div></blockquote>
 </div>
-<p>:::{admonition} See Solution
-:class: tip, dropdown
-The [random module][randommod] seems like it could help you.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">See Solution</p>
+<p>The [random module][randommod] seems like it could help you.</p>
 <p>The string has 11 characters, each having a positional index from 0 to 10.
 You could use <code class="docutils literal notranslate"><span class="pre">random.randrange</span></code> function (or the alias <code class="docutils literal notranslate"><span class="pre">random.randint</span></code> if you find that easier to remember) to get a random integer between 0 and 10, and then pick out the character at that position:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randrange</span>
@@ -595,8 +590,8 @@ You could use <code class="docutils literal notranslate"><span class="pre">rando
 </pre></div>
 </div>
 <p>Note that this function returns a list of values. There’s also other functions you could use, but with more convoluted
-code as a result.
-:::</p>
+code as a result.</p>
+</div>
 </div>
 </div>
 
@@ -613,7 +608,7 @@ code as a result.
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./01_Day_1_Unix_Shell\excercises"
+            path: "./01_Day_1_Unix_Shell/excercises"
         },
         predefinedOutput: true
     }
@@ -628,7 +623,7 @@ code as a result.
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="B4_Exercise.html" title="previous page">Built-in Functions and Help</a>
+    <a class='left-prev' id="prev-link" href="B4_Exercise.html" title="previous page">More on built-in Functions and Help</a>
     <a class='right-next' id="next-link" href="../../02_Day_2_QGIS/00_README.html" title="next page">Working with the Python console in QGIS</a>
 
     </div>
@@ -649,7 +644,7 @@ code as a result.
     </div>
 
     
-  <script src="../../_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     
