@@ -1,4 +1,4 @@
-# Overview
+# DAY 3
 ## Learning goals
 ### Understand
 - Social coding and version control

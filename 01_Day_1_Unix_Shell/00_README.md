@@ -1,5 +1,8 @@
-# Overview
+# DAY 1
 ## Learning goals
+- Understand how to work with command line interfaces (CLI)
+- Get exposed to the python ecosystem
+- Learn how to learn how to code
 
 ## Schedule
 ### Workshop introduction

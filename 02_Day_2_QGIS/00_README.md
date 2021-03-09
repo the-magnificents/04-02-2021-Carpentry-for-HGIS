@@ -1,5 +1,14 @@
-# Overview
+# DAY 2
 ## Learning goals
+### Understand:
+- Basic concepts of object oriented programming
+- The potential and benefits of automating workflows
+- How to explore datasets using powerfull python libraries 
+
+### Practice how to:
+- Use other peoples code
+- Read and analyze other people's code
+- Do simple operations with pandas and matplotlib
 
 ## Schedule
 ### Run and inspect code 
