@@ -1,14 +1,14 @@
 # DAY 2
 ## Learning goals
 ### Understand:
-- Basic concepts of object oriented programming
+- Basic concepts of Object Oriented Programming
 - The potential and benefits of automating workflows
-- How to explore datasets using powerfull python libraries 
+- How to explore datasets using powerful Python libraries 
 
-### Practice how to:
-- Use other peoples code
-- Read and analyze other people's code
-- Do simple operations with pandas and matplotlib
+### Practice:
+- Using other peoples code
+- Reading and analyze other people's code
+- Doing simple data analysis and plotting operations with pandas and matplotlib
 
 ## Schedule
 **Day 2 begins at 09:30.** The morning teaching session will conclude at 12:30, followed by the afternoon of independent exercises.

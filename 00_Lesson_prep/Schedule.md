@@ -6,60 +6,93 @@ Exercises are meant to be explored and executed independently during the afterno
 
 ## Day 1: The Unix Shell and Getting Started with Python
 
+### 09:00 - Pre-workshop help session
+Ashley Cryan, Jose Urra - 30 mins
+- Help troubleshooting installation issues or answering questions about setup
+
 **Morning session**
 
-1. Workshop introduction (30 mins) 
-- Instructor introductions and the goals of this workshop
-- How to use the website to interact and ask questions 
-- Icebreaker activity
+### 09:30 - Workshop introduction
+Ashley Cryan, Jose Urra - 30-45 mins
+- Icebreaker
+- Workshop structure 
+- How to interact with the website and the material
 
-2. Navigating files with the Unix Shell (1.5 hours)
+### Navigating files with the Unix shell and running Bash commands 
+Ashley Cryan - 1 hr
 - Introduction to the Bash scripting language
 - Creating directories using the command line
 - Name pattern matching to select, move and concatenate data files
 
---- Coffee break (15 mins) ---
+### Coffee break - 15 mins
 
-3. Getting started with Python (1 hour)
-- Working with a Python interpreter
-- Running a script
-- Creating your own variables
+### Introduction to the Python ecosystem
+Jose Urra - 45 mins
+- Python ecosystem tools, Anaconda and Jupyter Lab
+- How to use Jupyter Lab to complete the afternoon exercises
+- How to contact us if you need help
 
 **Afternoon session - independent exercises**
 *find the exercises for Day 1 on the left-hand sidebar* 
 
-There are 4 exercises for Day 1:
-1. Generate city data for a country
-2. Working with lists in Python
-3. Running a for loop
-4. Working with Jupyter Lab  
 
-
-## Day 2: Python Essentials 
+## Day 2: Python Essentials and working with QGIS
 
 **Morning session**
 
-1. Working with Jupyter Lab 
+### 09:30 - Introduction to Object Oriented Programming and Python code
+Jose Urra - 30-45 mins
+- Briefly demonstrate what a module is and how to use it
+- Use someone else's code to explain, discuss and understand roughly what the code does
 
---- Coffee break (15 mins) ---
+### Working with the Python console in QGIS
+Ashley Cryan - 20 mins
+- Storing layer as a variable to extract information
+- Changing the style of point data displayed in QGIS
+- Simple yet powerful automation with Python scripts
+
+### Coffee break - 15 mins
+
+### Introduction to data frames in Python, working with pandas and matplotlib (libraries)
+Jose Urra, Ashley Cryan - 1.5 hrs
+- Use the data generated in the previous demo to run some analyses using pandas and create basic plots with matplotlib
 
 **Afternoon session - independent exercises**
+*find the exercises for Day 1 on the left-hand sidebar* 
 
-Exercises (4 hours)
-
-## Day 3: Version control and remote collaboration on code
+## Day 3: Version control and social coding with Git and GitHub
 
 **Morning session**
 
-1. Forking and cloning a remote repository on GitHub (30 minutes)
+### Introduction to social coding concepts
+Jose Urra - 15-20 mins
+- Why use version control?
+- The basics of unit testing
+- How to write reproducible and reusable code
 
-2. Python exercise from https://github.com/wmvanvliet/gizmo (30 minutes)
+### Group reflection and discussion on social coding
+All - 15 mins
 
---- Coffee break (15 mins) ---
+### Hands on social coding with Github 
+Jose Urra - 1hr 
+- Step 1: Set up Git configuration settings
+- Step 2: Fork the Gizmo Python challenges repository on GitHub
+- Step 3: Clone the forked copy of the Gizmo Python challenges repository to your local computer
 
-3. Version control with Git (1hr 15 mins)
+### Coffee break - 15 mins
 
-4. Wrap up and resources for continued learning (15 mins)
+### Version control with Git (cont'd from hands on social coding with GitHub) 
+Ashley Cryan - 1hr
+- Step 4: Create a new branch and gizmo.py file
+- Step 5: Add and commit changes to local git repository
+- Step 6: Push changes to remote repository in GitHub
+- Step 7: Test your answers to Python challenges
+
+### Teaching wrap-up 
+Ashley Cryan, Jose Urra - 15 mins
+- How to give feedback
+- Post-workshop survey
+- How to continue learning :) 
 
 **Afternoon session - independent exercises**
 

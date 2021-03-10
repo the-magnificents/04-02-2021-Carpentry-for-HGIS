@@ -1,11 +1,11 @@
 # DAY 3
 ## Learning goals
-### Understand
+### Understand:
 - Social coding and version control
 - Overview of git and git hosting platforms
 - The role of unit testing and test driven development
 
-### Practice
+### Practice:
 - Start contributing to code using git and github
 - Learn how to do commits and what they mean
 - Push changes to the remote repository
