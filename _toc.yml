@@ -20,6 +20,10 @@ sections:
   sections:
   - file: 02_Day_2_QGIS/A1_qgis_lesson1
   - file: 02_Day_2_QGIS/B0_exercise1_qgis
+  - file: 02_Day_2_QGIS/exercise/B0_Exercise
+    sections:
+    - file: 02_Day_2_QGIS/exercise/B1_Exercise
+    - file: 02_Day_2_QGIS/exercise/B2_Exercise
   - file: 02_Day_2_QGIS/reads/R0_Python_QGIS
 - file: 02_Python_Draw_GIS/00_README
   sections:
