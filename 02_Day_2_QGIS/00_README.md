@@ -11,17 +11,21 @@
 - Do simple operations with pandas and matplotlib
 
 ## Schedule
-### Run and inspect code 
+**Day 2 begins at 09:30.** The morning teaching session will conclude at 12:30, followed by the afternoon of independent exercises.
+
+### Introduction to Object Oriented Programming and Python code
 Jose Urra - 30-45 mins
-- We will briefly demonstrate how to use a module
-- We will try to understand roughly what the code does and discuss the code
+- Briefly demonstrate what a module is and how to use it
+- Use someone else's code to explain, discuss and understand roughly what the code does
 
-### Demo of scripting with QGIS
-Ashley Cryan- 20 mins
-Example of simple yet powerful automation with python scripts
+### Working with the Python console in QGIS
+Ashley Cryan - 20 mins
+- Storing layer as a variable to extract information
+- Changing the style of point data displayed in QGIS
+- Simple yet powerful automation with Python scripts
 
-### Coffee break 15 mins
+### Coffee break - 15 mins
 
-### Working with pandas and matplotlib
-Jose Urra, Ashley Cryan - 1hr, hr and half
-We will use the data generated in the previous demo to plot some data using pandas and matplotlib.
+### Introduction to data frames in Python, working with pandas and matplotlib (libraries)
+Jose Urra, Ashley Cryan - 1.5 hrs
+- Use the data generated in the previous demo to run some analyses using pandas and create basic plots with matplotlib
