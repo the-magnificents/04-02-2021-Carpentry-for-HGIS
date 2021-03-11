@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DAY 3 &#8212; Python essentials for GIS learners</title>
+    <title>Programmatically access the attributes of international airports &#8212; Python essentials for GIS learners</title>
     
   <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -89,8 +89,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Instructor Notes: Python Essentials for GIS Learners Day 3" href="git_instructor_notes.html" />
-    <link rel="prev" title="Old notes" href="../Day_2/old/readme.html" />
+    <link rel="next" title="Go from for loops and while loops to functions" href="old/03_lesson.html" />
+    <link rel="prev" title="Run map.py on netherlandsmap.csv" href="mappy_instructor_notes.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -796,53 +796,53 @@ commentsRunWhenDOMLoaded(addUtterances);
     <i class="fas fa-chevron-down">
     </i>
    </li>
-   <li class="toctree-l2 collapsible-parent">
-    <a class="reference internal" href="../Day_2/00_README.html">
+   <li class="toctree-l2 current active collapsible-parent">
+    <a class="reference internal" href="00_README.html">
      DAY 2
     </a>
-    <ul class="collapse-ul">
+    <ul class="current collapse-ul">
      <li class="toctree-l3">
-      <a class="reference internal" href="../Day_2/01_lesson.html">
+      <a class="reference internal" href="01_lesson.html">
        Using and reading other people’s code
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="../Day_2/02_lesson.html">
+      <a class="reference internal" href="02_lesson.html">
        Variables (and constants)
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="../Day_2/jupyter_instructor_notes.html">
+      <a class="reference internal" href="jupyter_instructor_notes.html">
        Working with Jupyter Notebooks in Jupyter Lab
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="../Day_2/mappy_instructor_notes.html">
+      <a class="reference internal" href="mappy_instructor_notes.html">
        Run map.py on netherlandsmap.csv
       </a>
      </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Day_2/A1_qgis_lesson1.html">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
        Programmatically access the attributes of international airports
       </a>
      </li>
      <li class="toctree-l3 collapsible-parent">
-      <a class="reference internal" href="../Day_2/old/03_lesson.html">
+      <a class="reference internal" href="old/03_lesson.html">
        Go from for loops and while loops to functions
       </a>
       <ul class="collapse-ul">
        <li class="toctree-l4">
-        <a class="reference internal" href="../Day_2/old/C1_Python_Standard_Library.html">
+        <a class="reference internal" href="old/C1_Python_Standard_Library.html">
          Python standard libraries
         </a>
        </li>
        <li class="toctree-l4">
-        <a class="reference internal" href="../Day_2/old/python_instructor_notes.html">
+        <a class="reference internal" href="old/python_instructor_notes.html">
          About these instructor notes
         </a>
        </li>
        <li class="toctree-l4">
-        <a class="reference internal" href="../Day_2/old/readme.html">
+        <a class="reference internal" href="old/readme.html">
          Old notes
         </a>
        </li>
@@ -854,13 +854,13 @@ commentsRunWhenDOMLoaded(addUtterances);
     <i class="fas fa-chevron-down">
     </i>
    </li>
-   <li class="toctree-l2 current active collapsible-parent">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../Day_3/00_README.html">
      DAY 3
     </a>
     <ul class="collapse-ul">
      <li class="toctree-l3">
-      <a class="reference internal" href="git_instructor_notes.html">
+      <a class="reference internal" href="../Day_3/git_instructor_notes.html">
        Instructor Notes: Python Essentials for GIS Learners Day 3
       </a>
      </li>
@@ -912,9 +912,9 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/Instructor_notes/Day_3/00_README.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/Instructor_notes/Day_2/A1_qgis_lesson1.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -932,6 +932,23 @@ commentsRunWhenDOMLoaded(addUtterances);
 
         <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/Instructor_notes/Day_2/A1_qgis_lesson1.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
     </div>
 
     <!-- Table of contents -->
@@ -943,8 +960,8 @@ commentsRunWhenDOMLoaded(addUtterances);
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#overview">
-   Overview
+  <a class="reference internal nav-link" href="#saving-a-python-script-for-qgis">
+   Saving a Python script for QGIS
   </a>
  </li>
 </ul>
@@ -958,71 +975,93 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  <div class="section" id="day-3">
-<h1>DAY 3<a class="headerlink" href="#day-3" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Introduction to (open) science, and reproducibility</p>
-<ul>
-<li><p>It is very common in software development to be able to reproduce programs given a set of prerequisites</p>
-<ul>
-<li><p>This might be dependencies needed</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>Introduction to social coding and human centered coding</p>
-<ul>
-<li><p>Program the right way</p>
-<ul>
-<li><p>Save time and focus on fun challenges</p></li>
-<li><p>Automate processes and get rid of tedious work</p></li>
-<li><p>Become more creative</p></li>
-<li><p>Reuse scripts you have already written</p></li>
-<li><p>Made code more efficient</p></li>
-</ul>
-</li>
-<li><p>Common issues and mistakes (Overestimating memory)</p>
-<ul>
-<li><p>Beginners tend to go fast and want to do complex things, slow down</p></li>
-<li><p>You dont understand the code you wrote, therefore you cant adjust it and its frustrating</p></li>
-<li><p>This bad habit</p></li>
-</ul>
-</li>
-<li><p>Clean code</p>
-<ul>
-<li><p>Provide context</p></li>
-<li><p>For you and for others</p></li>
-</ul>
-</li>
-<li><p>Dependency management</p>
-<ul>
-<li><p>Code is continuously changing</p></li>
-</ul>
-</li>
-<li><p>Unit testing and testing to write better code</p>
-<ul>
-<li><p>Better design and specifications</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>Todays challenge</p>
-<ul>
-<li><p>Go through a collaborative social coding process</p>
-<ul>
-<li><p>Make sure to install pytest</p></li>
-<li><p>We will contribute to an existing codebase</p></li>
-<li><p>We will make new changes to the codebase and apply unit testing as well as version control to it</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>Start the hands on part</p></li>
-</ul>
-<div class="toctree-wrapper compound">
+  <div class="section" id="programmatically-access-the-attributes-of-international-airports">
+<h1>Programmatically access the attributes of international airports<a class="headerlink" href="#programmatically-access-the-attributes-of-international-airports" title="Permalink to this headline">¶</a></h1>
+<p>This part of the lesson material is meant to be run as a demonstration, so there is no need to get ready with hands-on following along. However, if you are interested the data and scripts used in this lesson are in the ‘qgis/’ folder that was included in the ‘pre_workshop_files/’ folder.</p>
+<ol class="simple">
+<li><p>Open QGIS and use the left side menu to navigate to Natural Earth datasets (airports and countries). Drag and drop both to the mapping view.</p></li>
+<li><p>Use info button to show attributes of each airport (feature), pointing out name and iata_code as we will be saving those).</p></li>
+<li><p>Open the Python console either from the plugins menu or the button on the header menu.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 4. Save the airports dataset as a variable called layer: </span>
+
+<span class="n">layer</span> <span class="o">=</span> <span class="n">iface</span><span class="o">.</span><span class="n">activeLayer</span><span class="p">()</span>
+</pre></div>
 </div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 5. Change the shape and color of the symbols representing airports:</span>
+
+<span class="n">symbol</span> <span class="o">=</span> <span class="n">QgsMarkerSymbol</span><span class="o">.</span><span class="n">createSimple</span><span class="p">({</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;cross&#39;</span><span class="p">,</span> <span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;black&#39;</span><span class="p">})</span>
+<span class="n">layer</span><span class="o">.</span><span class="n">renderer</span><span class="p">()</span><span class="o">.</span><span class="n">setSymbol</span><span class="p">(</span><span class="n">symbol</span><span class="p">)</span>
+<span class="n">layer</span><span class="o">.</span><span class="n">triggerRepaint</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 6. For loop that prints the name and iata_code for each airport on the list, using the function getFeatures that allows you to reference all features of a layer. In this case, the features are airports (point data). </span>
+
+<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">layer</span><span class="o">.</span><span class="n">getFeatures</span><span class="p">():</span>
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;iata_code&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#  7. Access the coordinates of the feature (airport) using the geometry function. Returns a geometry object that we can store in a variable called geom. The asPoint() function gets the x and y coordinates of the point. </span>
+
+<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">layer</span><span class="o">.</span><span class="n">getFeatures</span><span class="p">():</span>
+  <span class="n">geom</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">geometry</span><span class="p">()</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">geom</span><span class="o">.</span><span class="n">asPoint</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 8. Print the name, iata_code, lat and long of each of the airports. The .2f truncates lat and long to 2 decimal places:</span>
+
+<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">layer</span><span class="o">.</span><span class="n">getFeatures</span><span class="p">():</span>
+  <span class="n">geom</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">geometry</span><span class="p">()</span>
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;iata_code&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">, (</span><span class="si">{</span><span class="n">geom</span><span class="o">.</span><span class="n">asPoint</span><span class="p">()</span><span class="o">.</span><span class="n">y</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">geom</span><span class="o">.</span><span class="n">asPoint</span><span class="p">()</span><span class="o">.</span><span class="n">x</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 9. Store the output in a csv file instead of printing it in the console. To do this step on your own, need to replace your file path. </span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;/Users/acryan/Desktop/airports.csv&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">output_file</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">layer</span><span class="o">.</span><span class="n">getFeatures</span><span class="p">():</span>
+        <span class="n">geom</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">geometry</span><span class="p">()</span>
+        <span class="n">line</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;iata_code&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">geom</span><span class="o">.</span><span class="n">asPoint</span><span class="p">()</span><span class="o">.</span><span class="n">y</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">geom</span><span class="o">.</span><span class="n">asPoint</span><span class="p">()</span><span class="o">.</span><span class="n">x</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
+        <span class="n">o</span><span class="o">=</span><span class="n">output_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>At this point there should be a file called <code class="docutils literal notranslate"><span class="pre">airports.csv</span></code> on the Desktop. This file can be used as an input for a next analysis step or stored as supplementary material for a project or manuscript. It’s a lot easier than copy and pasting that information from a database or website! :)</p>
+<div class="section" id="saving-a-python-script-for-qgis">
+<h2>Saving a Python script for QGIS<a class="headerlink" href="#saving-a-python-script-for-qgis" title="Permalink to this headline">¶</a></h2>
+<p>Whenever possible, it’s good practice to document exactly how you generated data. In this case you can do that by showing how you created the subset of data - since we used code, we can save it as a script that anyone else could use to produce the same results (the airports.csv file).</p>
+<ol class="simple">
+<li><p>Open the Code Editor</p></li>
+<li><p>Copy and paste the last command into the Code Editor</p></li>
+<li><p>Save it as a script called airport_codes.py</p></li>
+</ol>
+<p>Helpful links:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.qgis.org/3.16/en/docs/user_manual/processing/scripts.html">https://docs.qgis.org/3.16/en/docs/user_manual/processing/scripts.html</a></p></li>
+<li><p><a class="reference external" href="https://courses.spatialthoughts.com/pyqgis-in-a-day.html#where-can-you-use-python-in-qgis">https://courses.spatialthoughts.com/pyqgis-in-a-day.html#where-can-you-use-python-in-qgis</a></p></li>
+</ul>
 </div>
 </div>
 
@@ -1039,7 +1078,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./Instructor_notes/Day_3"
+            path: "./Instructor_notes/Day_2"
         },
         predefinedOutput: true
     }
@@ -1054,8 +1093,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../Day_2/old/readme.html" title="previous page">Old notes</a>
-    <a class='right-next' id="next-link" href="git_instructor_notes.html" title="next page">Instructor Notes: Python Essentials for GIS Learners Day 3</a>
+    <a class='left-prev' id="prev-link" href="mappy_instructor_notes.html" title="previous page">Run map.py on netherlandsmap.csv</a>
+    <a class='right-next' id="next-link" href="old/03_lesson.html" title="next page">Go from for loops and while loops to functions</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
