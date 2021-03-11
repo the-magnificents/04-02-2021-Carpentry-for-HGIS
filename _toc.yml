@@ -4,7 +4,7 @@ sections:
   sections:
   - file: 00_Lesson_prep/01_About_this_workshop
   - file: 00_Lesson_prep/Schedule
-- file: 01_Day_1_Unix_Shell/00_README
+- file: 01_Day_1_Unix_Shell/00_README_unix
   sections:
   - file: 01_Day_1_Unix_Shell/A1_unix_lesson1
   - file: 01_Day_1_Unix_Shell/A2_Runing_quiting
@@ -22,9 +22,6 @@ sections:
   - file: 01_Day_1_Unix_Shell/reads/R0_Bash
 - file: 02_Day_2_GIS_Data/00_README
   sections:
-  - file: 02_Day_2_GIS_Data/A1_qgis_lesson1
-  - file: 02_Day_2_GIS_Data/B0_exercise1_qgis
-  - file: 02_Day_2_GIS_Data/02_Python_Draw_GIS/00_README
   - file: 02_Day_2_GIS_Data/code/city
     sections:
     - file: 02_Day_2_GIS_Data/code/map
@@ -33,17 +30,15 @@ sections:
     - file: 02_Day_2_GIS_Data/code/test_polygon
   - file: 02_Day_2_GIS_Data/exercise/00_README
     sections:
+    - file: 02_Day_2_GIS_Data/exercise/B0_exercise1_qgis
     - file: 02_Day_2_GIS_Data/exercise/B0_Exercise_libs
     - file: 02_Day_2_GIS_Data/exercise/B1_Exercise
     - file: 02_Day_2_GIS_Data/exercise/B2_Exercise
     - file: 02_Day_2_GIS_Data/exercise/B3_Exercise
     - file: 02_Day_2_GIS_Data/exercise/B7_Exercise_Loop_Datasets
-  - file: 02_Day_2_GIS_Data/lesson_notes/01_lesson
+  - file: 02_Day_2_GIS_Data/reads/A1_qgis_lesson1
     sections:
-    - file: 02_Day_2_GIS_Data/lesson_notes/02_lesson
-    - file: 02_Day_2_GIS_Data/lesson_notes/03_lesson
-    - file: 02_Day_2_GIS_Data/lesson_notes/C1_Python_Standard_Library
-  - file: 02_Day_2_GIS_Data/reads/R0_Python_QGIS
+    - file: 02_Day_2_GIS_Data/reads/R0_Python_QGIS
 - file: 03_Day_3_Git/00_README
   sections:
   - file: 03_Day_3_Git/A1_git_lesson1
