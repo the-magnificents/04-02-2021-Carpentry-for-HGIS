@@ -1,12 +1,11 @@
 file: README
 sections:
-- file: 00_Lesson_prep/00_README
+- file: 00_Lesson_prep/00_About_this_workshop
   sections:
-  - file: 00_Lesson_prep/01_About_this_workshop
+  - file: 00_Lesson_prep/01_Prep
   - file: 00_Lesson_prep/Schedule
-- file: 01_Day_1_Unix_Shell/00_README_unix
+- file: 01_Day_1_Unix_Shell/00_README
   sections:
-  - file: 01_Day_1_Unix_Shell/A1_unix_lesson1
   - file: 01_Day_1_Unix_Shell/A2_Runing_quiting
   - file: 01_Day_1_Unix_Shell/excercises/B0_Excercise
     sections:
@@ -19,35 +18,69 @@ sections:
     - file: 01_Day_1_Unix_Shell/excercises/B7_Exercise_ForLoop
     - file: 01_Day_1_Unix_Shell/excercises/B8_Exercise_Conditionals
     - file: 01_Day_1_Unix_Shell/excercises/B9_Scopes_Variables
-  - file: 01_Day_1_Unix_Shell/reads/R0_Bash
-- file: 02_Day_2_GIS_Data/00_README
+  - file: 01_Day_1_Unix_Shell/reads/00_README
+    sections:
+    - file: 01_Day_1_Unix_Shell/reads/R0_Bash
+- file: 02_Day_2_Python_GIS/00_README
   sections:
-  - file: 02_Day_2_GIS_Data/code/city
+  - file: 02_Day_2_Python_GIS/code/city
     sections:
-    - file: 02_Day_2_GIS_Data/code/map
-    - file: 02_Day_2_GIS_Data/code/polygon
-    - file: 02_Day_2_GIS_Data/code/simple_GIS
-    - file: 02_Day_2_GIS_Data/code/test_polygon
-  - file: 02_Day_2_GIS_Data/exercise/00_README
+    - file: 02_Day_2_Python_GIS/code/map
+    - file: 02_Day_2_Python_GIS/code/polygon
+    - file: 02_Day_2_Python_GIS/code/simple_GIS
+    - file: 02_Day_2_Python_GIS/code/test_polygon
+  - file: 02_Day_2_Python_GIS/exercise/00_README
     sections:
-    - file: 02_Day_2_GIS_Data/exercise/B0_exercise1_qgis
-    - file: 02_Day_2_GIS_Data/exercise/B0_Exercise_libs
-    - file: 02_Day_2_GIS_Data/exercise/B1_Exercise
-    - file: 02_Day_2_GIS_Data/exercise/B2_Exercise
-    - file: 02_Day_2_GIS_Data/exercise/B3_Exercise
-    - file: 02_Day_2_GIS_Data/exercise/B7_Exercise_Loop_Datasets
-  - file: 02_Day_2_GIS_Data/reads/A1_qgis_lesson1
+    - file: 02_Day_2_Python_GIS/exercise/B0_exercise1_qgis
+    - file: 02_Day_2_Python_GIS/exercise/B0_Exercise_libs
+    - file: 02_Day_2_Python_GIS/exercise/B1_Exercise
+    - file: 02_Day_2_Python_GIS/exercise/B2_Exercise
+    - file: 02_Day_2_Python_GIS/exercise/B3_Exercise
+    - file: 02_Day_2_Python_GIS/exercise/B7_Exercise_Loop_Datasets
+  - file: 02_Day_2_Python_GIS/reads/00_README
     sections:
-    - file: 02_Day_2_GIS_Data/reads/R0_Python_QGIS
+    - file: 02_Day_2_Python_GIS/reads/A1_qgis_lesson1
+    - file: 02_Day_2_Python_GIS/reads/R0_Python_QGIS
 - file: 03_Day_3_Git/00_README
   sections:
-  - file: 03_Day_3_Git/A1_git_lesson1
-  - file: 03_Day_3_Git/reads/R0_README
+  - file: 03_Day_3_Git/exercise/00_README
+  - file: 03_Day_3_Git/reads/00_README
+    sections:
+    - file: 03_Day_3_Git/reads/R0_README
 - file: Instructor_notes/00_README
   sections:
-  - file: Instructor_notes/01_Notes_From_DH_context
   - file: Instructor_notes/02_References
-  - file: Instructor_notes/git_instructor_notes
-  - file: Instructor_notes/open_science_instructor_notes
-  - file: Instructor_notes/python_instructor_notes
-  - file: Instructor_notes/unix_instructor_notes
+  - file: Instructor_notes/Day_1/00_README
+    sections:
+    - file: Instructor_notes/Day_1/01_Notes_From_DH_context
+    - file: Instructor_notes/Day_1/02_About_Open_science_instructor_notes
+    - file: Instructor_notes/Day_1/03_unix_instructor_notes
+    - file: Instructor_notes/Day_1/04_Python_Jupyter_Intro
+    - file: Instructor_notes/Day_1/lesson_notes/B2_Vars_Types
+      sections:
+      - file: Instructor_notes/Day_1/lesson_notes/B4_Functions
+      - file: Instructor_notes/Day_1/lesson_notes/B5_Exercise
+      - file: Instructor_notes/Day_1/lesson_notes/C1_Excercises_notes
+      - file: Instructor_notes/Day_1/lesson_notes/C2_Iterators&Generators
+      - file: Instructor_notes/Day_1/lesson_notes/C2_Iterators
+      - file: Instructor_notes/Day_1/lesson_notes/C3_Pythonic_
+      - file: Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson
+      - file: Instructor_notes/Day_1/lesson_notes/types
+    - file: Instructor_notes/Day_1/old_exercises/B1_exercise
+      sections:
+      - file: Instructor_notes/Day_1/old_exercises/B2_exercise
+      - file: Instructor_notes/Day_1/old_exercises/B3_exercise
+  - file: Instructor_notes/Day_2/00_README
+    sections:
+    - file: Instructor_notes/Day_2/01_lesson
+    - file: Instructor_notes/Day_2/02_lesson
+    - file: Instructor_notes/Day_2/jupyter_instructor_notes
+    - file: Instructor_notes/Day_2/mappy_instructor_notes
+    - file: Instructor_notes/Day_2/old/03_lesson
+      sections:
+      - file: Instructor_notes/Day_2/old/C1_Python_Standard_Library
+      - file: Instructor_notes/Day_2/old/python_instructor_notes
+      - file: Instructor_notes/Day_2/old/readme
+  - file: Instructor_notes/Day_3/00_README
+    sections:
+    - file: Instructor_notes/Day_3/git_instructor_notes
