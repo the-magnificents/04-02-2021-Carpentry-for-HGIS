@@ -3,6 +3,8 @@
 ### Understand: 
 - Basic and important elements of the Python ecosystem including Anaconda and Jupyter Lab
 - How to begin learning to code in Python
+- computers can be used to record and automate iterative tasks
+- JupyterLab and Jupyter notebooks are important tools for writing and sharing code
 
 ### Practice:
 - Using command line interfaces (CLIs) (Unix shell, Terminal) to navigate files and folders and write Bash commands
@@ -22,7 +24,9 @@ Ashley Cryan, Jose Urra - 30-45 mins
 
 ### Navigating files and running comands with the unix shell
 Ashley Cryan- 1 hr
-Example of simple yet powerful automation with python scripts
+- Introduction to the Bash scripting language
+- Creating directories using the command line
+- Name pattern matching to select, move and concatenate data files
 
 ### Coffee break - 15 mins
 
