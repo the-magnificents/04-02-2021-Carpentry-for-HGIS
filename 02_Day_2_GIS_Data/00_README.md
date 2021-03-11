@@ -28,4 +28,5 @@ Ashley Cryan - 20 mins
 
 ### Introduction to data frames in Python, working with pandas and matplotlib (libraries)
 Jose Urra, Ashley Cryan - 1.5 hrs
-- Use the data generated in the previous demo to run some analyses using pandas and create basic plots with matplotlib
+- Reuse the data generated in the previous demo
+- Run some analyses using pandas and create basic plots with matplotlib
