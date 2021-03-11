@@ -45,38 +45,5 @@ During this workshop, we will be working with some tools and programs that will 
 
 If you have any questions about these steps before the workshop, please reach out to Ashley (a.e.cryan@tudelft.nl) and Jose (j.c.urrallanusa@tudelft.nl) before we get started!
 
-## Day 1
-### Learning objectives 
-#### Understand: 
-- Basic and important elements of the Python ecosystem including Anaconda and Jupyter Lab
-- How to begin learning to code in Python
-
-#### Practice:
-- Using command line interfaces (CLIs) (Unix shell, Terminal) to navigate files and folders and write Bash commands
-
-## Day 2
-### Learning objectives
-### Understand:
-- Basic concepts of object oriented programming
-- The potential and benefits of automating workflows
-- How to explore datasets using powerfull python libraries 
-
-### Practice:
-- Using other peoples code
-- Reading and analyze other people's code
-- Doing simple data analysis and plotting operations with pandas and matplotli
-
-## Day 3
-### Learning objectives
-### Understand
-- Social coding and version control
-- Overview of git and git hosting platforms
-- The role of unit testing and test driven development
-
-### Practice
-- Contributing to code using git and github
-- Learning how to do commits and what they mean
-- Pushing changes to a remote repository
-
 ## Credits and acknowledgements
 This lesson material is based upon the Software Carpentries lesson on [The Unix Shell](http://swcarpentry.github.io/shell-novice/), Andrea Cleland's [Turtle Graphics Map](https://github.com/acleland/turtle-graphics-map) repository, the [Plotting and Programming in Python](https://swcarpentry.github.io/python-novice-gapminder/) lesson from the Software Carpentries, and Gizmo ["Can you speak Python?" challenges](https://github.com/wmvanvliet/gizmo) repository by Marijn van Vliet. We thank the authors for their inspiration and material :) 
