@@ -22,7 +22,9 @@ Ashley Cryan, Jose Urra - 30-45 mins
 
 ### Navigating files and running comands with the unix shell
 Ashley Cryan- 1 hr
-Example of simple yet powerful automation with python scripts
+- Introduction to the Bash scripting language
+- Creating directories using the command line
+- Name pattern matching to select, move and concatenate data files
 
 ### Coffee break - 15 mins
 
