@@ -1,19 +1,9 @@
 # Guide to programing with Python for the Digital Humanities
 
 ## Finding the Balance Between CS and DH
-When I was first given this task of creating Digital Humanities (DH) assignments for
-an introductory programming course, I was faced with a serious dilemma: On one hand, I wanted to make sure that theDHstudents received a good introduction to some
-of the basic methods of DH research, such as social network analysis, stylometry,
-textual analysis, and visualization. But on the other hand, I was merely teaching
-an introductory programming course, so I could not expect all of the students to
-do professional-grade work, or to write analytical code at the level of functionality
-expected of advanced computer science practitioners.
+When I was first given this task of creating Digital Humanities (DH) assignments for an introductory programming course, I was faced with a serious dilemma: On one hand, I wanted to make sure that theDHstudents received a good introduction to some of the basic methods of DH research, such as social network analysis, stylometry, textual analysis, and visualization. But on the other hand, I was merely teaching an introductory programming course, so I could not expect all of the students to do professional-grade work, or to write analytical code at the level of functionality expected of advanced computer science practitioners.
 
-My solution was to try to strike a middle ground between the two ends of the spectrum—
-to give all students a solid introduction to DH analytical methods while keeping
-the course accessible for novice programmers, using assignments that employ
-the strengths of the Python language. So the average student in the course should be able to do a good job of programming the assignment, and should also be able to
-learn something about how programming for humanities research is done.
+My solution was to try to strike a middle ground between the two ends of the spectrum— to give all students a solid introduction to DH analytical methods while keeping the course accessible for novice programmers, using assignments that employ the strengths of the Python language. So the average student in the course should be able to do a good job of programming the assignment, and should also be able to learn something about how programming for humanities research is done.
 
 ## These are interesting criterion to setup the DH course
 - Keep workshop accessible for novice programers
