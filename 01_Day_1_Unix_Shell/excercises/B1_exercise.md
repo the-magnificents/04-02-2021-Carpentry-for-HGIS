@@ -18,7 +18,7 @@ We have three types of data files in the `cities_data/` directory: .txt, .csv, a
 :::
 
 ```{admonition} Exercise: Select and concatenate data files
- Right now, the data for each city in the `cities_data/` folder are each stored in separate files per city. That might be helpful for some applications, but we want a list of data in one .csv file. How could we do that?
+ Right now, the data for each city in the `cities_data/` folder are each stored in separate files per city. That might be helpful for some applications, but we want a list of data in one .csv file. How could we do that? **Note**: It will probably take some Googling to find the right Bash command to use, as it is a new one that we did not use this morning. **Hint:** it starts with an 'a' and reminds me of my teenage years... :) 
 ```
 
 :::{admonition} See Solution
