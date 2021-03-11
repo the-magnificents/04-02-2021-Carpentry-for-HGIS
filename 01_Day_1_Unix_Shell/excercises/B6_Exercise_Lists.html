@@ -1,0 +1,1588 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists and indexing &#8212; Python essentials for GIS learners</title>
+    
+  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "the-magnificents/04-02-2021-Carpentry-for-HGIS");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="For loops" href="B7_Exercise_ForLoop.html" />
+    <link rel="prev" title="Functions II" href="B5_Exercise_functions.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Python essentials for GIS learners</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="current nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../00_Lesson_prep/00_About_this_workshop.html">
+   Workshop overview
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../00_Lesson_prep/01_Prep.html">
+     Preparing for the workshop
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="../00_README.html">
+   DAY 1
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../A2_Runing_quiting.html">
+     Getting Started with JupyterLab
+    </a>
+   </li>
+   <li class="toctree-l2 current active collapsible-parent">
+    <a class="reference internal" href="B0_Excercise.html">
+     EXERCISES DAY 1
+    </a>
+    <ul class="current collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="B1_exercise.html">
+       Work with the bash shell
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="B2_Exercise.html">
+       Variables, values, inputs, outputs
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="B3_Exercise.html">
+       Types and built-in functions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="B4_Exercise.html">
+       Functions I
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="B5_Exercise_functions.html">
+       Functions II
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Lists and indexing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="B7_Exercise_ForLoop.html">
+       For loops
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="B8_Exercise_Conditionals.html">
+       Conditionals
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="B9_Scopes_Variables.html">
+       Variable Scope
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../reads/00_README.html">
+     READS DAY 1
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reads/R0_Bash.html">
+       Day 1: Introduction to Unix Shell, Python and Jupyter Lab
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../02_Day_2_Python_GIS/00_README.html">
+   DAY 2
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../02_Day_2_Python_GIS/exercise/00_README.html">
+     EXERCISES DAY 2
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02_Day_2_Python_GIS/exercise/B0_exercise1_qgis.html">
+       Exercise 1: Running someone else’s Python script
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02_Day_2_Python_GIS/exercise/B0_Exercise_libs.html">
+       Working with libraries
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02_Day_2_Python_GIS/exercise/B1_Exercise.html">
+       Reading data with pandas
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02_Day_2_Python_GIS/exercise/B2_Exercise.html">
+       Pandas dataframes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02_Day_2_Python_GIS/exercise/B3_Exercise.html">
+       Plotting
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02_Day_2_Python_GIS/exercise/B7_Exercise_Loop_Datasets.html">
+       Looping Over Data Sets
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../02_Day_2_Python_GIS/reads/00_README.html">
+     READS DAY 2
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02_Day_2_Python_GIS/reads/A1_qgis_lesson1.html">
+       Programmatically access the attributes of international airports
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../02_Day_2_Python_GIS/reads/R0_Python_QGIS.html">
+       Working with the Python console in QGIS
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../03_Day_3_Git/00_README.html">
+   DAY 3
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../03_Day_3_Git/exercise/00_README.html">
+     EXERCISES DAY 3
+    </a>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../03_Day_3_Git/reads/00_README.html">
+     READS DAY 3
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../03_Day_3_Git/reads/R0_README.html">
+       Social coding on GitHub and version control with Git
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../Instructor_notes/00_README.html">
+   Instructor notes
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../Instructor_notes/Day_1/00_README.html">
+     DAY 1
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/01_Notes_From_DH_context.html">
+       Guide to programing with Python for the Digital Humanities
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/02_About_Open_science_instructor_notes.html">
+       Open Science
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/04_Python_Jupyter_Intro.html">
+       Python, jupyter and scientific programming intro
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html">
+       Use an index to get a single character from a string.
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#use-a-slice-to-get-a-substring">
+       Use a slice to get a substring.
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#use-the-built-in-function-len-to-find-the-length-of-a-string">
+       Use the built-in function
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         len
+        </span>
+       </code>
+       to find the length of a string.
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#python-is-case-sensitive">
+       Python is case-sensitive.
+      </a>
+     </li>
+     <li class="toctree-l3 collapsible-parent">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#use-meaningful-variable-names">
+       Use meaningful variable names.
+      </a>
+      <ul class="collapse-ul">
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B4_Functions.html">
+         Functions may only work for certain (combinations of) arguments.
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#functions-may-have-default-values-for-some-arguments">
+         Functions may have default values for some arguments.
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#functions-attached-to-objects-are-called-methods">
+         Functions attached to objects are called methods
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#use-the-built-in-function-help-to-get-help-for-a-function">
+         Use the built-in function
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           help
+          </span>
+         </code>
+         to get help for a function.
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#the-jupyter-notebook-has-two-ways-to-get-help">
+         The Jupyter Notebook has two ways to get help.
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#python-reports-a-syntax-error-when-it-can-t-understand-the-source-of-a-program">
+         Python reports a syntax error when it can’t understand the source of a program.
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#a-name-runtime-error-a-python-reports-a-runtime-error-when-something-goes-wrong-while-a-program-is-executing">
+         <a name="runtime-error">
+         </a>
+         Python reports a runtime error when something goes wrong while a program is executing.
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#what-happens-when">
+         What Happens When
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#solution">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#spot-the-difference">
+         Spot the Difference
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#id1">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#why-not">
+         Why Not?
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#id2">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#last-character-of-a-string">
+         Last Character of a String
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#id3">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html">
+         Jigsaw Puzzle (Parson’s Problem) Programming Example
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#solution">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#when-is-help-available">
+         When Is Help Available?
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#id1">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#importing-with-aliases">
+         Importing With Aliases
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#id2">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#there-are-many-ways-to-import-libraries">
+         There Are Many Ways To Import Libraries!
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#id3">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#importing-specific-items">
+         Importing Specific Items
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#id4">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#reading-error-messages">
+         Reading Error Messages
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#id5">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C2_Iterators&amp;Generators.html">
+         Iterators and iterables
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C2_Iterators.html">
+         Iterators and iterables
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Pythonic_.html">
+         None pythonic example
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Pythonic_.html#the-pythonic-example">
+         The pythonic example
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html">
+         Use variables to store values.
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#use-print-to-display-values">
+         Use
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           print
+          </span>
+         </code>
+         to display values.
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-must-be-created-before-they-are-used">
+         Variables must be created before they are used.
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-persist-between-cells">
+         Variables Persist Between Cells
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-can-be-used-in-calculations">
+         Variables can be used in calculations.
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#use-an-index-to-get-a-single-character-from-a-string">
+         Use an index to get a single character from a string.
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#use-a-slice-to-get-a-substring">
+         Use a slice to get a substring.
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#use-the-built-in-function-len-to-find-the-length-of-a-string">
+         Use the built-in function
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           len
+          </span>
+         </code>
+         to find the length of a string.
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#python-is-case-sensitive">
+         Python is case-sensitive.
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#use-meaningful-variable-names">
+         Use meaningful variable names.
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#swapping-values">
+         Swapping Values
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#solution">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#predicting-values">
+         Predicting Values
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#id1">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#challenge">
+         Challenge
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#id2">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#choosing-a-name">
+         Choosing a Name
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#id3">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#slicing-practice">
+         Slicing practice
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#id4">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#slicing-concepts">
+         Slicing concepts
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#solutions">
+         Solutions
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/types.html">
+         Variables only change value when something is assigned to them.
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/types.html#fractions">
+         Fractions
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/types.html#solution">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/types.html#automatic-type-conversion">
+         Automatic Type Conversion
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/types.html#id1">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/types.html#choose-a-type">
+         Choose a Type
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/types.html#id2">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/types.html#division-types">
+         Division Types
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/types.html#id3">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/types.html#strings-to-numbers">
+         Strings to Numbers
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/types.html#id4">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/types.html#arithmetic-with-different-types">
+         Arithmetic with Different Types
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/types.html#id5">
+         Solution
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/types.html#complex-numbers">
+         Complex Numbers
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/types.html#id6">
+         Solution
+        </a>
+       </li>
+      </ul>
+      <i class="fas fa-chevron-down">
+      </i>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#swapping-values">
+       Swapping Values
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#solution">
+       Solution
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#predicting-values">
+       Predicting Values
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#id1">
+       Solution
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#challenge">
+       Challenge
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#id2">
+       Solution
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#choosing-a-name">
+       Choosing a Name
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#id3">
+       Solution
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#slicing-practice">
+       Slicing practice
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#id4">
+       Solution
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#slicing-concepts">
+       Slicing concepts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#solutions">
+       Solutions
+      </a>
+     </li>
+     <li class="toctree-l3 collapsible-parent">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/old_exercises/B1_exercise.html">
+       Excercise 2
+      </a>
+      <ul class="collapse-ul">
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/old_exercises/B2_exercise.html">
+         Excercise 2
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_1/old_exercises/B3_exercise.html">
+         Exercise 3
+        </a>
+       </li>
+      </ul>
+      <i class="fas fa-chevron-down">
+      </i>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../Instructor_notes/Day_2/00_README.html">
+     DAY 2
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_2/01_lesson.html">
+       Using and reading other people’s code
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_2/02_lesson.html">
+       Variables (and constants)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_2/jupyter_instructor_notes.html">
+       Working with Jupyter Notebooks in Jupyter Lab
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_2/mappy_instructor_notes.html">
+       Run map.py on netherlandsmap.csv
+      </a>
+     </li>
+     <li class="toctree-l3 collapsible-parent">
+      <a class="reference internal" href="../../Instructor_notes/Day_2/old/03_lesson.html">
+       Go from for loops and while loops to functions
+      </a>
+      <ul class="collapse-ul">
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_2/old/C1_Python_Standard_Library.html">
+         Python standard libraries
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_2/old/python_instructor_notes.html">
+         About these instructor notes
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../../Instructor_notes/Day_2/old/readme.html">
+         Old notes
+        </a>
+       </li>
+      </ul>
+      <i class="fas fa-chevron-down">
+      </i>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../Instructor_notes/Day_3/00_README.html">
+     DAY 3
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_3/git_instructor_notes.html">
+       Instructor Notes: Python Essentials for GIS Learners Day 3
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/01_Day_1_Unix_Shell/excercises/B6_Exercise_Lists.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/01_Day_1_Unix_Shell/excercises/B6_Exercise_Lists.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-list-stores-many-values-in-a-single-structure">
+   A list stores many values in a single structure.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#use-an-item-s-index-to-fetch-it-from-a-list">
+   Use an item’s index to fetch it from a list.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lists-values-can-be-replaced-by-assigning-to-them">
+   Lists’ values can be replaced by assigning to them.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#appending-items-to-a-list-lengthens-it">
+   Appending items to a list lengthens it.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#use-del-to-remove-items-from-a-list-entirely">
+   Use
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     del
+    </span>
+   </code>
+   to remove items from a list entirely.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-empty-list-contains-no-values">
+   The empty list contains no values.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lists-may-contain-values-of-different-types">
+   Lists may contain values of different types.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#character-strings-can-be-indexed-like-lists">
+   Character strings can be indexed like lists.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#character-strings-are-immutable">
+   Character strings are immutable.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#indexing-beyond-the-end-of-the-collection-is-an-error">
+   Indexing beyond the end of the collection is an error.
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="lists-and-indexing">
+<h1>Lists and indexing<a class="headerlink" href="#lists-and-indexing" title="Permalink to this headline">¶</a></h1>
+<hr class="docutils" />
+<p>title: “Lists”
+teaching: 10
+exercises: 10
+questions:</p>
+<ul class="simple">
+<li><p>“How can I store multiple values?”
+objectives:</p></li>
+<li><p>“Explain why programs need collections of values.”</p></li>
+<li><p>“Write programs that create flat lists, index them, slice them, and modify them through assignment and method calls.”
+keypoints:</p></li>
+<li><p>“A list stores many values in a single structure.”</p></li>
+<li><p>“Use an item’s index to fetch it from a list.”</p></li>
+<li><p>“Lists’ values can be replaced by assigning to them.”</p></li>
+<li><p>“Appending items to a list lengthens it.”</p></li>
+<li><p>“Use <code class="docutils literal notranslate"><span class="pre">del</span></code> to remove items from a list entirely.”</p></li>
+<li><p>“The empty list contains no values.”</p></li>
+<li><p>“Lists may contain values of different types.”</p></li>
+<li><p>“Character strings can be indexed like lists.”</p></li>
+<li><p>“Character strings are immutable.”</p></li>
+<li><p>“Indexing beyond the end of the collection is an error.”</p></li>
+</ul>
+<hr class="docutils" />
+<div class="section" id="a-list-stores-many-values-in-a-single-structure">
+<h2>A list stores many values in a single structure.<a class="headerlink" href="#a-list-stores-many-values-in-a-single-structure" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Doing calculations with a hundred variables called <code class="docutils literal notranslate"><span class="pre">pressure_001</span></code>, <code class="docutils literal notranslate"><span class="pre">pressure_002</span></code>, etc.,
+would be at least as slow as doing them by hand.</p></li>
+<li><p>Use a <em>list</em> to store many values together.</p>
+<ul>
+<li><p>Contained within square brackets <code class="docutils literal notranslate"><span class="pre">[...]</span></code>.</p></li>
+<li><p>Values separated by commas <code class="docutils literal notranslate"><span class="pre">,</span></code>.</p></li>
+</ul>
+</li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">len</span></code> to find out how many values are in a list.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pressures</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.273</span><span class="p">,</span> <span class="mf">0.275</span><span class="p">,</span> <span class="mf">0.277</span><span class="p">,</span> <span class="mf">0.275</span><span class="p">,</span> <span class="mf">0.276</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;pressures:&#39;</span><span class="p">,</span> <span class="n">pressures</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;length:&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">pressures</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pressures: [0.273, 0.275, 0.277, 0.275, 0.276]
+length: 5
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pressures</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.273</span><span class="p">,</span> <span class="mf">0.275</span><span class="p">,</span> <span class="mf">0.277</span><span class="p">,</span> <span class="mf">0.275</span><span class="p">,</span> <span class="mf">0.276</span><span class="p">]</span>
+<span class="n">length</span><span class="p">:</span> <span class="mi">5</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="use-an-item-s-index-to-fetch-it-from-a-list">
+<h2>Use an item’s index to fetch it from a list.<a class="headerlink" href="#use-an-item-s-index-to-fetch-it-from-a-list" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Just like strings.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;zeroth item of pressures:&#39;</span><span class="p">,</span> <span class="n">pressures</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;fourth item of pressures:&#39;</span><span class="p">,</span> <span class="n">pressures</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>zeroth item of pressures: 0.273
+fourth item of pressures: 0.276
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="lists-values-can-be-replaced-by-assigning-to-them">
+<h2>Lists’ values can be replaced by assigning to them.<a class="headerlink" href="#lists-values-can-be-replaced-by-assigning-to-them" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Use an index expression on the left of assignment to replace a value.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pressures</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.265</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;pressures is now:&#39;</span><span class="p">,</span> <span class="n">pressures</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pressures is now: [0.265, 0.275, 0.277, 0.275, 0.276]
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="appending-items-to-a-list-lengthens-it">
+<h2>Appending items to a list lengthens it.<a class="headerlink" href="#appending-items-to-a-list-lengthens-it" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">list_name.append</span></code> to add items to the end of a list.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">primes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;primes is initially:&#39;</span><span class="p">,</span> <span class="n">primes</span><span class="p">)</span>
+<span class="n">primes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;primes has become:&#39;</span><span class="p">,</span> <span class="n">primes</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>primes is initially: [2, 3, 5]
+primes has become: [2, 3, 5, 7]
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">append</span></code> is a <em>method</em> of lists.</p>
+<ul>
+<li><p>Like a function, but tied to a particular object.</p></li>
+</ul>
+</li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">object_name.method_name</span></code> to call methods.</p>
+<ul>
+<li><p>Deliberately resembles the way we refer to things in a library.</p></li>
+</ul>
+</li>
+<li><p>We will meet other methods of lists as we go along.</p>
+<ul>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">help(list)</span></code> for a preview.</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">extend</span></code> is similar to <code class="docutils literal notranslate"><span class="pre">append</span></code>, but it allows you to combine two lists.  For example:</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">teen_primes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">]</span>
+<span class="n">middle_aged_primes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">37</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">47</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;primes is currently:&#39;</span><span class="p">,</span> <span class="n">primes</span><span class="p">)</span>
+<span class="n">primes</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">teen_primes</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;primes has now become:&#39;</span><span class="p">,</span> <span class="n">primes</span><span class="p">)</span>
+<span class="n">primes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">middle_aged_primes</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;primes has finally become:&#39;</span><span class="p">,</span> <span class="n">primes</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>primes is currently: [2, 3, 5, 7]
+primes has now become: [2, 3, 5, 7, 11, 13, 17, 19]
+primes has finally become: [2, 3, 5, 7, 11, 13, 17, 19, [37, 41, 43, 47]]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Note that while <code class="docutils literal notranslate"><span class="pre">extend</span></code> maintains the “flat” structure of the list, appending a list to a list makes the result
+two-dimensional - the last element in <code class="docutils literal notranslate"><span class="pre">primes</span></code> is a list, not an integer.</p>
+</div>
+<div class="section" id="use-del-to-remove-items-from-a-list-entirely">
+<h2>Use <code class="docutils literal notranslate"><span class="pre">del</span></code> to remove items from a list entirely.<a class="headerlink" href="#use-del-to-remove-items-from-a-list-entirely" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>We use <code class="docutils literal notranslate"><span class="pre">del</span> <span class="pre">list_name[index]</span></code> to remove an element from a list (in the example, 9 is not a prime number) and thus shorten it.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">del</span></code> is not a function or a method, but a statement in the language.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">primes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;primes before removing last item:&#39;</span><span class="p">,</span> <span class="n">primes</span><span class="p">)</span>
+<span class="k">del</span> <span class="n">primes</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;primes after removing last item:&#39;</span><span class="p">,</span> <span class="n">primes</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>primes before removing last item: [2, 3, 5, 7, 9]
+primes after removing last item: [2, 3, 5, 7]
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="the-empty-list-contains-no-values">
+<h2>The empty list contains no values.<a class="headerlink" href="#the-empty-list-contains-no-values" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">[]</span></code> on its own to represent a list that doesn’t contain any values.</p>
+<ul>
+<li><p>“The zero of lists.”</p></li>
+</ul>
+</li>
+<li><p>Helpful as a starting point for collecting values
+(which we will see in the [next episode](/12-for-loops/)).</p></li>
+</ul>
+</div>
+<div class="section" id="lists-may-contain-values-of-different-types">
+<h2>Lists may contain values of different types.<a class="headerlink" href="#lists-may-contain-values-of-different-types" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>A single list may contain numbers, strings, and anything else.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">goals</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;Create lists.&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;Extract items from lists.&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;Modify lists.&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="character-strings-can-be-indexed-like-lists">
+<h2>Character strings can be indexed like lists.<a class="headerlink" href="#character-strings-can-be-indexed-like-lists" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Get single characters from a character string using indexes in square brackets.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">element</span> <span class="o">=</span> <span class="s1">&#39;carbon&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;zeroth character:&#39;</span><span class="p">,</span> <span class="n">element</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;third character:&#39;</span><span class="p">,</span> <span class="n">element</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>zeroth character: c
+third character: b
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="character-strings-are-immutable">
+<h2>Character strings are immutable.<a class="headerlink" href="#character-strings-are-immutable" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Cannot change the characters in a string after it has been created.</p>
+<ul>
+<li><p><em>Immutable</em>: can’t be changed after creation.</p></li>
+<li><p>In contrast, lists are <em>mutable</em>: they can be modified in place.</p></li>
+</ul>
+</li>
+<li><p>Python considers the string to be a single value with parts,
+not a collection of values.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">element</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;C&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">14</span><span class="o">-</span><span class="mi">6</span><span class="n">dc46761ce07</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">element</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;C&#39;</span>
+
+<span class="ne">TypeError</span>: &#39;str&#39; object does not support item assignment
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>Lists and character strings are both <em>collections</em>.</p></li>
+</ul>
+</div>
+<div class="section" id="indexing-beyond-the-end-of-the-collection-is-an-error">
+<h2>Indexing beyond the end of the collection is an error.<a class="headerlink" href="#indexing-beyond-the-end-of-the-collection-is-an-error" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Python reports an <code class="docutils literal notranslate"><span class="pre">IndexError</span></code> if we attempt to access a value that doesn’t exist.</p>
+<ul>
+<li><p>This is a kind of <a class="reference external" href="https://en.wikipedia.org/wiki/Runtime_error_detection">runtime error</a></p></li>
+<li><p>Cannot be detected as the code is parsed
+because the index might be calculated based on data.</p></li>
+</ul>
+</li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;99th element of element is:&#39;</span><span class="p">,</span> <span class="n">element</span><span class="p">[</span><span class="mi">99</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">IndexError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">15</span><span class="o">-</span><span class="n">f178a3be0901</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;99th element of element is:&#39;</span><span class="p">,</span> <span class="n">element</span><span class="p">[</span><span class="mi">99</span><span class="p">])</span>
+
+<span class="ne">IndexError</span>: string index out of range
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">values</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">values</span><span class="o">.</span><span class="n">____</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">values</span><span class="o">.</span><span class="n">____</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">values</span><span class="o">.</span><span class="n">____</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;first time:&#39;</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
+<span class="n">values</span> <span class="o">=</span> <span class="n">values</span><span class="p">[</span><span class="n">____</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;second time:&#39;</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>first time: [1, 3, 5]
+second time: [3, 5]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">See Solution</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">values</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;first time:&#39;</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
+<span class="n">values</span> <span class="o">=</span> <span class="n">values</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;second time:&#39;</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="admonition-exercise-how-large-is-a-slice admonition">
+<p class="admonition-title">Exercise: How Large is a Slice</p>
+<p>If ‘low’ and ‘high’ are both non-negative integers, how long is the list <code class="docutils literal notranslate"><span class="pre">values[low:high]</span></code>?</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">See Solution</p>
+<p>The list <code class="docutils literal notranslate"><span class="pre">values[low:high]</span></code> has <code class="docutils literal notranslate"><span class="pre">high</span> <span class="pre">-</span> <span class="pre">low</span></code> elements.  For example, <code class="docutils literal notranslate"><span class="pre">values[1:4]</span></code> has the 3 elements <code class="docutils literal notranslate"><span class="pre">values[1]</span></code>, <code class="docutils literal notranslate"><span class="pre">values[2]</span></code>, and <code class="docutils literal notranslate"><span class="pre">values[3]</span></code>. Note that the expression will only work if <code class="docutils literal notranslate"><span class="pre">high</span></code> is less than the total length of the list <code class="docutils literal notranslate"><span class="pre">values</span></code>.</p>
+</div>
+<div class="admonition-exercise-from-strings-to-lists-and-back admonition">
+<p class="admonition-title">Exercise: From Strings to Lists and Back</p>
+<p>Given this:</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;string to list:&#39;</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;tin&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;list to string:&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>string to list: [&#39;t&#39;, &#39;i&#39;, &#39;n&#39;]
+list to string: gold
+</pre></div>
+</div>
+</div>
+</div>
+<ol class="simple">
+<li><p>What does <code class="docutils literal notranslate"><span class="pre">list('some</span> <span class="pre">string')</span></code> do?</p></li>
+<li><p>What does <code class="docutils literal notranslate"><span class="pre">'-'.join(['x',</span> <span class="pre">'y',</span> <span class="pre">'z'])</span></code> generate?</p></li>
+</ol>
+<div class="tip dropdown admonition">
+<p class="admonition-title">See Solution</p>
+<ol class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list"><code class="docutils literal notranslate"><span class="pre">list('some</span> <span class="pre">string')</span></code></a> converts a string into a list containing all of its characters.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str.join"><code class="docutils literal notranslate"><span class="pre">join</span></code></a> returns a string that is the <em>concatenation</em>
+of each string element in the list and adds the separator between each element in the list. This results in
+<code class="docutils literal notranslate"><span class="pre">x-y-z</span></code>. The separator between the elements is the string that provides this method.</p></li>
+</ol>
+</div>
+<div class="admonition-exercise-working-with-the-end admonition">
+<p class="admonition-title">Exercise: Working With the End</p>
+<p>What does the following program print?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">element</span> <span class="o">=</span> <span class="s1">&#39;helium&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">element</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li><p>How does Python interpret a negative index?</p></li>
+<li><p>If a list or string has N elements,
+what is the most negative index that can safely be used with it,
+and what location does that index represent?</p></li>
+<li><p>If <code class="docutils literal notranslate"><span class="pre">values</span></code> is a list, what does <code class="docutils literal notranslate"><span class="pre">del</span> <span class="pre">values[-1]</span></code> do?</p></li>
+<li><p>How can you display all elements but the last one without changing <code class="docutils literal notranslate"><span class="pre">values</span></code>?
+(Hint: you will need to combine slicing and negative indexing.)</p></li>
+</ol>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">See Solution</p>
+<ol class="simple">
+<li><p>Python interprets a negative index as starting from the end (as opposed to
+starting from the beginning).  The last element is <code class="docutils literal notranslate"><span class="pre">-1</span></code>.</p></li>
+<li><p>The last index that can safely be used with a list of N elements is element
+<code class="docutils literal notranslate"><span class="pre">-N</span></code>, which represents the first element.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">del</span> <span class="pre">values[-1]</span></code> removes the last element from the list.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">values[:-1]</span></code></p></li>
+</ol>
+</div>
+<div class="admonition-exercise-through-a-list admonition">
+<p class="admonition-title">Exercise: Through a List</p>
+<p>What does the following program print?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">element</span> <span class="o">=</span> <span class="s1">&#39;fluorine&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">element</span><span class="p">[::</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">element</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">See Solution</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">furn</span>
+<span class="n">eniroulf</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">stride</span></code> is the step size of the slice</p></li>
+<li><p>The slice <code class="docutils literal notranslate"><span class="pre">1::2</span></code> selects all even-numbered items from a collection: it starts
+with element <code class="docutils literal notranslate"><span class="pre">1</span></code> (which is the second element, since indexing starts at <code class="docutils literal notranslate"><span class="pre">0</span></code>),
+goes on until the end (since no <code class="docutils literal notranslate"><span class="pre">end</span></code> is given), and uses a step size of <code class="docutils literal notranslate"><span class="pre">2</span></code>
+(i.e., selects every second element).</p></li>
+</ol>
+</div>
+<div class="admonition-exercise-slice-bounds admonition">
+<p class="admonition-title">Exercise: Slice Bounds</p>
+<p>What does the following program print?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">element</span> <span class="o">=</span> <span class="s1">&#39;lithium&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">element</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">20</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">element</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition-exercise-sort-and-sorted admonition">
+<p class="admonition-title">Exercise: Sort and Sorted</p>
+<p>What do these two programs print?
+In simple terms, explain the difference between <code class="docutils literal notranslate"><span class="pre">sorted(letters)</span></code> and <code class="docutils literal notranslate"><span class="pre">letters.sort()</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Program A</span>
+<span class="n">letters</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;gold&#39;</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">letters</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;letters is&#39;</span><span class="p">,</span> <span class="n">letters</span><span class="p">,</span> <span class="s1">&#39;and result is&#39;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Program B</span>
+<span class="n">letters</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;gold&#39;</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">letters</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;letters is&#39;</span><span class="p">,</span> <span class="n">letters</span><span class="p">,</span> <span class="s1">&#39;and result is&#39;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">See Solution</p>
+<p>Program A prints</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">letters</span> <span class="ow">is</span> <span class="p">[</span><span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">]</span> <span class="ow">and</span> <span class="n">result</span> <span class="ow">is</span> <span class="p">[</span><span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Program B prints</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">letters</span> <span class="ow">is</span> <span class="p">[</span><span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">]</span> <span class="ow">and</span> <span class="n">result</span> <span class="ow">is</span> <span class="kc">None</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">sorted(letters)</span></code> returns a sorted copy of the list <code class="docutils literal notranslate"><span class="pre">letters</span></code> (the original
+list <code class="docutils literal notranslate"><span class="pre">letters</span></code> remains unchanged), while <code class="docutils literal notranslate"><span class="pre">letters.sort()</span></code> sorts the list
+<code class="docutils literal notranslate"><span class="pre">letters</span></code> in-place and does not return anything.</p>
+</div>
+<div class="admonition-exercise-copying-or-not admonition">
+<p class="admonition-title">Exercise: Copying (or Not)</p>
+<p>What do these two programs print?
+In simple terms, explain the difference between <code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">=</span> <span class="pre">old</span></code> and <code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">=</span> <span class="pre">old[:]</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Program A</span>
+<span class="n">old</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;gold&#39;</span><span class="p">)</span>
+<span class="n">new</span> <span class="o">=</span> <span class="n">old</span>      <span class="c1"># simple assignment</span>
+<span class="n">new</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;D&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;new is&#39;</span><span class="p">,</span> <span class="n">new</span><span class="p">,</span> <span class="s1">&#39;and old is&#39;</span><span class="p">,</span> <span class="n">old</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Program B</span>
+<span class="n">old</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;gold&#39;</span><span class="p">)</span>
+<span class="n">new</span> <span class="o">=</span> <span class="n">old</span><span class="p">[:]</span>   <span class="c1"># assigning a slice</span>
+<span class="n">new</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;D&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;new is&#39;</span><span class="p">,</span> <span class="n">new</span><span class="p">,</span> <span class="s1">&#39;and old is&#39;</span><span class="p">,</span> <span class="n">old</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">See Solution</p>
+<p>Program A prints</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">new</span> <span class="ow">is</span> <span class="p">[</span><span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">]</span> <span class="ow">and</span> <span class="n">old</span> <span class="ow">is</span> <span class="p">[</span><span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Program B prints</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">new</span> <span class="ow">is</span> <span class="p">[</span><span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">]</span> <span class="ow">and</span> <span class="n">old</span> <span class="ow">is</span> <span class="p">[</span><span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>{: .language-python}
+<code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">=</span> <span class="pre">old</span></code> makes <code class="docutils literal notranslate"><span class="pre">new</span></code> a reference to the list <code class="docutils literal notranslate"><span class="pre">old</span></code>; <code class="docutils literal notranslate"><span class="pre">new</span></code> and <code class="docutils literal notranslate"><span class="pre">old</span></code> point towards the same object.
+<code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">=</span> <span class="pre">old[:]</span></code> however creates a new list object <code class="docutils literal notranslate"><span class="pre">new</span></code> containing all elements
+from the list <code class="docutils literal notranslate"><span class="pre">old</span></code>; <code class="docutils literal notranslate"><span class="pre">new</span></code> and <code class="docutils literal notranslate"><span class="pre">old</span></code> are different objects.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./01_Day_1_Unix_Shell/excercises"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="B5_Exercise_functions.html" title="previous page">Functions II</a>
+    <a class='right-next' id="next-link" href="B7_Exercise_ForLoop.html" title="next page">For loops</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book community<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

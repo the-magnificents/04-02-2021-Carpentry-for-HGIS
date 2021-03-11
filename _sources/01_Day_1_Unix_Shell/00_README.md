@@ -1,19 +1,37 @@
-# Day 1: Introduction to Unix Shell, Python and Jupyter Lab
+# DAY 1
+## Learning goals
+### Understand: 
+- Basic and important elements of the Python ecosystem including Anaconda and Jupyter Lab
+- How to begin learning to code in Python
+- computers can be used to record and automate iterative tasks
+- JupyterLab and Jupyter notebooks are important tools for writing and sharing code
 
-## Creating and navigating files and directories with the Unix Shell (Bash)
+### Practice:
+- Using command line interfaces (CLIs) (Unix shell, Terminal) to navigate files and folders and write Bash commands
 
-This lesson is an introduction to using the Unix shell and the Bash scripting language to create and navigate through files and directories (folders) on your local computer. It is an alternative to "clicking" and provides some significant advantages in documenting processes, automating tasks, and enabling reproducible workflows.
+## Schedule
+**Day 1 begins at 09:30, however if you need extra help or have had installation issues your instructors will be available at 9:00am.** The morning teaching session will conclude at 12:30, followed by the afternoon of independent exercises.
 
-This lesson material is based upon the Software Carpentries lesson on [The Unix Shell](http://swcarpentry.github.io/shell-novice/), the [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) lesson from Data Carpentries, and an [Intro to the Shell](https://datacarpentry.org/2015-11-04-ACUNS/shell-intro/) workshop from softwarecarpentry.org.
+### 09:00 - Pre-workshop help session
+Ashley Cryan, Jose Urra - 30 mins
+- Help troubleshooting installation issues or answering questions about setup
 
-## Background for today
-The shell is a program that enables us to send commands to the computer and receive output. It is also referred to as the terminal or command line.
-Humans and computers commonly interact in many different ways, such as through a keyboard and mouse, touch screen interfaces, or using speech recognition systems. The most widely used way to interact with personal computers is called a graphical user interface (GUI). With a GUI, we give instructions by clicking a mouse and using menu-driven interactions.
+### Workshop introduction
+Ashley Cryan, Jose Urra - 30-45 mins
+- Icebreaker
+- Workshop structure 
+- How to interact with the website and the material
 
-While the visual aid of a GUI makes it intuitive to learn, this way of delivering instructions to a computer scales very poorly. Imagine the following task: moving every file that contains the word "important" to a dedicated folder. Using a GUI, you would not only be clicking at your desk for several hours, but you could potentially also commit an error in the process of completing this repetitive task. This is where we take advantage of the Unix shell. The Unix shell is both a command-line interface (CLI) and a scripting language, allowing such repetitive tasks to be done automatically and fast. With the proper commands, the shell can repeat tasks with or without some modification as many times as we want. Using the shell, the task in the example can be accomplished in seconds.
+### Navigating files and running comands with the unix shell
+Ashley Cryan- 1 hr
+- Introduction to the Bash scripting language
+- Creating directories using the command line
+- Name pattern matching to select, move and concatenate data files
 
-The most popular Unix shell is Bash (the Bourne Again SHell — so-called because it’s derived from a shell written by Stephen Bourne). Bash is the default shell on most modern implementations of Unix and in most packages that provide Unix-like tools for Windows.
+### Coffee break - 15 mins
 
-Using the shell will take some effort and some time to learn. While a GUI presents you with choices to select, CLI choices are not automatically presented to you, so you must learn a few commands like new vocabulary in a language you’re studying. However, unlike a spoken language, a small number of “words” (i.e. commands) gets you a long way, and we’ll cover some of those essentials today.
-
-The grammar of a shell allows you to combine existing tools into powerful pipelines and handle large volumes of data automatically. Sequences of commands can be written into a script, improving the reproducibility of workflows.
+### Introduction to the python ecosystem
+Jose Urra - 45 mins
+- Python ecosystem tools, Anaconda and Jupyter Lab
+- How to use Jupyter Lab to complete the afternoon exercises
+- How to contact us if you need help
