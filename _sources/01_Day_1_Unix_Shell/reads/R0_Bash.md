@@ -1,12 +1,6 @@
-# Day 1: Introduction to Unix Shell, Python and Jupyter Lab
+# Introduction to Unix Shell, Python and Jupyter Lab
 
-## Creating and navigating files and directories with the Unix Shell (Bash)
-
-This lesson is an introduction to using the Unix shell and the Bash scripting language to create and navigate through files and directories (folders) on your local computer. It is an alternative to "clicking" and provides some significant advantages in documenting processes, automating tasks, and enabling reproducible workflows.
-
-This lesson material is based upon the Software Carpentries lesson on [The Unix Shell](http://swcarpentry.github.io/shell-novice/), the [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) lesson from Data Carpentries, and an [Intro to the Shell](https://datacarpentry.org/2015-11-04-ACUNS/shell-intro/) workshop from softwarecarpentry.org.
-
-## Background for today
+## Background
 The shell is a program that enables us to send commands to the computer and receive output. It is also referred to as the terminal or command line.
 Humans and computers commonly interact in many different ways, such as through a keyboard and mouse, touch screen interfaces, or using speech recognition systems. The most widely used way to interact with personal computers is called a graphical user interface (GUI). With a GUI, we give instructions by clicking a mouse and using menu-driven interactions.
 

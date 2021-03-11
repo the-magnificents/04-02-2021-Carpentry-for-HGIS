@@ -27,3 +27,6 @@ We have carefully curated and provided exercises with different levels of comple
 Some exercises can be optional, for those cases we should clearly specify which are not required.
 
 ```
+
+## Credits and acknowledgements
+This lesson material is based upon the Software Carpentries lesson on [The Unix Shell](http://swcarpentry.github.io/shell-novice/), Andrea Cleland's [Turtle Graphics Map](https://github.com/acleland/turtle-graphics-map) repository, the [Plotting and Programming in Python](https://swcarpentry.github.io/python-novice-gapminder/) lesson from the Software Carpentries, and Gizmo ["Can you speak Python?" challenges](https://github.com/wmvanvliet/gizmo) repository by Marijn van Vliet. We thank the authors for their inspiration and material :) 
