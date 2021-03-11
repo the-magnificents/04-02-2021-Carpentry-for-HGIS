@@ -1,9 +1,6 @@
 file: README
 sections:
-- file: 00_Lesson_prep/00_About_this_workshop
-  sections:
-  - file: 00_Lesson_prep/01_Prep
-  - file: 00_Lesson_prep/Schedule
+- file: 00_Lesson_prep/README
 - file: 01_Day_1_Unix_Shell/00_README
   sections:
   - file: 01_Day_1_Unix_Shell/A2_Runing_quiting
