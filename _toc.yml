@@ -76,6 +76,7 @@ sections:
     - file: Instructor_notes/Day_2/02_lesson
     - file: Instructor_notes/Day_2/jupyter_instructor_notes
     - file: Instructor_notes/Day_2/mappy_instructor_notes
+    - file: Instructor_notes/Day_2/A1_qgis_lesson1
     - file: Instructor_notes/Day_2/old/03_lesson
       sections:
       - file: Instructor_notes/Day_2/old/C1_Python_Standard_Library
