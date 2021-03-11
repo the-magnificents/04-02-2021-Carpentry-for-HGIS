@@ -1,6 +1,8 @@
 file: README
 sections:
 - file: 00_Lesson_prep/README
+  sections:
+  - file: 00_Lesson_prep/icebreaker
 - file: 01_Day_1_Unix_Shell/00_README
   sections:
   - file: 01_Day_1_Unix_Shell/A2_Runing_quiting
