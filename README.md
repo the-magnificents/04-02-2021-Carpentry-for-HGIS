@@ -30,9 +30,6 @@ Some exercises can be optional, for those cases we should clearly specify which 
 
 ```
 
-# Preparing for the workshop
-During this workshop, we will be working with some tools and programs that will need to be installed before we begin. **The checklist below should be completed prior to Day 1 of the workshop** in order to be ready to go :) 
-
 ## Pre-workshop Checklist
 *all of these steps should be taken before Day 1 starts. These programs and files will be all we need to complete all three days of the workshop*
 
