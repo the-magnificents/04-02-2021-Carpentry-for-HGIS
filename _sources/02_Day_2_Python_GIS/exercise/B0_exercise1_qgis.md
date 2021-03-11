@@ -1,4 +1,4 @@
-# Exercise 1: Running someone else's Python script
+# Running someone else's Python script
 
 QGIS is an open-source program that is written in Python, which makes it easy to interact with programmatically. You can use Python scripts for analysing data, create your own processing algorithms, and even change things about the appearance and functionality of your own version of the application.
 
