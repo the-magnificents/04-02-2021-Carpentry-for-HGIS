@@ -1,14 +1,5 @@
-# Day 1: Introduction to Unix Shell, Python and Jupyter Lab
-
-## Creating and navigating files and directories with the Unix Shell (Bash)
-
-This lesson is an introduction to using the Unix shell and the Bash scripting language to create and navigate through files and directories (folders) on your local computer. It is an alternative to "clicking" and provides some significant advantages in documenting processes, automating tasks, and enabling reproducible workflows.
-
-This lesson material is based upon the Software Carpentries lesson on [The Unix Shell](http://swcarpentry.github.io/shell-novice/), the [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) lesson from Data Carpentries, and an [Intro to the Shell](https://datacarpentry.org/2015-11-04-ACUNS/shell-intro/) workshop from softwarecarpentry.org.
-
-## Background for today
-The shell is a program that enables us to send commands to the computer and receive output. It is also referred to as the terminal or command line.
-Humans and computers commonly interact in many different ways, such as through a keyboard and mouse, touch screen interfaces, or using speech recognition systems. The most widely used way to interact with personal computers is called a graphical user interface (GUI). With a GUI, we give instructions by clicking a mouse and using menu-driven interactions.
+## Unix Shell
+The shell is a program that enables us to send commands to the computer and receive output. It is also referred to as the terminal or command line.Humans and computers commonly interact in many different ways, such as through a keyboard and mouse, touch screen interfaces, or using speech recognition systems. The most widely used way to interact with personal computers is called a graphical user interface (GUI). With a GUI, we give instructions by clicking a mouse and using menu-driven interactions.
 
 While the visual aid of a GUI makes it intuitive to learn, this way of delivering instructions to a computer scales very poorly. Imagine the following task: moving every file that contains the word "important" to a dedicated folder. Using a GUI, you would not only be clicking at your desk for several hours, but you could potentially also commit an error in the process of completing this repetitive task. This is where we take advantage of the Unix shell. The Unix shell is both a command-line interface (CLI) and a scripting language, allowing such repetitive tasks to be done automatically and fast. With the proper commands, the shell can repeat tasks with or without some modification as many times as we want. Using the shell, the task in the example can be accomplished in seconds.
 

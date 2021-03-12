@@ -1,10 +1,10 @@
 # Workshop overview
+![](../images/Delft_1949.jpg)
 Are you interested in learning to program with Python? Are you working with geospatial data or interested in working with geospatial data? Would you like to apply computational thinking and data analysis tools to your research?
 
 This  3-day long workshop is for beginners with zero programming experience. We are going to work with very simple geospatial datasets as examples, but it is not exclusive or focused only on GIS. 
 
-By the end of this workshop, you will learn fundamental concepts of programming with python, version control, and how to work with the command line. 
-We will also demonstrate how these tools are useful and make sense in the context of GIS.
+By the end of this workshop, you will learn fundamental concepts of programming with python, version control, and how to work with the command line.  We will also demonstrate how these tools are useful and make sense in the context of GIS.
 We hope to get you inspired and motivated to use these tools in your future research!
 
 ## General considerations for this workshop
@@ -20,10 +20,3 @@ We have carefully curated and provided exercises with different levels of comple
 - Once you have solved the exercises, give a "like" to the first comment of the exercises page so we as instructors know you were able to complete the exercise. 
 - Use the comments to ask questions about the exercises. We have set up comments on each exercise page so that workshop is more interactive.
 
-<!-- - Once you have read the material provided prior to the morning session, comment on the summary page -->
-
-
-```{tip}
-Some exercises can be optional, for those cases we should clearly specify which are not required.
-
-```

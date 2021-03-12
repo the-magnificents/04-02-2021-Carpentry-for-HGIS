@@ -3,7 +3,6 @@ sections:
 - file: 00_Lesson_prep/00_About_this_workshop
   sections:
   - file: 00_Lesson_prep/01_Prep
-  - file: 00_Lesson_prep/Schedule
 - file: 01_Day_1_Unix_Shell/00_README
   sections:
   - file: 01_Day_1_Unix_Shell/A2_Runing_quiting
@@ -21,6 +20,7 @@ sections:
   - file: 01_Day_1_Unix_Shell/reads/00_README
     sections:
     - file: 01_Day_1_Unix_Shell/reads/R0_Bash
+    - file: 01_Day_1_Unix_Shell/reads/R1_Dist_V_Control
 - file: 02_Day_2_Python_GIS/00_README
   sections:
   - file: 02_Day_2_Python_GIS/code/city
