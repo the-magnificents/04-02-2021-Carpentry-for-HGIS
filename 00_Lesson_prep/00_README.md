@@ -13,4 +13,9 @@ During this workshop, we will be working with some tools and programs that will 
 
 If you have any questions about these steps before the workshop, please reach out to Ashley (a.e.cryan@tudelft.nl) and Jose (j.c.urrallanusa@tudelft.nl) before we get started!
 
-
+## Code of Conduct
+- Use welcoming and inclusive language
+- Be respectful of different viewpoints and experiences 
+- Gracefully accept constructive criticism
+- Focus on what is best for the community
+- Show courtesy and respect towards other community members

@@ -1,8 +1,8 @@
 file: README
 sections:
-- file: 00_Lesson_prep/00_About_this_workshop
+- file: 00_Lesson_prep/README
   sections:
-  - file: 00_Lesson_prep/01_Prep
+  - file: 00_Lesson_prep/icebreaker
 - file: 01_Day_1_Unix_Shell/00_README
   sections:
   - file: 01_Day_1_Unix_Shell/A2_Runing_quiting
@@ -76,6 +76,7 @@ sections:
     - file: Instructor_notes/Day_2/02_lesson
     - file: Instructor_notes/Day_2/jupyter_instructor_notes
     - file: Instructor_notes/Day_2/mappy_instructor_notes
+    - file: Instructor_notes/Day_2/A1_qgis_lesson1
     - file: Instructor_notes/Day_2/old/03_lesson
       sections:
       - file: Instructor_notes/Day_2/old/C1_Python_Standard_Library

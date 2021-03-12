@@ -6,9 +6,9 @@
 - How to explore datasets using powerful Python libraries 
 
 ### Practice:
-- Using other peoples code
-- Reading and analyze other people's code
-- Doing simple data analysis and plotting operations with pandas and matplotlib
+- Using other people's code
+- Reading and analyzing other people's code
+- Doing simple data analysis and plotting operations with pandas, numpy and matplotlib
 
 ## Schedule
 **Day 2 begins at 09:30.** The morning teaching session will conclude at 12:30, followed by the afternoon of independent exercises.
