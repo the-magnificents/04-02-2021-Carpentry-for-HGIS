@@ -44,13 +44,17 @@ The Bash commands, notations and tools taught in this lesson are:
 
 - `cd` - change directory
 - `ls` - list (files and directories)
-- `ls -F` - list files and directories with a slash to distinguish
+- `ls -F` - list files and directories with a /
 - `mkdir` - make directory
 - `cat` - show file contents
 - `..` - move "up one" directory level
 - `mv` - move
 - `pwd` - print working directory
 - `*` - wildcard used to match filenames
+- `>` - used to save output from a command in a file
+- `awk` - used for pattern matching and processing
+
+
 - nano text editor
 
 The Jupyter commands taught in this lesson are:
