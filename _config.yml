@@ -13,6 +13,7 @@ repository:
   url  : https://github.com/the-magnificents/04-02-2021-Carpentry-for-HGIS.git
 
 html:
+  use_repository_button: true
   comments:
     utterances:
       repo: "the-magnificents/04-02-2021-Carpentry-for-HGIS" 

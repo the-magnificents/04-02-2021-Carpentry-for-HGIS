@@ -1,6 +1,7 @@
 # EXERCISES DAY 3
-
-You will make mistakes, its human nature, learn how to deal with them, control your code. 
+```{warning}
+Watch out!! You will make mistakes, its human nature, learn how to deal with them, control your code and workflow. 
+```
 ![](../../images/git.jpg)
 
 ![](../../images/automated-testing.jpg)

@@ -1,8 +1,11 @@
-file: README
+file: LICENSE
 sections:
-- file: 00_Lesson_prep/README
+- file: README
+- file: 00_Lesson_prep/00_About_this_workshop
   sections:
-  - file: 00_Lesson_prep/icebreaker
+  - file: 00_Lesson_prep/00_README
+  - file: 00_Lesson_prep/01_icebreaker
+  - file: 00_Lesson_prep/02_Aknowledgement
 - file: 01_Day_1_Unix_Shell/00_README
   sections:
   - file: 01_Day_1_Unix_Shell/A2_Runing_quiting
@@ -29,6 +32,7 @@ sections:
     - file: 02_Day_2_Python_GIS/code/polygon
     - file: 02_Day_2_Python_GIS/code/simple_GIS
     - file: 02_Day_2_Python_GIS/code/test_polygon
+    - file: 02_Day_2_Python_GIS/code/.pytest_cache/README
   - file: 02_Day_2_Python_GIS/exercise/00_README
     sections:
     - file: 02_Day_2_Python_GIS/exercise/B0_exercise1_qgis
@@ -39,7 +43,6 @@ sections:
     - file: 02_Day_2_Python_GIS/exercise/B7_Exercise_Loop_Datasets
   - file: 02_Day_2_Python_GIS/reads/00_README
     sections:
-    - file: 02_Day_2_Python_GIS/reads/A1_qgis_lesson1
     - file: 02_Day_2_Python_GIS/reads/R0_Python_QGIS
 - file: 03_Day_3_Git/00_README
   sections:
@@ -47,6 +50,7 @@ sections:
   - file: 03_Day_3_Git/reads/00_README
     sections:
     - file: 03_Day_3_Git/reads/R0_README
+- file: 04_Wrap_up/00_README
 - file: Instructor_notes/00_README
   sections:
   - file: Instructor_notes/02_References
@@ -74,12 +78,13 @@ sections:
     sections:
     - file: Instructor_notes/Day_2/01_lesson
     - file: Instructor_notes/Day_2/02_lesson
+    - file: Instructor_notes/Day_2/A1_qgis_lesson1
     - file: Instructor_notes/Day_2/jupyter_instructor_notes
     - file: Instructor_notes/Day_2/mappy_instructor_notes
-    - file: Instructor_notes/Day_2/A1_qgis_lesson1
     - file: Instructor_notes/Day_2/old/03_lesson
       sections:
       - file: Instructor_notes/Day_2/old/C1_Python_Standard_Library
+      - file: Instructor_notes/Day_2/old/polygon
       - file: Instructor_notes/Day_2/old/python_instructor_notes
       - file: Instructor_notes/Day_2/old/readme
   - file: Instructor_notes/Day_3/00_README

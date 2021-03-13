@@ -1,5 +1,6 @@
 # Workshop overview
-![](../images/Delft_1949.jpg)
+![](../images/map_delft.jpg)
+
 Are you interested in learning to program with Python? Are you working with geospatial data or interested in working with geospatial data? Would you like to apply computational thinking and data analysis tools to your research?
 
 This  3-day long workshop is for beginners with zero programming experience. We are going to work with very simple geospatial datasets as examples, but it is not exclusive or focused only on GIS. 
