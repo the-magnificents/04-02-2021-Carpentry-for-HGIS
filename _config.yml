@@ -6,7 +6,7 @@ execute:
 
 only_build_toc_files: true
 
-exclude_patterns: [02_Python_Draw_GIS/code/** images/**.*,./**/*.py, ./**/*.jpg ]
+exclude_patterns: [LICENSE.md, 02_Python_Draw_GIS/code/** images/**.*,./**/*.py, ./**/*.jpg ]
 
 # Information about where the book exists on the web
 repository:

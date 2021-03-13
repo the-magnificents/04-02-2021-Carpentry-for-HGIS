@@ -1,11 +1,7 @@
-file: LICENSE
+file: 00_README_old
 sections:
 - file: README
-- file: 00_Lesson_prep/00_About_this_workshop
-  sections:
-  - file: 00_Lesson_prep/00_README
-  - file: 00_Lesson_prep/01_icebreaker
-  - file: 00_Lesson_prep/02_Aknowledgement
+- file: 00_Lesson_prep/01_icebreaker
 - file: 01_Day_1_Unix_Shell/00_README
   sections:
   - file: 01_Day_1_Unix_Shell/A2_Runing_quiting
