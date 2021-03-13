@@ -1,6 +1,7 @@
 # EXERCISES DAY 2
 
 Like any craft, coding requires patience, curiosity, determination, anticipation, and experimentation. When learning how to program it is crucial that you constantly experiment and test, from simple commands and code snippets(little pieces of code), to entire codebases and libraries.
+
 ![](../../images/python_joke.jpg)
 
 ## Before getting started
