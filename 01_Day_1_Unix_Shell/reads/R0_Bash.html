@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to Unix Shell, Python and Jupyter Lab &#8212; Python essentials for GIS learners</title>
+    <title>Unix Shell &#8212; Python essentials for GIS learners</title>
     
-  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
     
   <link rel="stylesheet"
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../../_static/js/index.3da636dd464baa7582d2.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -89,7 +89,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="DAY 2" href="../../02_Day_2_Python_GIS/00_README.html" />
+    <link rel="next" title="Distributed version control" href="R1_Dist_V_Control.html" />
     <link rel="prev" title="READS DAY 1" href="00_README.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -121,6 +121,35 @@ commentsRunWhenDOMLoaded(addUtterances);
 </form>
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Python Essentials for GIS Learners
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../00_Lesson_prep/00_About_this_workshop.html">
+   Workshop overview
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../00_Lesson_prep/00_README.html">
+     Preparing for the workshop
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../00_Lesson_prep/01_icebreaker.html">
+     Icebreaker question
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../00_Lesson_prep/02_Aknowledgement.html">
+     Acknowledgments
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
  <li class="toctree-l1 current active collapsible-parent">
   <a class="reference internal" href="../00_README.html">
    DAY 1
@@ -192,7 +221,14 @@ commentsRunWhenDOMLoaded(addUtterances);
     <ul class="current collapse-ul">
      <li class="toctree-l3 current active">
       <a class="current reference internal" href="#">
-       Introduction to Unix Shell, Python and Jupyter Lab
+       Unix Shell
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="R1_Dist_V_Control.html">
+       <strong>
+        Distributed version control
+       </strong>
       </a>
      </li>
     </ul>
@@ -292,6 +328,11 @@ commentsRunWhenDOMLoaded(addUtterances);
   </ul>
   <i class="fas fa-chevron-down">
   </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../04_Wrap_up/00_README.html">
+   FOLLOW UP
+  </a>
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../../Instructor_notes/00_README.html">
@@ -812,6 +853,11 @@ commentsRunWhenDOMLoaded(addUtterances);
       </a>
      </li>
      <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_2/A1_qgis_lesson1.html">
+       Programmatically access the attributes of international airports
+      </a>
+     </li>
+     <li class="toctree-l3">
       <a class="reference internal" href="../../Instructor_notes/Day_2/jupyter_instructor_notes.html">
        Working with Jupyter Notebooks in Jupyter Lab
       </a>
@@ -819,11 +865,6 @@ commentsRunWhenDOMLoaded(addUtterances);
      <li class="toctree-l3">
       <a class="reference internal" href="../../Instructor_notes/Day_2/mappy_instructor_notes.html">
        Run map.py on netherlandsmap.csv
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../Instructor_notes/Day_2/A1_qgis_lesson1.html">
-       Programmatically access the attributes of international airports
       </a>
      </li>
      <li class="toctree-l3 collapsible-parent">
@@ -923,6 +964,19 @@ commentsRunWhenDOMLoaded(addUtterances);
 
         <!-- Source interaction buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/the-magnificents/04-02-2021-Carpentry-for-HGIS.git"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
 
         <!-- Full screen (wrap in <a> to have style consistency -->
         <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
@@ -937,20 +991,6 @@ commentsRunWhenDOMLoaded(addUtterances);
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
-        </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#background">
-   Background
-  </a>
- </li>
-</ul>
-
-        </nav>
-        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -958,17 +998,13 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  <div class="section" id="introduction-to-unix-shell-python-and-jupyter-lab">
-<h1>Introduction to Unix Shell, Python and Jupyter Lab<a class="headerlink" href="#introduction-to-unix-shell-python-and-jupyter-lab" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="background">
-<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
-<p>The shell is a program that enables us to send commands to the computer and receive output. It is also referred to as the terminal or command line.
-Humans and computers commonly interact in many different ways, such as through a keyboard and mouse, touch screen interfaces, or using speech recognition systems. The most widely used way to interact with personal computers is called a graphical user interface (GUI). With a GUI, we give instructions by clicking a mouse and using menu-driven interactions.</p>
+  <div class="section" id="unix-shell">
+<h1>Unix Shell<a class="headerlink" href="#unix-shell" title="Permalink to this headline">¶</a></h1>
+<p>The shell is a program that enables us to send commands to the computer and receive output. It is also referred to as the terminal or command line.Humans and computers commonly interact in many different ways, such as through a keyboard and mouse, touch screen interfaces, or using speech recognition systems. The most widely used way to interact with personal computers is called a graphical user interface (GUI). With a GUI, we give instructions by clicking a mouse and using menu-driven interactions.</p>
 <p>While the visual aid of a GUI makes it intuitive to learn, this way of delivering instructions to a computer scales very poorly. Imagine the following task: moving every file that contains the word “important” to a dedicated folder. Using a GUI, you would not only be clicking at your desk for several hours, but you could potentially also commit an error in the process of completing this repetitive task. This is where we take advantage of the Unix shell. The Unix shell is both a command-line interface (CLI) and a scripting language, allowing such repetitive tasks to be done automatically and fast. With the proper commands, the shell can repeat tasks with or without some modification as many times as we want. Using the shell, the task in the example can be accomplished in seconds.</p>
 <p>The most popular Unix shell is Bash (the Bourne Again SHell — so-called because it’s derived from a shell written by Stephen Bourne). Bash is the default shell on most modern implementations of Unix and in most packages that provide Unix-like tools for Windows.</p>
 <p>Using the shell will take some effort and some time to learn. While a GUI presents you with choices to select, CLI choices are not automatically presented to you, so you must learn a few commands like new vocabulary in a language you’re studying. However, unlike a spoken language, a small number of “words” (i.e. commands) gets you a long way, and we’ll cover some of those essentials today.</p>
 <p>The grammar of a shell allows you to combine existing tools into powerful pipelines and handle large volumes of data automatically. Sequences of commands can be written into a script, improving the reproducibility of workflows.</p>
-</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -984,7 +1020,7 @@ Humans and computers commonly interact in many different ways, such as through a
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./01_Day_1_Unix_Shell/reads"
+            path: "./01_Day_1_Unix_Shell\reads"
         },
         predefinedOutput: true
     }
@@ -1000,7 +1036,7 @@ Humans and computers commonly interact in many different ways, such as through a
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="00_README.html" title="previous page">READS DAY 1</a>
-    <a class='right-next' id="next-link" href="../../02_Day_2_Python_GIS/00_README.html" title="next page">DAY 2</a>
+    <a class='right-next' id="next-link" href="R1_Dist_V_Control.html" title="next page"><strong>Distributed version control</strong></a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
@@ -1020,7 +1056,7 @@ Humans and computers commonly interact in many different ways, such as through a
     </div>
 
     
-  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
+  <script src="../../_static/js/index.3da636dd464baa7582d2.js"></script>
 
 
     

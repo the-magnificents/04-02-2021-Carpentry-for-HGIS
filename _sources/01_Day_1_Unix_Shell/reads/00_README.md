@@ -11,7 +11,8 @@ Graphical shells place a low burden on beginning computer users, and are charact
 #### **Kernel** 
 The main difference between kernel and shell is that the kernel is the core of the operating system that controls all the tasks of the system while the shell is the interface that allows the users to communicate with the kernel.[Difference between kernel and shell](https://www.google.com/search?q=kernell+and+shell&rlz=1C1GCEU_nlNL866NL866&oq=kernell+and+shell&aqs=chrome..69i57j0i10l9.2586j0j4&sourceid=chrome&ie=UTF-8)
 
-#### File System (fs)
+#### **File system (fs)**
+In computing, a file system or filesystem (often abbreviated to fs) controls how data is stored and retrieved. Without a file system, data placed in a storage medium would be one large body of data with no way to tell where one piece of data stops and the next begins.[File system](https://en.wikipedia.org/wiki/File_system)
 
 
 #### **Bash(Unix shell)** 

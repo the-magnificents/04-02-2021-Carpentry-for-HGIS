@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>READS DAY 2 &#8212; Python essentials for GIS learners</title>
     
-  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
     
   <link rel="stylesheet"
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../../_static/js/index.3da636dd464baa7582d2.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -121,6 +121,35 @@ commentsRunWhenDOMLoaded(addUtterances);
 </form>
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Python Essentials for GIS Learners
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../00_Lesson_prep/00_About_this_workshop.html">
+   Workshop overview
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../00_Lesson_prep/00_README.html">
+     Preparing for the workshop
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../00_Lesson_prep/01_icebreaker.html">
+     Icebreaker question
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../00_Lesson_prep/02_Aknowledgement.html">
+     Acknowledgments
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../../01_Day_1_Unix_Shell/00_README.html">
    DAY 1
@@ -192,7 +221,14 @@ commentsRunWhenDOMLoaded(addUtterances);
     <ul class="collapse-ul">
      <li class="toctree-l3">
       <a class="reference internal" href="../../01_Day_1_Unix_Shell/reads/R0_Bash.html">
-       Introduction to Unix Shell, Python and Jupyter Lab
+       Unix Shell
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../01_Day_1_Unix_Shell/reads/R1_Dist_V_Control.html">
+       <strong>
+        Distributed version control
+       </strong>
       </a>
      </li>
     </ul>
@@ -292,6 +328,11 @@ commentsRunWhenDOMLoaded(addUtterances);
   </ul>
   <i class="fas fa-chevron-down">
   </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../04_Wrap_up/00_README.html">
+   FOLLOW UP
+  </a>
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../../Instructor_notes/00_README.html">
@@ -812,6 +853,11 @@ commentsRunWhenDOMLoaded(addUtterances);
       </a>
      </li>
      <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_2/A1_qgis_lesson1.html">
+       Programmatically access the attributes of international airports
+      </a>
+     </li>
+     <li class="toctree-l3">
       <a class="reference internal" href="../../Instructor_notes/Day_2/jupyter_instructor_notes.html">
        Working with Jupyter Notebooks in Jupyter Lab
       </a>
@@ -819,11 +865,6 @@ commentsRunWhenDOMLoaded(addUtterances);
      <li class="toctree-l3">
       <a class="reference internal" href="../../Instructor_notes/Day_2/mappy_instructor_notes.html">
        Run map.py on netherlandsmap.csv
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../Instructor_notes/Day_2/A1_qgis_lesson1.html">
-       Programmatically access the attributes of international airports
       </a>
      </li>
      <li class="toctree-l3 collapsible-parent">
@@ -923,6 +964,19 @@ commentsRunWhenDOMLoaded(addUtterances);
 
         <!-- Source interaction buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/the-magnificents/04-02-2021-Carpentry-for-HGIS.git"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
 
         <!-- Full screen (wrap in <a> to have style consistency -->
         <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
@@ -937,6 +991,64 @@ commentsRunWhenDOMLoaded(addUtterances);
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#glosary">
+   Glosary
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#index">
+     <strong>
+      Index
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-set">
+     <strong>
+      Data set
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#object-oriented-programming-oop">
+     <strong>
+      Object oriented programming (OOP)
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#class">
+     <strong>
+      Class
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#software-architecture">
+     <strong>
+      Software Architecture
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#design-patterns">
+     <strong>
+      Design patterns
+     </strong>
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -946,8 +1058,37 @@ commentsRunWhenDOMLoaded(addUtterances);
                 
   <div class="section" id="reads-day-2">
 <h1>READS DAY 2<a class="headerlink" href="#reads-day-2" title="Permalink to this headline">¶</a></h1>
-<p>Write here why</p>
+<div class="section" id="glosary">
+<h2>Glosary<a class="headerlink" href="#glosary" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="index">
+<h3><strong>Index</strong><a class="headerlink" href="#index" title="Permalink to this headline">¶</a></h3>
+<p>An index is a numerical representation of an item’s position in a sequence. This sequence can refer to many things: a list, a string of characters, or any arbitrary sequence of values. In some programming languages, an array can be defined by key-value pairs, where a specific key points to a value.<a class="reference external" href="https://en.scratch-wiki.info/wiki/Index#:~:text=An%20index%20is%20a%20numerical,key%20points%20to%20a%20value.">Index</a>
+<img alt="" src="../../_images/string-indexes.png" /></p>
+</div>
+<div class="section" id="data-set">
+<h3><strong>Data set</strong><a class="headerlink" href="#data-set" title="Permalink to this headline">¶</a></h3>
+<p>A data set (or dataset) is a collection of data. In the case of tabular data, a data set corresponds to one or more database tables, where every column of a table represents a particular variable, and each row corresponds to a given record of the data set in question. The data set lists values for each of the variables, such as height and weight of an object, for each member of the data set. Each value is known as a datum. Data sets can also consist of a collection of documents or files.<a class="reference external" href="https://en.wikipedia.org/wiki/Data_set#cite_note-Editorial-1">Data set</a></p>
+</div>
+<div class="section" id="object-oriented-programming-oop">
+<h3><strong>Object oriented programming (OOP)</strong><a class="headerlink" href="#object-oriented-programming-oop" title="Permalink to this headline">¶</a></h3>
+<p>Object-oriented programming is an approach to designing modular reusable software systems. The object-oriented approach is an evolution of good design practices that go back to the very beginning of computer programming. Object-orientation is simply the logical extension of older techniques such as structured programming and abstract data types.<a class="reference external" href="https://en.wikipedia.org/wiki/Object_(computer_science)#:~:text=An%20object%20is%20an%20abstract,found%20in%20the%20real%20world.">Object Oriented Programming</a></p>
+<p>The object bellow shows properties on top(values) and methods(functions) bellow.
+<span class="xref myst"></span></p>
+</div>
+<div class="section" id="class">
+<h3><strong>Class</strong><a class="headerlink" href="#class" title="Permalink to this headline">¶</a></h3>
+<p>Think of a class like a factory of objects, this is a very simplistic explanation, but enough to ilustrate the concept for the workshop. In object-oriented programming, a class is an extensible program-code-template for creating objects, providing initial values for state (member variables) and implementations of behavior (member functions or methods)<a class="reference external" href="https://en.wikipedia.org/wiki/Class_(computer_programming)">Class</a>.</p>
+</div>
+<div class="section" id="software-architecture">
+<h3><strong>Software Architecture</strong><a class="headerlink" href="#software-architecture" title="Permalink to this headline">¶</a></h3>
+<p>Software architecture refers to the fundamental structures of a software system and the discipline of creating such structures and systems.<a class="reference external" href="https://en.wikipedia.org/wiki/Software_architecture">Software Architecture</a></p>
+</div>
+<div class="section" id="design-patterns">
+<h3><strong>Design patterns</strong><a class="headerlink" href="#design-patterns" title="Permalink to this headline">¶</a></h3>
+<p>A design pattern is the re-usable form of a solution to a design problem. The idea was introduced by the architect Christopher Alexander(Architect) and has been adapted for various other disciplines, notably software engineering.</p>
 <div class="toctree-wrapper compound">
+</div>
+</div>
 </div>
 </div>
 
@@ -964,7 +1105,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./02_Day_2_Python_GIS/reads"
+            path: "./02_Day_2_Python_GIS\reads"
         },
         predefinedOutput: true
     }
@@ -1000,7 +1141,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     </div>
 
     
-  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
+  <script src="../../_static/js/index.3da636dd464baa7582d2.js"></script>
 
 
     

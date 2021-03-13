@@ -4,10 +4,10 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Excercise 2 &#8212; Python essentials for GIS learners</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise variables, values, inputs, outputs &#8212; Python essentials for GIS learners</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
     
   <link rel="stylesheet"
@@ -25,8 +25,8 @@
     href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -34,12 +34,13 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -88,8 +89,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Day 2" href="../02_Python_Draw_GIS/00_README.html" />
-    <link rel="prev" title="Excercise 2" href="B1_exercise.html" />
+    <link rel="next" title="Exercise types and built-in functions" href="B3_Exercise.html" />
+    <link rel="prev" title="Exercise 1" href="B1_exercise.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -150,18 +151,52 @@ commentsRunWhenDOMLoaded(addUtterances);
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="B0_exercise.html">
-     Exercise 1
+    <a class="reference internal" href="A2_Runing_quiting.html">
+     Getting Started with JupyterLab
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="B1_exercise.html">
-     Excercise 2
+     Exercise 1
     </a>
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Excercise 2
+     Excercise variables, values, inputs, outputs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="B3_Exercise.html">
+     Exercise types and built-in functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="B4_Exercise.html">
+     Built-in Functions and Help
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="B5_Exercise.html">
+     Working with libraries
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../02_Day_2_QGIS/00_README.html">
+   Working with the Python console in QGIS
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Day_2_QGIS/A1_qgis_lesson1.html">
+     Programmatically access the attributes of international airports
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Day_2_QGIS/B0_exercise1_qgis.html">
+     Exercise 1: Running someone else’s Python script
     </a>
    </li>
   </ul>
@@ -188,6 +223,11 @@ commentsRunWhenDOMLoaded(addUtterances);
      Go from for loops and while loops to functions
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Python_Draw_GIS/C1_Python_Standard_Library.html">
+     Python standard libraries
+    </a>
+   </li>
   </ul>
   <i class="fas fa-chevron-down">
   </i>
@@ -212,13 +252,8 @@ commentsRunWhenDOMLoaded(addUtterances);
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/unix_instructor_notes.html">
-     Instructor Notes: Python Essentials for GIS Learners Day 1
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/python_instructor_notes.html">
-     About these instructor notes
+    <a class="reference internal" href="../Instructor_notes/01_Notes_From_DH_context.html">
+     Guide to programing with Python for the Digital Humanities
     </a>
    </li>
    <li class="toctree-l2">
@@ -229,6 +264,16 @@ commentsRunWhenDOMLoaded(addUtterances);
    <li class="toctree-l2">
     <a class="reference internal" href="../Instructor_notes/open_science_instructor_notes.html">
      Open Science
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/python_instructor_notes.html">
+     About these instructor notes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/unix_instructor_notes.html">
+     Instructor Notes: Python Essentials for GIS Learners Day 1
     </a>
    </li>
   </ul>
@@ -275,9 +320,9 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/01_Day_1_Unix_Shell/B2_exercise.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/01_Day_1_Unix_Shell/B2_Exercise.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -295,6 +340,23 @@ commentsRunWhenDOMLoaded(addUtterances);
 
         <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/01_Day_1_Unix_Shell/B2_Exercise.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
     </div>
 
     <!-- Table of contents -->
@@ -306,8 +368,34 @@ commentsRunWhenDOMLoaded(addUtterances);
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#comment-on-the-following-questions-bellow">
-   Comment on the following questions bellow
+  <a class="reference internal nav-link" href="#use-variables-to-store-values">
+   Use variables to store values
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#use-print-to-display-values">
+   Use
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     print
+    </span>
+   </code>
+   to display values.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#variables-must-be-created-before-they-are-used">
+   Variables must be created before they are used.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#variables-persist-between-cells">
+   Variables Persist Between Cells
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#use-variables-in-calculations">
+   Use variables in calculations
   </a>
  </li>
 </ul>
@@ -321,37 +409,192 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  <div class="section" id="excercise-2">
-<h1>Excercise 2<a class="headerlink" href="#excercise-2" title="Permalink to this headline">¶</a></h1>
-<p>Make sure you still have the fruits list in your interpreter. Otherwise, recreate it:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;bananas&#39;</span><span class="p">,</span><span class="s1">&#39;apples&#39;</span><span class="p">,</span><span class="s1">&#39;strawberries&#39;</span><span class="p">]</span>
+  <div class="section" id="excercise-variables-values-inputs-outputs">
+<h1>Excercise variables, values, inputs, outputs<a class="headerlink" href="#excercise-variables-values-inputs-outputs" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="use-variables-to-store-values">
+<h2>Use variables to store values<a class="headerlink" href="#use-variables-to-store-values" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Variables</strong> are names for values.</p></li>
+<li><p>In Python the <code class="docutils literal notranslate"><span class="pre">=</span></code> symbol assigns the value on the right to the name on the left.</p></li>
+<li><p>The variable is created when a value is assigned to it.</p></li>
+<li><p>Here, Python assigns an age to a variable <code class="docutils literal notranslate"><span class="pre">age</span></code>
+and a name in quotes to a variable <code class="docutils literal notranslate"><span class="pre">first_name</span></code>.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="n">first_name</span> <span class="o">=</span> <span class="s1">&#39;Ahmed&#39;</span>
 </pre></div>
 </div>
-<p>Write in your python interpreter</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>
+</div>
+</div>
+<ul class="simple">
+<li><p>Variable names</p>
+<ul>
+<li><p>can <strong>only</strong> contain letters, digits, and underscore <code class="docutils literal notranslate"><span class="pre">_</span></code> (typically used to separate words in long variable names)</p></li>
+<li><p>cannot start with a digit</p></li>
+<li><p>are <strong>case sensitive</strong> (age, Age and AGE are three different variables)</p></li>
+</ul>
+</li>
+<li><p>Variable names that start with underscores like <code class="docutils literal notranslate"><span class="pre">__alistairs_real_age</span></code> have a special meaning
+so we won’t do that until we understand the convention.</p></li>
+</ul>
+</div>
+<div class="section" id="use-print-to-display-values">
+<h2>Use <code class="docutils literal notranslate"><span class="pre">print</span></code> to display values.<a class="headerlink" href="#use-print-to-display-values" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Python has a built-in function called <code class="docutils literal notranslate"><span class="pre">print</span></code> that prints things as text.</p></li>
+<li><p>To add a string to the printout, wrap the string in single or double quotes.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The values passed to the function are called <strong>arguments</strong></p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">first_name</span><span class="p">,</span> <span class="s1">&#39;is&#39;</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="s1">&#39;years old&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>then press enter.
-then write:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>
-<span class="go">        print(i)</span>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ahmed is 42 years old
 </pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">print</span></code> automatically puts a single space between items to separate them.</p></li>
+<li><p>And wraps around to a new line at the end.</p></li>
+</ul>
+</div>
+<div class="section" id="variables-must-be-created-before-they-are-used">
+<h2>Variables must be created before they are used.<a class="headerlink" href="#variables-must-be-created-before-they-are-used" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>If a variable doesn’t exist yet, or if the name has been mis-spelled,
+Python reports an error. (Unlike some languages, which “guess” a default value.)</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">last_name</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">21</span><span class="o">-</span><span class="n">a637c5453549</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="n">last_name</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;last_name&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>The last line of an error message is usually the most informative.</p></li>
+<li><p>We will look at error messages in detail later.</p></li>
+</ul>
+</div>
+<div class="section" id="variables-persist-between-cells">
+<h2>Variables Persist Between Cells<a class="headerlink" href="#variables-persist-between-cells" title="Permalink to this headline">¶</a></h2>
+<p>Be aware that it is the <em>order</em> of execution of cells that is important in a Jupyter notebook, not the order in which they appear. Python will remember <em>all</em> the code that was run previously, including any variables you have defined, irrespective of the order in the notebook. Therefore if you define variables lower down the notebook and then (re)run cells further up, those defined further down will still be present. As an example, create two cells with the following content, in this order:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">myval</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">myval</span> <span class="o">=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>When we use programs and click on buttons we are basically providing instructions to the computer to do specific operations for us, from saving a file, to opening an existing file or creating new files. These are all things you can do using a GUI(Graphical User Interface) or CLI(Command Line Interface)</p>
+<p>If you execute this in order, the first cell will give an error. However, if you run the first cell <em>after</em> the second
+cell it will print out <code class="docutils literal notranslate"><span class="pre">1</span></code>. To prevent confusion, it can be helpful to use the <code class="docutils literal notranslate"><span class="pre">Kernel</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Restart</span> <span class="pre">&amp;</span> <span class="pre">Run</span> <span class="pre">All</span></code> option which
+clears the interpreter and runs everything from a clean slate going top to bottom.</p>
 </div>
-<div class="section" id="comment-on-the-following-questions-bellow">
-<h2>Comment on the following questions bellow<a class="headerlink" href="#comment-on-the-following-questions-bellow" title="Permalink to this headline">¶</a></h2>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You can copy and paste the questions bellow in your comment box, and answer each.</p>
 </div>
-<ul class="simple">
-<li><p>In what ways do you think we can improve the reusability of operations or instructions we gave to the computer?</p></li>
-<li><p>Can you think of different aspects that can make code more reusable ?</p></li>
-<li><p>Based on these questions and your previous answers, can you define what a program, script, or piece of code means to you?</p></li>
-</ul>
+<div class="section" id="use-variables-in-calculations">
+<h2>Use variables in calculations<a class="headerlink" href="#use-variables-in-calculations" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span> <span class="o">+</span> <span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Age in three years:&#39;</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Age in three years: 45
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition-exercise-calculate-yearly-gdp-of-a-country-given-certain-facts admonition">
+<p class="admonition-title">Exercise: calculate yearly GDP of a country given certain facts</p>
+<p>Copy and paste the code bellow in your jupyter notebook. Complete the empty spaces in the cell bellow to calculate the gdp.</p>
+<p>Assume that Consumer spending is 1 million per year, Investment is 500 K, Government spending is 800 K, Esports is 100 K and imports 2 million.</p>
+</div>
+<p><img alt="" src="../_images/gdp_formula.png" /></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_gdp</span><span class="p">(</span><span class="n">_</span><span class="p">,</span><span class="n">_</span><span class="p">,</span><span class="n">_</span><span class="p">,</span><span class="n">_</span><span class="p">,):</span>
+     <span class="k">return</span>  <span class="n">_</span> <span class="o">+</span> <span class="n">_</span> <span class="o">+</span> <span class="n">_</span> <span class="o">+</span> <span class="p">(</span><span class="n">_</span> <span class="o">-</span> <span class="n">_</span><span class="p">)</span>
+
+<span class="n">island_gdp</span> <span class="o">=</span> <span class="n">get_gdp</span><span class="p">(</span><span class="mi">1000000</span><span class="p">,</span><span class="mi">500000</span><span class="p">,</span><span class="mi">800000</span><span class="p">,</span><span class="mi">100000</span><span class="p">,</span><span class="mi">2000000</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">island_gdp</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>400000
+</pre></div>
+</div>
+</div>
+</div>
+<p>:::{admonition} See Solution
+:class: tip, dropdown</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_gdp</span><span class="p">(</span><span class="n">C</span><span class="p">,</span><span class="n">I</span><span class="p">,</span><span class="n">G</span><span class="p">,</span><span class="n">X</span><span class="p">,</span><span class="n">M</span><span class="p">):</span>
+     <span class="k">return</span>  <span class="n">C</span> <span class="o">+</span> <span class="n">I</span> <span class="o">+</span> <span class="n">G</span> <span class="o">+</span> <span class="p">(</span><span class="n">X</span> <span class="o">-</span> <span class="n">M</span><span class="p">)</span>
+
+<span class="n">island_gdp</span> <span class="o">=</span> <span class="n">get_gdp</span><span class="p">(</span><span class="mi">1000000</span><span class="p">,</span><span class="mi">500000</span><span class="p">,</span><span class="mi">800000</span><span class="p">,</span><span class="mi">100000</span><span class="p">,</span><span class="mi">2000000</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">island_gdp</span><span class="p">)</span>
+
+</pre></div>
+</div>
+<p>:::</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">C</span> <span class="o">=</span> <span class="mi">1000000</span>
+<span class="n">I</span> <span class="o">=</span> <span class="mi">500000</span>
+<span class="n">G</span> <span class="o">=</span> <span class="mi">800000</span>
+<span class="n">X</span> <span class="o">=</span> <span class="mi">100000</span>
+<span class="n">M</span> <span class="o">=</span> <span class="mi">2000000</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">C</span> <span class="o">+</span> <span class="n">I</span> <span class="o">+</span> <span class="n">G</span> <span class="o">+</span> <span class="p">(</span><span class="n">X</span> <span class="o">-</span> <span class="n">M</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>400000
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition-exercise admonition">
+<p class="admonition-title">Exercise:</p>
+<p>Consider the following keywords:
+input, output, reusable, arguments, parameters. Then discuss on the comments below what are the main differences and similarities between cell[26] and cell [15].</p>
+</div>
 </div>
 </div>
 
@@ -383,8 +626,8 @@ then write:</p>
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="B1_exercise.html" title="previous page">Excercise 2</a>
-    <a class='right-next' id="next-link" href="../02_Python_Draw_GIS/00_README.html" title="next page">Day 2</a>
+    <a class='left-prev' id="prev-link" href="B1_exercise.html" title="previous page">Exercise 1</a>
+    <a class='right-next' id="next-link" href="B3_Exercise.html" title="next page">Exercise types and built-in functions</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
@@ -404,7 +647,7 @@ then write:</p>
     </div>
 
     
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
 
 
     

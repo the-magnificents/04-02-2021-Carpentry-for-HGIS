@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAY 2 &#8212; Python essentials for GIS learners</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
     
   <link rel="stylesheet"
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -90,7 +90,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="EXERCISES DAY 2" href="exercise/00_README.html" />
-    <link rel="prev" title="Introduction to Unix Shell, Python and Jupyter Lab" href="../01_Day_1_Unix_Shell/reads/R0_Bash.html" />
+    <link rel="prev" title="Distributed version control" href="../01_Day_1_Unix_Shell/reads/R1_Dist_V_Control.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -121,6 +121,35 @@ commentsRunWhenDOMLoaded(addUtterances);
 </form>
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../README.html">
+   Python Essentials for GIS Learners
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../00_Lesson_prep/00_About_this_workshop.html">
+   Workshop overview
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../00_Lesson_prep/00_README.html">
+     Preparing for the workshop
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../00_Lesson_prep/01_icebreaker.html">
+     Icebreaker question
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../00_Lesson_prep/02_Aknowledgement.html">
+     Acknowledgments
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../01_Day_1_Unix_Shell/00_README.html">
    DAY 1
@@ -192,7 +221,14 @@ commentsRunWhenDOMLoaded(addUtterances);
     <ul class="collapse-ul">
      <li class="toctree-l3">
       <a class="reference internal" href="../01_Day_1_Unix_Shell/reads/R0_Bash.html">
-       Introduction to Unix Shell, Python and Jupyter Lab
+       Unix Shell
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01_Day_1_Unix_Shell/reads/R1_Dist_V_Control.html">
+       <strong>
+        Distributed version control
+       </strong>
       </a>
      </li>
     </ul>
@@ -292,6 +328,11 @@ commentsRunWhenDOMLoaded(addUtterances);
   </ul>
   <i class="fas fa-chevron-down">
   </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../04_Wrap_up/00_README.html">
+   FOLLOW UP
+  </a>
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../Instructor_notes/00_README.html">
@@ -812,6 +853,11 @@ commentsRunWhenDOMLoaded(addUtterances);
       </a>
      </li>
      <li class="toctree-l3">
+      <a class="reference internal" href="../Instructor_notes/Day_2/A1_qgis_lesson1.html">
+       Programmatically access the attributes of international airports
+      </a>
+     </li>
+     <li class="toctree-l3">
       <a class="reference internal" href="../Instructor_notes/Day_2/jupyter_instructor_notes.html">
        Working with Jupyter Notebooks in Jupyter Lab
       </a>
@@ -819,11 +865,6 @@ commentsRunWhenDOMLoaded(addUtterances);
      <li class="toctree-l3">
       <a class="reference internal" href="../Instructor_notes/Day_2/mappy_instructor_notes.html">
        Run map.py on netherlandsmap.csv
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_2/A1_qgis_lesson1.html">
-       Programmatically access the attributes of international airports
       </a>
      </li>
      <li class="toctree-l3 collapsible-parent">
@@ -922,6 +963,19 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 
         <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/the-magnificents/04-02-2021-Carpentry-for-HGIS.git"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
 
 
         <!-- Full screen (wrap in <a> to have style consistency -->
@@ -1082,7 +1136,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../01_Day_1_Unix_Shell/reads/R0_Bash.html" title="previous page">Introduction to Unix Shell, Python and Jupyter Lab</a>
+    <a class='left-prev' id="prev-link" href="../01_Day_1_Unix_Shell/reads/R1_Dist_V_Control.html" title="previous page"><strong>Distributed version control</strong></a>
     <a class='right-next' id="next-link" href="exercise/00_README.html" title="next page">EXERCISES DAY 2</a>
 
     </div>
@@ -1103,7 +1157,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     </div>
 
     
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
 
 
     

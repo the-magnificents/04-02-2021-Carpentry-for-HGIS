@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Variables, values, inputs, outputs &#8212; Python essentials for GIS learners</title>
     
-  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
     
   <link rel="stylesheet"
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../../_static/js/index.3da636dd464baa7582d2.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -121,6 +121,35 @@ commentsRunWhenDOMLoaded(addUtterances);
 </form>
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Python Essentials for GIS Learners
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../00_Lesson_prep/00_About_this_workshop.html">
+   Workshop overview
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../00_Lesson_prep/00_README.html">
+     Preparing for the workshop
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../00_Lesson_prep/01_icebreaker.html">
+     Icebreaker question
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../00_Lesson_prep/02_Aknowledgement.html">
+     Acknowledgments
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
  <li class="toctree-l1 current active collapsible-parent">
   <a class="reference internal" href="../00_README.html">
    DAY 1
@@ -192,7 +221,14 @@ commentsRunWhenDOMLoaded(addUtterances);
     <ul class="collapse-ul">
      <li class="toctree-l3">
       <a class="reference internal" href="../reads/R0_Bash.html">
-       Introduction to Unix Shell, Python and Jupyter Lab
+       Unix Shell
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reads/R1_Dist_V_Control.html">
+       <strong>
+        Distributed version control
+       </strong>
       </a>
      </li>
     </ul>
@@ -292,6 +328,11 @@ commentsRunWhenDOMLoaded(addUtterances);
   </ul>
   <i class="fas fa-chevron-down">
   </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../04_Wrap_up/00_README.html">
+   FOLLOW UP
+  </a>
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../../Instructor_notes/00_README.html">
@@ -812,6 +853,11 @@ commentsRunWhenDOMLoaded(addUtterances);
       </a>
      </li>
      <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_2/A1_qgis_lesson1.html">
+       Programmatically access the attributes of international airports
+      </a>
+     </li>
+     <li class="toctree-l3">
       <a class="reference internal" href="../../Instructor_notes/Day_2/jupyter_instructor_notes.html">
        Working with Jupyter Notebooks in Jupyter Lab
       </a>
@@ -819,11 +865,6 @@ commentsRunWhenDOMLoaded(addUtterances);
      <li class="toctree-l3">
       <a class="reference internal" href="../../Instructor_notes/Day_2/mappy_instructor_notes.html">
        Run map.py on netherlandsmap.csv
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../Instructor_notes/Day_2/A1_qgis_lesson1.html">
-       Programmatically access the attributes of international airports
       </a>
      </li>
      <li class="toctree-l3 collapsible-parent">
@@ -923,6 +964,19 @@ commentsRunWhenDOMLoaded(addUtterances);
 
         <!-- Source interaction buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/the-magnificents/04-02-2021-Carpentry-for-HGIS.git"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
 
         <!-- Full screen (wrap in <a> to have style consistency -->
         <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
@@ -937,7 +991,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/01_Day_1_Unix_Shell/excercises/B2_Exercise.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/the-magnificents/04-02-2021-Carpentry-for-HGIS.git/master?urlpath=tree/01_Day_1_Unix_Shell/excercises/B2_Exercise.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
@@ -1053,11 +1107,6 @@ so we won’t do that until we understand the convention.</p></li>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ahmed is 42 years old
-</pre></div>
-</div>
-</div>
 </div>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">print</span></code> automatically puts a single space between items to separate them.</p></li>
@@ -1076,16 +1125,6 @@ Python reports an error. (Unlike some languages, which “guess” a default val
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">21</span><span class="o">-</span><span class="n">a637c5453549</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="n">last_name</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;last_name&#39; is not defined
-</pre></div>
-</div>
-</div>
 </div>
 <ul class="simple">
 <li><p>The last line of an error message is usually the most informative.</p></li>
@@ -1098,11 +1137,6 @@ Python reports an error. (Unlike some languages, which “guess” a default val
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">myval</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
 </pre></div>
 </div>
 </div>
@@ -1130,11 +1164,6 @@ clears the interpreter and runs everything from a clean slate going top to botto
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Age in three years: 45
-</pre></div>
-</div>
-</div>
 </div>
 </div>
 <div class="section" id="basic-gdp-calculation">
@@ -1149,11 +1178,6 @@ clears the interpreter and runs everything from a clean slate going top to botto
 <span class="n">M</span> <span class="o">=</span> <span class="mi">2000000</span>
 <span class="n">Y</span> <span class="o">=</span> <span class="n">C</span> <span class="o">+</span> <span class="n">I</span> <span class="o">+</span> <span class="n">G</span> <span class="o">+</span> <span class="p">(</span><span class="n">X</span> <span class="o">-</span> <span class="n">M</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>400000
 </pre></div>
 </div>
 </div>
@@ -1174,11 +1198,6 @@ clears the interpreter and runs everything from a clean slate going top to botto
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>400000
-</pre></div>
-</div>
-</div>
 </div>
 <div class="tip dropdown admonition">
 <p class="admonition-title">See Solution</p>
@@ -1195,31 +1214,6 @@ clears the interpreter and runs everything from a clean slate going top to botto
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run this code in your computer</span>
 <span class="kn">import</span> <span class="nn">this</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The Zen of Python, by Tim Peters
-
-Beautiful is better than ugly.
-Explicit is better than implicit.
-Simple is better than complex.
-Complex is better than complicated.
-Flat is better than nested.
-Sparse is better than dense.
-Readability counts.
-Special cases aren&#39;t special enough to break the rules.
-Although practicality beats purity.
-Errors should never pass silently.
-Unless explicitly silenced.
-In the face of ambiguity, refuse the temptation to guess.
-There should be one-- and preferably only one --obvious way to do it.
-Although that way may not be obvious at first unless you&#39;re Dutch.
-Now is better than never.
-Although never is often better than *right* now.
-If the implementation is hard to explain, it&#39;s a bad idea.
-If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let&#39;s do more of those!
 </pre></div>
 </div>
 </div>
@@ -1257,7 +1251,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./01_Day_1_Unix_Shell/excercises"
+            path: "./01_Day_1_Unix_Shell\excercises"
         },
         predefinedOutput: true
     }
@@ -1293,7 +1287,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
     </div>
 
     
-  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
+  <script src="../../_static/js/index.3da636dd464baa7582d2.js"></script>
 
 
     

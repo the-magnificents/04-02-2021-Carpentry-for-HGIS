@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>READS DAY 3 &#8212; Python essentials for GIS learners</title>
     
-  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
     
   <link rel="stylesheet"
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../../_static/js/index.3da636dd464baa7582d2.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -121,6 +121,35 @@ commentsRunWhenDOMLoaded(addUtterances);
 </form>
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Python Essentials for GIS Learners
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../00_Lesson_prep/00_About_this_workshop.html">
+   Workshop overview
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../00_Lesson_prep/00_README.html">
+     Preparing for the workshop
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../00_Lesson_prep/01_icebreaker.html">
+     Icebreaker question
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../00_Lesson_prep/02_Aknowledgement.html">
+     Acknowledgments
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../../01_Day_1_Unix_Shell/00_README.html">
    DAY 1
@@ -192,7 +221,14 @@ commentsRunWhenDOMLoaded(addUtterances);
     <ul class="collapse-ul">
      <li class="toctree-l3">
       <a class="reference internal" href="../../01_Day_1_Unix_Shell/reads/R0_Bash.html">
-       Introduction to Unix Shell, Python and Jupyter Lab
+       Unix Shell
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../01_Day_1_Unix_Shell/reads/R1_Dist_V_Control.html">
+       <strong>
+        Distributed version control
+       </strong>
       </a>
      </li>
     </ul>
@@ -292,6 +328,11 @@ commentsRunWhenDOMLoaded(addUtterances);
   </ul>
   <i class="fas fa-chevron-down">
   </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../04_Wrap_up/00_README.html">
+   FOLLOW UP
+  </a>
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../../Instructor_notes/00_README.html">
@@ -812,6 +853,11 @@ commentsRunWhenDOMLoaded(addUtterances);
       </a>
      </li>
      <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_2/A1_qgis_lesson1.html">
+       Programmatically access the attributes of international airports
+      </a>
+     </li>
+     <li class="toctree-l3">
       <a class="reference internal" href="../../Instructor_notes/Day_2/jupyter_instructor_notes.html">
        Working with Jupyter Notebooks in Jupyter Lab
       </a>
@@ -819,11 +865,6 @@ commentsRunWhenDOMLoaded(addUtterances);
      <li class="toctree-l3">
       <a class="reference internal" href="../../Instructor_notes/Day_2/mappy_instructor_notes.html">
        Run map.py on netherlandsmap.csv
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../Instructor_notes/Day_2/A1_qgis_lesson1.html">
-       Programmatically access the attributes of international airports
       </a>
      </li>
      <li class="toctree-l3 collapsible-parent">
@@ -923,6 +964,19 @@ commentsRunWhenDOMLoaded(addUtterances);
 
         <!-- Source interaction buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/the-magnificents/04-02-2021-Carpentry-for-HGIS.git"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
 
         <!-- Full screen (wrap in <a> to have style consistency -->
         <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
@@ -949,22 +1003,37 @@ commentsRunWhenDOMLoaded(addUtterances);
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#version-control">
-     Version control
+     <strong>
+      Version control
+     </strong>
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#testing">
-     Testing
+     <strong>
+      Testing
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#git-repository">
+     <strong>
+      Git repository
+     </strong>
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#git">
-     Git
+     <strong>
+      Git
+     </strong>
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#commit">
-     Commit
+     <strong>
+      Commit
+     </strong>
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -974,37 +1043,9 @@ commentsRunWhenDOMLoaded(addUtterances);
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#push">
-     Push
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#pull">
-     Pull
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#branch">
-     Branch
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#fork">
-     Fork
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#clone">
-     Clone
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#pull-request">
-     Pull request
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#unit-testing">
-     Unit testing
+     <strong>
+      Push
+     </strong>
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -1030,21 +1071,25 @@ commentsRunWhenDOMLoaded(addUtterances);
 <div class="section" id="glossary">
 <h2>Glossary<a class="headerlink" href="#glossary" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="version-control">
-<h3>Version control<a class="headerlink" href="#version-control" title="Permalink to this headline">¶</a></h3>
+<h3><strong>Version control</strong><a class="headerlink" href="#version-control" title="Permalink to this headline">¶</a></h3>
 <p>In software engineering, version control (also known as revision control, source control, or source code management) is a class of systems responsible for managing changes to computer programs, documents, large web sites, or other collections of information.</p>
 <p>At the simplest level, developers could simply retain multiple copies of the different versions of the program, and label them appropriately. This simple approach has been used in many large software projects. While this method can work, it is inefficient as many near-identical copies of the program have to be maintained. This requires a lot of self-discipline on the part of developers and often leads to mistakes. <a class="reference external" href="https://en.wikipedia.org/wiki/Version_control">Version Control</a></p>
 </div>
 <div class="section" id="testing">
-<h3>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h3>
+<h3><strong>Testing</strong><a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h3>
 <p>In software testing, test automation is the use of software separate from the software being tested to control the execution of tests and the comparison of actual outcomes with predicted outcomes. Test automation can automate some repetitive but necessary tasks in a formalized testing process already in place, or perform additional testing that would be difficult to do manually.<a class="reference external" href="https://en.wikipedia.org/wiki/Test_automation">Test automation</a></p>
 </div>
+<div class="section" id="git-repository">
+<h3><strong>Git repository</strong><a class="headerlink" href="#git-repository" title="Permalink to this headline">¶</a></h3>
+<p>Version control uses a repository (a database of changes) and a working copy where you do your work.</p>
+</div>
 <div class="section" id="git">
-<h3>Git<a class="headerlink" href="#git" title="Permalink to this headline">¶</a></h3>
+<h3><strong>Git</strong><a class="headerlink" href="#git" title="Permalink to this headline">¶</a></h3>
 <p>Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development.<a class="reference external" href="https://en.wikipedia.org/wiki/Git">Git</a>
 <span class="xref myst">Read more about git characteristics</span></p>
 </div>
 <div class="section" id="commit">
-<h3>Commit<a class="headerlink" href="#commit" title="Permalink to this headline">¶</a></h3>
+<h3><strong>Commit</strong><a class="headerlink" href="#commit" title="Permalink to this headline">¶</a></h3>
 <p>In version control systems, a commit is an operation which sends the latest changes to the source code to the repository, making these changes part of the head revision of the repository.</p>
 </div>
 <div class="section" id="github">
@@ -1052,26 +1097,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 <p>GitHub, Inc. is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management (SCM) functionality of Git, plus its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, continuous integration and wikis for every project.<a class="reference external" href="https://en.wikipedia.org/wiki/GitHub">Github</a></p>
 </div>
 <div class="section" id="push">
-<h3>Push<a class="headerlink" href="#push" title="Permalink to this headline">¶</a></h3>
+<h3><strong>Push</strong><a class="headerlink" href="#push" title="Permalink to this headline">¶</a></h3>
 <p>The “push” command is used to publish new local commits on a remote server.</p>
-</div>
-<div class="section" id="pull">
-<h3>Pull<a class="headerlink" href="#pull" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="branch">
-<h3>Branch<a class="headerlink" href="#branch" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="fork">
-<h3>Fork<a class="headerlink" href="#fork" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="clone">
-<h3>Clone<a class="headerlink" href="#clone" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="pull-request">
-<h3>Pull request<a class="headerlink" href="#pull-request" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="unit-testing">
-<h3>Unit testing<a class="headerlink" href="#unit-testing" title="Permalink to this headline">¶</a></h3>
 </div>
 <div class="section" id="clean-code">
 <h3>Clean code<a class="headerlink" href="#clean-code" title="Permalink to this headline">¶</a></h3>
@@ -1094,7 +1121,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./03_Day_3_Git/reads"
+            path: "./03_Day_3_Git\reads"
         },
         predefinedOutput: true
     }
@@ -1130,7 +1157,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     </div>
 
     
-  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
+  <script src="../../_static/js/index.3da636dd464baa7582d2.js"></script>
 
 
     
