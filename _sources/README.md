@@ -1,5 +1,5 @@
 # Python Essentials for GIS Learners
-
+![](images/map_delft.jpg)
 This website hosts materials, exercises and lessons for a 3-day course on Python Essentials for GIS Learners offered to the BK Faculty at TU Delft. Materials and website created by co-instructors Jose Urra Llanusa and Ashley Cryan of the TU Delft Digital Competence Centre. 
 
 ## Workshop overview
@@ -22,13 +22,6 @@ We have carefully curated and provided exercises with different levels of comple
 - Once you have solved the exercises, give a "like" to the first comment of the exercises page so we as instructors know you were able to complete the exercise. 
 - Use the comments to ask questions about the exercises. We have set up comments on each exercise page so that workshop is more interactive.
 
-<!-- - Once you have read the material provided prior to the morning session, comment on the summary page -->
-
-
-```{tip}
-Some exercises can be optional, for those cases we should clearly specify which are not required.
-
-```
 
 ## Pre-workshop Checklist
 *all of these steps should be taken before Day 1 starts. These programs and files will be all we need to complete all three days of the workshop*
