@@ -1,11 +1,63 @@
-## Working with Jupyter Notebooks in Jupyter Lab
+# Introduce Jupyter lab and basic python concepts
 
+
+## Python, jupyter and scientific programming intro
+1. Slides with intro to python and the ecosystem features
+    - What about python and scientific programming
+        - Why python and the python ecosystem
+        - [ ] Go to the Slides showing the python ecosystem
+        - Its open source, allows multiple people to contribute
+        - Its easy to read
+        - It has awesome tools
+ 
+## Hands on    
 Executing code in a python interpreter or directly from the command line is useful, but we also want a way to edit and annotate code and go through some process of trial and error when we're solving problems on our own. Anaconda installed JupyterLab, which is a web-based interactive development environment for Jupyter notebooks, code, and data. The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more. ([source](https://jupyter.org/#:~:text=JupyterLab%20is%20a%20web%2Dbased,scientific%20computing%2C%20and%20machine%20learning.))
 
 You can launch Jupyter Lab from your command line from within the folder you want to work in. In this case, we want to create our first Jupyter notebook in the `py_workshop_2021/` folder.
 
 1. Make sure you are in the py_workshop_2021/ folder. If you were in scripts, move up one: `cd ..`
 2. Launch Jupyter Lab: `jupyter lab`
+
+
+```{Note}
+Start directly with the terminal first
+```
+```
+Python 3.8.3 (default, Jul  2 2020, 17:30:36) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> my_name = "Jose"
+>>> message = "Hello, " + my_name
+>>> print(message)
+Hello, Jose
+>>> my_name = "Ashley"
+>>> print(message)
+Hello, Jose
+```
+
+```{Note}
+Discuss here a problem of reusability, and then try to make a function
+```
+```
+>>> def say_hello_to(name):
+...   print("Hello, " + name)
+...
+>>> say_hello_to("Ashley")
+Hello, Ashley
+```
+
+```{Note}
+Store some data in room, and say hello to everyone in the room... Discuss here lists, and indexing,
+Discuss in this example why python is very expressive
+```
+```
+>>> room = ["Jose"]
+>>> if len(room) > 0:   # If room has guests
+...   for guest in room:
+...     print("Hello, " + guest)
+...
+Hello, Jose
+>>>
+```
 
 You will see a browser window open - this is your local browser, so you will see files in the `py_workshop_2021/` folder there.
 
@@ -40,3 +92,10 @@ You can also write inline annotations to your code to help you remember specific
 2. Hit Shift+Enter to run the code.
 
 Congratulations, you just wrote and annotated your first Python code in a Jupyter notebook!
+
+## Take aways before going to exerises
+- Learning how to program when you are not a computer scientist
+    - User scripts
+    - Formulate computational problems
+    - Understanding how computers work is important
+    - Fundamentals are important

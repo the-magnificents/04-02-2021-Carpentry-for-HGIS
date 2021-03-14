@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Working with Jupyter Notebooks in Jupyter Lab &#8212; Python essentials for GIS learners</title>
+    <title>Introduce Jupyter lab and basic python concepts &#8212; Python essentials for GIS learners</title>
     
   <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -90,7 +90,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="DAY 2" href="../Day_2/00_README.html" />
-    <link rel="prev" title="Python, jupyter and scientific programming intro" href="04_Python_Jupyter_Intro.html" />
+    <link rel="prev" title="Instructor Notes: Python Essentials for GIS Learners Day 1 (Unix Shell)" href="03_unix_instructor_notes.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -335,14 +335,9 @@ commentsRunWhenDOMLoaded(addUtterances);
        Instructor Notes: Python Essentials for GIS Learners Day 1 (Unix Shell)
       </a>
      </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="04_Python_Jupyter_Intro.html">
-       Python, jupyter and scientific programming intro
-      </a>
-     </li>
      <li class="toctree-l3 current active">
       <a class="current reference internal" href="#">
-       Working with Jupyter Notebooks in Jupyter Lab
+       Introduce Jupyter lab and basic python concepts
       </a>
      </li>
     </ul>
@@ -484,6 +479,30 @@ commentsRunWhenDOMLoaded(addUtterances);
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-jupyter-and-scientific-programming-intro">
+   Python, jupyter and scientific programming intro
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hands-on">
+   Hands on
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#take-aways-before-going-to-exerises">
+   Take aways before going to exerises
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -491,14 +510,74 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  <div class="section" id="working-with-jupyter-notebooks-in-jupyter-lab">
-<h1>Working with Jupyter Notebooks in Jupyter Lab<a class="headerlink" href="#working-with-jupyter-notebooks-in-jupyter-lab" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="introduce-jupyter-lab-and-basic-python-concepts">
+<h1>Introduce Jupyter lab and basic python concepts<a class="headerlink" href="#introduce-jupyter-lab-and-basic-python-concepts" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="python-jupyter-and-scientific-programming-intro">
+<h2>Python, jupyter and scientific programming intro<a class="headerlink" href="#python-jupyter-and-scientific-programming-intro" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Slides with intro to python and the ecosystem features</p>
+<ul class="simple">
+<li><p>What about python and scientific programming</p>
+<ul>
+<li><p>Why python and the python ecosystem</p></li>
+<li><p>[ ] Go to the Slides showing the python ecosystem</p></li>
+<li><p>Its open source, allows multiple people to contribute</p></li>
+<li><p>Its easy to read</p></li>
+<li><p>It has awesome tools</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="hands-on">
+<h2>Hands on<a class="headerlink" href="#hands-on" title="Permalink to this headline">¶</a></h2>
 <p>Executing code in a python interpreter or directly from the command line is useful, but we also want a way to edit and annotate code and go through some process of trial and error when we’re solving problems on our own. Anaconda installed JupyterLab, which is a web-based interactive development environment for Jupyter notebooks, code, and data. The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more. (<a class="reference external" href="https://jupyter.org/#:~:text=JupyterLab%20is%20a%20web%2Dbased,scientific%20computing%2C%20and%20machine%20learning.">source</a>)</p>
 <p>You can launch Jupyter Lab from your command line from within the folder you want to work in. In this case, we want to create our first Jupyter notebook in the <code class="docutils literal notranslate"><span class="pre">py_workshop_2021/</span></code> folder.</p>
 <ol class="simple">
 <li><p>Make sure you are in the py_workshop_2021/ folder. If you were in scripts, move up one: <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code></p></li>
 <li><p>Launch Jupyter Lab: <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">lab</span></code></p></li>
 </ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Start directly with the terminal first</p>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Python</span> <span class="mf">3.8</span><span class="o">.</span><span class="mi">3</span> <span class="p">(</span><span class="n">default</span><span class="p">,</span> <span class="n">Jul</span>  <span class="mi">2</span> <span class="mi">2020</span><span class="p">,</span> <span class="mi">17</span><span class="p">:</span><span class="mi">30</span><span class="p">:</span><span class="mi">36</span><span class="p">)</span> <span class="p">[</span><span class="n">MSC</span> <span class="n">v</span><span class="o">.</span><span class="mi">1916</span> <span class="mi">64</span> <span class="n">bit</span> <span class="p">(</span><span class="n">AMD64</span><span class="p">)]</span> <span class="p">::</span> <span class="n">Anaconda</span><span class="p">,</span> <span class="n">Inc</span><span class="o">.</span> <span class="n">on</span> <span class="n">win32</span>
+<span class="n">Type</span> <span class="s2">&quot;help&quot;</span><span class="p">,</span> <span class="s2">&quot;copyright&quot;</span><span class="p">,</span> <span class="s2">&quot;credits&quot;</span> <span class="ow">or</span> <span class="s2">&quot;license&quot;</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="o">.</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">my_name</span> <span class="o">=</span> <span class="s2">&quot;Jose&quot;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello, &quot;</span> <span class="o">+</span> <span class="n">my_name</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+<span class="n">Hello</span><span class="p">,</span> <span class="n">Jose</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">my_name</span> <span class="o">=</span> <span class="s2">&quot;Ashley&quot;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+<span class="n">Hello</span><span class="p">,</span> <span class="n">Jose</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Discuss here a problem of reusability, and then try to make a function</p>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">say_hello_to</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<span class="gp">... </span>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">say_hello_to</span><span class="p">(</span><span class="s2">&quot;Ashley&quot;</span><span class="p">)</span>
+<span class="go">Hello, Ashley</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Store some data in room, and say hello to everyone in the room… Discuss here lists, and indexing,
+Discuss in this example why python is very expressive</p>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">room</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Jose&quot;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">room</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>   <span class="c1"># If room has guests</span>
+<span class="gp">... </span>  <span class="k">for</span> <span class="n">guest</span> <span class="ow">in</span> <span class="n">room</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, &quot;</span> <span class="o">+</span> <span class="n">guest</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="go">Hello, Jose</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
 <p>You will see a browser window open - this is your local browser, so you will see files in the <code class="docutils literal notranslate"><span class="pre">py_workshop_2021/</span></code> folder there.</p>
 <ol class="simple">
 <li><p>Move into the <code class="docutils literal notranslate"><span class="pre">scripts/</span></code> folder on the left hand navigation bar.</p></li>
@@ -531,6 +610,20 @@ commentsRunWhenDOMLoaded(addUtterances);
 </ol>
 <p>Congratulations, you just wrote and annotated your first Python code in a Jupyter notebook!</p>
 </div>
+<div class="section" id="take-aways-before-going-to-exerises">
+<h2>Take aways before going to exerises<a class="headerlink" href="#take-aways-before-going-to-exerises" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Learning how to program when you are not a computer scientist</p>
+<ul>
+<li><p>User scripts</p></li>
+<li><p>Formulate computational problems</p></li>
+<li><p>Understanding how computers work is important</p></li>
+<li><p>Fundamentals are important</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -560,7 +653,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="04_Python_Jupyter_Intro.html" title="previous page">Python, jupyter and scientific programming intro</a>
+    <a class='left-prev' id="prev-link" href="03_unix_instructor_notes.html" title="previous page">Instructor Notes: Python Essentials for GIS Learners Day 1 (Unix Shell)</a>
     <a class='right-next' id="next-link" href="../Day_2/00_README.html" title="next page">DAY 2</a>
 
     </div>

@@ -1,6 +1,6 @@
 # READS DAY 1
 ## Glossary
-### Shells, kernels and operating systems
+### **Shells, kernels and operating systems**
 #### **Shell**
 In computing, a shell is a computer program which exposes an operating system's services to a human user or other program. In general, operating system shells use either a command-line interface (CLI) or graphical user interface (GUI), depending on a computer's role and particular operation. It is named a shell because it is the outermost layer around the operating system.
 
@@ -24,7 +24,19 @@ Unix systems are characterized by a modular design that is sometimes called the 
 #### **Command Line Interface (CLI)** 
 A command-line interface (CLI) processes commands to a computer program in the form of lines of text. The program which handles the interface is called a command-line interpreter or command-line processor. Operating systems implement a command-line interface in a shell for interactive access to operating system functions or services.[Command Line Interfaces](https://en.wikipedia.org/wiki/Command-line_interface)
 
-### The python ecosystem
+### **Programming basics**
+**Variable:** A named value, that potentially can be changed as the program runs
+**Variable name:** A label for a memory location
+**Data:** Information processed or stored by a computer
+**Storage:** A place where data can be stored
+**Program:** A computer program is a set of instructions to perform a task on a computer
+**Reference:** A pointer to a variable or object
+**Declaration:** Announcing a variable (usually) at the beginning of a program
+**Naming convention:** A set of rules about the names of variables
+**Value:** The something that would be stored in a variable
+**Assignment:** Giving (setting) a variable a value
+
+### **The python ecosystem**
 #### **Python** 
 Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.[Python](https://en.wikipedia.org/wiki/Python_(programming_language)).
 
