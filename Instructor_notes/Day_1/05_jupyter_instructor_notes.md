@@ -1,5 +1,16 @@
-## Working with Jupyter Notebooks in Jupyter Lab
+# Introduce Jupyter lab and basic python concepts
 
+
+## Python, jupyter and scientific programming intro
+1. Slides with intro to python and the ecosystem features
+    - What about python and scientific programming
+        - Why python and the python ecosystem
+        - [ ] Go to the Slides showing the python ecosystem
+        - Its open source, allows multiple people to contribute
+        - Its easy to read
+        - It has awesome tools
+ 
+## Hands on    
 Executing code in a python interpreter or directly from the command line is useful, but we also want a way to edit and annotate code and go through some process of trial and error when we're solving problems on our own. Anaconda installed JupyterLab, which is a web-based interactive development environment for Jupyter notebooks, code, and data. The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more. ([source](https://jupyter.org/#:~:text=JupyterLab%20is%20a%20web%2Dbased,scientific%20computing%2C%20and%20machine%20learning.))
 
 You can launch Jupyter Lab from your command line from within the folder you want to work in. In this case, we want to create our first Jupyter notebook in the `py_workshop_2021/` folder.
@@ -40,3 +51,10 @@ You can also write inline annotations to your code to help you remember specific
 2. Hit Shift+Enter to run the code.
 
 Congratulations, you just wrote and annotated your first Python code in a Jupyter notebook!
+
+## Take aways before going to exerises
+- Learning how to program when you are not a computer scientist
+    - User scripts
+    - Formulate computational problems
+    - Understanding how computers work is important
+    - Fundamentals are important
