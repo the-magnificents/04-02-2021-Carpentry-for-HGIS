@@ -89,7 +89,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Working with Jupyter Notebooks in Jupyter Lab" href="jupyter_instructor_notes.html" />
+    <link rel="next" title="Run map.py on netherlandsmap.csv" href="mappy_instructor_notes.html" />
     <link rel="prev" title="Variables (and constants)" href="02_lesson.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -326,13 +326,13 @@ commentsRunWhenDOMLoaded(addUtterances);
     </a>
     <ul class="collapse-ul">
      <li class="toctree-l3">
-      <a class="reference internal" href="../Day_1/01_Notes_From_DH_context.html">
-       Guide to programing with Python for the Digital Humanities
+      <a class="reference internal" href="../Day_1/02_About_Open_science_instructor_notes.html">
+       Open Science
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="../Day_1/02_About_Open_science_instructor_notes.html">
-       Open Science
+      <a class="reference internal" href="../Day_1/03_unix_instructor_notes.html">
+       Instructor Notes: Python Essentials for GIS Learners Day 1 (Unix Shell)
       </a>
      </li>
      <li class="toctree-l3">
@@ -341,478 +341,9 @@ commentsRunWhenDOMLoaded(addUtterances);
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="../Day_1/lesson_notes/B2_Vars_Types.html">
-       Use an index to get a single character from a string.
+      <a class="reference internal" href="../Day_1/05_jupyter_instructor_notes.html">
+       Working with Jupyter Notebooks in Jupyter Lab
       </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Day_1/lesson_notes/B2_Vars_Types.html#use-a-slice-to-get-a-substring">
-       Use a slice to get a substring.
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Day_1/lesson_notes/B2_Vars_Types.html#use-the-built-in-function-len-to-find-the-length-of-a-string">
-       Use the built-in function
-       <code class="docutils literal notranslate">
-        <span class="pre">
-         len
-        </span>
-       </code>
-       to find the length of a string.
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Day_1/lesson_notes/B2_Vars_Types.html#python-is-case-sensitive">
-       Python is case-sensitive.
-      </a>
-     </li>
-     <li class="toctree-l3 collapsible-parent">
-      <a class="reference internal" href="../Day_1/lesson_notes/B2_Vars_Types.html#use-meaningful-variable-names">
-       Use meaningful variable names.
-      </a>
-      <ul class="collapse-ul">
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B4_Functions.html">
-         Functions may only work for certain (combinations of) arguments.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B4_Functions.html#functions-may-have-default-values-for-some-arguments">
-         Functions may have default values for some arguments.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B4_Functions.html#functions-attached-to-objects-are-called-methods">
-         Functions attached to objects are called methods
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B4_Functions.html#use-the-built-in-function-help-to-get-help-for-a-function">
-         Use the built-in function
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           help
-          </span>
-         </code>
-         to get help for a function.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B4_Functions.html#the-jupyter-notebook-has-two-ways-to-get-help">
-         The Jupyter Notebook has two ways to get help.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B4_Functions.html#python-reports-a-syntax-error-when-it-can-t-understand-the-source-of-a-program">
-         Python reports a syntax error when it can’t understand the source of a program.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B4_Functions.html#a-name-runtime-error-a-python-reports-a-runtime-error-when-something-goes-wrong-while-a-program-is-executing">
-         <a name="runtime-error">
-         </a>
-         Python reports a runtime error when something goes wrong while a program is executing.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B4_Functions.html#what-happens-when">
-         What Happens When
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B4_Functions.html#solution">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B4_Functions.html#spot-the-difference">
-         Spot the Difference
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B4_Functions.html#id1">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B4_Functions.html#why-not">
-         Why Not?
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B4_Functions.html#id2">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B4_Functions.html#last-character-of-a-string">
-         Last Character of a String
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B4_Functions.html#id3">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B5_Exercise.html">
-         Jigsaw Puzzle (Parson’s Problem) Programming Example
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B5_Exercise.html#solution">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B5_Exercise.html#when-is-help-available">
-         When Is Help Available?
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B5_Exercise.html#id1">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B5_Exercise.html#importing-with-aliases">
-         Importing With Aliases
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B5_Exercise.html#id2">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B5_Exercise.html#there-are-many-ways-to-import-libraries">
-         There Are Many Ways To Import Libraries!
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B5_Exercise.html#id3">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B5_Exercise.html#importing-specific-items">
-         Importing Specific Items
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B5_Exercise.html#id4">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B5_Exercise.html#reading-error-messages">
-         Reading Error Messages
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/B5_Exercise.html#id5">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C2_Iterators&amp;Generators.html">
-         Iterators and iterables
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C2_Iterators.html">
-         Iterators and iterables
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Pythonic_.html">
-         None pythonic example
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Pythonic_.html#the-pythonic-example">
-         The pythonic example
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html">
-         Use variables to store values.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#use-print-to-display-values">
-         Use
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           print
-          </span>
-         </code>
-         to display values.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-must-be-created-before-they-are-used">
-         Variables must be created before they are used.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-persist-between-cells">
-         Variables Persist Between Cells
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-can-be-used-in-calculations">
-         Variables can be used in calculations.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#use-an-index-to-get-a-single-character-from-a-string">
-         Use an index to get a single character from a string.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#use-a-slice-to-get-a-substring">
-         Use a slice to get a substring.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#use-the-built-in-function-len-to-find-the-length-of-a-string">
-         Use the built-in function
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           len
-          </span>
-         </code>
-         to find the length of a string.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#python-is-case-sensitive">
-         Python is case-sensitive.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#use-meaningful-variable-names">
-         Use meaningful variable names.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#swapping-values">
-         Swapping Values
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#solution">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#predicting-values">
-         Predicting Values
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#id1">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#challenge">
-         Challenge
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#id2">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#choosing-a-name">
-         Choosing a Name
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#id3">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#slicing-practice">
-         Slicing practice
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#id4">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#slicing-concepts">
-         Slicing concepts
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#solutions">
-         Solutions
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/types.html">
-         Variables only change value when something is assigned to them.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/types.html#fractions">
-         Fractions
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/types.html#solution">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/types.html#automatic-type-conversion">
-         Automatic Type Conversion
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/types.html#id1">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/types.html#choose-a-type">
-         Choose a Type
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/types.html#id2">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/types.html#division-types">
-         Division Types
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/types.html#id3">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/types.html#strings-to-numbers">
-         Strings to Numbers
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/types.html#id4">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/types.html#arithmetic-with-different-types">
-         Arithmetic with Different Types
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/types.html#id5">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/types.html#complex-numbers">
-         Complex Numbers
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/lesson_notes/types.html#id6">
-         Solution
-        </a>
-       </li>
-      </ul>
-      <i class="fas fa-chevron-down">
-      </i>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Day_1/lesson_notes/B2_Vars_Types.html#swapping-values">
-       Swapping Values
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Day_1/lesson_notes/B2_Vars_Types.html#solution">
-       Solution
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Day_1/lesson_notes/B2_Vars_Types.html#predicting-values">
-       Predicting Values
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Day_1/lesson_notes/B2_Vars_Types.html#id1">
-       Solution
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Day_1/lesson_notes/B2_Vars_Types.html#challenge">
-       Challenge
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Day_1/lesson_notes/B2_Vars_Types.html#id2">
-       Solution
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Day_1/lesson_notes/B2_Vars_Types.html#choosing-a-name">
-       Choosing a Name
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Day_1/lesson_notes/B2_Vars_Types.html#id3">
-       Solution
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Day_1/lesson_notes/B2_Vars_Types.html#slicing-practice">
-       Slicing practice
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Day_1/lesson_notes/B2_Vars_Types.html#id4">
-       Solution
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Day_1/lesson_notes/B2_Vars_Types.html#slicing-concepts">
-       Slicing concepts
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Day_1/lesson_notes/B2_Vars_Types.html#solutions">
-       Solutions
-      </a>
-     </li>
-     <li class="toctree-l3 collapsible-parent">
-      <a class="reference internal" href="../Day_1/old_exercises/B1_exercise.html">
-       Excercise 2
-      </a>
-      <ul class="collapse-ul">
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/old_exercises/B2_exercise.html">
-         Excercise 2
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_1/old_exercises/B3_exercise.html">
-         Exercise 3
-        </a>
-       </li>
-      </ul>
-      <i class="fas fa-chevron-down">
-      </i>
      </li>
     </ul>
     <i class="fas fa-chevron-down">
@@ -838,39 +369,15 @@ commentsRunWhenDOMLoaded(addUtterances);
        Programmatically access the attributes of international airports
       </a>
      </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="jupyter_instructor_notes.html">
-       Working with Jupyter Notebooks in Jupyter Lab
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Programmatically access the attributes of international airports
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="mappy_instructor_notes.html">
        Run map.py on netherlandsmap.csv
       </a>
-     </li>
-     <li class="toctree-l3 collapsible-parent">
-      <a class="reference internal" href="old/03_lesson.html">
-       Go from for loops and while loops to functions
-      </a>
-      <ul class="collapse-ul">
-       <li class="toctree-l4">
-        <a class="reference internal" href="old/C1_Python_Standard_Library.html">
-         Python standard libraries
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="old/python_instructor_notes.html">
-         About these instructor notes
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="old/readme.html">
-         Old notes
-        </a>
-       </li>
-      </ul>
-      <i class="fas fa-chevron-down">
-      </i>
      </li>
     </ul>
     <i class="fas fa-chevron-down">
@@ -881,6 +388,11 @@ commentsRunWhenDOMLoaded(addUtterances);
      DAY 3
     </a>
     <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Day_3/git_instructor_notes.html">
+       Instructor Notes: Python Essentials for GIS Learners Day 3
+      </a>
+     </li>
      <li class="toctree-l3">
       <a class="reference internal" href="../Day_3/git_instructor_notes.html">
        Instructor Notes: Python Essentials for GIS Learners Day 3
@@ -934,9 +446,9 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/Instructor_notes/Day_2/A1_qgis_lesson1.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/Instructor_notes/Day_2/A1_qgis_lesson1.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -966,23 +478,6 @@ commentsRunWhenDOMLoaded(addUtterances);
                     class="fas fa-expand"></i></button></a>
 
         <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/the-magnificents/04-02-2021-Carpentry-for-HGIS.git/master?urlpath=tree/Instructor_notes/Day_2/A1_qgis_lesson1.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
 
     </div>
 
@@ -1017,72 +512,40 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li><p>Open QGIS and use the left side menu to navigate to Natural Earth datasets (airports and countries). Drag and drop both to the mapping view.</p></li>
 <li><p>Use info button to show attributes of each airport (feature), pointing out name and iata_code as we will be saving those).</p></li>
 <li><p>Open the Python console either from the plugins menu or the button on the header menu.</p></li>
+<li><p>Save the airports dataset as a variable called layer: \n”,</p></li>
 </ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 4. Save the airports dataset as a variable called layer: </span>
-
-<span class="n">layer</span> <span class="o">=</span> <span class="n">iface</span><span class="o">.</span><span class="n">activeLayer</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 5. Change the shape and color of the symbols representing airports:</span>
-
-<span class="n">symbol</span> <span class="o">=</span> <span class="n">QgsMarkerSymbol</span><span class="o">.</span><span class="n">createSimple</span><span class="p">({</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;cross&#39;</span><span class="p">,</span> <span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;black&#39;</span><span class="p">})</span>
-<span class="n">layer</span><span class="o">.</span><span class="n">renderer</span><span class="p">()</span><span class="o">.</span><span class="n">setSymbol</span><span class="p">(</span><span class="n">symbol</span><span class="p">)</span>
-<span class="n">layer</span><span class="o">.</span><span class="n">triggerRepaint</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 6. For loop that prints the name and iata_code for each airport on the list, using the function getFeatures that allows you to reference all features of a layer. In this case, the features are airports (point data). </span>
-
-<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">layer</span><span class="o">.</span><span class="n">getFeatures</span><span class="p">():</span>
-  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;iata_code&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#  7. Access the coordinates of the feature (airport) using the geometry function. Returns a geometry object that we can store in a variable called geom. The asPoint() function gets the x and y coordinates of the point. </span>
-
-<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">layer</span><span class="o">.</span><span class="n">getFeatures</span><span class="p">():</span>
-  <span class="n">geom</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">geometry</span><span class="p">()</span>
-  <span class="nb">print</span><span class="p">(</span><span class="n">geom</span><span class="o">.</span><span class="n">asPoint</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 8. Print the name, iata_code, lat and long of each of the airports. The .2f truncates lat and long to 2 decimal places:</span>
-
-<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">layer</span><span class="o">.</span><span class="n">getFeatures</span><span class="p">():</span>
-  <span class="n">geom</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">geometry</span><span class="p">()</span>
-  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;iata_code&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">, (</span><span class="si">{</span><span class="n">geom</span><span class="o">.</span><span class="n">asPoint</span><span class="p">()</span><span class="o">.</span><span class="n">y</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">geom</span><span class="o">.</span><span class="n">asPoint</span><span class="p">()</span><span class="o">.</span><span class="n">x</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 9. Store the output in a csv file instead of printing it in the console. To do this step on your own, need to replace your file path. </span>
-
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;/Users/acryan/Desktop/airports.csv&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">output_file</span><span class="p">:</span>
-    <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">layer</span><span class="o">.</span><span class="n">getFeatures</span><span class="p">():</span>
-        <span class="n">geom</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">geometry</span><span class="p">()</span>
-        <span class="n">line</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;iata_code&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">geom</span><span class="o">.</span><span class="n">asPoint</span><span class="p">()</span><span class="o">.</span><span class="n">y</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">geom</span><span class="o">.</span><span class="n">asPoint</span><span class="p">()</span><span class="o">.</span><span class="n">x</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
-        <span class="n">o</span><span class="o">=</span><span class="n">output_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
+<p>layer = iface.activeLayer()</p>
+<ol class="simple">
+<li><p>Change the shape and color of the symbols representing airports:</p></li>
+</ol>
+<p>symbol = QgsMarkerSymbol.createSimple({‘name’: ‘cross’, ‘color’: ‘black’})
+layer.renderer().setSymbol(symbol)
+layer.triggerRepaint()</p>
+<ol class="simple">
+<li><p>For loop that prints the name and iata_code for each airport on the list, using the function getFeatures that allows you to reference all features of a layer. In this case, the features are airports (point data).</p></li>
+</ol>
+<p>for f in layer.getFeatures():
+print(f”{f[‘name’]}, {f[‘iata_code’]}”)</p>
+<ol class="simple">
+<li><p>Access the coordinates of the feature (airport) using the geometry function. Returns a geometry object that we can store in a variable called geom. The asPoint() function gets the x and y coordinates of the point.</p></li>
+</ol>
+<p>for f in layer.getFeatures():
+geom = f.geometry()
+print(geom.asPoint())</p>
+<ol class="simple">
+<li><p>Print the name, iata_code, lat and long of each of the airports. The .2f truncates lat and long to 2 decimal places:</p></li>
+</ol>
+<p>for f in layer.getFeatures():
+geom = f.geometry()
+print(f”{f[‘name’]}, {f[‘iata_code’]}, ({geom.asPoint().y():.2f},{geom.asPoint().x():.2f})”)</p>
+<ol class="simple">
+<li><p>Store the output in a csv file instead of printing it in the console. To do this step on your own, need to replace your file path.</p></li>
+</ol>
+<p>with open(“/Users/acryan/Desktop/airports.csv”,”w”) as output_file:
+for f in layer.getFeatures():
+geom = f.geometry()
+line = f”{f[‘name’]},{f[‘iata_code’]},{geom.asPoint().y():.2f},{geom.asPoint().x():.2f}\n”
+o=output_file.write(line)</p>
 <p>At this point there should be a file called <code class="docutils literal notranslate"><span class="pre">airports.csv</span></code> on the Desktop. This file can be used as an input for a next analysis step or stored as supplementary material for a project or manuscript. It’s a lot easier than copy and pasting that information from a database or website! :)</p>
 <div class="section" id="saving-a-python-script-for-qgis">
 <h2>Saving a Python script for QGIS<a class="headerlink" href="#saving-a-python-script-for-qgis" title="Permalink to this headline">¶</a></h2>
@@ -1129,7 +592,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="02_lesson.html" title="previous page">Variables (and constants)</a>
-    <a class='right-next' id="next-link" href="jupyter_instructor_notes.html" title="next page">Working with Jupyter Notebooks in Jupyter Lab</a>
+    <a class='right-next' id="next-link" href="mappy_instructor_notes.html" title="next page">Run map.py on netherlandsmap.csv</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

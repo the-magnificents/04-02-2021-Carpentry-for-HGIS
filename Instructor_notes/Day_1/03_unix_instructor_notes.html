@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>&lt;no title&gt; &#8212; Python essentials for GIS learners</title>
+    <title>Instructor Notes: Python Essentials for GIS Learners Day 1 (Unix Shell) &#8212; Python essentials for GIS learners</title>
     
   <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -120,7 +120,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form>
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
+    <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../../README.html">
    Python Essentials for GIS Learners
@@ -315,24 +315,24 @@ commentsRunWhenDOMLoaded(addUtterances);
    FOLLOW UP
   </a>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 current active collapsible-parent">
   <a class="reference internal" href="../00_README.html">
    Instructor notes
   </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2 collapsible-parent">
+  <ul class="current collapse-ul">
+   <li class="toctree-l2 current active collapsible-parent">
     <a class="reference internal" href="00_README.html">
      DAY 1
     </a>
-    <ul class="collapse-ul">
-     <li class="toctree-l3">
-      <a class="reference internal" href="01_Notes_From_DH_context.html">
-       Guide to programing with Python for the Digital Humanities
-      </a>
-     </li>
+    <ul class="current collapse-ul">
      <li class="toctree-l3">
       <a class="reference internal" href="02_About_Open_science_instructor_notes.html">
        Open Science
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Instructor Notes: Python Essentials for GIS Learners Day 1 (Unix Shell)
       </a>
      </li>
      <li class="toctree-l3">
@@ -341,478 +341,9 @@ commentsRunWhenDOMLoaded(addUtterances);
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="lesson_notes/B2_Vars_Types.html">
-       Use an index to get a single character from a string.
+      <a class="reference internal" href="05_jupyter_instructor_notes.html">
+       Working with Jupyter Notebooks in Jupyter Lab
       </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="lesson_notes/B2_Vars_Types.html#use-a-slice-to-get-a-substring">
-       Use a slice to get a substring.
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="lesson_notes/B2_Vars_Types.html#use-the-built-in-function-len-to-find-the-length-of-a-string">
-       Use the built-in function
-       <code class="docutils literal notranslate">
-        <span class="pre">
-         len
-        </span>
-       </code>
-       to find the length of a string.
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="lesson_notes/B2_Vars_Types.html#python-is-case-sensitive">
-       Python is case-sensitive.
-      </a>
-     </li>
-     <li class="toctree-l3 collapsible-parent">
-      <a class="reference internal" href="lesson_notes/B2_Vars_Types.html#use-meaningful-variable-names">
-       Use meaningful variable names.
-      </a>
-      <ul class="collapse-ul">
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B4_Functions.html">
-         Functions may only work for certain (combinations of) arguments.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B4_Functions.html#functions-may-have-default-values-for-some-arguments">
-         Functions may have default values for some arguments.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B4_Functions.html#functions-attached-to-objects-are-called-methods">
-         Functions attached to objects are called methods
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B4_Functions.html#use-the-built-in-function-help-to-get-help-for-a-function">
-         Use the built-in function
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           help
-          </span>
-         </code>
-         to get help for a function.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B4_Functions.html#the-jupyter-notebook-has-two-ways-to-get-help">
-         The Jupyter Notebook has two ways to get help.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B4_Functions.html#python-reports-a-syntax-error-when-it-can-t-understand-the-source-of-a-program">
-         Python reports a syntax error when it can’t understand the source of a program.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B4_Functions.html#a-name-runtime-error-a-python-reports-a-runtime-error-when-something-goes-wrong-while-a-program-is-executing">
-         <a name="runtime-error">
-         </a>
-         Python reports a runtime error when something goes wrong while a program is executing.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B4_Functions.html#what-happens-when">
-         What Happens When
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B4_Functions.html#solution">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B4_Functions.html#spot-the-difference">
-         Spot the Difference
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B4_Functions.html#id1">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B4_Functions.html#why-not">
-         Why Not?
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B4_Functions.html#id2">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B4_Functions.html#last-character-of-a-string">
-         Last Character of a String
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B4_Functions.html#id3">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B5_Exercise.html">
-         Jigsaw Puzzle (Parson’s Problem) Programming Example
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B5_Exercise.html#solution">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B5_Exercise.html#when-is-help-available">
-         When Is Help Available?
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B5_Exercise.html#id1">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B5_Exercise.html#importing-with-aliases">
-         Importing With Aliases
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B5_Exercise.html#id2">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B5_Exercise.html#there-are-many-ways-to-import-libraries">
-         There Are Many Ways To Import Libraries!
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B5_Exercise.html#id3">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B5_Exercise.html#importing-specific-items">
-         Importing Specific Items
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B5_Exercise.html#id4">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B5_Exercise.html#reading-error-messages">
-         Reading Error Messages
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/B5_Exercise.html#id5">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C2_Iterators&amp;Generators.html">
-         Iterators and iterables
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C2_Iterators.html">
-         Iterators and iterables
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Pythonic_.html">
-         None pythonic example
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Pythonic_.html#the-pythonic-example">
-         The pythonic example
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html">
-         Use variables to store values.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#use-print-to-display-values">
-         Use
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           print
-          </span>
-         </code>
-         to display values.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-must-be-created-before-they-are-used">
-         Variables must be created before they are used.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-persist-between-cells">
-         Variables Persist Between Cells
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-can-be-used-in-calculations">
-         Variables can be used in calculations.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#use-an-index-to-get-a-single-character-from-a-string">
-         Use an index to get a single character from a string.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#use-a-slice-to-get-a-substring">
-         Use a slice to get a substring.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#use-the-built-in-function-len-to-find-the-length-of-a-string">
-         Use the built-in function
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           len
-          </span>
-         </code>
-         to find the length of a string.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#python-is-case-sensitive">
-         Python is case-sensitive.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#use-meaningful-variable-names">
-         Use meaningful variable names.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#swapping-values">
-         Swapping Values
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#solution">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#predicting-values">
-         Predicting Values
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#id1">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#challenge">
-         Challenge
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#id2">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#choosing-a-name">
-         Choosing a Name
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#id3">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#slicing-practice">
-         Slicing practice
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#id4">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#slicing-concepts">
-         Slicing concepts
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#solutions">
-         Solutions
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/types.html">
-         Variables only change value when something is assigned to them.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/types.html#fractions">
-         Fractions
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/types.html#solution">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/types.html#automatic-type-conversion">
-         Automatic Type Conversion
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/types.html#id1">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/types.html#choose-a-type">
-         Choose a Type
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/types.html#id2">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/types.html#division-types">
-         Division Types
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/types.html#id3">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/types.html#strings-to-numbers">
-         Strings to Numbers
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/types.html#id4">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/types.html#arithmetic-with-different-types">
-         Arithmetic with Different Types
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/types.html#id5">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/types.html#complex-numbers">
-         Complex Numbers
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="lesson_notes/types.html#id6">
-         Solution
-        </a>
-       </li>
-      </ul>
-      <i class="fas fa-chevron-down">
-      </i>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="lesson_notes/B2_Vars_Types.html#swapping-values">
-       Swapping Values
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="lesson_notes/B2_Vars_Types.html#solution">
-       Solution
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="lesson_notes/B2_Vars_Types.html#predicting-values">
-       Predicting Values
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="lesson_notes/B2_Vars_Types.html#id1">
-       Solution
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="lesson_notes/B2_Vars_Types.html#challenge">
-       Challenge
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="lesson_notes/B2_Vars_Types.html#id2">
-       Solution
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="lesson_notes/B2_Vars_Types.html#choosing-a-name">
-       Choosing a Name
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="lesson_notes/B2_Vars_Types.html#id3">
-       Solution
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="lesson_notes/B2_Vars_Types.html#slicing-practice">
-       Slicing practice
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="lesson_notes/B2_Vars_Types.html#id4">
-       Solution
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="lesson_notes/B2_Vars_Types.html#slicing-concepts">
-       Slicing concepts
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="lesson_notes/B2_Vars_Types.html#solutions">
-       Solutions
-      </a>
-     </li>
-     <li class="toctree-l3 collapsible-parent">
-      <a class="reference internal" href="old_exercises/B1_exercise.html">
-       Excercise 2
-      </a>
-      <ul class="collapse-ul">
-       <li class="toctree-l4">
-        <a class="reference internal" href="old_exercises/B2_exercise.html">
-         Excercise 2
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="old_exercises/B3_exercise.html">
-         Exercise 3
-        </a>
-       </li>
-      </ul>
-      <i class="fas fa-chevron-down">
-      </i>
      </li>
     </ul>
     <i class="fas fa-chevron-down">
@@ -839,38 +370,14 @@ commentsRunWhenDOMLoaded(addUtterances);
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="../Day_2/jupyter_instructor_notes.html">
-       Working with Jupyter Notebooks in Jupyter Lab
+      <a class="reference internal" href="../Day_2/A1_qgis_lesson1.html">
+       Programmatically access the attributes of international airports
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="../Day_2/mappy_instructor_notes.html">
        Run map.py on netherlandsmap.csv
       </a>
-     </li>
-     <li class="toctree-l3 collapsible-parent">
-      <a class="reference internal" href="../Day_2/old/03_lesson.html">
-       Go from for loops and while loops to functions
-      </a>
-      <ul class="collapse-ul">
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_2/old/C1_Python_Standard_Library.html">
-         Python standard libraries
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_2/old/python_instructor_notes.html">
-         About these instructor notes
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Day_2/old/readme.html">
-         Old notes
-        </a>
-       </li>
-      </ul>
-      <i class="fas fa-chevron-down">
-      </i>
      </li>
     </ul>
     <i class="fas fa-chevron-down">
@@ -881,6 +388,11 @@ commentsRunWhenDOMLoaded(addUtterances);
      DAY 3
     </a>
     <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Day_3/git_instructor_notes.html">
+       Instructor Notes: Python Essentials for GIS Learners Day 3
+      </a>
+     </li>
      <li class="toctree-l3">
       <a class="reference internal" href="../Day_3/git_instructor_notes.html">
        Instructor Notes: Python Essentials for GIS Learners Day 3
@@ -934,9 +446,9 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/Instructor_notes/Day_1/03_unix_instructor_notes.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/Instructor_notes/Day_1/03_unix_instructor_notes.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -976,7 +488,94 @@ commentsRunWhenDOMLoaded(addUtterances);
             <i class="fas fa-list"></i> Contents
         </div>
         <nav id="bd-toc-nav">
-            <ul class="simple nav section-nav flex-column">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#learning-goals">
+   Learning goals
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#setup-requirements">
+   Setup requirements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-and-script-for-day-1">
+   Data and script for Day 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#background">
+   Background
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#run-your-first-bash-commands">
+     Run your first Bash commands
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-the-new-directories">
+     Create the new directories
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set-up-the-project-folder-structure">
+     Set up the project folder structure
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-2-move-data-and-script-files-to-the-project-folder-n">
+   Step 2: Move data and script files to the project folder\n”,
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#move-files-from-the-pre-workshop-files-folder-to-the-py-workshop-2021-folder">
+     Move files from the
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       pre_workshop_files/
+      </span>
+     </code>
+     folder to the
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       py_workshop_2021/
+      </span>
+     </code>
+     folder
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#use-wildcards-to-access-multiple-files-at-once">
+     Use wildcards to access multiple files at once
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-3-use-nano-to-add-information-to-the-documentation-txt-file">
+   Step 3: Use nano to add information to the
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     documentation.txt
+    </span>
+   </code>
+   file
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#counting-the-world-s-tallest-mountains">
+   Counting the World’s Tallest Mountains
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#saving-the-nepalese-tallest-mountains-in-a-file-concatenating">
+   Saving the Nepalese tallest mountains in a file (concatenating)
+  </a>
+ </li>
 </ul>
 
         </nav>
@@ -988,7 +587,179 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  
+  <div class="section" id="instructor-notes-python-essentials-for-gis-learners-day-1-unix-shell">
+<h1>Instructor Notes: Python Essentials for GIS Learners Day 1 (Unix Shell)<a class="headerlink" href="#instructor-notes-python-essentials-for-gis-learners-day-1-unix-shell" title="Permalink to this headline">¶</a></h1>
+<p>This lesson is an introduction to using the Unix shell and the Bash scripting language to create and navigate through files and directories (folders). It is an alternative to “clicking” and provides some significant advantages in documenting processes, automating tasks, and enabling reproducible workflows.</p>
+<p>The second part of the lesson runs a script called <a class="reference external" href="http://map.py">map.py</a> that draws a simple map using the Turtle graphics package. Finally, learners are introduced to Jupyter Lab and using Jupyter notebooks to write and compile code.</p>
+<p>The lesson material on Unix Shell is based upon the Software Carpentries lesson on <a class="reference external" href="http://swcarpentry.github.io/shell-novice/">The Unix Shell</a>, the <a class="reference external" href="https://datacarpentry.org/shell-genomics/">Introduction to the Command Line for Genomics</a> lesson from Data Carpentries, and an <a class="reference external" href="https://datacarpentry.org/2015-11-04-ACUNS/shell-intro/">Intro to the Shell</a> workshop from <a class="reference external" href="http://softwarecarpentry.org">softwarecarpentry.org</a>.</p>
+<p>The <a class="reference external" href="http://map.py">map.py</a> script and oregonmap.csv and californiamap.csv files are from user acleland on GitHub: <a class="reference external" href="https://github.com/acleland/turtle-graphics-map">https://github.com/acleland/turtle-graphics-map</a> distributed and reused under the MIT License.</p>
+<div class="section" id="learning-goals">
+<h2>Learning goals<a class="headerlink" href="#learning-goals" title="Permalink to this headline">¶</a></h2>
+<p>The learning goals for this lesson are:</p>
+<ul class="simple">
+<li><p>computers can be used to record and automate iterative tasks</p></li>
+<li><p>scripts are a tool for reproducibility</p></li>
+<li><p>code is reusable and will consistently produce the same result from the same data file</p></li>
+<li><p>code can be used with different data files</p></li>
+<li><p>JupyterLab and Jupyter notebooks are important tools for writing and sharing code</p></li>
+</ul>
+</div>
+<div class="section" id="setup-requirements">
+<h2>Setup requirements<a class="headerlink" href="#setup-requirements" title="Permalink to this headline">¶</a></h2>
+<p>Participants using Windows OS will need to install Git for Windows following the instructions <a class="reference external" href="https://carpentries.github.io/workshop-template/#shell">here</a> before Day 1 begins.</p>
+<p>The default shell in some versions of macOS is Bash, and Bash is available in all versions, so no need to install anything. You access Bash from the Terminal. The easiest way to find it is by using the magnifying glass symbol at the top right corner of your page and search “Terminal”. You should open it up and it’s a good idea to right click the icon at the bottom of your screen and choose Options &gt; Keep in Dock.</p>
+</div>
+<div class="section" id="data-and-script-for-day-1">
+<h2>Data and script for Day 1<a class="headerlink" href="#data-and-script-for-day-1" title="Permalink to this headline">¶</a></h2>
+<p>Files for the Unix Shell lesson are contained in the <code class="docutils literal notranslate"><span class="pre">pre_workshop_files/</span></code> directory that participants should download and save this folder on their Desktop keeping the name <code class="docutils literal notranslate"><span class="pre">pre_workshop_files/</span></code>.</p>
+</div>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>The shell is a program that enables us to send commands to the computer and receive output. It is also referred to as the terminal or command line.</p>
+<p>Humans and computers commonly interact in many different ways, such as through a keyboard and mouse, touch screen interfaces, or using speech recognition systems. The most widely used way to interact with personal computers is called a graphical user interface (GUI). With a GUI, we give instructions by clicking a mouse and using menu-driven interactions.</p>
+<p>While the visual aid of a GUI makes it intuitive to learn, this way of delivering instructions to a computer scales very poorly. Imagine the following task: copying image files one at a time from one location to another. Using a GUI, you would not only be clicking at your desk for several hours, but you could potentially also commit an error in the process of completing this repetitive task. This is where we take advantage of the Unix shell. The Unix shell is both a command-line interface (CLI) and a scripting language, allowing such repetitive tasks to be done automatically and fast. With the proper commands, the shell can repeat tasks with or without some modification as many times as we want. Using the shell, the task in the example can be accomplished in seconds.</p>
+<p>The most popular Unix shell is Bash (the Bourne Again SHell — so-called because it’s derived from a shell written by Stephen Bourne). Bash is the default shell on most modern implementations of Unix and in most packages that provide Unix-like tools for Windows.</p>
+<p>Using the shell will take some effort and some time to learn. While a GUI presents you with choices to select, CLI choices are not automatically presented to you, so you must learn a few commands like new vocabulary in a language you’re studying. However, unlike a spoken language, a small number of “words” (i.e. commands) gets you a long way, and we’ll cover some of those essentials today.</p>
+<p>The grammar of a shell allows you to combine existing tools into powerful pipelines and handle large volumes of data automatically. Sequences of commands can be written into a script, improving the reproducibility of workflows.
+The Bash commands, notations and tools taught in this lesson are:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span></code> - change directory</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ls</span></code> - list (files and directories)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-F</span></code> - list files and directories with a /</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code> - make directory</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cat</span></code> - show file contents</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">..</span></code> - move “up one” directory level</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mv</span></code> - move</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pwd</span></code> - print working directory</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">*</span></code> - wildcard used to match filenames</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&gt;</span></code> - used to save output from a command in a file</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">awk</span></code> - used for pattern matching and processing</p></li>
+<li><p>nano text editor</p></li>
+</ul>
+<p>The Jupyter commands taught in this lesson are:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">lab</span></code>”</p></li>
+</ul>
+<p>Step 1. Create a new directory and folder structure</p>
+<div class="section" id="run-your-first-bash-commands">
+<h3>Run your first Bash commands<a class="headerlink" href="#run-your-first-bash-commands" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Change Directory to Desktop: `$ cd Desktop</p></li>
+<li><p>List files and directories on Desktop: <code class="docutils literal notranslate"><span class="pre">my_Desktop</span> <span class="pre">$</span> <span class="pre">ls</span></code></p></li>
+<li><p>Try a command error: <code class="docutils literal notranslate"><span class="pre">my_Desktop</span> <span class="pre">$</span> <span class="pre">ks</span></code></p></li>
+</ol>
+</div>
+<div class="section" id="create-the-new-directories">
+<h3>Create the new directories<a class="headerlink" href="#create-the-new-directories" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Make a workshop folder called <code class="docutils literal notranslate"><span class="pre">py_workshop_2021/</span></code>: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">mkdir</span> <span class="pre">py_workshop_2021</span></code></p></li>
+<li><p>Change directory to <code class="docutils literal notranslate"><span class="pre">py_workshop_2021</span></code>: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">py_workshop_2021</span></code></p></li>
+<li><p>List contents of <code class="docutils literal notranslate"><span class="pre">py_workshop_2021/</span></code>: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">ls</span></code> (it should be empty)</p></li>
+</ol>
+</div>
+<div class="section" id="set-up-the-project-folder-structure">
+<h3>Set up the project folder structure<a class="headerlink" href="#set-up-the-project-folder-structure" title="Permalink to this headline">¶</a></h3>
+<p>Let’s set up a folder structure for our project that is generally useful for any project working with data and code. It’s good practice to make separate folders each for raw data, data outputs, scripts and documents in the context of any project you’re working on. For now, let’s create two new directories, data/ and scripts/ inside the <code class="docutils literal notranslate"><span class="pre">py_workshop_2021/</span></code> directory.</p>
+<ol class="simple">
+<li><p>Make sure you are in the <code class="docutils literal notranslate"><span class="pre">py_workshop_2021/</span></code> folder: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">pwd</span></code></p></li>
+<li><p>Create two new directories, <code class="docutils literal notranslate"><span class="pre">data/</span></code> and <code class="docutils literal notranslate"><span class="pre">scripts/</span></code> inside the py_workshop_2021/ folder: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">mkdir</span> <span class="pre">data</span> <span class="pre">scripts</span></code></p></li>
+</ol>
+<div class="admonition-try-on-your-own admonition">
+<p class="admonition-title">Try on your own</p>
+<p>Try creating two new folders for <code class="docutils literal notranslate"><span class="pre">documentation/</span></code> and <code class="docutils literal notranslate"><span class="pre">demos/</span></code> in <code class="docutils literal notranslate"><span class="pre">py_workshop_2021/</span></code>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p><code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">documentation</span> <span class="pre">demos</span></code></p>
+</div>
+<ol class="simple">
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-F</span></code> to verify that your new subdirectories were created.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="step-2-move-data-and-script-files-to-the-project-folder-n">
+<h2>Step 2: Move data and script files to the project folder\n”,<a class="headerlink" href="#step-2-move-data-and-script-files-to-the-project-folder-n" title="Permalink to this headline">¶</a></h2>
+<p>The data and scripts we want to use are located in the <code class="docutils literal notranslate"><span class="pre">pre_workshop_files/</span></code> folder that we sent out prior to this workshop and you should have saved on your Desktop. Let’s take a look at the contents of that folder by navigating there in the shell. If you are in your <code class="docutils literal notranslate"><span class="pre">py_workshop_2021/</span></code> folder, you can use a special notation that means “move up one level”: ..</p>
+<ol class="simple">
+<li><p>Move back to the Desktop and directly into the <code class="docutils literal notranslate"><span class="pre">pre_workshop_files/</span></code> folder: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">../pre_workshop_files</span></code></p></li>
+<li><p>Use ls to take a look at the files in the <code class="docutils literal notranslate"><span class="pre">pre_workshop_files/</span></code> folder: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">ls</span></code></p></li>
+<li><p>Take a look at the contents of the documentation.txt file: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cat</span> <span class="pre">documentation.txt</span></code></p></li>
+</ol>
+<div class="section" id="move-files-from-the-pre-workshop-files-folder-to-the-py-workshop-2021-folder">
+<h3>Move files from the <code class="docutils literal notranslate"><span class="pre">pre_workshop_files/</span></code> folder to the <code class="docutils literal notranslate"><span class="pre">py_workshop_2021/</span></code> folder<a class="headerlink" href="#move-files-from-the-pre-workshop-files-folder-to-the-py-workshop-2021-folder" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Move <code class="docutils literal notranslate"><span class="pre">documentation.txt</span></code> to <code class="docutils literal notranslate"><span class="pre">py_workshop_2021/documents</span></code>: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">mv</span> <span class="pre">documentation.txt</span> <span class="pre">../py_workshop_2021/documentation</span></code></p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">ls</span></code> to see that <code class="docutils literal notranslate"><span class="pre">documentation.txt</span></code> is no longer in the <code class="docutils literal notranslate"><span class="pre">pre_workshop_files/</span></code> folder</p></li>
+</ol>
+<p>Note how we use the <code class="docutils literal notranslate"><span class="pre">../</span></code> notation to move one folder “up” from <code class="docutils literal notranslate"><span class="pre">pre_workshop_files/</span></code> to Desktop, and from there we can specify the exact path to the new folder. Note that we didn’t actually move there in the terminal - just our files did.</p>
+<p>In <code class="docutils literal notranslate"><span class="pre">pre_workshop_files/</span></code> You should also see a file called <code class="docutils literal notranslate"><span class="pre">map.py</span></code> - this extension lets us know that this is a Python script. We can <code class="docutils literal notranslate"><span class="pre">cat</span></code> into it the same way we did to other files because it is simply a text file with a very particular syntax that Python can read and understand. We don’t know much else about it at this moment, and that’s ok - let’s just move it for now.</p>
+<div class="admonition-try-on-your-own admonition">
+<p class="admonition-title">Try on your own</p>
+<p>Move <a class="reference external" href="http://map.py">map.py</a> to the right subfolder within the <code class="docutils literal notranslate"><span class="pre">py_workshop_2021/</span></code> directory.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">mv</span> <span class="pre">map.py</span> <span class="pre">../py_workshop_2021/scripts</span></code></p>
+</div>
+</div>
+<div class="section" id="use-wildcards-to-access-multiple-files-at-once">
+<h3>Use wildcards to access multiple files at once<a class="headerlink" href="#use-wildcards-to-access-multiple-files-at-once" title="Permalink to this headline">¶</a></h3>
+<p>We have three .csv files in the <code class="docutils literal notranslate"><span class="pre">pre_workshop_files/</span></code> folder - <code class="docutils literal notranslate"><span class="pre">airports_edit.csv</span></code>,<code class="docutils literal notranslate"><span class="pre">netherlandsmap.csv</span></code> and <code class="docutils literal notranslate"><span class="pre">oregonmap.csv</span></code>. The last two are both data files that can be run with <a class="reference external" href="http://map.py">map.py</a>. We could move each file individually, or type both names in the <code class="docutils literal notranslate"><span class="pre">mv</span></code> command, but there’s another way to do this that saves us time.</p>
+<p>In Bash, <code class="docutils literal notranslate"><span class="pre">*</span></code> is a wildcard, which matches zero or more characters. Let’s consider the <code class="docutils literal notranslate"><span class="pre">pre_workshop_files/</span></code> directory. <code class="docutils literal notranslate"><span class="pre">*.csv</span></code> matches every file that ends with ‘.csv’. On the other hand, <code class="docutils literal notranslate"><span class="pre">o*.csv</span></code> only matches oregonmap.csv because the ‘o’ at the front only matches filenames that begin with the letter ‘o’. Since we have one file airports_edit.csv that matches the extension but cannot be run with <a class="reference external" href="http://map.py">map.py</a>, we want to avoid copying that. How could we do that?</p>
+<ol class="simple">
+<li><p>You <em>could</em> move the two .csv data files from <code class="docutils literal notranslate"><span class="pre">pre_workshop_files/</span></code> to the <code class="docutils literal notranslate"><span class="pre">data</span></code> folder in <code class="docutils literal notranslate"><span class="pre">py_workshop_2021/</span></code>: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">mv</span> <span class="pre">*map.csv</span> <span class="pre">../py_workshop_2021/data</span></code></p></li>
+<li><p>But, we want all the .csv files to go in the data folder. <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">mv</span> <span class="pre">*.csv</span> <span class="pre">../py_workshop_2021/data</span></code></p></li>
+</ol>
+<p>Now, let’s check that everything worked the way we wanted it to. The <code class="docutils literal notranslate"><span class="pre">pre_workshop_files/</span></code> directory should now contain two folders called <code class="docutils literal notranslate"><span class="pre">mountain_data/</span></code> and <code class="docutils literal notranslate"><span class="pre">qgis/</span></code>. Let’s move these folders to the <code class="docutils literal notranslate"><span class="pre">py_workshop_2021/data</span></code> and <code class="docutils literal notranslate"><span class="pre">py_workshop_2021/demos/</span></code> directories, respectively.</p>
+<ol class="simple">
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">ls</span></code> to check that the <code class="docutils literal notranslate"><span class="pre">pre_workshop_files/</span></code> directory is empty as it should be.</p></li>
+<li><p>Change directory to <code class="docutils literal notranslate"><span class="pre">py_workshop_2021/</span></code>: <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">../py_workshop_2021</span></code></p></li>
+</ol>
+<div class="admonition-try-on-your-own admonition">
+<p class="admonition-title">Try on your own</p>
+<p>Check in each of the subdirectories to see if your files are there.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p>Use <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-F</span></code> to see the subdirectories, then <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">data</span></code>, <code class="docutils literal notranslate"><span class="pre">ls</span></code>, <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code>;  <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">scripts</span></code>, <code class="docutils literal notranslate"><span class="pre">ls</span></code>, <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code>; <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">documentation</span></code>, <code class="docutils literal notranslate"><span class="pre">ls</span></code>, <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code></p>
+</div>
+</div>
+</div>
+<div class="section" id="step-3-use-nano-to-add-information-to-the-documentation-txt-file">
+<h2>Step 3: Use nano to add information to the <code class="docutils literal notranslate"><span class="pre">documentation.txt</span></code> file<a class="headerlink" href="#step-3-use-nano-to-add-information-to-the-documentation-txt-file" title="Permalink to this headline">¶</a></h2>
+<p>Nano is a text editor that you can use directly in the command line. Let’s add some information about ourselves in the <code class="docutils literal notranslate"><span class="pre">documentation.txt</span></code> file.</p>
+<ol class="simple">
+<li><p>Move into the <code class="docutils literal notranslate"><span class="pre">documentation</span></code> folder: <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">documentation</span></code></p></li>
+<li><p>Use nano to open the <code class="docutils literal notranslate"><span class="pre">documentation.txt</span></code> file: <code class="docutils literal notranslate"><span class="pre">nano</span> <span class="pre">documentation.txt</span></code></p></li>
+<li><p>Add your name and information about this workshop to that file. Use the arrow keys to navigate and type directly in the editor.</p></li>
+<li><p>Save the changes and write out the file: Control + O; Enter</p></li>
+<li><p>Exit the nano editor: Control + X (you should be back in the terminal)</p></li>
+<li><p>See that your changes were saved: <code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">documentation.txt</span></code></p></li>
+</ol>
+</div>
+<div class="section" id="counting-the-world-s-tallest-mountains">
+<h2>Counting the World’s Tallest Mountains<a class="headerlink" href="#counting-the-world-s-tallest-mountains" title="Permalink to this headline">¶</a></h2>
+<p>The folder <code class="docutils literal notranslate"><span class="pre">mountain_data/</span></code> has an assortment of files that describe the world’s 10 tallest mountains. We are going to demonstrate pipes and pattern matching to count and concatenate files.</p>
+<ol class="simple">
+<li><p>cd into mountain_data: cd ../data/mountain_data</p></li>
+<li><p>Check out what is there: ls (see mostly text files that follow a naming convention of mountainname-country.txt and two image files)</p></li>
+<li><p><a class="reference external" href="http://README.md">README.md</a> file shows what is there in the dataset</p></li>
+<li><p>cat into one of the files to see it: cat annapurna-np.txt</p></li>
+<li><p>Use pattern matching to list all the files that end with -np.txt: ls *-np.txt</p></li>
+<li><p>Count how many mountains are in Nepal: ls *-np.txt | wc -l</p></li>
+</ol>
+<p>We know there are 10 mountains in this dataset which means that 8/10 of the tallest mountains on earth are in Nepal.</p>
+</div>
+<div class="section" id="saving-the-nepalese-tallest-mountains-in-a-file-concatenating">
+<h2>Saving the Nepalese tallest mountains in a file (concatenating)<a class="headerlink" href="#saving-the-nepalese-tallest-mountains-in-a-file-concatenating" title="Permalink to this headline">¶</a></h2>
+<p>Right now, the data for each mountain are stored in separate files. So we can see the list of mountains in Nepal, but we want one file with all mountains in Nepal. Use the awk command, for pattern processing and matching. The 1 flag automatically inserts a new line between each file.</p>
+<ol class="simple">
+<li><p>See the list of mountains in Nepal: awk 1 *-np.txt</p></li>
+<li><p>Save the list using “&gt;”: awk 1 *-np.txt &gt; nepal_mountains.txt</p></li>
+</ol>
+</div>
+</div>
+
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
