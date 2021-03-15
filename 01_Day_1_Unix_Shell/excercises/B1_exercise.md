@@ -27,7 +27,7 @@ We can use the wildcard `*` to grab all the .txt files this time in the `mount
 
 `$ awk 1 *.txt > tallest-mountains.txt`
 
-You can use `ls` to see the files in the `cities_data/` folder, and `cat` to check out the contents of the newly created `netherlands-cities.csv`.
+You can use `ls` to see the files in the `mountain_data/` folder, and `cat` to check out the contents of the newly created `tallest-mountains.txt`.
 :::
 
 ```{admonition} Exercise: add data to tallest-mountains.txt
