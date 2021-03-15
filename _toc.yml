@@ -65,6 +65,7 @@ sections:
     - file: Instructor_notes/Day_2/A1_qgis_lesson1
     - file: Instructor_notes/Day_2/A1_qgis_lesson1
     - file: Instructor_notes/Day_2/mappy_instructor_notes
+    - file: Instructor_notes/Day_2/airports_analysis_answers.ipynb
   
   - file: Instructor_notes/Day_3/00_README
     sections:
