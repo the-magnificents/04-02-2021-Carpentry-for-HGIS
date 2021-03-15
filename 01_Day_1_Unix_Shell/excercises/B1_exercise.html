@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work with the bash shell &#8212; Python essentials for GIS learners</title>
     
-  <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -523,7 +523,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <p class="admonition-title">See Solution</p>
 <p>We can use the wildcard <code class="docutils literal notranslate"><span class="pre">*</span></code> to grab all the .txt files this time in the <code class="docutils literal notranslate"><span class="pre">mountain_data</span></code> folder. We want to concatenate the contents of every txt file in the folder, so we should use <code class="docutils literal notranslate"><span class="pre">*.txt</span></code> to match all the files in the directory. To concatenate, we use the <code class="docutils literal notranslate"><span class="pre">awk</span></code> command (used for pattern scanning and processing) along with the 1 flag which automatically inserts a new line between the data from each of the separate files. The <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> symbol will concatenate the contents of all files that match this naming pattern to a new file that we define, in this case called tallest-mountains.txt.</p>
 <p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">awk</span> <span class="pre">1</span> <span class="pre">*.txt</span> <span class="pre">&gt;</span> <span class="pre">tallest-mountains.txt</span></code></p>
-<p>You can use <code class="docutils literal notranslate"><span class="pre">ls</span></code> to see the files in the <code class="docutils literal notranslate"><span class="pre">cities_data/</span></code> folder, and <code class="docutils literal notranslate"><span class="pre">cat</span></code> to check out the contents of the newly created <code class="docutils literal notranslate"><span class="pre">netherlands-cities.csv</span></code>.</p>
+<p>You can use <code class="docutils literal notranslate"><span class="pre">ls</span></code> to see the files in the <code class="docutils literal notranslate"><span class="pre">mountain_data/</span></code> folder, and <code class="docutils literal notranslate"><span class="pre">cat</span></code> to check out the contents of the newly created <code class="docutils literal notranslate"><span class="pre">tallest-mountains.txt</span></code>.</p>
 </div>
 <div class="admonition-exercise-add-data-to-tallest-mountains-txt admonition">
 <p class="admonition-title">Exercise: add data to tallest-mountains.txt</p>
@@ -555,7 +555,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./01_Day_1_Unix_Shell\excercises"
+            path: "./01_Day_1_Unix_Shell/excercises"
         },
         predefinedOutput: true
     }
@@ -591,7 +591,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     </div>
 
     
-  <script src="../../_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>&lt;no title&gt; &#8212; Python essentials for GIS learners</title>
+    <title>Run map.py on oregonmap.csv &#8212; Python essentials for GIS learners</title>
     
-  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -89,8 +89,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Select and concatenate data files" href="B0_exercise.html" />
-    <link rel="prev" title="Move data and script files to the project folder" href="A2_unix_lesson2.html" />
+    <link rel="next" title="Day 1: Introduction to the Unix Shell and basic setup of Python" href="00_README.html" />
+    <link rel="prev" title="Select and concatenate data files" href="B0_exercise.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -120,333 +120,20 @@ commentsRunWhenDOMLoaded(addUtterances);
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form>
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
+    <ul class="current nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../00_Lesson_prep/00_README.html">
-   Preparing for the workshop
-  </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="../00_Lesson_prep/01_About_this_workshop.html">
-     General considerations for this workshop
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../00_Lesson_prep/Schedule.html">
-     Schedule overview
-    </a>
-   </li>
-  </ul>
-  <i class="fas fa-chevron-down">
-  </i>
- </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="00_README.html">
-   Day 1: Introduction to the Unix Shell and basic setup of Python
-  </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="A1_unix_lesson1.html">
-     Create a new project directory and subdirectories for data and code
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="A2_unix_lesson2.html">
-     Move data and script files to the project folder
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="B0_exercise.html">
-     Select and concatenate data files
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="B0_exercise.html#add-data-to-netherlands-cities-csv">
-     Add data to
-     <code class="docutils literal notranslate">
-      <span class="pre">
-       netherlands-cities.csv
-      </span>
-     </code>
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="B1_exercise.html">
-     Getting Started with JupyterLab
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="B1_exercise.html#jupyterlab-what-about-jupyter-notebooks">
-     JupyterLab? What about Jupyter notebooks?
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="B1_exercise.html#starting-jupyterlab">
-     Starting JupyterLab
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="B1_exercise.html#the-jupyterlab-interface">
-     The JupyterLab Interface
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="B1_exercise.html#creating-a-python-script">
-     Creating a Python script
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="B1_exercise.html#creating-a-jupyter-notebook">
-     Creating a Jupyter Notebook
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="B1_exercise.html#how-it-s-stored">
-     How It’s Stored
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="B1_exercise.html#arranging-documents-into-panels-of-tabs">
-     Arranging Documents into Panels of Tabs
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="B1_exercise.html#solution">
-     Solution
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="B1_exercise.html#use-the-jupyter-notebook-for-editing-and-running-python">
-     Use the Jupyter Notebook for editing and running Python.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="B1_exercise.html#code-vs-text">
-     Code vs. Text
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="B1_exercise.html#the-notebook-has-command-and-edit-modes">
-     The Notebook has Command and Edit modes.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="B1_exercise.html#command-vs-edit">
-     Command Vs. Edit
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="B1_exercise.html#id1">
-     Solution
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="B1_exercise.html#a-level-1-heading">
-     A Level-1 Heading
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C2_Iterators&amp;Generators.html">
-     Iterators and iterables
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C2_Iterators.html">
-     Iterators and iterables
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Pythonic_.html">
-     None pythonic example
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Pythonic_.html#the-pythonic-example">
-     The pythonic example
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html">
-     Use variables to store values.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#use-print-to-display-values">
-     Use
-     <code class="docutils literal notranslate">
-      <span class="pre">
-       print
-      </span>
-     </code>
-     to display values.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-must-be-created-before-they-are-used">
-     Variables must be created before they are used.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-persist-between-cells">
-     Variables Persist Between Cells
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-can-be-used-in-calculations">
-     Variables can be used in calculations.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#use-an-index-to-get-a-single-character-from-a-string">
-     Use an index to get a single character from a string.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#use-a-slice-to-get-a-substring">
-     Use a slice to get a substring.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#use-the-built-in-function-len-to-find-the-length-of-a-string">
-     Use the built-in function
-     <code class="docutils literal notranslate">
-      <span class="pre">
-       len
-      </span>
-     </code>
-     to find the length of a string.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#python-is-case-sensitive">
-     Python is case-sensitive.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#use-meaningful-variable-names">
-     Use meaningful variable names.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#swapping-values">
-     Swapping Values
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#solution">
-     Solution
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#predicting-values">
-     Predicting Values
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#id1">
-     Solution
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#challenge">
-     Challenge
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#id2">
-     Solution
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#choosing-a-name">
-     Choosing a Name
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#id3">
-     Solution
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#slicing-practice">
-     Slicing practice
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#id4">
-     Solution
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#slicing-concepts">
-     Slicing concepts
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="lesson_notes/C3_Testing_Carpentry_Lesson.html#solutions">
-     Solutions
-    </a>
-   </li>
-   <li class="toctree-l2 collapsible-parent">
-    <a class="reference internal" href="old_exercises/B1_exercise.html">
-     Excercise 2
-    </a>
-    <ul class="collapse-ul">
-     <li class="toctree-l3">
-      <a class="reference internal" href="old_exercises/B2_exercise.html">
-       Excercise 2
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="old_exercises/B3_exercise.html">
-       Exercise 3
-      </a>
-     </li>
-    </ul>
-    <i class="fas fa-chevron-down">
-    </i>
-   </li>
-  </ul>
-  <i class="fas fa-chevron-down">
-  </i>
- </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../02_Python_Draw_GIS/00_README.html">
-   Day 2
-  </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="../02_Python_Draw_GIS/01_lesson.html">
-     Using and reading other people’s code
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../02_Python_Draw_GIS/02_lesson.html">
-     Variables (and constants)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../02_Python_Draw_GIS/03_lesson.html">
-     Go from for loops and while loops to functions
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../02_Python_Draw_GIS/C1_Python_Standard_Library.html">
-     Python standard libraries
-    </a>
-   </li>
-  </ul>
-  <i class="fas fa-chevron-down">
-  </i>
- </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../03_Day_3_Git/00_README.html">
-   Day 3: Working with remote repositories on GitHub and version control with Git
+  <a class="reference internal" href="../03_Day_3_Git/A5_git_lesson5.html">
+   Test your answers to Python challenges
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="../03_Day_3_Git/A1_git_lesson1.html">
      Fork and clone a repository from GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03_Day_3_Git/00_README.html">
+     Day 3: Working with remote repositories on GitHub and version control with Git
     </a>
    </li>
    <li class="toctree-l2">
@@ -464,33 +151,23 @@ commentsRunWhenDOMLoaded(addUtterances);
      Push changes to remote repository in GitHub
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../03_Day_3_Git/A5_git_lesson5.html">
-     Test your answers to Python challenges
-    </a>
-   </li>
   </ul>
   <i class="fas fa-chevron-down">
   </i>
  </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../Instructor_notes/00_README.html">
-   Instructor notes
+  <a class="reference internal" href="../Instructor_notes/open_science_instructor_notes.html">
+   Open Science
   </a>
   <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/01_Notes_From_DH_context.html">
-     Guide to programing with Python for the Digital Humanities
-    </a>
-   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html">
      Version control and remote collaboration with Git and GitHub
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/open_science_instructor_notes.html">
-     Open Science
+    <a class="reference internal" href="../Instructor_notes/unix_instructor_notes.html">
+     Creating and navigating files and directories with the Unix Shell (Bash)
     </a>
    </li>
    <li class="toctree-l2">
@@ -499,8 +176,100 @@ commentsRunWhenDOMLoaded(addUtterances);
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/unix_instructor_notes.html">
-     Creating and navigating files and directories with the Unix Shell (Bash)
+    <a class="reference internal" href="../Instructor_notes/00_README.html">
+     Instructor notes
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="B3_exercise.html">
+   Exercise 3
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="B0_exercise.html">
+     Select and concatenate data files
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Run map.py on oregonmap.csv
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="#working-with-jupyter-notebooks-in-jupyter-lab">
+     Working with Jupyter Notebooks in Jupyter Lab
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="00_README.html">
+     Day 1: Introduction to the Unix Shell and basic setup of Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="B2_exercise.html">
+     Excercise 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="A1_unix_lesson1.html">
+     Create a new project directory and subdirectories for data and code
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="A2_unix_lesson2.html">
+     Move data and script files to the project folder
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="B1_exercise.html">
+     Excercise 2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../02_Python_Draw_GIS/01_lesson.html">
+   Using and reading other people’s code
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Python_Draw_GIS/00_README.html">
+     Day 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Python_Draw_GIS/03_lesson.html">
+     Go from for loops and while loops to functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Python_Draw_GIS/02_lesson.html">
+     Variables (and constants)
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../00_Lesson_prep/01_About_this_workshop.html">
+   General considerations for this workshop
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../00_Lesson_prep/Schedule.html">
+     Schedule overview
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../00_Lesson_prep/00_README.html">
+     Preparing for the workshop
     </a>
    </li>
   </ul>
@@ -576,7 +345,17 @@ commentsRunWhenDOMLoaded(addUtterances);
             <i class="fas fa-list"></i> Contents
         </div>
         <nav id="bd-toc-nav">
-            <ul class="simple nav section-nav flex-column">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Run map.py on oregonmap.csv
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#working-with-jupyter-notebooks-in-jupyter-lab">
+   Working with Jupyter Notebooks in Jupyter Lab
+  </a>
+ </li>
 </ul>
 
         </nav>
@@ -588,7 +367,60 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  
+  <div class="section" id="run-map-py-on-oregonmap-csv">
+<h1>Run <a class="reference external" href="http://map.py">map.py</a> on oregonmap.csv<a class="headerlink" href="#run-map-py-on-oregonmap-csv" title="Permalink to this headline">¶</a></h1>
+<p>Python is already installed on your computer from the Anaconda all-in-one installer. We can give Python commands directly in the command line by using a specific format that always starts with its name:</p>
+<ol class="simple">
+<li><p>Change directory to <code class="docutils literal notranslate"><span class="pre">py_workshop_2021/scripts</span></code>: <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">../scripts</span></code></p></li>
+<li><p>Tell python to run the <a class="reference external" href="http://map.py">map.py</a> script on the oregonmap.csv file: <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">map.py</span> <span class="pre">../data/oregonmap.csv</span></code></p></li>
+</ol>
+<p>Check out the map - bet it is the first map you’ve ever seen a turtle draw!</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">californiamap.csv</span></code> file also works with the <a class="reference external" href="http://map.py">map.py</a> script. Try drawing a map from californiamap.csv on your own.</p>
+<p>(Answer: <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">map.py</span> <span class="pre">../data/californiamap.csv</span></code>)</p>
+</div>
+<div class="section" id="working-with-jupyter-notebooks-in-jupyter-lab">
+<h1>Working with Jupyter Notebooks in Jupyter Lab<a class="headerlink" href="#working-with-jupyter-notebooks-in-jupyter-lab" title="Permalink to this headline">¶</a></h1>
+<p>Executing code in a python interpreter or directly from the command line is useful, but we also want a way to edit and annotate code and go through some process of trial and error when we’re solving problems on our own. Anaconda installed JupyterLab, which is a web-based interactive development environment for Jupyter notebooks, code, and data. The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more. (<a class="reference external" href="https://jupyter.org/#:~:text=JupyterLab%20is%20a%20web%2Dbased,scientific%20computing%2C%20and%20machine%20learning.">source</a>).</p>
+<p>You can launch Jupyter Lab from your command line from within the folder you want to work in. In this case, we want to create our first Jupyter notebook in the <code class="docutils literal notranslate"><span class="pre">py_workshop_2021/</span></code> folder.</p>
+<ol class="simple">
+<li><p>Make sure you are in the <code class="docutils literal notranslate"><span class="pre">py_workshop_2021/</span></code> folder. If you were in scripts, move up one: <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code></p></li>
+<li><p>Launch Jupyter Lab: <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">lab</span></code></p></li>
+</ol>
+<p>You will see a browser window open - this is your local browser, so you will see files in the <code class="docutils literal notranslate"><span class="pre">py_workshop_2021/</span></code> folder there.</p>
+<ol class="simple">
+<li><p>Move into the <code class="docutils literal notranslate"><span class="pre">scripts/</span></code> folder on the left hand navigation bar.</p></li>
+<li><p>Create a new Jupyter Notebook with a Python 3 kernel by clicking on the icon at the top of the screen.</p></li>
+<li><p>Right click on the new name ‘Untitled.ipynb’ and select ‘Rename’ from the list of options. Name it ‘day1_exercises.ipynb`</p></li>
+</ol>
+<p>In the Jupyter notebook, the default cell type is code. The convenient thing about working with Jupyter notebooks is you can store text and annotation as important information to go along with your code, so that you or someone else can reproduce it more easily later. Let’s start by adding a title and description to this document:</p>
+<ol class="simple">
+<li><p>Make sure your cursor is in the first cell, then change the type from ‘Code’ to ‘Markdown’ at the top menu bar.</p></li>
+<li><p>Click in the cell again, and begin typing. Let’s write a title, ‘Python Essentials Day 1 Exercises`</p></li>
+<li><p>Hit Shift + Enter to “run” the cell.</p></li>
+</ol>
+<p>Markdown is a language with its own syntax for formatting text. Since this is a title, let’s make it large and bold:</p>
+<ol class="simple">
+<li><p>Click back into the first cell</p></li>
+<li><p>Add a # symbol and a space before the title</p></li>
+<li><p>Hit enter twice to create a new line with a space in between.</p></li>
+<li><p>Type a short description that will help you remember what this workshop is about. Let it start with: <strong>Description:</strong></p></li>
+<li><p>Hit Shift+Enter to run the cell and see the formatting change.</p></li>
+</ol>
+<p>Now let’s work with a code cell to create a simple print statement.</p>
+<ol class="simple">
+<li><p>In a new cell, check to make sure the type is ‘Code’ (no need to change anything as that is default)</p></li>
+<li><p>Make a variable called <code class="docutils literal notranslate"><span class="pre">myname</span></code> and assign it a value of your name: <code class="docutils literal notranslate"><span class="pre">myname</span> <span class="pre">=</span> <span class="pre">'Ashley'</span></code></p></li>
+<li><p>Hit enter to get a new line.</p></li>
+<li><p>Create a print statement to say hello using the variable you stored: <code class="docutils literal notranslate"><span class="pre">print(&quot;Hello</span> <span class="pre">&quot;</span> <span class="pre">+</span> <span class="pre">myname</span> <span class="pre">+</span> <span class="pre">&quot;!&quot;)</span></code></p></li>
+</ol>
+<p>You can also write inline annotations to your code to help you remember specific things about what it does. To do this you use the # symbol, in a code cell, Python will not run anything written after the hash symbol per line.</p>
+<ol class="simple">
+<li><p>Write a short annotation at the end of the line where you store your myname variable. <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">i</span> <span class="pre">got</span> <span class="pre">this</span> <span class="pre">name</span> <span class="pre">at</span> <span class="pre">birth</span> <span class="pre">:)</span></code></p></li>
+<li><p>Hit Shift+Enter to run the code.</p></li>
+</ol>
+<p>Congratulations, you just wrote and annotated your first Python code in a Jupyter notebook!</p>
+</div>
+
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -617,8 +449,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="A2_unix_lesson2.html" title="previous page">Move data and script files to the project folder</a>
-    <a class='right-next' id="next-link" href="B0_exercise.html" title="next page">Select and concatenate data files</a>
+    <a class='left-prev' id="prev-link" href="B0_exercise.html" title="previous page">Select and concatenate data files</a>
+    <a class='right-next' id="next-link" href="00_README.html" title="next page">Day 1: Introduction to the Unix Shell and basic setup of Python</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
@@ -638,7 +470,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     </div>
 
     
-  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     

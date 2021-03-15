@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move data and script files to the project folder &#8212; Python essentials for GIS learners</title>
+    
+  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "the-magnificents/04-02-2021-Carpentry-for-HGIS");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Select, concatenate and add custom data to .csv files" href="unix_lesson3.html" />
+    <link rel="prev" title="Create a new project directory and subdirectories for data and code" href="unix_lesson1.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Python essentials for GIS learners</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Python essentials for GIS learners
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Getting started
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../00_Lesson_prep/README.html">
+   Preparing for the workshop
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../00_Lesson_prep/Schedule.html">
+   Schedule overview
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Day 1
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="unix_lesson_intro.html">
+   Intro to creating and navigating files and directories with the Unix Shell (Bash)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="unix_lesson1.html">
+   Create a new project directory and subdirectories for data and code
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Move data and script files to the project folder
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="unix_lesson3.html">
+   Select, concatenate and add custom data to .csv files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Exercises/generate_country_data_exercise.html">
+   Exercise (data generation)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../01_Day_1/exercises/01_exercise.html">
+   Excercise 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../01_Day_1/exercises/02_exercise.html">
+   Excercise 2
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Day 2
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../02_Python_Draw_GIS/01_lesson.html">
+   Using and reading other people’s code
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../02_Python_Draw_GIS/02_lesson.html">
+   Variables (and constants)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../02_Python_Draw_GIS/03_lesson.html">
+   Go from for loops and while loops to functions
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Day 3
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Git/Lessons/git_lesson_intro.html">
+   Version control with Git
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Git/Lessons/git_lesson1.html">
+   Set up and initialise a local Git repository
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Git/Lessons/git_lesson2.html">
+   Making a change to a file
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Git/Lessons/git_lesson3.html">
+   Ignoring things in Git
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Git/Lessons/git_lesson4.html">
+   Remote collaboration on GitHub
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Instructor Notes
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../00_Instructor_notes/README.html">
+   Instructor notes
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/Unix_shell/Lessons/unix_lesson2.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#move-files-from-the-workshop-data-folder-to-the-world-cities-workshop-folder">
+   Move files from the
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     workshop_data/
+    </span>
+   </code>
+   folder to the
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     world_cities_workshop/
+    </span>
+   </code>
+   folder
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#use-wildcards-to-access-multiple-files-at-once">
+   Use wildcards to access multiple files at once
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="move-data-and-script-files-to-the-project-folder">
+<h1>Move data and script files to the project folder<a class="headerlink" href="#move-data-and-script-files-to-the-project-folder" title="Permalink to this headline">¶</a></h1>
+<p>The data we want to use are contained in multiple files located in the workshop_data/ folder that we sent out prior to this workshop. Let’s take a look at the contents of that folder by navigating there in the shell. If you are in your <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/</span></code> folder, you can use a special notation that means</p>
+<ol class="simple">
+<li><p>Move back to the Desktop and directly into the <code class="docutils literal notranslate"><span class="pre">workshop_data/</span></code> folder: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">../workshop_data</span></code></p></li>
+<li><p>Use ls to take a look at the files in the <code class="docutils literal notranslate"><span class="pre">workshop_data/</span></code> folder: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">ls</span></code></p></li>
+<li><p>Take a look at the contents of each file: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cat</span> <span class="pre">amsterdam-nl.csv</span></code></p></li>
+</ol>
+<p>You can cat into other files as well, give it a try on your own.</p>
+<div class="section" id="move-files-from-the-workshop-data-folder-to-the-world-cities-workshop-folder">
+<h2>Move files from the <code class="docutils literal notranslate"><span class="pre">workshop_data/</span></code> folder to the <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/</span></code> folder<a class="headerlink" href="#move-files-from-the-workshop-data-folder-to-the-world-cities-workshop-folder" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Move <code class="docutils literal notranslate"><span class="pre">data-documentation.txt</span></code> to <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/documents</span></code>: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">mv</span> <span class="pre">data-documentation.txt</span> <span class="pre">../world_cities_workshop/documents</span></code></p></li>
+</ol>
+<p>Note how we use the <code class="docutils literal notranslate"><span class="pre">../</span></code> notation to move one folder “up” from <code class="docutils literal notranslate"><span class="pre">workshop_data/</span></code> to Desktop, and from there we can specify the exact path to the new folder.</p>
+<p>You should also see a file called <code class="docutils literal notranslate"><span class="pre">map.py</span></code> - this extension lets us know that this is a Python script. We can <code class="docutils literal notranslate"><span class="pre">cat</span></code> into it the same way we did to other files because it is simply a text file with a very particular syntax that Python can read and understand. We don’t know much else about it at this moment, and that’s ok - let’s just</p>
+<p>Move <a class="reference external" href="http://map.py">map.py</a> to the right subfolder within the <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/</span></code> directory. Try this on your own. <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">mv</span> <span class="pre">map.py</span> <span class="pre">../world_cities_workshop/scripts</span></code></p>
+</div>
+<div class="section" id="use-wildcards-to-access-multiple-files-at-once">
+<h2>Use wildcards to access multiple files at once<a class="headerlink" href="#use-wildcards-to-access-multiple-files-at-once" title="Permalink to this headline">¶</a></h2>
+<p>In Bash, <code class="docutils literal notranslate"><span class="pre">*</span></code> is a wildcard, which matches zero or more characters. Let’s consider the <code class="docutils literal notranslate"><span class="pre">workshop_data/</span></code> directory. All the .csv files follow a naming convention that goes <code class="docutils literal notranslate"><span class="pre">&lt;cityname&gt;-&lt;countryabbreviation&gt;.csv</span></code>. <code class="docutils literal notranslate"><span class="pre">*.csv</span></code> matches amsterdam-nl.csv, eindhoven-nl.csv and every file that ends with ‘.csv’. On the other hand, <code class="docutils literal notranslate"><span class="pre">n*.csv</span></code> only matches newyorkcity.csv because the ‘n’ at the front only matches filenames that begin with the letter ‘n’.</p>
+<ol class="simple">
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">ls</span></code> to view files in the <code class="docutils literal notranslate"><span class="pre">workshop_data/</span></code> directory.</p></li>
+<li><p>Move all data files from Netherlands’ cities to the <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/data/</span></code> folder: <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">mv</span> <span class="pre">*-nl.csv</span> <span class="pre">../world_cities_workshop/data</span></code></p></li>
+</ol>
+<p>If you now look in your <code class="docutils literal notranslate"><span class="pre">world_cities_workshop/data/</span></code> folder, you should see 5 files that contain data for cities in the Netherlands.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Unix_shell/Lessons"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="unix_lesson1.html" title="previous page">Create a new project directory and subdirectories for data and code</a>
+    <a class='right-next' id="next-link" href="unix_lesson3.html" title="next page">Select, concatenate and add custom data to .csv files</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book community<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

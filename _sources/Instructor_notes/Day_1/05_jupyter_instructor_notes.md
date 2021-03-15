@@ -18,47 +18,6 @@ You can launch Jupyter Lab from your command line from within the folder you wan
 1. Make sure you are in the py_workshop_2021/ folder. If you were in scripts, move up one: `cd ..`
 2. Launch Jupyter Lab: `jupyter lab`
 
-
-```{Note}
-Start directly with the terminal first
-```
-```
-Python 3.8.3 (default, Jul  2 2020, 17:30:36) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32
-Type "help", "copyright", "credits" or "license" for more information.
->>> my_name = "Jose"
->>> message = "Hello, " + my_name
->>> print(message)
-Hello, Jose
->>> my_name = "Ashley"
->>> print(message)
-Hello, Jose
-```
-
-```{Note}
-Discuss here a problem of reusability, and then try to make a function
-```
-```
->>> def say_hello_to(name):
-...   print("Hello, " + name)
-...
->>> say_hello_to("Ashley")
-Hello, Ashley
-```
-
-```{Note}
-Store some data in room, and say hello to everyone in the room... Discuss here lists, and indexing,
-Discuss in this example why python is very expressive
-```
-```
->>> room = ["Jose"]
->>> if len(room) > 0:   # If room has guests
-...   for guest in room:
-...     print("Hello, " + guest)
-...
-Hello, Jose
->>>
-```
-
 You will see a browser window open - this is your local browser, so you will see files in the `py_workshop_2021/` folder there.
 
 1. Move into the `scripts/` folder on the left hand navigation bar.

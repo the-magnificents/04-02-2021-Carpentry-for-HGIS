@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduce Jupyter lab and basic python concepts &#8212; Python essentials for GIS learners</title>
     
-  <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -538,46 +538,6 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li><p>Make sure you are in the py_workshop_2021/ folder. If you were in scripts, move up one: <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code></p></li>
 <li><p>Launch Jupyter Lab: <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">lab</span></code></p></li>
 </ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Start directly with the terminal first</p>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Python</span> <span class="mf">3.8</span><span class="o">.</span><span class="mi">3</span> <span class="p">(</span><span class="n">default</span><span class="p">,</span> <span class="n">Jul</span>  <span class="mi">2</span> <span class="mi">2020</span><span class="p">,</span> <span class="mi">17</span><span class="p">:</span><span class="mi">30</span><span class="p">:</span><span class="mi">36</span><span class="p">)</span> <span class="p">[</span><span class="n">MSC</span> <span class="n">v</span><span class="o">.</span><span class="mi">1916</span> <span class="mi">64</span> <span class="n">bit</span> <span class="p">(</span><span class="n">AMD64</span><span class="p">)]</span> <span class="p">::</span> <span class="n">Anaconda</span><span class="p">,</span> <span class="n">Inc</span><span class="o">.</span> <span class="n">on</span> <span class="n">win32</span>
-<span class="n">Type</span> <span class="s2">&quot;help&quot;</span><span class="p">,</span> <span class="s2">&quot;copyright&quot;</span><span class="p">,</span> <span class="s2">&quot;credits&quot;</span> <span class="ow">or</span> <span class="s2">&quot;license&quot;</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="o">.</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">my_name</span> <span class="o">=</span> <span class="s2">&quot;Jose&quot;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello, &quot;</span> <span class="o">+</span> <span class="n">my_name</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-<span class="n">Hello</span><span class="p">,</span> <span class="n">Jose</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">my_name</span> <span class="o">=</span> <span class="s2">&quot;Ashley&quot;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-<span class="n">Hello</span><span class="p">,</span> <span class="n">Jose</span>
-</pre></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Discuss here a problem of reusability, and then try to make a function</p>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">say_hello_to</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-<span class="gp">... </span>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
-<span class="gp">...</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">say_hello_to</span><span class="p">(</span><span class="s2">&quot;Ashley&quot;</span><span class="p">)</span>
-<span class="go">Hello, Ashley</span>
-</pre></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Store some data in room, and say hello to everyone in the room… Discuss here lists, and indexing,
-Discuss in this example why python is very expressive</p>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">room</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Jose&quot;</span><span class="p">]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">room</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>   <span class="c1"># If room has guests</span>
-<span class="gp">... </span>  <span class="k">for</span> <span class="n">guest</span> <span class="ow">in</span> <span class="n">room</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, &quot;</span> <span class="o">+</span> <span class="n">guest</span><span class="p">)</span>
-<span class="gp">...</span>
-<span class="go">Hello, Jose</span>
-<span class="go">&gt;&gt;&gt;</span>
-</pre></div>
-</div>
 <p>You will see a browser window open - this is your local browser, so you will see files in the <code class="docutils literal notranslate"><span class="pre">py_workshop_2021/</span></code> folder there.</p>
 <ol class="simple">
 <li><p>Move into the <code class="docutils literal notranslate"><span class="pre">scripts/</span></code> folder on the left hand navigation bar.</p></li>
@@ -638,7 +598,7 @@ Discuss in this example why python is very expressive</p>
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./Instructor_notes\Day_1"
+            path: "./Instructor_notes/Day_1"
         },
         predefinedOutput: true
     }
@@ -674,7 +634,7 @@ Discuss in this example why python is very expressive</p>
     </div>
 
     
-  <script src="../../_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     

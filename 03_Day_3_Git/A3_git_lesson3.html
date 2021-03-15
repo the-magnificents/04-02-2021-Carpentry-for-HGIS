@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add and commit changes to local git repository &#8212; Python essentials for GIS learners</title>
     
-  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -121,252 +121,19 @@ commentsRunWhenDOMLoaded(addUtterances);
 </form>
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <ul class="current nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../00_Lesson_prep/00_README.html">
-   Preparing for the workshop
-  </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="../00_Lesson_prep/01_About_this_workshop.html">
-     General considerations for this workshop
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../00_Lesson_prep/Schedule.html">
-     Schedule overview
-    </a>
-   </li>
-  </ul>
-  <i class="fas fa-chevron-down">
-  </i>
- </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../01_Day_1_Unix_Shell/00_README.html">
-   Day 1: Introduction to the Unix Shell and basic setup of Python
-  </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/A1_unix_lesson1.html">
-     Day 1 visuals/information to add:
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/B0_exercise.html">
-     Select and concatenate data files
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/B1_exercise.html">
-     Getting Started with JupyterLab
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/B1_exercise.html#a-level-1-heading">
-     A Level-1 Heading
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C2_Iterators&amp;Generators.html">
-     Iterators and iterables
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C2_Iterators.html">
-     Iterators and iterables
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Pythonic_.html">
-     None pythonic example
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Pythonic_.html#the-pythonic-example">
-     The pythonic example
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html">
-     Use variables to store values.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#use-print-to-display-values">
-     Use
-     <code class="docutils literal notranslate">
-      <span class="pre">
-       print
-      </span>
-     </code>
-     to display values.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-must-be-created-before-they-are-used">
-     Variables must be created before they are used.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-persist-between-cells">
-     Variables Persist Between Cells
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-can-be-used-in-calculations">
-     Variables can be used in calculations.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#use-an-index-to-get-a-single-character-from-a-string">
-     Use an index to get a single character from a string.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#use-a-slice-to-get-a-substring">
-     Use a slice to get a substring.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#use-the-built-in-function-len-to-find-the-length-of-a-string">
-     Use the built-in function
-     <code class="docutils literal notranslate">
-      <span class="pre">
-       len
-      </span>
-     </code>
-     to find the length of a string.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#python-is-case-sensitive">
-     Python is case-sensitive.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#use-meaningful-variable-names">
-     Use meaningful variable names.
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#swapping-values">
-     Swapping Values
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#solution">
-     Solution
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#predicting-values">
-     Predicting Values
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#id1">
-     Solution
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#challenge">
-     Challenge
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#id2">
-     Solution
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#choosing-a-name">
-     Choosing a Name
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#id3">
-     Solution
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#slicing-practice">
-     Slicing practice
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#id4">
-     Solution
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#slicing-concepts">
-     Slicing concepts
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/lesson_notes/C3_Testing_Carpentry_Lesson.html#solutions">
-     Solutions
-    </a>
-   </li>
-   <li class="toctree-l2 collapsible-parent">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/old_exercises/B1_exercise.html">
-     Excercise 2
-    </a>
-    <ul class="collapse-ul">
-     <li class="toctree-l3">
-      <a class="reference internal" href="../01_Day_1_Unix_Shell/old_exercises/B2_exercise.html">
-       Excercise 2
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../01_Day_1_Unix_Shell/old_exercises/B3_exercise.html">
-       Exercise 3
-      </a>
-     </li>
-    </ul>
-    <i class="fas fa-chevron-down">
-    </i>
-   </li>
-  </ul>
-  <i class="fas fa-chevron-down">
-  </i>
- </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../02_Python_Draw_GIS/00_README.html">
-   Day 2
-  </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="../02_Python_Draw_GIS/01_lesson.html">
-     Using and reading other people’s code
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../02_Python_Draw_GIS/02_lesson.html">
-     Variables (and constants)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../02_Python_Draw_GIS/03_lesson.html">
-     Go from for loops and while loops to functions
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../02_Python_Draw_GIS/C1_Python_Standard_Library.html">
-     Python standard libraries
-    </a>
-   </li>
-  </ul>
-  <i class="fas fa-chevron-down">
-  </i>
- </li>
  <li class="toctree-l1 current active collapsible-parent">
-  <a class="reference internal" href="00_README.html">
-   Day 3: Working with remote repositories on GitHub and version control with Git
+  <a class="reference internal" href="A5_git_lesson5.html">
+   Test your answers to Python challenges
   </a>
   <ul class="current collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="A1_git_lesson1.html">
      Fork and clone a repository from GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="00_README.html">
+     Day 3: Working with remote repositories on GitHub and version control with Git
     </a>
    </li>
    <li class="toctree-l2">
@@ -384,33 +151,23 @@ commentsRunWhenDOMLoaded(addUtterances);
      Push changes to remote repository in GitHub
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="A5_git_lesson5.html">
-     Test your answers to Python challenges
-    </a>
-   </li>
   </ul>
   <i class="fas fa-chevron-down">
   </i>
  </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../Instructor_notes/00_README.html">
-   Instructor notes
+  <a class="reference internal" href="../Instructor_notes/open_science_instructor_notes.html">
+   Open Science
   </a>
   <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/01_Notes_From_DH_context.html">
-     Guide to programing with Python for the Digital Humanities
-    </a>
-   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html">
      Version control and remote collaboration with Git and GitHub
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/open_science_instructor_notes.html">
-     Open Science
+    <a class="reference internal" href="../Instructor_notes/unix_instructor_notes.html">
+     Creating and navigating files and directories with the Unix Shell (Bash)
     </a>
    </li>
    <li class="toctree-l2">
@@ -419,8 +176,100 @@ commentsRunWhenDOMLoaded(addUtterances);
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../Instructor_notes/unix_instructor_notes.html">
-     Instructor Notes: Python Essentials for GIS Learners Day 1
+    <a class="reference internal" href="../Instructor_notes/00_README.html">
+     Instructor notes
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../01_Day_1_Unix_Shell/B3_exercise.html">
+   Exercise 3
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/B0_exercise.html">
+     Select and concatenate data files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/A3_unix_lesson3.html">
+     Run map.py on oregonmap.csv
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/A3_unix_lesson3.html#working-with-jupyter-notebooks-in-jupyter-lab">
+     Working with Jupyter Notebooks in Jupyter Lab
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/00_README.html">
+     Day 1: Introduction to the Unix Shell and basic setup of Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/B2_exercise.html">
+     Excercise 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/A1_unix_lesson1.html">
+     Create a new project directory and subdirectories for data and code
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/A2_unix_lesson2.html">
+     Move data and script files to the project folder
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/B1_exercise.html">
+     Excercise 2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../02_Python_Draw_GIS/01_lesson.html">
+   Using and reading other people’s code
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Python_Draw_GIS/00_README.html">
+     Day 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Python_Draw_GIS/03_lesson.html">
+     Go from for loops and while loops to functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Python_Draw_GIS/02_lesson.html">
+     Variables (and constants)
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../00_Lesson_prep/01_About_this_workshop.html">
+   General considerations for this workshop
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../00_Lesson_prep/Schedule.html">
+     Schedule overview
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../00_Lesson_prep/00_README.html">
+     Preparing for the workshop
     </a>
    </li>
   </ul>
@@ -516,9 +365,9 @@ commentsRunWhenDOMLoaded(addUtterances);
   <div class="section" id="add-and-commit-changes-to-local-git-repository">
 <h1>Add and commit changes to local git repository<a class="headerlink" href="#add-and-commit-changes-to-local-git-repository" title="Permalink to this headline">¶</a></h1>
 <ol class="simple">
-<li><p>Check that git has noticed new gizmo.py file: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code></p></li>
-<li><p>Add gizmo.py to the staging area: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">gizmo.py</span></code></p></li>
-<li><p>Check that git has added gizmo.py to staging area: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code></p></li>
+<li><p>Check that git has noticed new <a class="reference external" href="http://gizmo.py">gizmo.py</a> file: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code></p></li>
+<li><p>Add <a class="reference external" href="http://gizmo.py">gizmo.py</a> to the staging area: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">gizmo.py</span></code></p></li>
+<li><p>Check that git has added <a class="reference external" href="http://gizmo.py">gizmo.py</a> to staging area: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code></p></li>
 <li><p>Commit the new file to git’s history: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;defined</span> <span class="pre">hello</span> <span class="pre">function</span> <span class="pre">in</span> <span class="pre">gizmo.py&quot;</span></code></p></li>
 <li><p>Check that the commit has been made: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code></p></li>
 </ol>
@@ -590,7 +439,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     </div>
 
     
-  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     

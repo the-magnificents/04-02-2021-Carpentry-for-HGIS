@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule overview &#8212; Python essentials for GIS learners</title>
     
-  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -89,8 +89,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="DAY 1" href="../01_Day_1_Unix_Shell/00_README.html" />
-    <link rel="prev" title="Preparing for the workshop" href="01_Prep.html" />
+    <link rel="next" title="Day 1: Introduction to Unix Shell, Python and Jupyter Lab" href="../01_Day_1_Unix_Shell/00_README.html" />
+    <link rel="prev" title="General considerations for this workshop" href="01_About_this_workshop.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -122,13 +122,13 @@ commentsRunWhenDOMLoaded(addUtterances);
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <ul class="current nav sidenav_l1">
  <li class="toctree-l1 current active collapsible-parent">
-  <a class="reference internal" href="00_About_this_workshop.html">
-   Workshop overview
+  <a class="reference internal" href="00_README.html">
+   Preparing for the workshop
   </a>
   <ul class="current collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="01_Prep.html">
-     Preparing for the workshop
+    <a class="reference internal" href="01_About_this_workshop.html">
+     General considerations for this workshop
     </a>
    </li>
    <li class="toctree-l2 current active">
@@ -142,9 +142,14 @@ commentsRunWhenDOMLoaded(addUtterances);
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../01_Day_1_Unix_Shell/00_README.html">
-   DAY 1
+   Day 1: Introduction to Unix Shell, Python and Jupyter Lab
   </a>
   <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01_Day_1_Unix_Shell/A1_unix_lesson1.html">
+     Day 1 visuals/information to add (maybe slides):
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../01_Day_1_Unix_Shell/A2_Runing_quiting.html">
      Getting Started with JupyterLab
@@ -172,46 +177,12 @@ commentsRunWhenDOMLoaded(addUtterances);
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="../01_Day_1_Unix_Shell/excercises/B4_Exercise.html">
-       Functions I
+       More on built-in Functions and Help
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="../01_Day_1_Unix_Shell/excercises/B5_Exercise_functions.html">
-       Functions II
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../01_Day_1_Unix_Shell/excercises/B6_Exercise_Lists.html">
-       Lists and indexing
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../01_Day_1_Unix_Shell/excercises/B7_Exercise_ForLoop.html">
-       For loops
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../01_Day_1_Unix_Shell/excercises/B8_Exercise_Conditionals.html">
-       Conditionals
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../01_Day_1_Unix_Shell/excercises/B9_Scopes_Variables.html">
-       Variable Scope
-      </a>
-     </li>
-    </ul>
-    <i class="fas fa-chevron-down">
-    </i>
-   </li>
-   <li class="toctree-l2 collapsible-parent">
-    <a class="reference internal" href="../01_Day_1_Unix_Shell/reads/00_README.html">
-     READS DAY 1
-    </a>
-    <ul class="collapse-ul">
-     <li class="toctree-l3">
-      <a class="reference internal" href="../01_Day_1_Unix_Shell/reads/R0_Bash.html">
-       Day 1: Introduction to Unix Shell, Python and Jupyter Lab
+      <a class="reference internal" href="../01_Day_1_Unix_Shell/excercises/B5_Exercise.html">
+       Working with libraries
       </a>
      </li>
     </ul>
@@ -223,67 +194,48 @@ commentsRunWhenDOMLoaded(addUtterances);
   </i>
  </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../02_Day_2_Python_GIS/00_README.html">
-   DAY 2
+  <a class="reference internal" href="../02_Day_2_QGIS/00_README.html">
+   Working with the Python console in QGIS
   </a>
   <ul class="collapse-ul">
-   <li class="toctree-l2 collapsible-parent">
-    <a class="reference internal" href="../02_Day_2_Python_GIS/exercise/00_README.html">
-     EXERCISES DAY 2
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Day_2_QGIS/A1_qgis_lesson1.html">
+     Programmatically access the attributes of international airports
     </a>
-    <ul class="collapse-ul">
-     <li class="toctree-l3">
-      <a class="reference internal" href="../02_Day_2_Python_GIS/exercise/B0_exercise1_qgis.html">
-       Exercise 1: Running someone else’s Python script
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../02_Day_2_Python_GIS/exercise/B0_Exercise_libs.html">
-       Working with libraries
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../02_Day_2_Python_GIS/exercise/B1_Exercise.html">
-       Reading data with pandas
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../02_Day_2_Python_GIS/exercise/B2_Exercise.html">
-       Pandas dataframes
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../02_Day_2_Python_GIS/exercise/B3_Exercise.html">
-       Plotting
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../02_Day_2_Python_GIS/exercise/B7_Exercise_Loop_Datasets.html">
-       Looping Over Data Sets
-      </a>
-     </li>
-    </ul>
-    <i class="fas fa-chevron-down">
-    </i>
    </li>
-   <li class="toctree-l2 collapsible-parent">
-    <a class="reference internal" href="../02_Day_2_Python_GIS/reads/00_README.html">
-     READS DAY 2
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Day_2_QGIS/B0_exercise1_qgis.html">
+     Exercise 1: Running someone else’s Python script
     </a>
-    <ul class="collapse-ul">
-     <li class="toctree-l3">
-      <a class="reference internal" href="../02_Day_2_Python_GIS/reads/A1_qgis_lesson1.html">
-       Programmatically access the attributes of international airports
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../02_Day_2_Python_GIS/reads/R0_Python_QGIS.html">
-       Working with the Python console in QGIS
-      </a>
-     </li>
-    </ul>
-    <i class="fas fa-chevron-down">
-    </i>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../02_Python_Draw_GIS/00_README.html">
+   Day 2
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Python_Draw_GIS/01_lesson.html">
+     Using and reading other people’s code
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Python_Draw_GIS/02_lesson.html">
+     Variables (and constants)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Python_Draw_GIS/03_lesson.html">
+     Go from for loops and while loops to functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02_Python_Draw_GIS/C1_Python_Standard_Library.html">
+     Python standard libraries
+    </a>
    </li>
   </ul>
   <i class="fas fa-chevron-down">
@@ -291,27 +243,13 @@ commentsRunWhenDOMLoaded(addUtterances);
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../03_Day_3_Git/00_README.html">
-   DAY 3
+   Day 3: Social coding on GitHub and version control with Git
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../03_Day_3_Git/exercise/00_README.html">
-     EXERCISES DAY 3
+    <a class="reference internal" href="../03_Day_3_Git/A1_git_lesson1.html">
+     Day 3 visuals/information (maybe slides):
     </a>
-   </li>
-   <li class="toctree-l2 collapsible-parent">
-    <a class="reference internal" href="../03_Day_3_Git/reads/00_README.html">
-     READS DAY 3
-    </a>
-    <ul class="collapse-ul">
-     <li class="toctree-l3">
-      <a class="reference internal" href="../03_Day_3_Git/reads/R0_README.html">
-       Social coding on GitHub and version control with Git
-      </a>
-     </li>
-    </ul>
-    <i class="fas fa-chevron-down">
-    </i>
    </li>
   </ul>
   <i class="fas fa-chevron-down">
@@ -322,570 +260,25 @@ commentsRunWhenDOMLoaded(addUtterances);
    Instructor notes
   </a>
   <ul class="collapse-ul">
-   <li class="toctree-l2 collapsible-parent">
-    <a class="reference internal" href="../Instructor_notes/Day_1/00_README.html">
-     DAY 1
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/git_instructor_notes.html">
+     Instructor Notes: Python Essentials for GIS Learners Day 3
     </a>
-    <ul class="collapse-ul">
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_1/01_Notes_From_DH_context.html">
-       Guide to programing with Python for the Digital Humanities
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_1/02_About_Open_science_instructor_notes.html">
-       Open Science
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_1/04_Python_Jupyter_Intro.html">
-       Python, jupyter and scientific programming intro
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html">
-       Use an index to get a single character from a string.
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#use-a-slice-to-get-a-substring">
-       Use a slice to get a substring.
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#use-the-built-in-function-len-to-find-the-length-of-a-string">
-       Use the built-in function
-       <code class="docutils literal notranslate">
-        <span class="pre">
-         len
-        </span>
-       </code>
-       to find the length of a string.
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#python-is-case-sensitive">
-       Python is case-sensitive.
-      </a>
-     </li>
-     <li class="toctree-l3 collapsible-parent">
-      <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#use-meaningful-variable-names">
-       Use meaningful variable names.
-      </a>
-      <ul class="collapse-ul">
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B4_Functions.html">
-         Functions may only work for certain (combinations of) arguments.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#functions-may-have-default-values-for-some-arguments">
-         Functions may have default values for some arguments.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#functions-attached-to-objects-are-called-methods">
-         Functions attached to objects are called methods
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#use-the-built-in-function-help-to-get-help-for-a-function">
-         Use the built-in function
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           help
-          </span>
-         </code>
-         to get help for a function.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#the-jupyter-notebook-has-two-ways-to-get-help">
-         The Jupyter Notebook has two ways to get help.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#python-reports-a-syntax-error-when-it-can-t-understand-the-source-of-a-program">
-         Python reports a syntax error when it can’t understand the source of a program.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#a-name-runtime-error-a-python-reports-a-runtime-error-when-something-goes-wrong-while-a-program-is-executing">
-         <a name="runtime-error">
-         </a>
-         Python reports a runtime error when something goes wrong while a program is executing.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#what-happens-when">
-         What Happens When
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#solution">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#spot-the-difference">
-         Spot the Difference
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#id1">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#why-not">
-         Why Not?
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#id2">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#last-character-of-a-string">
-         Last Character of a String
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B4_Functions.html#id3">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html">
-         Jigsaw Puzzle (Parson’s Problem) Programming Example
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#solution">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#when-is-help-available">
-         When Is Help Available?
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#id1">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#importing-with-aliases">
-         Importing With Aliases
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#id2">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#there-are-many-ways-to-import-libraries">
-         There Are Many Ways To Import Libraries!
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#id3">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#importing-specific-items">
-         Importing Specific Items
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#id4">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#reading-error-messages">
-         Reading Error Messages
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B5_Exercise.html#id5">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C2_Iterators&amp;Generators.html">
-         Iterators and iterables
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C2_Iterators.html">
-         Iterators and iterables
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Pythonic_.html">
-         None pythonic example
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Pythonic_.html#the-pythonic-example">
-         The pythonic example
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html">
-         Use variables to store values.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#use-print-to-display-values">
-         Use
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           print
-          </span>
-         </code>
-         to display values.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-must-be-created-before-they-are-used">
-         Variables must be created before they are used.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-persist-between-cells">
-         Variables Persist Between Cells
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#variables-can-be-used-in-calculations">
-         Variables can be used in calculations.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#use-an-index-to-get-a-single-character-from-a-string">
-         Use an index to get a single character from a string.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#use-a-slice-to-get-a-substring">
-         Use a slice to get a substring.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#use-the-built-in-function-len-to-find-the-length-of-a-string">
-         Use the built-in function
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           len
-          </span>
-         </code>
-         to find the length of a string.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#python-is-case-sensitive">
-         Python is case-sensitive.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#use-meaningful-variable-names">
-         Use meaningful variable names.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#swapping-values">
-         Swapping Values
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#solution">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#predicting-values">
-         Predicting Values
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#id1">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#challenge">
-         Challenge
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#id2">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#choosing-a-name">
-         Choosing a Name
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#id3">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#slicing-practice">
-         Slicing practice
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#id4">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#slicing-concepts">
-         Slicing concepts
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/C3_Testing_Carpentry_Lesson.html#solutions">
-         Solutions
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/types.html">
-         Variables only change value when something is assigned to them.
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/types.html#fractions">
-         Fractions
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/types.html#solution">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/types.html#automatic-type-conversion">
-         Automatic Type Conversion
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/types.html#id1">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/types.html#choose-a-type">
-         Choose a Type
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/types.html#id2">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/types.html#division-types">
-         Division Types
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/types.html#id3">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/types.html#strings-to-numbers">
-         Strings to Numbers
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/types.html#id4">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/types.html#arithmetic-with-different-types">
-         Arithmetic with Different Types
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/types.html#id5">
-         Solution
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/types.html#complex-numbers">
-         Complex Numbers
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/types.html#id6">
-         Solution
-        </a>
-       </li>
-      </ul>
-      <i class="fas fa-chevron-down">
-      </i>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#swapping-values">
-       Swapping Values
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#solution">
-       Solution
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#predicting-values">
-       Predicting Values
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#id1">
-       Solution
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#challenge">
-       Challenge
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#id2">
-       Solution
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#choosing-a-name">
-       Choosing a Name
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#id3">
-       Solution
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#slicing-practice">
-       Slicing practice
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#id4">
-       Solution
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#slicing-concepts">
-       Slicing concepts
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_1/lesson_notes/B2_Vars_Types.html#solutions">
-       Solutions
-      </a>
-     </li>
-     <li class="toctree-l3 collapsible-parent">
-      <a class="reference internal" href="../Instructor_notes/Day_1/old_exercises/B1_exercise.html">
-       Excercise 2
-      </a>
-      <ul class="collapse-ul">
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/old_exercises/B2_exercise.html">
-         Excercise 2
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_1/old_exercises/B3_exercise.html">
-         Exercise 3
-        </a>
-       </li>
-      </ul>
-      <i class="fas fa-chevron-down">
-      </i>
-     </li>
-    </ul>
-    <i class="fas fa-chevron-down">
-    </i>
    </li>
-   <li class="toctree-l2 collapsible-parent">
-    <a class="reference internal" href="../Instructor_notes/Day_2/00_README.html">
-     DAY 2
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/open_science_instructor_notes.html">
+     Open Science
     </a>
-    <ul class="collapse-ul">
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_2/01_lesson.html">
-       Using and reading other people’s code
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_2/02_lesson.html">
-       Variables (and constants)
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_2/jupyter_instructor_notes.html">
-       Working with Jupyter Notebooks in Jupyter Lab
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_2/mappy_instructor_notes.html">
-       Run map.py on netherlandsmap.csv
-      </a>
-     </li>
-     <li class="toctree-l3 collapsible-parent">
-      <a class="reference internal" href="../Instructor_notes/Day_2/old/03_lesson.html">
-       Go from for loops and while loops to functions
-      </a>
-      <ul class="collapse-ul">
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_2/old/C1_Python_Standard_Library.html">
-         Python standard libraries
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_2/old/python_instructor_notes.html">
-         About these instructor notes
-        </a>
-       </li>
-       <li class="toctree-l4">
-        <a class="reference internal" href="../Instructor_notes/Day_2/old/readme.html">
-         Old notes
-        </a>
-       </li>
-      </ul>
-      <i class="fas fa-chevron-down">
-      </i>
-     </li>
-    </ul>
-    <i class="fas fa-chevron-down">
-    </i>
    </li>
-   <li class="toctree-l2 collapsible-parent">
-    <a class="reference internal" href="../Instructor_notes/Day_3/00_README.html">
-     DAY 3
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/python_instructor_notes.html">
+     About these instructor notes
     </a>
-    <ul class="collapse-ul">
-     <li class="toctree-l3">
-      <a class="reference internal" href="../Instructor_notes/Day_3/git_instructor_notes.html">
-       Instructor Notes: Python Essentials for GIS Learners Day 3
-      </a>
-     </li>
-    </ul>
-    <i class="fas fa-chevron-down">
-    </i>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Instructor_notes/unix_instructor_notes.html">
+     Instructor Notes: Python Essentials for GIS Learners Day 1
+    </a>
    </li>
   </ul>
   <i class="fas fa-chevron-down">
@@ -965,97 +358,16 @@ commentsRunWhenDOMLoaded(addUtterances);
   <a class="reference internal nav-link" href="#day-1-the-unix-shell-and-getting-started-with-python">
    Day 1: The Unix Shell and Getting Started with Python
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#pre-workshop-help-session">
-     09:00 - Pre-workshop help session
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#workshop-introduction">
-     09:30 - Workshop introduction
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#navigating-files-with-the-unix-shell-and-running-bash-commands">
-     Navigating files with the Unix shell and running Bash commands
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#coffee-break-15-mins">
-     Coffee break - 15 mins
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#introduction-to-the-python-ecosystem">
-     Introduction to the Python ecosystem
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#day-2-python-essentials-and-working-with-qgis">
-   Day 2: Python Essentials and working with QGIS
+  <a class="reference internal nav-link" href="#day-2-python-essentials">
+   Day 2: Python Essentials
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#introduction-to-object-oriented-programming-and-python-code">
-     09:30 - Introduction to Object Oriented Programming and Python code
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#working-with-the-python-console-in-qgis">
-     Working with the Python console in QGIS
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
-     Coffee break - 15 mins
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#introduction-to-data-frames-in-python-working-with-pandas-and-matplotlib-libraries">
-     Introduction to data frames in Python, working with pandas and matplotlib (libraries)
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#day-3-version-control-and-social-coding-with-git-and-github">
-   Day 3: Version control and social coding with Git and GitHub
+  <a class="reference internal nav-link" href="#day-3-version-control-and-remote-collaboration-on-code">
+   Day 3: Version control and remote collaboration on code
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#introduction-to-social-coding-concepts">
-     Introduction to social coding concepts
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#group-reflection-and-discussion-on-social-coding">
-     Group reflection and discussion on social coding
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#hands-on-social-coding-with-github">
-     Hands on social coding with Github
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id2">
-     Coffee break - 15 mins
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#version-control-with-git-cont-d-from-hands-on-social-coding-with-github">
-     Version control with Git (cont’d from hands on social coding with GitHub)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#teaching-wrap-up">
-     Teaching wrap-up
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -1074,129 +386,66 @@ commentsRunWhenDOMLoaded(addUtterances);
 <p>Exercises are meant to be explored and executed independently during the afternoons following each morning teaching session of the workshop. The exercises are designed to build upon the information from the morning session and prepare for the next day. Your instructors are available to help in response to comments made on the workshop website. You can find the exercises under the material for each day on the left-hand sidebar.</p>
 <div class="section" id="day-1-the-unix-shell-and-getting-started-with-python">
 <h2>Day 1: The Unix Shell and Getting Started with Python<a class="headerlink" href="#day-1-the-unix-shell-and-getting-started-with-python" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="pre-workshop-help-session">
-<h3>09:00 - Pre-workshop help session<a class="headerlink" href="#pre-workshop-help-session" title="Permalink to this headline">¶</a></h3>
-<p>Ashley Cryan, Jose Urra - 30 mins</p>
-<ul class="simple">
-<li><p>Help troubleshooting installation issues or answering questions about setup</p></li>
-</ul>
 <p><strong>Morning session</strong></p>
-</div>
-<div class="section" id="workshop-introduction">
-<h3>09:30 - Workshop introduction<a class="headerlink" href="#workshop-introduction" title="Permalink to this headline">¶</a></h3>
-<p>Ashley Cryan, Jose Urra - 30-45 mins</p>
+<ol class="simple">
+<li><p>Workshop introduction (30 mins)</p></li>
+</ol>
 <ul class="simple">
-<li><p>Icebreaker</p></li>
-<li><p>Workshop structure</p></li>
-<li><p>How to interact with the website and the material</p></li>
+<li><p>Instructor introductions and the goals of this workshop</p></li>
+<li><p>How to use the website to interact and ask questions</p></li>
+<li><p>Icebreaker activity</p></li>
 </ul>
-</div>
-<div class="section" id="navigating-files-with-the-unix-shell-and-running-bash-commands">
-<h3>Navigating files with the Unix shell and running Bash commands<a class="headerlink" href="#navigating-files-with-the-unix-shell-and-running-bash-commands" title="Permalink to this headline">¶</a></h3>
-<p>Ashley Cryan - 1 hr</p>
+<ol class="simple">
+<li><p>Navigating files with the Unix Shell (1.5 hours)</p></li>
+</ol>
 <ul class="simple">
 <li><p>Introduction to the Bash scripting language</p></li>
 <li><p>Creating directories using the command line</p></li>
 <li><p>Name pattern matching to select, move and concatenate data files</p></li>
 </ul>
-</div>
-<div class="section" id="coffee-break-15-mins">
-<h3>Coffee break - 15 mins<a class="headerlink" href="#coffee-break-15-mins" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="introduction-to-the-python-ecosystem">
-<h3>Introduction to the Python ecosystem<a class="headerlink" href="#introduction-to-the-python-ecosystem" title="Permalink to this headline">¶</a></h3>
-<p>Jose Urra - 45 mins</p>
+<p>— Coffee break (15 mins) —</p>
+<ol class="simple">
+<li><p>Getting started with Python (1 hour)</p></li>
+</ol>
 <ul class="simple">
-<li><p>Python ecosystem tools, Anaconda and Jupyter Lab</p></li>
-<li><p>How to use Jupyter Lab to complete the afternoon exercises</p></li>
-<li><p>How to contact us if you need help</p></li>
+<li><p>Working with a Python interpreter</p></li>
+<li><p>Running a script</p></li>
+<li><p>Creating your own variables</p></li>
 </ul>
 <p><strong>Afternoon session - independent exercises</strong>
 <em>find the exercises for Day 1 on the left-hand sidebar</em></p>
+<p>There are 4 exercises for Day 1:</p>
+<ol class="simple">
+<li><p>Generate city data for a country</p></li>
+<li><p>Working with lists in Python</p></li>
+<li><p>Running a for loop</p></li>
+<li><p>Working with Jupyter Lab</p></li>
+</ol>
 </div>
-</div>
-<div class="section" id="day-2-python-essentials-and-working-with-qgis">
-<h2>Day 2: Python Essentials and working with QGIS<a class="headerlink" href="#day-2-python-essentials-and-working-with-qgis" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="day-2-python-essentials">
+<h2>Day 2: Python Essentials<a class="headerlink" href="#day-2-python-essentials" title="Permalink to this headline">¶</a></h2>
 <p><strong>Morning session</strong></p>
-<div class="section" id="introduction-to-object-oriented-programming-and-python-code">
-<h3>09:30 - Introduction to Object Oriented Programming and Python code<a class="headerlink" href="#introduction-to-object-oriented-programming-and-python-code" title="Permalink to this headline">¶</a></h3>
-<p>Jose Urra - 30-45 mins</p>
-<ul class="simple">
-<li><p>Briefly demonstrate what a module is and how to use it</p></li>
-<li><p>Use someone else’s code to explain, discuss and understand roughly what the code does</p></li>
-</ul>
+<ol class="simple">
+<li><p>Working with Jupyter Lab</p></li>
+</ol>
+<p>— Coffee break (15 mins) —</p>
+<p><strong>Afternoon session - independent exercises</strong></p>
+<p>Exercises (4 hours)</p>
 </div>
-<div class="section" id="working-with-the-python-console-in-qgis">
-<h3>Working with the Python console in QGIS<a class="headerlink" href="#working-with-the-python-console-in-qgis" title="Permalink to this headline">¶</a></h3>
-<p>Ashley Cryan - 20 mins</p>
-<ul class="simple">
-<li><p>Storing layer as a variable to extract information</p></li>
-<li><p>Changing the style of point data displayed in QGIS</p></li>
-<li><p>Simple yet powerful automation with Python scripts</p></li>
-</ul>
-</div>
-<div class="section" id="id1">
-<h3>Coffee break - 15 mins<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="introduction-to-data-frames-in-python-working-with-pandas-and-matplotlib-libraries">
-<h3>Introduction to data frames in Python, working with pandas and matplotlib (libraries)<a class="headerlink" href="#introduction-to-data-frames-in-python-working-with-pandas-and-matplotlib-libraries" title="Permalink to this headline">¶</a></h3>
-<p>Jose Urra, Ashley Cryan - 1.5 hrs</p>
-<ul class="simple">
-<li><p>Use the data generated in the previous demo to run some analyses using pandas and create basic plots with matplotlib</p></li>
-</ul>
-<p><strong>Afternoon session - independent exercises</strong>
-<em>find the exercises for Day 1 on the left-hand sidebar</em></p>
-</div>
-</div>
-<div class="section" id="day-3-version-control-and-social-coding-with-git-and-github">
-<h2>Day 3: Version control and social coding with Git and GitHub<a class="headerlink" href="#day-3-version-control-and-social-coding-with-git-and-github" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="day-3-version-control-and-remote-collaboration-on-code">
+<h2>Day 3: Version control and remote collaboration on code<a class="headerlink" href="#day-3-version-control-and-remote-collaboration-on-code" title="Permalink to this headline">¶</a></h2>
 <p><strong>Morning session</strong></p>
-<div class="section" id="introduction-to-social-coding-concepts">
-<h3>Introduction to social coding concepts<a class="headerlink" href="#introduction-to-social-coding-concepts" title="Permalink to this headline">¶</a></h3>
-<p>Jose Urra - 15-20 mins</p>
-<ul class="simple">
-<li><p>Why use version control?</p></li>
-<li><p>The basics of unit testing</p></li>
-<li><p>How to write reproducible and reusable code</p></li>
-</ul>
-</div>
-<div class="section" id="group-reflection-and-discussion-on-social-coding">
-<h3>Group reflection and discussion on social coding<a class="headerlink" href="#group-reflection-and-discussion-on-social-coding" title="Permalink to this headline">¶</a></h3>
-<p>All - 15 mins</p>
-</div>
-<div class="section" id="hands-on-social-coding-with-github">
-<h3>Hands on social coding with Github<a class="headerlink" href="#hands-on-social-coding-with-github" title="Permalink to this headline">¶</a></h3>
-<p>Jose Urra - 1hr</p>
-<ul class="simple">
-<li><p>Step 1: Set up Git configuration settings</p></li>
-<li><p>Step 2: Fork the Gizmo Python challenges repository on GitHub</p></li>
-<li><p>Step 3: Clone the forked copy of the Gizmo Python challenges repository to your local computer</p></li>
-</ul>
-</div>
-<div class="section" id="id2">
-<h3>Coffee break - 15 mins<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="version-control-with-git-cont-d-from-hands-on-social-coding-with-github">
-<h3>Version control with Git (cont’d from hands on social coding with GitHub)<a class="headerlink" href="#version-control-with-git-cont-d-from-hands-on-social-coding-with-github" title="Permalink to this headline">¶</a></h3>
-<p>Ashley Cryan - 1hr</p>
-<ul class="simple">
-<li><p>Step 4: Create a new branch and gizmo.py file</p></li>
-<li><p>Step 5: Add and commit changes to local git repository</p></li>
-<li><p>Step 6: Push changes to remote repository in GitHub</p></li>
-<li><p>Step 7: Test your answers to Python challenges</p></li>
-</ul>
-</div>
-<div class="section" id="teaching-wrap-up">
-<h3>Teaching wrap-up<a class="headerlink" href="#teaching-wrap-up" title="Permalink to this headline">¶</a></h3>
-<p>Ashley Cryan, Jose Urra - 15 mins</p>
-<ul class="simple">
-<li><p>How to give feedback</p></li>
-<li><p>Post-workshop survey</p></li>
-<li><p>How to continue learning :)</p></li>
-</ul>
+<ol class="simple">
+<li><p>Forking and cloning a remote repository on GitHub (30 minutes)</p></li>
+<li><p>Python exercise from <a class="reference external" href="https://github.com/wmvanvliet/gizmo">https://github.com/wmvanvliet/gizmo</a> (30 minutes)</p></li>
+</ol>
+<p>— Coffee break (15 mins) —</p>
+<ol class="simple">
+<li><p>Version control with Git (1hr 15 mins)</p></li>
+<li><p>Wrap up and resources for continued learning (15 mins)</p></li>
+</ol>
 <p><strong>Afternoon session - independent exercises</strong></p>
 <p>Following the last day of teaching, we recommend continuing to see if you can complete the remainder of the exercises on the <a class="reference external" href="https://github.com/wmvanvliet/gizmo">Gizmo repository</a>. Time to test your learning and level up! :)</p>
-</div>
 </div>
 </div>
 
@@ -1228,8 +477,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="01_Prep.html" title="previous page">Preparing for the workshop</a>
-    <a class='right-next' id="next-link" href="../01_Day_1_Unix_Shell/00_README.html" title="next page">DAY 1</a>
+    <a class='left-prev' id="prev-link" href="01_About_this_workshop.html" title="previous page">General considerations for this workshop</a>
+    <a class='right-next' id="next-link" href="../01_Day_1_Unix_Shell/00_README.html" title="next page">Day 1: Introduction to Unix Shell, Python and Jupyter Lab</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
@@ -1249,7 +498,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     </div>
 
     
-  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     

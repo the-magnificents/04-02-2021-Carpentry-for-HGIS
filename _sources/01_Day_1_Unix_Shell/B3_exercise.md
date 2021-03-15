@@ -8,5 +8,3 @@ jupyter-lab
 
 
 ```
-
-## Questions or comments?
