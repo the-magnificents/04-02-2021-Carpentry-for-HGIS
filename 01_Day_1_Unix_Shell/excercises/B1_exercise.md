@@ -31,7 +31,7 @@ You can use `ls` to see the files in the `mountain_data/` folder, and `cat`
 :::
 
 ```{admonition} Exercise: add data to tallest-mountains.txt
- Right now, the tallest-mountains.txt file contains geographic and population data for the 5 tallest mountains in the world. A good start, but there are many more cool mountains in the world! Add a few more mountains to the tallest-mountains.txt file using nano on the command line. Don't forget to keep the same format as the rest of the data: name, lat, lon, height in meters, successful ascents(pre-2004), unsuccessful ascents(pre-2004). **Hint:** You can find a link to the data source in the `mountain_data/README.md` file. 
+ Right now, the tallest-mountains.txt file contains geographic and population data for the 10 tallest mountains in the world. A good start, but there are many more cool mountains in the world! Add a few more mountains to the tallest-mountains.txt file using nano on the command line. Don't forget to keep the same format as the rest of the data: name, lat, lon, height in meters, successful ascents(pre-2004), unsuccessful ascents(pre-2004). **Hint:** You can find a link to the data source in the `mountain_data/README.md` file. 
 ```
 :::{admonition} See Solution
 :class: tip, dropdown
