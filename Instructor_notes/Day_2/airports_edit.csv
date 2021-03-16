@@ -1,0 +1,836 @@
+name,latitude,longitude,iata_code,country
+Sahnewal,30.85,75.96, LUH,IN
+Solapur,17.63,75.93, SSE,IN
+Birsa Munda,23.32,85.32, IXR,IN
+Ahwaz,31.34,48.75, AWZ,IR
+Gwalior,26.29,78.22, GWL,IN
+Hodeidah Int'l,14.76,42.97, HOD,YE
+Devi Ahilyabai Holkar Int'l,22.73,75.81, IDR,IN
+Gandhinagar,19.97,73.81, ISK,IN
+Chandigarh Int'l,30.67,76.8, IXC,IN
+Aurangabad,19.87,75.4, IXU,IN
+Faisalabad Int'l,31.36,72.99, LYP,PK
+Omsk Tsentralny,54.96,73.32, OMS,RU
+Novosibirsk Tolmachev,55.01,82.67, OVB,RU
+Zaporozhye Int'l,47.87,35.3, OZH,UA
+Simpang Tiga,0.46,101.45, PKU,ID
+Rota Int'l,14.17,145.24, ROP,MP
+Surgut,61.34,73.41, SGC,RU
+Tiruchirappalli,10.76,78.71, TRZ,IN
+Turbat Int'l,25.99,63.03, TUK,PK
+Quetta Int'l,30.25,66.95, UET,PK
+Zahedan Int'l,29.48,60.9, ZAH,IR
+Abdul Rachman Saleh,-7.93,112.71, MLG,ID
+Barnaul,53.36,83.55, BAX,RU
+Adampur,31.43,75.76, NULL,IN
+Bareilly,28.42,79.45, NULL,IN
+Dhamial,33.56,73.03, NULL,PK
+Cheongju Int'l,36.72,127.5, CJJ,KR
+Gwangju,35.14,126.81, KWJ,KR
+Daegu Int'l,35.9,128.64, TAE,KR
+Ulsan,35.59,129.36, USN,KR
+Radin Inten II,-5.24,105.18, TKG,ID
+Allahabad,25.44,81.73, IXD,IN
+Chelyabinsk,55.3,61.51, CEK,RU
+Tainan,22.95,120.21, TNN,TW
+Taichung,24.27,120.63, RMQ,TW
+Rotterdam The Hague,51.95,4.43, RTM,NL
+Voronezh-Chertovitskoye,51.81,39.23, VOZ,RU
+Liverpool John Lennon,53.34,-2.86, LPL,GB
+Vishakapatnam,17.73,83.22, VTZ,IN
+Sultan Hasanuddin Int'l,-5.06,119.55, UPG,ID
+Vava'u Int'l,-18.59,-173.97, VAV,TO
+Newcastle Int'l,55.04,-1.71, NCL,GB
+Goloson Int'l,15.75,-86.85, LCE,HN
+Madinah Int'l,24.54,39.7, MED,SA
+Mirabel Int'l,45.68,-74.03, YMX,CA
+Palanga Int'l,55.97,21.1, PLQ,LT
+Jaipur Int'l,26.82,75.8, JAI,IN
+Sonari,22.82,86.17, IXW,IN
+Yenisehir,40.26,29.54, YEI,TR
+Şakirpaşa,36.99,35.3, ADA,TR
+Kodiak,57.75,-152.49, ADQ,US
+Amarillo Int'l,35.22,-101.71, AMA,US
+Alice Springs,-23.8,133.9, ASP,AU
+Raja Sansi Int'l,31.71,74.81, ATQ,IN
+Biju Patnaik,20.25,85.82, BBI,IN
+Bethel,60.78,-161.84, BET,US
+Palonegro,7.13,-73.18, BGA,CO
+Birmingham Int'l,33.56,-86.75, BHM,US
+Broken Hill,-32.0,141.47, BHQ,AU
+Logan Int'l,45.8,-108.54, BIL,US
+Bismarck Muni.,46.78,-100.76, BIS,US
+Del Bajio Int'l,20.99,-101.48, BJX,MX
+Benin,6.32,5.6, BNI,NG
+Bourgas,42.57,27.52, BOJ,BG
+Bremen,53.05,8.79, BRE,DE
+Jacinto Lara Int'l,10.05,-69.36, BRM,VE
+Brownsville-South Padre Island Int'l,25.91,-97.43, BRO,US
+Bristol Int'l,51.39,-2.71, BRS,GB
+Baton Rouge Metro,30.53,-91.16, BTR,US
+Bratislava-M.R. Štefánik,48.17,17.2, BTS,SK
+Burlington Int'l,44.47,-73.16, BTV,US
+Columbia Metro,33.93,-81.11, CAE,US
+Calicut Int'l,11.14,75.95, CCJ,IN
+Changchun Longjia Int'l,43.99,125.69, CGQ,CN
+Charleston Int'l,32.88,-80.04, CHS,US
+Coimbatore,11.03,77.04, CJB,IN
+Someseni,46.78,23.69, CLJ,RO
+Ignacio Agramonte,21.42,-77.85, CMW,CU
+Casper/Natrona County Int'l,42.9,-106.46, CPR,US
+Clark Int'l,15.19,120.55, CRK,PH
+Yeager,38.37,-81.6, CRW,US
+Catania Fontanarossa,37.47,15.07, CTA,IT
+Chetumal Int'l,18.51,-88.32, CTM,MX
+Cardiff,51.4,-3.34, CWL,GB
+Gerrard Smith,19.69,-79.88, CYB,KY
+Cozumel Int'l,20.51,-86.93, CZM,MX
+James M. Cox Dayton Int'l,39.9,-84.22, DAY,US
+Dubbo,-32.22,148.57, DBO,AU
+Washington Nat'l,38.85,-77.04, DCA,US
+Durango Int'l,24.13,-104.53, DGO,MX
+Voloskoye,48.37,35.09, DNK,UA
+Donetsk,48.07,37.74, DOK,UA
+Santa Bernardina Int'l,-33.36,-56.5, DZO,UY
+Edinburgh Int'l,55.95,-3.36, EDI,GB
+Elko Reg.,40.83,-115.79, EKO,US
+Ensenada,31.8,-116.6, ESE,MX
+Vágar,62.06,-7.27, FAE,FO
+Hector Int'l,46.92,-96.83, FAR,US
+Fresno Yosemite Int'l,36.77,-119.72, FAT,US
+Flagstaff Pulliam,35.14,-111.67, FLG,US
+Mundo Maya Int'l,16.91,-89.88, FRS,GT
+Sioux Falls Reg.,43.58,-96.73, FSD,US
+Spokane Int'l,47.63,-117.54, GEG,US
+Exuma Int'l,23.56,-75.87, GGT,BS
+Gerald R. Ford Int'l,42.88,-85.53, GRR,US
+Triad Int'l,36.11,-79.94, GSO,US
+Great Falls Int'l,47.48,-111.36, GTF,US
+Gaziantep Oğuzeli Int'l,36.95,37.47, GZT,TR
+Hubli,15.36,75.09, HBX,IN
+Hat Yai Int'l,6.94,100.39, HDY,TH
+Hefei-Luogang,31.78,117.3, HFE,CN
+Hurghada Int'l,27.18,33.81, HRG,EG
+Kharkov Int'l,49.92,36.28, HRK,UA
+Huntsville Int'l,34.65,-86.77, HSV,US
+Ibadan,7.36,3.97, IBA,NG
+Kansas City Int'l,37.65,-97.43, ICT,US
+Wilmington Int'l,34.27,-77.91, ILM,US
+Ilorin Int'l,8.44,4.49, ILR,NG
+Falls Int'l,48.57,-93.4, INL,US
+Inverness,57.54,-4.06, INV,GB
+Imperial Cty.,32.83,-115.57, IPL,US
+Jammu,32.68,74.84, IXJ,IN
+Madurai,9.84,78.09, IXM,IN
+Jodhpur,26.26,73.05, JDH,IN
+Jabalpur,23.18,80.06, JLR,IN
+Kilimanjaro Int'l,-3.42,37.07, JRO,TZ
+Kaduna,10.69,7.33, KAD,NG
+Kananga,-5.9,22.48, KGA,CD
+Kumasi,6.71,-1.59, KMS,GH
+Viña del Mar,-32.95,-71.48, KNA,CL
+Kanpur,26.44,80.37, KNU,IN
+Kona Int'l at Keahole,19.74,-156.04, KOA,US
+Kirkwall,58.95,-2.9, KOI,GB
+Kota,25.16,75.85, KTU,IN
+Konya,37.98,32.58, KYA,TR
+Blue Grass,38.04,-84.6, LEX,US
+Lihue,21.98,-159.35, LIH,US
+Clinton National,34.73,-92.22, LIT,US
+Los Mochis,25.69,-109.08, LMM,MX
+Venustiano Carranza Int'l,26.96,-101.46, LOV,MX
+Laredo Int'l,27.54,-99.46, LRD,US
+Sumburgh,59.88,-1.29, LSI,GB
+Bassel Al-Assad Int'l,35.41,35.94, LTK,SY
+London Luton,51.88,-0.38, LTN,GB
+Sangster Int'l,18.5,-77.92, MBJ,JM
+Mandalay Int'l,21.71,95.97, MDL,MM
+Chicago Midway Int'l,41.79,-87.74, MDW,US
+Eloy Alfaro Int'l,-0.95,-80.68, MEC,EC
+Montgomery Reg.,32.3,-86.39, MGM,US
+Manchester-Boston Reg.,42.93,-71.44, MHT,US
+Maiduguri Int'l,11.85,13.09, MIU,NG
+Mbuji Mayi,-6.12,23.57, MJM,CD
+Minot Int'l,48.26,-101.29, MOT,US
+Missoula Int'l,46.92,-114.08, MSO,US
+Gen R.S. Taboada Int'l,32.63,-115.25, MXL,MX
+Malpensa,45.63,8.71, MXP,IT
+Norfolk Island,-29.04,167.94, NLK,NF
+Nurnberg,49.49,11.08, NUE,DE
+Odessa Int'l,46.44,30.68, ODS,UA
+Gold Coast,-28.17,153.51, OOL,AU
+Oran Es Senia,35.62,-0.61, ORN,DZ
+Lok Nayak Jaiprakash,25.59,85.09, PAT,IN
+Paysandu,-32.36,-58.07, PDU,UY
+Paphos Int'l,34.71,32.48, PFO,CY
+Sultan Mahmud Badaruddin II,-2.9,104.7, PLM,ID
+Polokwane Int'l,-23.86,29.45, PTG,ZA
+Punta Cana,18.56,-68.36, PUJ,DO
+Queretaro Int'l,20.62,-100.19, QRO,MX
+Rajkot,22.31,70.78, RAJ,IN
+Richmond Int'l,37.51,-77.33, RIC,US
+Shah Makhdum,24.44,88.61, RJH,BD
+Greater Rochester Int'l,43.13,-77.67, ROC,US
+Rockhampton,-23.38,150.48, ROK,AU
+Rostov-on-Don,47.26,39.8, ROV,RU
+Saratov,51.56,46.04, RTW,RU
+Ramón Villeda Morales Int'l,15.46,-87.93, SAP,HN
+Deadhorse,70.2,-148.46, SCC,US
+Springfield Reg.,37.24,-93.38, SGF,US
+Shreveport Reg.,32.45,-93.83, SHV,US
+Simferopol Int'l,45.02,34.0, SIP,UA
+Los Cabos Int'l,23.16,-109.72, SJD,MX
+McNary Field,44.91,-123.01, SLE,US
+Plan de Guadalupe,25.55,-100.93, SLW,MX
+Santo Pekoa Int'l,-15.51,167.22, SON,VU
+Srinagar,33.98,74.78, SXR,IN
+Tapachula Int'l,14.79,-92.37, TAP,MX
+Podgorica,42.37,19.25, TGD,ME
+Tallahassee Reg.,30.4,-84.34, TLH,US
+Turin Int'l,45.19,7.64, TRN,IT
+Taiyuan Wusu Int'l,37.75,112.63, TYN,CN
+Narsarsuaq,61.16,-45.42, UAK,GL
+U-Tapao,12.69,101.0, UTP,TH
+Victoria Falls,-18.1,25.85, VFA,ZW
+Vijaywada,16.53,80.8, VGA,IN
+Varanasi,25.45,82.85, VNS,IN
+Juan Gualberto Gomez,23.04,-81.44, VRA,CU
+Villahermosa,17.99,-92.82, VSA,MX
+Brandon,49.9,-99.95, YBR,CA
+CFB Edmonton,53.67,-113.48, YED,CA
+Iqaluit,63.75,-68.54, YFB,CA
+John C. Munro Hamilton Int'l,43.16,-79.93, YHM,CA
+Fort McMurray,56.66,-111.22, YMM,CA
+Yantai,37.41,121.37, YNT,CN
+Peace River,56.23,-117.44, YPE,CA
+Greater Moncton Int'l,46.12,-64.69, YQM,CA
+Sydney/J.A. Douglas McCurdy,46.17,-60.05, YQY,CA
+Resolute Bay,74.72,-94.97, YRB,CA
+Fort Smith,60.02,-111.96, YSM,CA
+Thompson,55.8,-97.86, YTH,CA
+Timmins,48.57,-81.37, YTS,CA
+Repulse Bay,66.53,-86.25, YUT,CA
+Kuujjuaq,58.1,-68.43, YVP,CA
+Wabush,52.93,-66.87, YWK,CA
+Edmonton City Centre,53.57,-113.52, YXD,CA
+Fort St. John N. Peace,56.25,-120.74, YXJ,CA
+North Bay/Jack Garland,46.36,-79.42, YYB,CA
+Zaria,11.14,7.69, ZAR,NG
+Skopje,41.96,21.63, SKP,MK
+Burnpur,23.63,86.97, NULL,IN
+Hindon Air Force Station,28.71,77.35, NULL,IN
+Sunchon,39.41,125.89, NULL,KP
+Łódź Władysław Reymont,51.73,19.4, LCJ,PL
+Alma Ata N.W.,43.36,76.88, BXJ,KZ
+Jiamusi Dongjiao,46.84,130.46, JMU,CN
+Mudanjiang Hailang,44.53,129.58, MDG,CN
+Severomorsk-3 Murmansk N.E.,69.02,33.29, NULL,RU
+Mosul Int'l,36.31,43.15, OSB,IQ
+Rostov N.,47.28,39.64, NULL,RU
+Rostov S.W.,47.12,39.8, NULL,RU
+Oulu,64.93,25.37, OUL,FI
+Bordeaux,44.83,-0.7, BOD,FR
+Mandelieu,43.55,6.95, CEQ,FR
+St Gatien,49.36,0.16, DOL,FR
+Lille-Lesquin,50.57,3.11, LIL,FR
+Toulouse-Blagnac,43.63,1.37, TLS,FR
+Fukuoka,33.58,130.44, FUK,JP
+Hiroshima-Nishi,34.37,132.42, HIW,JP
+Nagoya,35.25,136.92, NKM,JP
+Sendai,38.14,140.93, SDJ,JP
+Kirkenes Hoybuktmoen,69.72,29.89, KKN,NO
+Marechal Rondon Int'l,-15.65,-56.12, CGB,BR
+Joinville-Lauro C. de Loyola,-26.22,-48.8, JOI,BR
+Presidente Castro Pinto Int'l,-7.15,-34.95, JPA,BR
+Augusto Severo Int'l,-5.9,-35.25, NAT,BR
+Francisco Sa Carneiro,41.24,-8.67, OPO,PT
+Marechal Cunha Machado Int'l,-2.58,-44.24, SLZ,BR
+Teresina-Senador Petronio Portella,-5.06,-42.82, THE,BR
+Viracopos-Campinas Int'l,-23.01,-47.14, VCP,BR
+Alicante,38.29,-0.56, ALC,ES
+Almeria,36.85,-2.37, LEI,ES
+Valencia,39.49,-0.47, VLC,ES
+Kiruna_Airport,67.83,20.34, KRN,SE
+Norrköping Airport,58.58,16.23, NRK,SE
+Husein Sastranegara Int'l,-6.9,107.58, BDO,ID
+Rosario – Islas Malvinas Int'l,-32.92,-60.78, ROS,AR
+Maceio/Zumbi dos Palmares Int'l,-9.51,-35.79, MCZ,BR
+Sharm el-Sheikh Int'l,27.98,34.39, SSH,EG
+Taba Int'l,29.59,34.78, TCP,EG
+Agra,27.16,77.96, AGR,IN
+Vadodara,22.34,73.23, BDQ,IN
+Shahid Ashrafi Esfahani,34.35,47.16, KSH,IR
+Benina Int'l,32.09,20.27, BEN,LY
+King Abdulaziz AB,26.27,50.15, DHA,SA
+Nueva Hespérides Int'l,-31.44,-57.98, STY,UY
+Baikonur Cosmodrome,45.96,63.31, NULL,KZ
+Kennedy Space Center,28.52,-80.64, NULL,US
+Centre Spatial Guyanais,5.24,-52.77, NULL,GF
+Queen Beatrix Int'l,12.5,-70.01, AUA,AW
+Djibouti-Ambouli Int'l,11.55,43.15, JIB,DJ
+Diego Aracena Int'l,-20.55,-70.18, IQQ,CL
+Sabiha Gökçen Havaalani,40.9,29.31, SAW,TR
+Kosrae Island,5.35,162.96, KSA,FM
+Dr. Babasaheb Ambedkar Int'l,21.09,79.05, NAG,IN
+Phuket Int'l,8.11,98.31, HKT,TH
+Nadi Int'l,-17.75,177.45, NAN,FJ
+Lic. Jesús Terán Peredo Int'l,21.7,-102.31, AGU,MX
+Albenga,44.05,8.12, ALL,IT
+Queen Alia Int'l,31.72,35.99, AMM,JO
+Chacalluta Int'l,-18.35,-70.34, ARI,CL
+Atar Int'l,20.5,-13.05, ATR,MR
+Ernesto Cortissoz Int'l,10.89,-74.78, BAQ,CO
+Teniente Luis Candelaria Int'l,-41.15,-71.16, BRC,AR
+Bouaké,7.74,-5.07, BYK,CI
+Philip S. W. Goldson Int'l,17.54,-88.31, BZE,BZ
+Corpus Christi Int'l,27.77,-97.5, CRP,US
+Hato Int'l,12.18,-68.96, CUR,AN
+Velazco Astete Int'l,-13.54,-71.94, CUZ,PE
+Julius Nyerere Int'l,-6.87,39.21, DAR,TZ
+Detroit City,42.41,-83.0, DET,US
+Moscow Domodedovo Int'l,55.41,37.9, DME,RU
+Dunedin Int'l,-45.92,170.2, DUD,NZ
+Dzaoudzi Pamanzi Int'l,-12.8,45.28, DZA,YT
+El Paso Int'l,31.8,-106.4, ELP,US
+Zvartnots Int'l,40.15,44.4, EVN,AM
+Fort Worth Meacham Field,32.82,-97.36, FTW,US
+JAGS McCartney Int'l,21.44,-71.15, GDT,TC
+Scholes Int'l,29.27,-94.86, GLS,US
+Goma Int'l,-1.66,29.24, GOM,CD
+Garoua Int'l,9.33,13.37, GOU,CM
+Antonio B. Won Pat Int'l,13.49,144.81, GUM,GU
+Gary/Chicago Int'l,41.62,-87.41, GYY,US
+Prince Said Ibrahim Int'l,-11.54,43.27, HAH,KM
+Hobart Int'l,-42.84,147.51, HBA,AU
+Kiev Zhuliany Int'l,50.41,30.45, IEV,UA
+Irkutsk S.E.,52.27,104.36, IKT,RU
+Indianapolis Int'l,39.73,-86.27, IND,US
+Nauru Int'l,-0.55,166.92, INU,NR
+Mataveri Int'l,-27.16,-109.43, IPC,CL
+Gob. Horacio Guzman Int'l,-24.39,-65.09, JUJ,AR
+Nanchang Changbei Int'l,28.86,115.91, KHN,CN
+Kunming Wujiaba Int'l,25.0,102.74, KMG,CN
+Leeds Bradford,53.87,-1.66, LBA,GB
+Lomé Tokoin,6.17,1.25, LFW,TG
+Lviv Danylo Halytskyi Int'l,49.82,23.95, LWO,UA
+Aden Adde Int'l,2.02,45.3, MGQ,SO
+Maputo Int'l,-25.92,32.57, MPM,MZ
+Sir Seewoosagur Ramgoolam Int'l,-20.43,57.68, MRU,MU
+Naples Int'l,40.88,14.28, NAP,IT
+Nouadhibou Int'l,20.93,-17.03, NDB,MR
+Ningbo Lishe Int'l,29.82,121.46, NGB,CN
+Nouakchott Int'l,18.1,-15.95, NKC,MR
+La Tontouta Int'l,-22.01,166.22, NOU,NC
+Ontario Int'l,34.06,-117.59, ONT,US
+Cork,51.85,-8.49, ORK,IE
+Minangkabau Int'l,-0.79,100.29, PDG,ID
+Bacha Khan Int'l,33.99,71.52, PEW,PK
+Glasgow Prestwick,55.51,-4.61, PIK,GB
+Ponta Porã Int'l,-22.55,-55.71, PMG,BR
+Palmerston N. Int'l,-40.32,175.62, PMR,NZ
+Tahiti Faa'a Int'l,-17.56,-149.61, PPT,PF
+Pisa Galileo Galilei Int'l,43.7,10.4, PSA,IT
+Port Sudan,19.58,37.22, PZU,SD
+Praia Int'l,14.94,-23.49, RAI,CV
+Marrakech-Menara,31.6,-8.02, RAK,MA
+Rarotonga Int'l,-21.2,-159.8, RAR,CK
+Siem Reap Int'l,13.41,103.82, REP,KH
+Hermes Quijada Int'l,-53.78,-67.75, RGA,AR
+Piloto Civil Norberto Fernandez Int'l,-51.61,-69.31, RGL,AR
+Reno-Tahoe Int'l,39.51,-119.78, RNO,US
+Roman Tmetuchl Int'l,7.36,134.53, ROR,PW
+Sarajevo,43.83,18.34, SJJ,BA
+Robert L. Bradshaw Int'l,17.31,-62.71, SKB,KN
+Martín Miguel de Güemes Int,-24.84,-65.48, SLA,AR
+Saipan Int'l,15.12,145.72, SPN,MP
+Juana Azurduy de Padilla Int'l,-19.01,-65.29, SRE,BO
+Ta'izz Int'l,13.69,44.13, TAI,YE
+Qingdao Liuting Int'l,36.27,120.38, TAO,CN
+Tangier Ibn Battouta,35.73,-5.91, TNG,MA
+Astana Int'l,51.03,71.46, TSE,KZ
+Tianjin Binhai Int'l,39.13,117.35, TSN,CN
+Townsville,-19.26,146.77, TSV,AU
+Teniente Gen. Benjamin Matienzo Int'l,-26.84,-65.11, TUC,AR
+Aeroport Tunis,36.85,10.22, TUN,TN
+Tucson Int'l,32.12,-110.94, TUS,US
+Chinggis Khaan Int'l,47.85,106.76, ULN,MN
+Ürümqi Diwopu Int'l,43.9,87.47, URC,CN
+Bauerfield Int'l,-17.7,168.32, VLI,VU
+Wewak Int'l,-3.58,143.67, WWK,PG
+Châlons Vatry,48.78,4.19, XCR,FR
+Xiamen Gaoqi Int'l,24.54,118.13, XMN,CN
+Playa de Oro Int'l,19.15,-104.56, ZLO,MX
+Cayenne – Rochambeau,4.82,-52.36, CAY,GF
+Irkutsk N.W.,52.36,104.2, UIIR,RU
+Shijiazhuang Zhengding Int'l,38.28,114.69, SJW,CN
+Heydar Aliyev Int'l,40.46,50.05, GYD,AZ
+Lakatamia Airbase,35.11,33.32, LAK,CY
+Cabo Frio Int'l,-22.93,-42.08, CFB,BR
+Helsinki-Malmi,60.25,25.05, HEM,FI
+Luxembourg-Findel,49.63,6.22, LUX,LU
+Yangyang Int'l,38.06,128.66, YNY,KR
+Tabatinga Int'l,-4.25,-69.94, TBT,BR
+Boa Vista Int'l,2.84,-60.69, BVB,BR
+Gran Canaria,27.94,-15.39, LPA,ES
+Com. Armando Tola Int'l,-50.28,-72.05, ING,AR
+Stockholm-Skavsta,58.79,16.92, NYO,SE
+Polonia Int'l,3.57,98.68, MES,ID
+Bangui M'Poko Int'l,4.4,18.52, BGF,CF
+Hangzhou Xiaoshan Int'l,30.24,120.43, HGH,CN
+Šiauliai Int'l,55.9,23.38, SQQ,LT
+Niue Int'l,-19.08,-169.93, IUE,NU
+Guaraní Int'l,-25.46,-54.84, AGT,PY
+Rodríguez Ballón Int'l,-16.34,-71.57, AQP,PE
+Vladivostok Int'l,43.38,132.14, VVO,RU
+Pristina,42.59,21.03, PRN,RS
+Deurne,51.19,4.45, ANR,BE
+Gen. Márquez de León Int'l,24.08,-110.37, LAP,MX
+Harbin Taiping,45.62,126.24, HRB,CN
+Trivandrum Int'l,8.48,76.92, TRV,IN
+Adnan Menderes,38.29,27.15, ADB,TR
+Nanjing Lukou Int'l,31.74,118.87, NKG,CN
+Freeport Int'l,26.55,-78.7, FPO,BS
+Tripoli Int'l,32.67,13.14, TIP,LY
+Gander Int'l,48.95,-54.58, YQX,CA
+Doha Int'l,25.27,51.56, DOH,QA
+Albuquerque Int'l,35.05,-106.62, ABQ,US
+V.C. Bird Int'l,17.14,-61.79, ANU,AG
+Asyut,27.05,31.02, ATZ,EG
+Bahrain Int'l,26.27,50.63, BAH,BH
+Bradley Int'l,41.93,-72.69, BDL,US
+Grantley Adams Int'l,13.08,-59.49, BGI,BB
+Yundum Int'l,13.34,-16.65, BJL,GM
+Bujumbura Int'l,-3.32,29.32, BJM,BI
+Chileka Int'l,-15.68,34.97, BLZ,MW
+Bandar Abbass Int'l,27.21,56.37, BND,IR
+Basrah Int'l,30.55,47.67, BSR,IQ
+Ciudad Juarez Int'l,31.64,-106.44, CJS,MX
+Katunayake Int'l,7.18,79.89, CMB,LK
+Cairns Int'l,-16.88,145.75, CNS,AU
+Chiang Mai Int'l,18.77,98.97, CNX,TH
+City of Colorado Springs,38.8,-104.7, COS,US
+Ign. Alberto Ongay Int'l,19.81,-90.5, CPE,MX
+Changsha Huanghua Int'l,28.19,113.21, CSX,CN
+Greater Cincinnati Int'l,39.06,-84.66, CVG,US
+Dallas Love Field,32.84,-96.85, DAL,US
+Damascus Int'l,33.41,36.51, DAM,SY
+Enrique Malek Int'l,8.39,-82.43, DAV,PA
+Aba Tenna D. Yilma Int'l,9.61,41.86, DIR,ET
+Des Moines Int'l,41.53,-93.65, DSM,US
+Entebbe Int'l,0.04,32.44, EBB,UG
+Kisangani Bangoka Int'l,0.49,25.33, FKI,CD
+Fuzhou Changle Int'l,25.93,119.67, FOC,CN
+Lokpriya G. Bordoloi Int'l,26.11,91.59, GAU,IN
+Gdansk Lech Walesa,54.38,18.47, GDN,PL
+Nizhny Novgorod Int'l,56.22,43.79, GOJ,RU
+Gen. José M. Yáñez Int'l,27.97,-110.92, GYM,MX
+Hohhot Baita Int'l,40.85,111.81, HET,CN
+Helena Reg.,46.61,-111.99, HLN,US
+Gen. Ignacio P. Garcia Int'l,29.09,-111.05, HMO,MX
+Dulles Int'l,38.95,-77.45, IAD,US
+Hilo Int'l,19.71,-155.04, ITO,US
+Jackson Int'l,32.31,-90.08, JAN,US
+Jacksonville Int'l,30.49,-81.68, JAX,US
+Kuching Int'l,1.49,110.34, KCH,MY
+Kigali Int'l,-1.96,30.13, KGL,RW
+Kraków-Balice,50.07,19.8, KRK,PL
+Kurumoch,53.51,50.15, KUF,RU
+Guilin Liangjiang Int'l,25.22,110.05, KWL,CN
+Laoag Int'l,18.18,120.53, LAO,PH
+LaGuardia,40.77,-73.87, LGA,US
+London Gatwick,51.16,-0.16, LGW,GB
+Ljubljana,46.23,14.45, LJU,SI
+Amausi Int'l,26.76,80.88, LKO,IN
+La Plata,-34.97,-57.9, LPG,AR
+Gen. Sevando Canales,25.77,-97.53, MAM,MX
+Manchester Int'l,53.36,-2.27, MAN,GB
+Kansas City Int'l,39.3,-94.72, MCI,US
+Seeb Int'l,23.59,58.29, MCT,OM
+Habib Bourguiba Int'l,35.76,10.75, MIR,TN
+Marseille Provence Airport,43.44,5.22, MRS,FR
+Quetzalcoatl Int'l,27.45,-99.57, NLD,MX
+Nanning Wuwu Int'l,22.61,108.17, NNG,CN
+Xoxocotlán Int'l,17.0,-96.72, OAX,MX
+Kahului,20.89,-156.44, OGG,US
+Will Rogers,35.4,-97.6, OKC,US
+Norfolk Int'l,36.9,-76.2, ORF,US
+Palm Beach Int'l,26.69,-80.09, PBI,US
+Pengel Int'l,5.46,-55.2, PBM,SR
+Bolshesavino,57.92,56.02, PEE,RU
+Penang Int'l,5.29,100.27, PEN,MY
+Port Harcourt Int'l,5.01,6.95, PHC,NG
+Port Hedland Int'l,-20.38,118.63, PHE,AU
+Pierre Regional,44.38,-100.29, PIR,US
+Greater Pittsburgh Int'l,40.5,-80.26, PIT,US
+Pago Pago Int'l,-14.33,-170.71, PPG,AS
+Birmingham Int'l,52.45,-1.73, BHX,GB
+Roberts Int'l,6.24,-10.35, ROB,LR
+Raipur,21.19,81.74, RPR,IN
+El Salvador Int'l,13.44,-89.06, SAL,SV
+San Diego Int'l,32.73,-117.2, SAN,US
+San Antonio Int'l,29.53,-98.47, SAT,US
+Savannah Int'l,32.14,-81.21, SAV,US
+Antonio Maceo,19.97,-75.84, SCU,CU
+Ponciano Arriaga Int'l,22.26,-100.94, SLP,MX
+Sacramento Int'l,38.69,-121.59, SMF,US
+Cibao Int'l,19.47,-70.69, STI,DO
+Koltsovo,56.73,60.81, SVX,RU
+Syracuse Hancock Int'l,43.13,-76.11, SYR,US
+Tabriz,38.13,46.24, TBZ,IR
+Torreon Int'l,25.56,-103.4, TRC,MX
+Tulsa Int'l,36.19,-95.89, TUL,US
+Mcghee Tyson,35.81,-83.99, TYS,US
+Ufa Int'l,54.57,55.88, UFA,RU
+Hewanorra Int'l,13.74,-60.95, UVF,LC
+Windhoek Hosea Kutako Int'l,-22.49,17.46, WDH,NA
+Sault Ste Marie,46.49,-84.5, YAM,CA
+Dawson Cr.,55.74,-120.19, YDQ,CA
+Edmonton Int'l,53.31,-113.58, YEG,CA
+Halifax Int'l,44.89,-63.51, YHZ,CA
+Kamloops,50.71,-120.44, YKA,CA
+Sudbury,46.62,-80.8, YSB,CA
+Saint John,45.33,-65.89, YSJ,CA
+Prince George,53.88,-122.67, YXS,CA
+Victoria Int'l,48.64,-123.43, YYJ,CA
+Zamboanga Int'l,6.92,122.06, ZAM,PH
+Lanzhou Zhongchuan,36.51,103.62, ZGC,CN
+Albany Int'l,42.75,-73.81, ALB,US
+General Mitchell Int'l,42.95,-87.9, MKE,US
+Wang-Chia Tun Airbase,30.6,114.25, NULL,CN
+Sanya Phoenix Int'l,18.31,109.41, SYX,CN
+Lhasa Gonggar,29.29,90.9, LXA,CN
+Hotan,37.04,79.87, HTN,CN
+Dresden,51.13,13.76, DRS,DE
+Kenitra Air Base,34.3,-6.6, NNA,MA
+Annemasse,46.2,6.26, QNJ,FR
+Nogales Int'l,31.23,-110.97, NOG,MX
+Strasbourg,48.54,7.63, SXB,FR
+Cologne/Bonn,50.88,7.12, CGN,DE
+Kimhae Int'l,35.17,128.95, PUS,KR
+Stavanger Sola,58.88,5.63, SVG,NO
+Trondheim Vaernes,63.47,10.92, TRD,NO
+Corumbá Int'l,-19.01,-57.66, CMG,BR
+Madeira,32.69,-16.78, FNC,PT
+Foz do Iguaçu Int'l,-25.6,-54.49, IGU,BR
+Gov. Jorge Teixeira de Oliveira Int'l,-8.71,-63.9, PVH,BR
+Bilbao,43.31,-2.91, BIO,ES
+Palma de Mallorca,39.57,2.73, PMI,ES
+Tenerife N.,28.49,-16.35, TFN,ES
+Gothenburg,57.69,12.29, GOT,SE
+Lulea,65.55,22.12, LLA,SE
+Abu Dhabi Int'l,24.43,54.65, AUH,AE
+Mohamed Boudiaf Int'l,36.28,6.62, CZL,DZ
+Aswan Int'l,23.97,32.82, ASW,EG
+Rovaniemi,66.56,25.83, RVN,FI
+Cheddi Jagan Int'l,6.5,-58.25, GEO,GY
+Cochin Int'l,10.16,76.39, COK,IN
+Eldoret Int'l,0.41,35.22, EDL,KE
+Federal de Bachigualato Int'l,24.77,-107.47, CUL,MX
+Benazir Bhutto Int'l,33.61,73.1, ISB,PK
+Brussels,50.9,4.48, BRU,BE
+Abuja Int'l,9.0,7.27, ABV,NG
+Austin-Bergstrom Int'l,30.2,-97.67, AUS,US
+Antalya,36.92,30.8, AYT,TR
+Belfast Int'l,54.66,-6.22, BFS,GB
+Orio Al Serio,45.67,9.7, BGY,IT
+Bengaluru Int'l,13.2,77.71, BLR,IN
+Canberra Int'l,-35.31,149.19, CBR,AU
+Port Columbus Int'l,40.0,-82.88, CMH,US
+Mohamed V Int'l,33.37,-7.58, CMN,MA
+Düsseldorf Int'l,51.28,6.76, DUS,DE
+Esenboğa Int'l,40.12,32.99, ESB,TR
+Hamilton Int'l,-37.87,175.34, HLZ,NZ
+Rajiv Gandhi Int'l,17.24,78.43, HYD,IN
+John F Kennedy Int'l,40.65,-73.79, JFK,US
+Boryspil Int'l,50.34,30.9, KBP,UA
+Khartoum,15.59,32.55, KRT,SD
+Dane Cty. Reg. Truax Field,43.14,-89.35, MSN,US
+Minsk Int'l,53.89,28.03, MSQ,BY
+T.F. Green,41.73,-71.44, PVD,US
+Southwest Florida Int'l,26.53,-81.76, RSW,US
+Shenyang Taoxian Int'l,41.63,123.49, SHE,CN
+Sharjah Int'l,25.32,55.52, SHJ,AE
+San Jose Int'l,37.37,-121.93, SJC,US
+John Wayne,33.68,-117.86, SNA,US
+Stuttgart,48.69,9.19, STR,DE
+Nacional Tobías Bolaños,9.96,-84.14, SYQ,CR
+Shenzhen Bao'an Int'l,22.65,113.82, SZX,CN
+Louisville Int'l,38.19,-85.74, SDF,US
+Geneva,46.23,6.11, GVA,CH
+Lyon-Saint Exupery,45.72,5.08, LYS,FR
+Lisbon Portela,38.77,-9.13, LIS,PT
+Tancredo Neves Int'l,-19.63,-43.96, CNF,BR
+Bromma,59.36,17.95, BMA,SE
+Juanda Int'l,-7.38,112.78, SUB,ID
+Astor Piazzolla Int'l,-37.93,-57.58, MDQ,AR
+Owen Roberts Int'l,19.3,-81.36, GCM,KY
+Zhengzhou Xinzheng Int'l,34.53,113.84, CGO,CN
+Dalian Zhoushuizi Int'l,38.96,121.54, DLC,CN
+Tbilisi Int'l,41.67,44.96, TBS,GE
+Cascais,38.72,-9.35, XXC,PT
+Kaohsiung Int'l,22.57,120.35, KHH,TW
+Sadiq Abubakar III,12.92,5.2, SKO,NG
+Mariscal Sucre Int'l,-0.15,-78.49, UIO,EC
+Karachi Civil,24.9,67.15, KHI,PK
+Kishinev S.E.,46.93,28.94, KIV,MD
+Jorge Chávez,-12.02,-77.11, LIM,PE
+Thunder Bay Int'l,48.37,-89.31, YQT,CA
+Vilnius,54.64,25.28, VNO,LT
+Hsien Yang,34.44,108.76, XIY,CN
+Del Norte Int'l,25.86,-100.24, NTR,MX
+Fua'amotu Int'l,-21.25,-175.14, TBU,TO
+Esfahan Int'l,32.75,51.88, IFN,IR
+Harare Int'l,-17.92,31.1, HRE,ZW
+Kuwait Int'l,29.24,47.97, KWI,KW
+Macdonald-Cartier Int'l,45.32,-75.66, YOW,CA
+Kabul Int'l,34.56,69.21, KBL,AF
+Abidjan Port Bouet,5.25,-3.93, ABJ,CI
+General Juan N Alvarez Int'l,16.76,-99.75, ACA,MX
+Kotoka Int'l,5.61,-0.17, ACC,GH
+Bole Int'l,8.98,38.79, ADD,ET
+Aden Int'l,12.83,45.03, ADE,YE
+Adelaide Int'l,-34.94,138.53, ADL,AU
+Almaty Int'l,43.35,77.01, ALA,KZ
+Houari Boumediene,36.7,3.21, ALG,DZ
+Aleppo Int'l,36.18,37.23, ALP,SY
+Sardar Vallabhbhai Patel Int'l,23.07,72.62, AMD,IN
+Cerro Moreno Int'l,-23.45,-70.44, ANF,CL
+Ashkhabad Northwest,37.98,58.36, ASB,TM
+Yohannes Iv Int'l,15.29,38.91, ASM,ER
+Silvio Pettirossi Int'l,-25.24,-57.51, ASU,PY
+Bermuda Int'l,32.36,-64.7, BDA,BM
+Surcin,44.82,20.29, BEG,RS
+Beirut Int'l,33.83,35.49, BEY,LB
+Bairagarh,23.29,77.34, BHO,IN
+Bamako Sénou,12.54,-7.95, BKO,ML
+Nashville Int'l,36.13,-86.67, BNA,US
+Brisbane Int'l,-27.39,153.12, BNE,AU
+Boise Air Terminal,43.57,-116.22, BOI,US
+Wiley Post Will Rogers Mem.,71.29,-156.77, BRW,US
+Greater Buffalo Int'l,42.93,-78.73, BUF,US
+Bulawayo,-20.02,28.62, BUQ,ZW
+Brunei Int'l,4.95,114.93, BWN,BN
+Guangzhou Baiyun Int'l,23.39,113.3, CAN,CN
+Carriel Sur Int'l,-36.78,-73.06, CCP,CL
+Netaji Subhash Chandra Bose Int'l,22.65,88.44, CCU,IN
+Chittagong,22.25,91.81, CGP,BD
+Christchurch Int'l,-43.49,172.54, CHC,NZ
+Conakry,9.57,-13.62, CKY,GN
+Hopkins Int'l,41.41,-81.84, CLE,US
+Alfonso Bonilla Aragón Int'l,3.54,-76.39, CLO,CO
+Cotonou Cadjehon,6.36,2.38, COO,BJ
+Ingeniero Ambrosio L.V. Taravella Int'l,-31.32,-64.21, COR,AR
+Cancún,21.04,-86.87, CUN,MX
+General R F Villalobos Int'l,28.7,-105.97, CUU,MX
+Zia Int'l Dhaka,23.85,90.4, DAC,BD
+Darwin Int'l,-12.41,130.88, DRW,AU
+Louis Botha,-29.97,30.95, DUR,ZA
+Lubumbashi Luano Int'l,-11.59,27.53, FBM,CD
+Saiss,33.93,-4.98, FEZ,MA
+Kinshasa N Djili Int'l,-4.39,15.45, FIH,CD
+Freetown Lungi,8.62,-13.2, FNA,SL
+Sunan,39.2,125.68, FNJ,KP
+Vasilyevka,43.06,74.47, FRU,KG
+Sir Seretse Khama Int'l,-24.56,25.92, GBE,BW
+Don Miguel Hidalgo Int'l,20.52,-103.3, GDL,MX
+Glasgow Int'l,55.86,-4.43, GLA,GB
+La Aurora,14.59,-90.53, GUA,GT
+Noi Bai,21.21,105.8, HAN,VN
+José Martí Int'l,23.0,-82.41, HAV,CU
+Borg El Arab Int'l,30.92,29.69, HBE,EG
+King Abdul Aziz Int'l,21.67,39.15, JED,SA
+Kano Mallam Aminu Int'l,12.05,8.52, KAN,NG
+Kashi,39.54,76.01, KHG,CN
+Tribhuvan Int'l,27.7,85.36, KTM,NP
+Luanda 4 de Fevereiro,-8.85,13.23, LAD,AO
+Pulkovo 2,59.81,30.31, LED,RU
+Allama Iqbal Int'l,31.52,74.41, LHE,PK
+Kamuzu Int'l,-13.79,33.78, LLW,MW
+Lagos Murtala Muhammed,6.58,3.32, LOS,NG
+El Alto Int'l,-16.51,-68.18, LPB,BO
+Lusaka Int'l,-15.33,28.45, LUN,ZM
+Luxor,25.67,32.7, LXR,EG
+Chennai Int'l,12.98,80.16, MAA,IN
+La Chinita Int'l,10.56,-71.72, MAR,VE
+José María Córdova,6.17,-75.43, MDE,CO
+Memphis Int'l,35.04,-89.98, MEM,US
+Augusto Cesar Sandino Int'l,12.14,-86.17, MGA,NI
+Mashhad,36.23,59.64, MHD,IR
+Miami Int'l,25.79,-80.28, MIA,US
+Lic M Crecencio Rejon Int'l,20.93,-89.66, MID,MX
+Luqa,35.85,14.5, MLA,MT
+Moi Int'l,-4.03,39.6, MBA,KE
+Moshoeshoe I Int'l,-29.46,27.56, MSU,LS
+New Orleans Int'l,29.99,-90.26, MSY,US
+Multan,30.2,71.42, MUX,PK
+Carrasco Int'l,-34.84,-56.03, MVD,UY
+General Rafael Buelna Int'l,23.17,-106.27, MZT,MX
+Nassau Int'l,25.05,-77.46, NAS,BS
+Ndjamena,12.13,15.03, NDJ,TD
+Niamey,13.48,2.18, NIM,NE
+Nova Lisboa,-12.8,15.75, NOV,AO
+Eppley Airfield,41.3,-95.9, OMA,US
+Nome,64.51,-165.44, OME,US
+Ouagadougou,12.35,-1.51, OUA,BF
+Mais Gate Int'l,18.58,-72.29, PAP,HT
+Puebla,19.16,-98.38, PBC,MX
+Portland Int'l,45.59,-122.59, PDX,US
+Perth Int'l,-31.94,115.97, PER,AU
+H F Verwoerd,-33.98,25.61, PLZ,ZA
+El Tepual Int'l,-41.43,-73.1, PMC,CL
+Pochentong,11.55,104.85, PNH,KH
+Pune,18.58,73.91, PNQ,IN
+Port Moresby Int'l,-9.44,147.21, POM,PG
+Tocumen Int'l,9.07,-79.39, PTY,PA
+Carlos Ibáñez de Campo Int'l,-53.01,-70.84, PUQ,CL
+Durham Int'l,35.88,-78.79, RDU,US
+Mingaladon,16.9,96.13, RGN,MM
+Riga,56.92,23.98, RIX,LV
+Sanaa Int'l,15.47,44.22, SAH,YE
+Baghdad Int'l,33.27,44.23, SDA,IQ
+Tan Son Nhat,10.82,106.66, SGN,VN
+Thessaloniki,40.52,22.98, SKG,GR
+Vrazhdebna,42.69,23.4, SOF,BG
+Surat,21.12,72.74, STV,IN
+Nausori Int'l,-18.05,178.56, SUV,FJ
+Shiraz Int'l,29.55,52.59, SYZ,IR
+Gen Francisco J Mina Int'l,22.29,-97.87, TAM,MX
+Toncontin Int'l,14.06,-87.22, TGU,HN
+Mehrabad Int'l,35.69,51.32, THR,IR
+Tirane Rinas,41.42,19.72, TIA,AL
+General Abelardo L Rodriguez Int'l,32.55,-116.98, TIJ,US
+Jose Maria Morelos Y Pavon,19.34,-99.57, TLC,MX
+Ulemiste,59.42,24.8, TLL,EE
+Ben Gurion,32.0,34.87, TLV,IL
+São Tomé Salazar,0.37,6.71, TMS,ST
+Antananarivo Ivato,-18.8,47.48, TNR,MG
+Tampa Int'l,27.98,-82.53, TPA,US
+Zim Valencia,10.15,-67.92, VLN,VE
+Gumrak,48.79,44.35, VOG,RU
+Vientiane,17.98,102.57, VTE,LA
+Viru Viru Int'l,-17.65,-63.14, VVI,BO
+Wellington Int'l,-41.33,174.81, WLG,NZ
+Windsor,42.27,-82.96, YQG,CA
+Regina,50.43,-104.66, YQR,CA
+Vancouver Int'l,49.19,-123.18, YVR,CA
+Winnipeg Int'l,49.9,-97.23, YWG,CA
+John G Diefenbaker Int'l,52.17,-106.69, YXE,CA
+Whitehorse Int'l,60.71,-135.08, YXY,CA
+Calgary Int'l,51.13,-114.01, YYC,CA
+Charlottetown,46.29,-63.13, YYG,CA
+Churchill,58.75,-94.08, YYQ,CA
+St John's Int'l,47.61,-52.74, YYT,CA
+Yellowknife,62.47,-114.44, YZF,CA
+Zagreb,45.73,16.06, ZAG,HR
+Zanzibar,-6.22,39.22, ZNZ,TZ
+Arkhangelsk-Talagi,64.6,40.71, ARH,RU
+Kazan Int'l,55.61,49.3, KZN,RU
+Paris Orly,48.73,2.37, ORY,FR
+Québec,46.79,-71.38, YQB,CA
+Montréal-Trudeau,45.46,-73.75, YUL,CA
+Narita Int'l,35.76,140.38, NRT,JP
+Okadama,43.11,141.38, OKD,JP
+Bergen Flesland,60.29,5.23, BGO,NO
+Val de Caes Int'l,-1.39,-48.48, BEL,BR
+Campo Grande Int'l,-20.46,-54.67, CGR,BR
+Afonso Pena Int'l,-25.54,-49.17, CWB,BR
+Pinto Martins Int'l,-3.78,-38.54, FOR,BR
+São Paulo-Guarulhos Int'l,-23.43,-46.48, GRU,BR
+Santa Genoveva,-16.63,-49.23, GYN,BR
+Salgado Filho Int'l,-29.99,-51.18, POA,BR
+Gilberto Freyre Int'l,-8.13,-34.92, REC,BR
+Deputado Luis Eduardo Magalhaes Int'l,-12.91,-38.33, SSA,BR
+El Plumerillo,-32.83,-68.8, MDZ,AR
+Eduardo Gomes Int'l,-3.03,-60.05, MAO,BR
+Yaoundé Nsimalen Int'l,3.71,11.55, NSI,CM
+Marka Int'l,31.97,35.98, ADJ,JO
+Gen. Heriberto Jara Int'l,19.14,-96.18, VER,MX
+Osvaldo Vieira Int'l,11.89,-15.65, OXB,GW
+Francisco Bangoy Int'l,7.13,125.65, DVO,PH
+Seychelles Int'l,-4.67,55.51, SEZ,SC
+Léopold Sedar Senghor Int'l,14.75,-17.49, DKR,SN
+Port Sudan New Int'l,19.43,37.24, PZU,SD
+Tashkent Int'l,41.26,69.27, TAS,UZ
+Copenhagen,55.63,12.65, CPH,DK
+Aeroportul National Bucuresti-Baneasa,44.5,26.09, BBU,RO
+Ferihegy,47.43,19.26, BUD,HU
+Chongqing Jiangbei Int'l,29.72,106.64, CKG,CN
+Douglas Int'l,35.22,-80.94, CLT,US
+Detroit Metro,42.23,-83.35, DTW,US
+Dublin,53.43,-6.24, DUB,IE
+Fairbanks Int'l,64.82,-147.87, FAI,US
+Hamburg,53.63,10.01, HAM,DE
+Kuala Lumpur Int'l,2.75,101.71, KUL,MY
+Mccarran Int'l,36.08,-115.15, LAS,US
+Orlando Int'l,28.43,-81.31, MCO,US
+Minneapolis St. Paul Int'l,44.88,-93.21, MSP,US
+Franz-Josef-Strauss,48.35,11.79, MUC,DE
+Philadelphia Int'l,39.88,-75.24, PHL,US
+Sky Harbor Int'l,33.44,-112.01, PHX,US
+Salt Lake City Int'l,40.79,-111.98, SLC,US
+Lambert St Louis Int'l,38.74,-90.37, STL,US
+Okecie Int'l,52.17,20.97, WAW,PL
+Zurich Int'l,47.45,8.56, ZRH,CH
+Gosselies,50.46,4.45, CRL,BE
+Munich Freight Terminal,48.35,11.77, MUCf,DE
+Barcelona,41.3,2.08, BCN,ES
+Ruzyn,50.11,14.27, PRG,CZ
+Taoyuan,25.08,121.23, TPE,TW
+Schiphol,52.31,4.76, AMS,NL
+Singapore Changi,1.36,103.99, SIN,SG
+London Heathrow,51.47,-0.45, LHR,GB
+Anchorage Int'l,61.17,-149.98, ANC,US
+Hartsfield-Jackson Atlanta Int'l,33.64,-84.43, ATL,US
+Beijing Capital,40.08,116.59, PEK,CN
+Eldorado Int'l,4.7,-74.14, BOG,CO
+Chhatrapati Shivaji Int'l,19.1,72.87, BOM,IN
+Baltimore-Washington Int'l Thurgood Marshall,39.18,-76.67, BWI,US
+Cairo Int'l,30.11,31.4, CAI,EG
+Casablanca-Anfa,33.56,-7.66, CAS,MA
+Simón Bolivar Int'l,10.6,-67.01, CCS,VE
+Cape Town Int'l,-33.97,18.6, CPT,ZA
+Chengdushuang Liu,30.58,103.96, CTU,CN
+Indira Gandhi Int'l,28.56,77.09, DEL,IN
+Denver Int'l,39.85,-104.67, DEN,US
+Dallas-Ft. Worth Int'l,32.9,-97.04, DFW,US
+Don Muang Int'l,13.92,100.6, DMK,TH
+Dubai Int'l,25.25,55.35, DXB,AE
+Newark Int'l,40.69,-74.18, EWR,US
+Ministro Pistarini Int'l,-34.81,-58.54, EZE,AR
+Fort Lauderdale Hollywood Int'l,26.07,-80.15, FLL,US
+George Bush Intercontinental,29.99,-95.33, IAH,US
+Atatürk Hava Limani,40.98,28.82, IST,TR
+OR Tambo Int'l,-26.13,28.23, JNB,ZA
+Juneau Int'l,58.36,-134.58, JNU,US
+Los Angeles Int'l,33.94,-118.4, LAX,US
+Linate,45.46,9.28, LIN,IT
+Melbourne Int'l,-37.67,144.85, MEL,AU
+Lic Benito Juarez Int'l,19.44,-99.08, MEX,MX
+Ninoy Aquino Int'l,14.51,121.0, MNL,PH
+Jomo Kenyatta Int'l,-1.33,36.93, NBO,KE
+Honolulu Int'l,21.33,-157.92, HNL,US
+Chicago O'Hare Int'l,41.98,-87.91, ORD,US
+King Khalid Int'l,24.96,46.7, RUH,SA
+Arturo Merino Benitez Int'l,-33.4,-70.79, SCL,CL
+Tacoma Int'l,47.44,-122.3, SEA,US
+San Francisco Int'l,37.62,-122.38, SFO,US
+Hongqiao,31.19,121.34, SHA,CN
+Sheremtyevo,55.97,37.42, SVO,RU
+Toronto-Pearson Int'l,43.68,-79.61, YYZ,CA
+Kingsford Smith,-33.94,151.17, SYD,AU
+Helsinki Vantaa,60.32,24.97, HEL,FI
+Charles de Gaulle Int'l,49.01,2.54, CDG,FR
+Berlin-Tegel Int'l,52.55,13.29, TXL,DE
+Vienna Schwechat Int'l,48.12,16.56, VIE,AT
+Frankfurt Int'l,50.05,8.57, FRA,DE
+Leonardo da Vinci Int'l,41.8,12.25, FCO,IT
+Osaka Int'l,34.79,135.44, ITM,JP
+Gimpo Int'l,37.56,126.8, GMP,KR
+Oslo Gardermoen,60.19,11.1, OSL,NO
+Juscelino Kubitschek Int'l,-15.87,-47.92, BSB,BR
+Congonhas Int'l,-23.63,-46.66, CGH,BR
+Madrid Barajas,40.47,-3.57, MAD,ES
+Luis Muñoz Marin,18.44,-66.0, SJU,PR
+Arlanda,59.65,17.93, ARN,SE
+Soekarno-Hatta Int'l,-6.13,106.65, CGK,ID
+Eleftherios Venizelos Int'l,37.94,23.95, ATH,GR
