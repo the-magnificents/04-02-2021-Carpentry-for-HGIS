@@ -32,6 +32,7 @@ We have carefully curated and provided exercises with different levels of comple
 - Download and install Anaconda (an all-in-one installer for Python and Jupyter notebooks which we will be using throughout the workshop) following the instructions [here](https://carpentries.github.io/workshop-template/#python)
 - Download and install QGIS (free, open-source GIS program) [here](https://www.qgis.org/en/site/)
 - Download the pre-workshop folder containing data and scripts we will be using from the link we provided and save it to your Desktop with the same name. 
+- Download the [gapminder files](https://github.com/the-magnificents/04-02-2021-Carpentry-for-HGIS/raw/master/data_gapminder.zip) to be used in DAY 2.
 
 If you have any questions about these steps before the workshop, please reach out to Ashley (a.e.cryan@tudelft.nl) and Jose (j.c.urrallanusa@tudelft.nl) before we get started!
 
