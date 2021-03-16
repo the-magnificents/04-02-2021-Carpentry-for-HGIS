@@ -41,6 +41,7 @@ sections:
   - file: 02_Day_2_Python_GIS/reads/00_README
     sections:
     - file: 02_Day_2_Python_GIS/reads/R0_Python_QGIS
+    - file: 02_Day_2_Python_GIS/reads/01_pd_mplt
 - file: 03_Day_3_Git/00_README
   sections:
   - file: 03_Day_3_Git/exercise/00_README
