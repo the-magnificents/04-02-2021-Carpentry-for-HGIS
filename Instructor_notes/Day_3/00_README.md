@@ -3,6 +3,8 @@
 - Introduction to (open) science, and reproducibility
     - It is very common in software development to be able to reproduce programs given a set of prerequisites
         - This might be dependencies needed
+## Introduce the main exercise
+- Configure git global parameters
 - Introduction to social coding and human centered coding
     - Program the right way
         - Save time and focus on fun challenges
@@ -21,6 +23,7 @@
         - Code is continuously changing
     - Unit testing and testing to write better code
         - Better design and specifications
+
 
 - Todays challenge
     - Go through a collaborative social coding process
