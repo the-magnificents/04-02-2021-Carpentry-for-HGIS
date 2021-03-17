@@ -1,0 +1,1155 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic analysis and plotting of geodata with Python &#8212; Python essentials for GIS learners</title>
+    
+  <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "the-magnificents/04-02-2021-Carpentry-for-HGIS");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="DAY 3" href="../../03_Day_3_Git/00_README.html" />
+    <link rel="prev" title="Working with the Python console in QGIS" href="R0_Python_QGIS.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Python essentials for GIS learners</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Python Essentials for GIS Learners
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../00_Lesson_prep/01_icebreaker.html">
+   Icebreaker question
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../01_Day_1_Unix_Shell/00_README.html">
+   DAY 1
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../01_Day_1_Unix_Shell/A2_Runing_quiting.html">
+     Getting Started with JupyterLab
+    </a>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../01_Day_1_Unix_Shell/excercises/B0_Excercise.html">
+     EXERCISES DAY 1
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../01_Day_1_Unix_Shell/excercises/B1_exercise.html">
+       Work with the bash shell
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../01_Day_1_Unix_Shell/excercises/B2_Exercise.html">
+       Variables, values, inputs, outputs
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../01_Day_1_Unix_Shell/excercises/B3_Exercise.html">
+       Types and built-in functions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../01_Day_1_Unix_Shell/excercises/B4_Exercise.html">
+       Functions I
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../01_Day_1_Unix_Shell/excercises/B5_Exercise_functions.html">
+       Functions II
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../01_Day_1_Unix_Shell/excercises/B6_Exercise_Lists.html">
+       Lists and indexing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../01_Day_1_Unix_Shell/excercises/B7_Exercise_ForLoop.html">
+       For loops
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../01_Day_1_Unix_Shell/excercises/B8_Exercise_Conditionals.html">
+       Conditionals
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../01_Day_1_Unix_Shell/excercises/B9_Scopes_Variables.html">
+       Variable Scope
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../01_Day_1_Unix_Shell/reads/00_README.html">
+     READS DAY 1
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../01_Day_1_Unix_Shell/reads/R0_Bash.html">
+       Unix Shell
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../01_Day_1_Unix_Shell/reads/R1_Dist_V_Control.html">
+       <strong>
+        Distributed version control
+       </strong>
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="../00_README.html">
+   DAY 2
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../exercise/00_README.html">
+     EXERCISES DAY 2
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../exercise/B0_exercise1_qgis.html">
+       Running someone else’s Python script
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../exercise/B0_Exercise_libs.html">
+       Working with libraries
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../exercise/B1_Exercise.html">
+       Reading data with pandas
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../exercise/B2_Exercise.html">
+       Pandas dataframes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../exercise/B3_Exercise.html">
+       Plotting
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../exercise/B7_Exercise_Loop_Datasets.html">
+       Looping Over Data Sets
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2 current active collapsible-parent">
+    <a class="reference internal" href="00_README.html">
+     READS DAY 2
+    </a>
+    <ul class="current collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="R0_Python_QGIS.html">
+       Working with the Python console in QGIS
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Basic analysis and plotting of geodata with Python
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../03_Day_3_Git/00_README.html">
+   DAY 3
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../03_Day_3_Git/exercise/00_README.html">
+     EXERCISES DAY 3
+    </a>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../03_Day_3_Git/reads/00_README.html">
+     READS DAY 3
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../03_Day_3_Git/reads/R0_README.html">
+       Social coding on GitHub and version control with Git
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../Instructor_notes/00_README.html">
+   Instructor notes
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../Instructor_notes/Day_1/00_README.html">
+     DAY 1
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/02_About_Open_science_instructor_notes.html">
+       Open Science
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/03_unix_instructor_notes.html">
+       Instructor Notes: Python Essentials for GIS Learners Day 1 (Unix Shell)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_1/05_jupyter_instructor_notes.html">
+       Introduce Jupyter lab and basic python concepts
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../Instructor_notes/Day_2/00_README.html">
+     DAY 2
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_2/01_lesson.html">
+       Using and reading other people’s code
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_2/02_lesson.html">
+       Object oriented programming
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_2/A1_qgis_lesson1.html">
+       Programmatically access the attributes of international airports
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_2/A1_qgis_lesson1.html">
+       Programmatically access the attributes of international airports
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_2/mappy_instructor_notes.html">
+       Run map.py on netherlandsmap.csv
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+   <li class="toctree-l2 collapsible-parent">
+    <a class="reference internal" href="../../Instructor_notes/Day_3/00_README.html">
+     DAY 3
+    </a>
+    <ul class="collapse-ul">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_3/git_instructor_notes.html">
+       Instructor Notes: Python Essentials for GIS Learners Day 3
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Instructor_notes/Day_3/git_instructor_notes.html">
+       Instructor Notes: Python Essentials for GIS Learners Day 3
+      </a>
+     </li>
+    </ul>
+    <i class="fas fa-chevron-down">
+    </i>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/02_Day_2_Python_GIS/reads/01_pd_mplt.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/the-magnificents/04-02-2021-Carpentry-for-HGIS.git"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/the-magnificents/04-02-2021-Carpentry-for-HGIS.git/master?urlpath=tree/02_Day_2_Python_GIS/reads/01_pd_mplt.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-1-read-and-explore-the-airports-dataset">
+   Step 1: Read and explore the Airports dataset
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-2-group-airports-by-country-and-report-the-top-10-countries-with-the-most-airports">
+   Step 2: Group airports by country and report the top 10 countries with the most airports
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-3-input-a-2-digit-country-code-and-return-a-list-of-airports-in-it">
+   Step 3: Input a 2-digit country code and return a list of airports in it
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-4-answer-the-question-how-many-countries-have-only-one-airport">
+   Step 4: Answer the question, “How many countries have only one airport?”
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-5-report-the-proportion-of-airports-in-the-southern-vs-northern-hemisphere">
+   Step 5: Report the proportion of airports in the Southern vs. Northern hemisphere
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-6-find-the-furthest-south-and-north-airports-by-latitude">
+   Step 6: Find the furthest south and north airports by latitude
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-7-create-a-custom-column-hemisphere-based-on-a-conditional-statement">
+   Step 7: Create a custom column “hemisphere” based on a conditional statement
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-8-plot-all-airports-and-per-hemisphere">
+   Step 8: Plot all airports and per hemisphere
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#that-s-it-nice-job">
+   That’s it! Nice job :)
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="basic-analysis-and-plotting-of-geodata-with-python">
+<h1>Basic analysis and plotting of geodata with Python<a class="headerlink" href="#basic-analysis-and-plotting-of-geodata-with-python" title="Permalink to this headline">¶</a></h1>
+<p>In this hands-on lesson, we are going to use this notebook as a guide to explore, analyze and plot data from the Airports dataset from Natural Earth. For each step in this process, we are going to write code together to acheive some goals:</p>
+<ol class="simple">
+<li><p>Read and explore the Airports dataset</p></li>
+<li><p>Group airports by country and report the top 10 countries with the most airports</p></li>
+<li><p>Input a 2-digit country code and return a list of airports in it</p></li>
+<li><p>Answer the question, “How many countries have only one airport?”</p></li>
+<li><p>Report the proportion of airports in the Southern vs. Northern hemisphere</p></li>
+<li><p>Find the furthest south and north airports by latitude</p></li>
+<li><p>Create a custom “hemisphere” column based on conditional statement</p></li>
+<li><p>Plot all airports and per hemisphere</p></li>
+</ol>
+<div class="section" id="step-1-read-and-explore-the-airports-dataset">
+<h2>Step 1: Read and explore the Airports dataset<a class="headerlink" href="#step-1-read-and-explore-the-airports-dataset" title="Permalink to this headline">¶</a></h2>
+<p>Our first step is to import libraries we’ll need to read in and explore the airports dataset. Hit shift+Enter to run the cell below and import the libraries.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.colors</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Next, let’s read in the airports_edit.csv file and store it as a DataFrame called “df”. Pandas has a built-in function for reading in csv files called, read_csv(). Fill in the blanks to read in and store the dataset as df.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;airports_edit.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>There are several tools to explore the dataset with pandas, like .head(), .shape() and .info() which can all be written either in combination with print statements or on their own, attached to the df DataFrame we just created to give us some quick information about its size, attributes and contents. Run the df.head() cell below, then try writing commands for .shape() and .info(). Hint: with these two, you will need a print statement.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(835, 5)
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 835 entries, 0 to 834
+Data columns (total 5 columns):
+ #   Column     Non-Null Count  Dtype  
+---  ------     --------------  -----  
+ 0   name       835 non-null    object 
+ 1   latitude   835 non-null    float64
+ 2   longitude  835 non-null    float64
+ 3   iata_code  835 non-null    object 
+ 4   country    834 non-null    object 
+dtypes: float64(2), object(3)
+memory usage: 32.7+ KB
+None
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="step-2-group-airports-by-country-and-report-the-top-10-countries-with-the-most-airports">
+<h2>Step 2: Group airports by country and report the top 10 countries with the most airports<a class="headerlink" href="#step-2-group-airports-by-country-and-report-the-top-10-countries-with-the-most-airports" title="Permalink to this headline">¶</a></h2>
+<p>The .value_counts() function can be used to count the number of airports per country. The groupby function can be used to group data by country and count the number of unique name values of airports associated with each country.</p>
+<p>Since you can plot data directly from your DataFrame using the plot() method in MatPlotLib, we can store the groupby object. Using the .describe() method, show some statistics about the airports after they are divided by country. For example, what is the mean number of airports per country? What is the most? What is the least?</p>
+<p>Start by adding the value_counts() function to the country column from df in the cell below. Run shift+Enter and see what happens. Then move on to try creating a new groupby object that sorts countries by number of airports in the order of most to least.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="c1"># The US has the most airports, followed by India, Canada and Mexico</span>
+<span class="c1"># this can also be achieved after saving the groupby object by print(by_country)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>US    132
+IN     51
+CA     45
+MX     39
+CN     38
+     ... 
+LR      1
+PF      1
+HR      1
+CR      1
+TG      1
+Name: country, Length: 188, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">groupby_country</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;country&#39;</span><span class="p">)[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">groupby_country</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>count    188.000000
+mean       4.430851
+std       11.610916
+min        1.000000
+25%        1.000000
+50%        1.000000
+75%        3.000000
+max      131.000000
+Name: name, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p>Create a bar plot of airports by country using Matplotlib. Since there are a lot of countries on earth and it makes it hard to read the data, restrict your report to the top 10 by specifing rows 0:9.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create bar plot here</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">groupby_country</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">9</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;No. of Airports&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/01_pd_mplt_11_0.png" src="../../_images/01_pd_mplt_11_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="step-3-input-a-2-digit-country-code-and-return-a-list-of-airports-in-it">
+<h2>Step 3: Input a 2-digit country code and return a list of airports in it<a class="headerlink" href="#step-3-input-a-2-digit-country-code-and-return-a-list-of-airports-in-it" title="Permalink to this headline">¶</a></h2>
+<p>There are many ways to query a DataFrame. Use the .loc method to find and show just those airports that are in the Netherlands (country code = “NL”). Try it with other countries too - this statement should be easily modifiable to call any country on earth and see the list of airports it has.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;country&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;NL&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>latitude</th>
+      <th>longitude</th>
+      <th>iata_code</th>
+      <th>country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>35</th>
+      <td>Rotterdam The Hague</td>
+      <td>51.95</td>
+      <td>4.43</td>
+      <td>RTM</td>
+      <td>NL</td>
+    </tr>
+    <tr>
+      <th>777</th>
+      <td>Schiphol</td>
+      <td>52.31</td>
+      <td>4.76</td>
+      <td>AMS</td>
+      <td>NL</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="step-4-answer-the-question-how-many-countries-have-only-one-airport">
+<h2>Step 4: Answer the question, “How many countries have only one airport?”<a class="headerlink" href="#step-4-answer-the-question-how-many-countries-have-only-one-airport" title="Permalink to this headline">¶</a></h2>
+<p>Create a new dataframe where airports are grouped by country and use the .loc method to request just the rows where counts is equal to 1. Write a print statement that reports how many countries have only one airport. There is some code to get you started…</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ap_per_country</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;country&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;counts&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="s1">&#39;counts&#39;</span> <span class="p">,</span><span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">one_ap</span> <span class="o">=</span> <span class="n">ap_per_country</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">ap_per_country</span><span class="p">[</span><span class="s1">&#39;counts&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;country&#39;</span><span class="p">,</span><span class="n">ascending</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">one_ap</span><span class="p">),</span><span class="s2">&quot;countries have only one airport.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>95 countries have only one airport.
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="step-5-report-the-proportion-of-airports-in-the-southern-vs-northern-hemisphere">
+<h2>Step 5: Report the proportion of airports in the Southern vs. Northern hemisphere<a class="headerlink" href="#step-5-report-the-proportion-of-airports-in-the-southern-vs-northern-hemisphere" title="Permalink to this headline">¶</a></h2>
+<p>We can divide the airports dataset by latitude to see the proportion of airports that are located in the two hemispheres of the world. Southern locations are those with a negative latitude, and northern locations are those with a positive latitude. Then, we can store the number of airports in each sub-dataset using the len() function, and create a quick calculation of percentage to include in a print statement that reports the approximate percentage of airports in each hemisphere, respectively.</p>
+<p>The southern hemisphere dataset is created already, create the northern hemisphere.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sh_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;latitude&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">sh_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+
+<span class="n">nh_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;latitude&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">nh_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sh_airports</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">sh_df</span><span class="p">)</span>
+<span class="n">nh_airports</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">nh_df</span><span class="p">)</span>
+<span class="n">total_airports</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Approximately&quot;</span><span class="p">,(</span><span class="nb">int</span><span class="p">((</span><span class="n">sh_airports</span><span class="o">/</span><span class="n">total_airports</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">)),</span><span class="s2">&quot;percent of the world&#39;s airports are located in the Southern hemisphere.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Approximately&quot;</span><span class="p">,(</span><span class="nb">int</span><span class="p">((</span><span class="n">nh_airports</span><span class="o">/</span><span class="n">total_airports</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">)),</span><span class="s2">&quot;percent of the world&#39;s airports are located in the Northern hemisphere.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="step-6-find-the-furthest-south-and-north-airports-by-latitude">
+<h2>Step 6: Find the furthest south and north airports by latitude<a class="headerlink" href="#step-6-find-the-furthest-south-and-north-airports-by-latitude" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="c1">#See the furthest south airport is Hermes Quijada in Argentina</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>latitude</th>
+      <th>longitude</th>
+      <th>iata_code</th>
+      <th>country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>336</th>
+      <td>Hermes Quijada Int'l</td>
+      <td>-53.78</td>
+      <td>-67.75</td>
+      <td>RGA</td>
+      <td>AR</td>
+    </tr>
+    <tr>
+      <th>683</th>
+      <td>Carlos Ibáñez de Campo Int'l</td>
+      <td>-53.01</td>
+      <td>-70.84</td>
+      <td>PUQ</td>
+      <td>CL</td>
+    </tr>
+    <tr>
+      <th>337</th>
+      <td>Piloto Civil Norberto Fernandez Int'l</td>
+      <td>-51.61</td>
+      <td>-69.31</td>
+      <td>RGL</td>
+      <td>AR</td>
+    </tr>
+    <tr>
+      <th>373</th>
+      <td>Com. Armando Tola Int'l</td>
+      <td>-50.28</td>
+      <td>-72.05</td>
+      <td>ING</td>
+      <td>AR</td>
+    </tr>
+    <tr>
+      <th>290</th>
+      <td>Dunedin Int'l</td>
+      <td>-45.92</td>
+      <td>170.20</td>
+      <td>DUD</td>
+      <td>NZ</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
+<span class="c1">#See the furthest north airport is Resolute Bay in Canada</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>latitude</th>
+      <th>longitude</th>
+      <th>iata_code</th>
+      <th>country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>225</th>
+      <td>Severomorsk-3 Murmansk N.E.</td>
+      <td>69.02</td>
+      <td>33.29</td>
+      <td>NULL</td>
+      <td>RU</td>
+    </tr>
+    <tr>
+      <th>239</th>
+      <td>Kirkenes Hoybuktmoen</td>
+      <td>69.72</td>
+      <td>29.89</td>
+      <td>KKN</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <th>176</th>
+      <td>Deadhorse</td>
+      <td>70.20</td>
+      <td>-148.46</td>
+      <td>SCC</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <th>607</th>
+      <td>Wiley Post Will Rogers Mem.</td>
+      <td>71.29</td>
+      <td>-156.77</td>
+      <td>BRW</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <th>206</th>
+      <td>Resolute Bay</td>
+      <td>74.72</td>
+      <td>-94.97</td>
+      <td>YRB</td>
+      <td>CA</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="step-7-create-a-custom-column-hemisphere-based-on-a-conditional-statement">
+<h2>Step 7: Create a custom column “hemisphere” based on a conditional statement<a class="headerlink" href="#step-7-create-a-custom-column-hemisphere-based-on-a-conditional-statement" title="Permalink to this headline">¶</a></h2>
+<p>Create a new column called hemisphere in the df DataFrame. If latitude is less than 0 it should assign the label “southern” and if greater than 0 it should assign “northern”.</p>
+<p>To accomplish this, use numpy’s built-in where() function. This function takes three arguments in sequence: the condition we’re testing for, the value to assign to our new column if that condition is true, and the value to assign if it is false.</p>
+<p>Create a barplot showing the number of airports per hemisphere.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;hemisphere&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;latitude&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;southern&#39;</span><span class="p">,</span> <span class="s1">&#39;northern&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>latitude</th>
+      <th>longitude</th>
+      <th>iata_code</th>
+      <th>country</th>
+      <th>hemisphere</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Sahnewal</td>
+      <td>30.85</td>
+      <td>75.96</td>
+      <td>LUH</td>
+      <td>IN</td>
+      <td>northern</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Solapur</td>
+      <td>17.63</td>
+      <td>75.93</td>
+      <td>SSE</td>
+      <td>IN</td>
+      <td>northern</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Birsa Munda</td>
+      <td>23.32</td>
+      <td>85.32</td>
+      <td>IXR</td>
+      <td>IN</td>
+      <td>northern</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Ahwaz</td>
+      <td>31.34</td>
+      <td>48.75</td>
+      <td>AWZ</td>
+      <td>IR</td>
+      <td>northern</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Gwalior</td>
+      <td>26.29</td>
+      <td>78.22</td>
+      <td>GWL</td>
+      <td>IN</td>
+      <td>northern</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create barplot here</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;hemisphere&#39;</span><span class="p">)[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/01_pd_mplt_24_0.png" src="../../_images/01_pd_mplt_24_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="step-8-plot-all-airports-and-per-hemisphere">
+<h2>Step 8: Plot all airports and per hemisphere<a class="headerlink" href="#step-8-plot-all-airports-and-per-hemisphere" title="Permalink to this headline">¶</a></h2>
+<p>Using longitude as the x axis and latitude as the y axis, we can plot the airports in their approximate geographic location. Make a scatterplot from the df dataframe and use plt.show() to display it.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;scatter&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;longitude&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;latitude&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Make a scatterplot from sh_df Dataframe that plots just the airports in the southern hemisphere. Add the ylim() specification to make sure you plot the whole world and it doesn’t get distorted. You can also try it with the northern hemisphere.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sh_df</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;scatter&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;longitude&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;latitude&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">60</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Add some color to the world by mapping the color of the points on the scatterplot to their latitude.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">&quot;scatter&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;longitude&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;latitude&quot;</span><span class="p">,</span>
+    <span class="n">c</span><span class="o">=</span><span class="s2">&quot;latitude&quot;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s2">&quot;jet&quot;</span><span class="p">),</span>
+    <span class="n">colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">7</span><span class="p">),</span>
+<span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="that-s-it-nice-job">
+<h2>That’s it! Nice job :)<a class="headerlink" href="#that-s-it-nice-job" title="Permalink to this headline">¶</a></h2>
+<p>Keep going and learning more with pandas, numpy and matplotlib!</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./02_Day_2_Python_GIS\reads"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="R0_Python_QGIS.html" title="previous page">Working with the Python console in QGIS</a>
+    <a class='right-next' id="next-link" href="../../03_Day_3_Git/00_README.html" title="next page">DAY 3</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book community<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>

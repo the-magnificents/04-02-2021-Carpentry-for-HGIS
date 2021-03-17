@@ -2,6 +2,8 @@
 ![](images/map_delft.jpg)
 This website hosts materials, exercises and lessons for a 3-day course on Python Essentials for GIS Learners offered to the BK Faculty at TU Delft. Materials and website created by co-instructors Jose Urra Llanusa and Ashley Cryan of the TU Delft Digital Competence Centre. 
 
+The **slides** used to run the morning sessions can be found [here](https://docs.google.com/presentation/d/e/2PACX-1vQhpuHf8B-meVg-QgXF273j7lEA0DVrcaBDIjSTCv8_-6Hertx1X6ibS7hc3zO9cDUm1gl4zO4xp0MG/pub?start=false&loop=false&delayms=3000)
+
 ## Workshop overview
 Are you interested in learning to program with Python? Are you working with geospatial data or interested in working with geospatial data? Would you like to apply computational thinking and data analysis tools to your research?
 
